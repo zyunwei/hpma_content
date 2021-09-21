@@ -1,0 +1,21 @@
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/dotastyles.css" />
+		<include src="file://{resources}/layout/custom_game/templates/item_dota/inventory.css" />
+	</styles>
+	<scripts>
+		<include src="file://{resources}/layout/custom_game/templates/item_dota/inventory_item.js" />
+	</scripts>
+	<Panel class="ItemPanel" draggable="true">
+		<Button id="ItemButton" onmouseover="ItemShowTooltip()" onmouseout="ItemHideTooltip()">
+			<DOTAItemImage hittest="false" id="ItemImage" />
+			<Panel hittest="false" id="Cooldown">
+				<Panel hittest="false" id="CooldownOverlay" />
+				<Label hittest="false" id="CooldownTimer" />
+			</Panel>
+			<Label hittest="false" class="Charges" id="ChargeCount" />
+			<Label hittest="false" class="Charges" id="AltChargeCount" />
+			<Panel hittest="false" id="DropTargetHighlight" />
+		</Button>
+	</Panel>
+</root>

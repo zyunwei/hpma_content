@@ -1,0 +1,22 @@
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/dotastyles.css" />
+		<include src="file://{resources}/styles/custom_game/avalon.css" />
+		<include src="file://{resources}/layout/custom_game/tooltips/item/item.css" />
+	</styles>
+	<scripts>
+		<include src="file://{resources}/layout/custom_game/tooltips/item/item.js" />
+	</scripts>
+	<Panel class="ItemTooltipRoot" ontooltiploaded="SetupTooltip()" >
+		<Panel id="ItemList" >
+			<Panel id="Item1" />
+			<Panel id="Item2" />
+		</Panel>
+		<Panel id="Loading" >
+			<Panel class="spinner">
+				<Panel class="dot1"></Panel>
+				<Panel class="dot2"></Panel>
+			</Panel>
+		</Panel>
+	</Panel>
+</root>

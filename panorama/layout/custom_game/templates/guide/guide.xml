@@ -1,0 +1,37 @@
+<root>
+    <styles>
+        <include src="s2r://panorama/styles/dotastyles.css" />
+        <include src="file://{resources}/layout/custom_game/templates/guide/guide.css" />
+    </styles>
+
+    <scripts>
+        <include src="file://{resources}/layout/custom_game/templates/guide/guide_config.js" />
+        <include src="file://{resources}/layout/custom_game/templates/guide/guide.js" />
+    </scripts>
+
+    <snippets>
+        <snippet name="GuideStep">
+            <Button class="GuideStep">
+                <Image id="GuideStepImg"  hittest="false"/>
+                <Label id="GuideStepText" hittest="false"/>
+                <Panel id="GuideStepMask"/>
+            </Button>
+        </snippet>
+    </snippets>
+
+	<Panel hittest="false" class="GuideRoot">
+        <Panel id="GuideRootPanel">
+            <Panel class="CloseButton" onactivate="Close()"/>
+            <Label class="Title" text="- 游 戏 玩 法 -"/>
+            <Panel id="GuideNavigation"/>
+            <Panel id="RightInfo">
+                <Label id="GuideTitle" hittest="false" html="true"/> 
+                <Image id="InfoLine"/>
+                <Label id="GuideDes" hittest="false" html="true"/>
+                <Panel id="MovieContainer">
+                    <Movie id="GuideMovie" repeat="true" autoplay="onload"/>
+                </Panel>
+            </Panel>
+        </Panel>
+	</Panel>
+</root>

@@ -1,0 +1,19 @@
+<root>
+	<styles>
+		<include src="file://{resources}/layout/custom_game/frames/pay_html/pay_html.css" />
+    </styles>
+	<scripts>
+		<include src="file://{resources}/layout/custom_game/frames/pay_html/pay_html.js" />
+	</scripts>
+    <Panel class="panel_pay">
+    	<Panel id="main_panel">
+	    	<Image id="btnClose" onactivate="btnClose_Click()" />
+			<Panel class="pay_header">
+				<Label text="#xxwar_store_topup_scan" />
+			</Panel>
+			<Panel class="pay_content">
+				<DOTAHTMLPanel id="qrcode_iframe" hittest="true" />
+			</Panel>
+		</Panel>
+    </Panel>
+</root>

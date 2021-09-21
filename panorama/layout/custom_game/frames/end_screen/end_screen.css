@@ -1,0 +1,491 @@
+Label{
+	font-size: 20px;
+	color: white;
+	font-family: Radiance, FZLanTingHei-R-GBK, TH Sarabun New, YDYGO 540, Gulim, MingLiU;
+	text-shadow: 1px 1px 1px 1.0 #000000ff;
+}
+
+@define BACKGROUND_COLOR: #101010;
+
+.EndScreenRoot
+{
+	width: 100%;
+    height: 100%;
+}
+
+#EndScreenBackground
+{
+	width: 100%;
+    height: 100%;
+    background-color: gradient( linear, 0% 0%, 0% 100%, from( #000000FF ), color-stop( 0.12, #000000ff ), color-stop( 0.5, #00000022 ), to( #00000000 ) );
+}
+
+#VictoryRow
+{
+	flow-children: right;
+    horizontal-align: center;
+	margin-right: 8px;
+	margin-bottom: 16px;
+
+	transition-property: opacity, transform;
+    transition-duration: 1s;
+	opacity: 0;
+	transform: scaleX(0) scaleY(0) translatey(-50px);
+}
+
+.endgame #VictoryRow
+{
+	opacity: 1;
+	transform: scaleX(1) scaleY(1);
+}
+
+#WinningTeamLogo
+{
+	vertical-align: center;
+	background-image:url("file://{resources}/images/custom_game/winner_logo.png");
+	background-size: 100% 100%;
+	width:100px;
+	height:100px;
+}
+
+#EndScreenVictory
+{
+    font-size: 55px;
+    color: #ffffff;
+	vertical-align: center;
+	margin-left: 30px;
+	text-transform: uppercase;
+	margin-right: -60px;
+}
+
+.EndScreenWindow
+{
+    margin-top: 80px;
+    flow-children: down;
+    horizontal-align: center;
+	flow-children: down;
+}
+
+.EndScreenVictoryRow
+{
+	width: 100%;
+}
+
+#CloseButton
+{
+	background-color: #101010;
+	border: 3px solid #999999;
+    margin-top: 20px;
+    margin-right:7px;
+    horizontal-align: right;
+	vertical-align: bottom;
+	width: 160px;
+	height: 50px;
+}
+
+#CloseButton:hover
+{
+	border: 3px solid white;
+}
+
+#CloseButton Label
+{
+    horizontal-align: center;
+	vertical-align: center;
+	color: #999999;
+	text-transform: uppercase;
+	font-size: 26px;
+}
+
+#CloseButton:hover Label
+{
+	color: white;
+}
+
+.FlyoutScoreboardRoot.flyout_scoreboard_visible
+{
+    transform: translatey( 0px );
+}
+
+#TeamsContainer
+{
+	horizontal-align: right;
+    flow-children: down;
+}
+
+.FlyoutTeam
+{
+	margin-top: 3px;
+	margin-bottom: 3px;
+
+    transition-property: opacity, transform;
+    transition-duration: 0.5s;
+	opacity: 0;
+	transform: translatey(-50px);
+	
+	margin-right: 8px;
+}
+
+.FlyoutTeam.local_player_team
+{
+}
+
+.FlyoutTeam.team_endgame
+{
+	opacity: 1;
+	transform: translatey(0px);
+}
+
+.FlyoutTeam.no_players
+{
+	visibility: collapse;
+}
+
+.FlyoutTeamData
+{
+    flow-children: right;
+}
+
+.TeamInfo
+{
+	margin-top: 1px;
+	height: 100%;
+}
+
+#TeamColor_GradentFromTransparentLeft
+{
+	width: 100%;
+	height: 100%;
+}
+
+.FlyoutPlayer
+{ 
+    flow-children: right;
+}
+
+.TeamCloseSpacer
+{
+}
+
+#PlayersContainer
+{
+    flow-children: down;
+}
+
+.local_player_team #PlayersContainer
+{
+    box-shadow: fill #ffffff55 0px 0px 3px 3px;
+}
+
+.local_player_team .ScoreboardPanel{
+    background-color: #212121;
+}
+
+.TeamId
+{
+    flow-children: right;
+}
+
+.TeamName
+{
+	vertical-align: center;
+	horizontal-align: right;
+    height: 30px;
+    width: 100px;
+	margin-top: 2px;
+	margin-right: 4px;	
+}
+
+.TeamName Label{
+	text-align: right;
+	vertical-align: center;
+	text-overflow: shrink;
+	horizontal-align: right;
+}
+
+.Legend
+{
+	flow-children: right;
+	horizontal-align: right;
+	margin-right: 8px;
+}
+
+.Legend Label
+{
+	text-transform: uppercase;
+	font-size: 16px;
+	color: #90999b;
+	height:30px;
+}
+
+.PlayerRow
+{
+	height: 50px;
+}
+
+#PlayerRowContainer
+{
+	flow-children: right;
+	height: 50px;
+}
+
+#HeroIcon
+{
+    vertical-align: middle;
+	border: 1px solid black;
+}
+
+#LevelContainer,
+#KillsContainer,
+#DeathsContainer,
+#AssistsContainer
+{
+	height: 100%;
+}
+
+.ScoreboardPanel
+{
+    background-color: BACKGROUND_COLOR;
+	margin-top: 1px;
+	margin-left: 1px;
+	height: 100%;
+}
+
+.LegendPanel
+{
+	margin-top: 1px;
+	margin-left: 1px;
+}
+
+#Level
+{
+	vertical-align: middle;
+	horizontal-align: center;
+	color: #898b8c;
+}
+
+.ScoreboardPanel Label
+{
+	horizontal-align: center;
+	vertical-align: center;
+	text-align: center;
+	font-size: 20px;
+	text-shadow: 2px 2px 2px black;
+	margin-top: 3px;
+}
+
+#PlayerGoldAmount
+{
+}
+
+#PlayerName
+{
+	font-size: 20px;
+	font-weight: bold;
+	margin-top: 6px;
+	padding-left: 6px;
+	color: #eeeeee;
+	white-space: nowrap;
+	vertical-align: top;
+	horizontal-align:left;
+}
+
+#HeroNameAndDescription
+{
+	padding-left: 6px;
+	font-size: 14px;
+	text-shadow: 2px 2px 2px black;
+	color: #999999;
+	vertical-align: bottom;
+	margin-bottom: 3px;
+	horizontal-align:left;
+}
+
+#PlayerDetailsContainer
+{
+	height: 100%;
+}
+
+#PlayerAndHeroName
+{
+	height: 100%;
+}
+
+.PlayerHero
+{
+	width:32px;
+	height:32px;
+}
+
+#PlayerHerosContainer
+{
+	flow-children: down;
+}
+
+.PlayerHerosLine{
+	width: 100%;
+	height: 32px;
+	flow-children: right;
+	vertical-align: center;
+}
+
+.is_local_player Label
+{
+	color: white;
+}
+
+.ScoreCol_TeamInfo
+{
+	width: 100px;
+}
+
+.ScoreCol_PlayerDetails
+{
+	text-align: left;
+	padding-left:5px;
+	width: 200px;
+}
+
+.ScoreCol_Avatar
+{
+	width: 50px;
+}
+
+#dotaUserAvatar{
+    height:50px;
+    width:50px;
+    background-color: BACKGROUND_COLOR;
+}
+
+#avatarBackground{
+    height:50px;
+    width:50px;
+    background-color: BACKGROUND_COLOR;
+    border-radius: 2px;
+}
+
+#imgBotAvatar{
+    height:50px;
+    width:50px;
+    visibility: collapse;
+}
+
+.ScoreCol_Level
+{
+	width: 50px;
+	text-align: center;
+}
+
+.ScoreCol_Kills,
+.ScoreCol_Deaths,
+.ScoreCol_Assists
+{
+	width: 70px;
+	text-align: center;
+}
+
+.ScoreCol_Heros
+{
+	width: 340px;
+	padding-left:10px;
+	text-align: center;
+}
+
+.ScoreCol_Gold
+{
+	width: 100px;
+	text-align: center;
+}
+
+.ScoreCol_Bullion
+{
+	width: 100px;
+	text-align: center;
+}
+
+.ScoreCol_Round
+{
+	width: 70px;
+	text-align: center;
+}
+
+.ScoreCol_Time
+{
+	width: 100px;
+	text-align: center;
+}
+
+.ScoreCol_Rank
+{
+	width: 70px;
+	text-align: center;
+}
+
+.ScoreCol_Grade
+{
+	width: 70px;
+	text-align: center;
+}
+
+.ScoreCol_Score
+{
+	width: 120px;
+	text-align: center;
+}
+
+.ScoreCol_Items
+{
+	width: 300px;
+	text-align: center;
+}
+
+#PlayerItemsContainer
+{
+	flow-children: right;
+}
+
+.item{
+	width: 50px;
+	height: 50px;
+}
+
+.item #tooltip,
+.item #item-img{
+	width: 100%;
+	height: 100%;
+}
+
+#logoGrade{
+    width:50px;
+    height:50px;
+    vertical-align: top;
+    horizontal-align: center;
+}
+
+#lblGrade{
+    color:#ffffff;
+    font-weight: bold;
+    font-size:16px;
+    text-align: center;
+    width:50px;
+    text-overflow:shrink;
+}
+
+.ScorePanel{
+	flow-children:down;
+	padding-top:5px;
+}
+
+.ScorePanelRow{
+	width:100%;
+}
+
+.ScorePanelRow Label{
+	font-size:18px;
+	vertical-align: bottom;
+}
+
+#lblScoreToUpgrade{
+	font-size:14px;
+	vertical-align: center;
+}

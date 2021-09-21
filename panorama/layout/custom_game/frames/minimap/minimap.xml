@@ -1,0 +1,48 @@
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/dotastyles.css" />
+		<include src="file://{resources}/styles/custom_game/avalon.css" />
+		<include src="file://{resources}/layout/custom_game/frames/minimap/minimap.css" />
+	</styles>
+	<scripts>
+		<include src="file://{resources}/layout/custom_game/frames/minimap/minimap.js" />
+	</scripts>
+	<snippets>
+		<snippet name="item-point">
+			<Panel class="item-point" hittest="false" hittestchildren="false" >	
+				<Image id="item-img" src="file://{resources}/images/custom_game/teleport.png" />
+			</Panel>
+		</snippet>
+		<snippet name="tele-point">
+			<Panel class="tele-point" hittest="false" hittestchildren="false" >	
+				<Image id="item-img" src="file://{resources}/images/custom_game/teleport.png" />
+			</Panel>
+		</snippet>
+	</snippets>
+	<Panel hittest="false" class="MinmapRoot" >
+		<Panel class="down">
+			<Panel class="yellowline" />
+			<Label id="Title" text="#DOTA_Options_Minimap" />
+			<Panel class="line">
+			</Panel>
+			<Panel id="MinmapFrame" >
+				<!-- <Image class="full" src="file://{resources}/images/custom_game/minimap_png.png" /> -->
+				<DOTAMinimap id="MiniMap" onactivate="" renderbackground="false" hittest="true" require-composition-layer="true"/>
+				<Panel id="RegionList">
+					<Image id="region_1" />
+					<Image id="region_2" />
+					<Image id="region_3" />
+					<Image id="region_4" />
+					<Image id="region_5" />
+					<Image id="region_6" />
+					<Image id="region_7" />
+					<Image id="region_8" />
+					<Image id="region_9" />
+				</Panel>
+				<Panel id="ItemList"/>
+				<Panel id="Teleports"/>					
+			</Panel>
+		</Panel>
+		<ToggleButton id="MiniMapMaximizeOrMinimize" onselect="MiniMapMaximize()" ondeselect="MiniMapMinimize()" />
+	</Panel>
+</root>

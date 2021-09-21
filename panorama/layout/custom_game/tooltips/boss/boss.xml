@@ -1,0 +1,41 @@
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/dotastyles.css" />
+		<include src="file://{resources}/styles/custom_game/avalon.css" />
+		<include src="file://{resources}/layout/custom_game/tooltips/boss/boss.css" />
+	</styles>
+	<scripts>
+		<include src="file://{resources}/layout/custom_game/tooltips/boss/boss.js" />
+	</scripts>
+	<snippets>
+		<snippet name="item-name">
+			<Panel class="item" hittestchildren="false">
+				<DOTAItemImage id="item-img" />
+			</Panel>
+		</snippet>
+	</snippets>
+	<Panel class="BossTooltipRoot" ontooltiploaded="SetupTooltip()" >
+        <Panel id="BossInfo">
+			<Label id="BossName" text="" />
+            <Label id="KillBonus" text="#xxwar_text_kill_bonus" />
+            <Panel id="BonusExpRoot">
+                <Label class="BonusExpClass" text="#xxwar_exp"/>
+                <Label class="BonusExpClass" id="BonusExp" text=""/>
+            </Panel>
+            <Panel id="BonusGoldRoot">
+                <Label class="BonusGoldClass" text="#xxwar_currency_gold"/>
+                <Label class="BonusGoldClass" id="BonusGold" text=""/>
+            </Panel>
+            <Panel id="ItemListRoot">
+                <Label id="Drop" text="#xxwar_text_unit_maybe_drop_items" />
+                <Panel id="ItemList"/>
+            </Panel>
+        </Panel>
+		<Panel id="Loading" >
+			<Panel class="spinner">
+				<Panel class="dot1"></Panel>
+				<Panel class="dot2"></Panel>
+			</Panel>
+		</Panel>
+	</Panel>
+</root>

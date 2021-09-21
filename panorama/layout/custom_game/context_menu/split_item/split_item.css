@@ -1,0 +1,115 @@
+.Root{
+	background-color: #333;
+	flow-children: down;
+	min-width: 300px;
+	box-shadow: 0px 0px 5px #000;
+}
+
+#SplitItemFrame{
+	flow-children: down;
+	background-color: gradient( linear, 0% 100%, 0% 0%, from( #000000 ), to( #001122 ) );
+}
+
+#SplitItemTextEntryPanel{
+	width: 200px;
+}
+
+#SplitItemTextEntryPanel .text-entry-panel{
+	width: fill-parent-flow(1);
+	border: 2px solid #003355;
+}
+
+#SplitItemTextEntryPanel .arrow-panel .arrow{
+	width: 20px;
+	height: 15px;
+	background-image: url("file://{images}/control_icons/expand_collapse.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center;
+	wash-color: #005577;
+
+	horizontal-align: middle;
+	vertical-align: middle;
+
+	transition-property: wash-color;
+	transition-duration: 0.3s;
+}
+
+#SplitItemTextEntryPanel .arrow-panel{
+	width: 20px;
+	height: 100%;
+	border-top: 2px solid #003355;
+	border-bottom: 2px solid #003355;
+	overflow: clip;
+
+	transition-property: border;
+	transition-duration: 0.3s;
+}
+
+#SplitItemTextEntryPanel .arrow-panel:hover .arrow{
+	wash-color: #0099BB;
+}
+
+#SplitItemTextEntryPanel .arrow-panel.left{
+	border-left: 2px solid #003355;
+}
+
+#SplitItemTextEntryPanel .arrow-panel.left:hover{
+	border-left: 2px solid #007799;
+}
+
+#SplitItemTextEntryPanel .arrow-panel.left .arrow{
+	transform: rotateZ(90deg) translateX(-2px);
+}
+
+#SplitItemTextEntryPanel .arrow-panel.right{
+	border-right: 2px solid #003355;
+}
+
+#SplitItemTextEntryPanel .arrow-panel.right:hover{
+	border-right: 2px solid #007799;
+}
+
+#SplitItemTextEntryPanel .arrow-panel.right .arrow{
+	transform: rotateZ(-90deg);
+}
+
+#SplitItemTextEntry{
+	width: fit-children;
+	background-color: none;
+	text-align: right;
+	text-overflow: clip;
+	horizontal-align: center;
+	border: 0;
+}
+
+#ButtonList{
+	width: 100%;
+	border-right: 2px solid #003355;
+}
+#ButtonList .btn{
+	width: fill-parent-flow(1);
+	padding: 5px;
+	border-left: 2px solid #003355;
+	border-bottom: 2px solid #003355;
+
+	transition-property: border;
+	transition-duration: 0.3s;
+}
+
+#ButtonList .btn Label{
+	color: #005577;
+	horizontal-align: middle;
+	vertical-align: middle;
+
+	transition-property: color;
+	transition-duration: 0.3s;
+}
+
+#ButtonList .btn:hover{
+	border-bottom: 2px solid #007799;
+}
+
+#ButtonList .btn:hover Label{
+	color: #0099BB;
+}

@@ -1,0 +1,50 @@
+.HealthbarRoot{
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.HeroOverlayPanel{
+	flow-children:down;
+	transform: translateY(500px);
+	transition-property: transform, opacity;
+	transition-duration: 0.5s;
+	transform: scale3d(0,0,0);
+	opacity: 0;
+}
+
+.HeroOverlayPanel.show{
+	transform: scale3d(1, 1, 1);
+	opacity: 1;
+}
+
+#Background{
+    width: 100%;
+	height: 100%;
+    background-color:black;
+    opacity: 0.5;
+}
+
+#HeroOverlayContainer {
+    width: 100%;
+    height: 100%;
+}
+
+.HeroOverlay{
+	padding:10px;
+	text-align:center;
+	border-radius:10px;
+	background-color: gradient( linear, 0% 20%, 0% 100%, from( #075698 ), to( #7bb2e0 ) );
+}
+
+.HeroOverlay Label {
+	color:#fff;
+}
+
+.BubbleArrow {
+	width:20px;
+	height:10px;
+	background-image: url("file://{resources}/images/custom_game/bubble_arrow.png");
+	background-size: 100% 100%;
+	horizontal-align: center;
+}

@@ -1,0 +1,39 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:vpcf35:version{ec5bfcca-b89d-4591-9ef4-c8679487d623} -->
+{
+	_class = "CParticleSystemDefinition"
+	m_nBehaviorVersion = 11
+	m_nMaxParticles = 128
+	m_controlPointConfigurations = 
+	[
+		{
+			m_name = "preview"
+		},
+	]
+	m_Children = 
+	[
+		{
+			m_ChildRef = resource:"particles/avalon_assets/portal/portal_teleport_08.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/avalon_assets/portal/portal_teleport_02.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/avalon_assets/portal/portal_teleport_05.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/avalon_assets/portal/portal_teleport_04.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/avalon_assets/portal/portal_teleport_01.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/avalon_assets/portal/portal_teleport_07_a.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/avalon_assets/portal/portal_teleport_06_a.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/avalon_assets/portal/portal_outpost.vpcf"
+		},
+	]
+}

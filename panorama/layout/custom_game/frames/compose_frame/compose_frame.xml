@@ -1,0 +1,72 @@
+<root>
+	<styles>
+        <include src="s2r://panorama/styles/dotastyles.css" />
+		<include src="file://{resources}/styles/custom_game/avalon.css" />
+		<include src="file://{resources}/layout/custom_game/frames/compose_frame/compose_frame.css" />
+	</styles>
+	<scripts>
+		<include src="file://{resources}/layout/custom_game/frames/compose_frame/compose_frame.js" />
+	</scripts>
+	<snippets>
+		<!-- 物品 -->
+		<snippet name="item">
+			<Panel class="item" hittestchildren="false">
+				<Panel id="tooltip"/>
+				<DOTAItemImage id="item-img" itemname="" />
+				<Label id="count" text="x{s:Count}" />
+			</Panel>
+		</snippet>
+		<!-- 合成物品 -->
+		<snippet name="compose-item">
+			<Button class="compose-item" hittestchildren="false">
+				<Panel id="tooltip"/>
+				<Panel class="line">
+					<DOTAItemImage id="item-img" itemname="" />
+					<Label id="item-name" html="true" text="" />
+				</Panel>
+			</Button>
+		</snippet>
+		<!-- 分类按钮 -->
+		<snippet name="kind-btn">
+			<RadioButton class="kind-btn" group="compose_frame">
+				<Label id="name" html="true" text="" />
+			</RadioButton>
+		</snippet>
+	</snippets>
+	<Panel class="ComposeFrameRoot" hittest="false" >
+		<Panel id="ComposeFrame">
+			<Panel id="TopBar" >
+				<Label text="#xxwar_shop" />
+			</Panel>
+			<Panel id="Content" >
+				<Panel class="line" >
+					<Panel id="KindList" >
+						<Panel class="top-bar">
+							<Label text="#xxwar_kind" />
+						</Panel>
+					</Panel>
+					<Panel id="ComposeItemPanel" >
+						<Panel id="ComposeItemListPanel" >
+							<Button id="LeftArrow" onactivate="PreviousPage()" />
+							<Panel id="ComposeItemList" >
+							</Panel>
+							<Button id="RightArrow" onactivate="NextPage()"/>
+						</Panel>
+						<Panel id="ComposeRequireItemListPanel">
+							<Panel id="ComposeRequireItemList">
+							</Panel>
+						</Panel>
+						<Panel id="Buttons">
+							<Button id="PurchaseButton" onactivate="Purchase()">
+								<Label text="#xxwar_purchase" />
+							</Button>
+							<Button id="CloseButton" onactivate="GameUI.SwapFrame('compose_frame');">
+								<Label text="#xxwar_close" />
+							</Button>
+						</Panel>
+					</Panel>
+				</Panel>
+			</Panel>
+		</Panel>
+	</Panel>
+</root>

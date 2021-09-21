@@ -1,0 +1,103 @@
+.SelectTeleportRoot{
+    width: 600px;
+    height: 600px;
+    vertical-align: middle;
+    horizontal-align: middle;
+}
+
+#SelectRegionPanel{
+    width: 512px;
+    height: 512px;
+    visibility: collapse;
+    vertical-align: middle;
+    horizontal-align: middle;
+}
+.SelectRegion{
+    visibility: collapse;
+}
+
+#SelectRegionButtonList{
+    width: 100%;
+    height: 100%;  
+}
+
+#RegionList{
+	width: 100%;
+	height: 100%;
+}
+
+#button_select_region_1{
+    width:160px;
+    height:178px;
+    transform: translate3d(38px, -1px, 0px);
+}
+#button_select_region_2{
+    width:124px;
+    height:178px;
+    transform: translate3d(198px, -1px, 0px);
+}
+#button_select_region_3{
+    width:147px;
+    height:178px;
+    transform: translate3d(324px, 0px, 0px);
+}
+#button_select_region_4{
+    width:150px;
+    height:162px;
+    transform: translate3d(38px, 177px, 0px);
+}
+#button_select_region_5{
+    width:134px;
+    height:162px;
+    transform: translate3d(188px, 177px, 0px);
+}
+#button_select_region_6{
+    width:147px;
+    height:157px;
+    transform: translate3d(320px, 177px, 0px);
+}
+#button_select_region_7{
+    width:153px;
+    height:159px;
+    transform: translate3d(38px, 340px, 0px);
+}
+#button_select_region_8{
+    width:131px;
+    height:159px;
+    transform: translate3d(190px, 340px, 0px);
+}
+#button_select_region_9{
+    width:147px;
+    height:164px;
+    transform: translate3d(322px, 334px, 0px);
+}
+
+Label{
+    vertical-align: middle;
+    horizontal-align: middle;
+    font-size: 30px;
+    color: #ffffffcc;
+}
+
+.full{
+    opacity: 0.8;
+}
+
+#RegionList Image{
+	opacity: 1.0;
+	width: 100%;
+	height: 100%;
+}
+
+#btnClose{
+    width: 50px;
+    height: 50px;
+    position: 550px 0px 0px;
+    transition-property:transform;
+	transition-duration:0.2s;
+    visibility: collapse;
+}
+
+#btnClose:hover{
+	transform: scale3d( 1.1, 1.1, 1.1);
+}

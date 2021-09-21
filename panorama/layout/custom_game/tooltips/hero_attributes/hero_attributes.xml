@@ -1,0 +1,26 @@
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/dotastyles.css" />
+		<include src="file://{resources}/styles/custom_game/avalon.css" />
+		<include src="file://{resources}/layout/custom_game/tooltips/hero_attributes/hero_attributes.css" />
+	</styles>
+	<scripts>
+		<include src="file://{resources}/layout/custom_game/tooltips/hero_attributes/hero_attributes.js" />
+	</scripts>
+	<snippets>
+		<!-- 属性 -->
+		<snippet name="attribute-panel">
+			<Panel class="attribute-panel">
+				<Label id="attribute-name" text="" />
+				<Panel id="pnlValue">
+					<Label id="attribute-value" html="true" text="" />
+					<Label id="attribute-val2" />
+				</Panel>
+			</Panel>
+		</snippet>
+	</snippets>
+	<Panel hittest="false" class="HeroAttributesRoot" ontooltiploaded="SetupTooltip()" >
+		<Panel id="HeroAttributes">
+		</Panel>
+	</Panel>
+</root>

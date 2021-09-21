@@ -1,0 +1,281 @@
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/dotastyles.vcss_c" />
+		<include src="file://{resources}/styles/custom_game/avalon.css" />
+		<include src="file://{resources}/layout/custom_game/frames/store/store.css" />
+	</styles>
+	<scripts>
+		<include src="file://{resources}/layout/custom_game/frames/store/store.js" />
+	</scripts>
+	<snippets>
+		<!-- 商城物品 -->
+		<snippet name="store-item">
+			<Panel class="store-item" >
+				<Image id="StoreItemLogo" />
+				<Label id="StoreItemName" html="true" text="" />
+				<Label id="StoreItemPrice" text="" />
+				<Panel id="StoreItemButtons" class="line center">
+					<Button class="TextBar buy">
+						<Panel class="Left"/>
+						<Panel class="Middle">
+							<Label text="#xxwar_purchase" />
+						</Panel>
+						<Panel class="Right"/>
+					</Button>
+				</Panel>
+			</Panel>
+		</snippet>
+
+		<!-- 仓库物品 -->
+		<snippet name="inventroy-item">
+			<Panel class="inventroy-item">
+				<Image id="StoreItemLogo" />
+				<Label id="StoreItemName" html="true" text="" />
+				<Panel class="inventory-button-list">
+					<Button id="UseItemButton" class="TextBar BigButton">
+						<Panel class="Left"/>
+						<Panel class="Middle">
+							<Label id="lblItemButton" text="" />
+						</Panel>
+						<Panel class="Right"/>
+					</Button>
+					<Button id="UseItemButton2" class="TextBar">
+						<Panel class="Left"/>
+						<Panel class="Middle">
+							<Label id="lblItemButton2" text="#xxwar_store_present" />
+						</Panel>
+						<Panel class="Right"/>
+					</Button>
+				</Panel>
+			</Panel>
+		</snippet>
+	</snippets>
+	<Panel hittest="false" class="XXWarStoreRoot" >
+		<Panel id="XXWarStoreFrame" onactivate="">
+			<Panel id="Tier0" hittest="false">
+				<!-- 顶部栏背景 -->
+				<Panel id="Topbar" >
+					<Panel class="Left"/>
+					<Panel class="Middle"/>
+					<Panel class="Right"/>
+				</Panel>
+
+				<!-- 标题 -->
+				<Panel id="TitleBar" >
+					<Panel class="line">
+						<Panel class="Left"/>
+						<Panel class="Middle"/>
+						<Panel class="Right"/>
+					</Panel>
+					<Label text="#xxwar_store" />
+				</Panel>
+
+				<!-- 关闭按钮 -->
+				<Button id="CloseButton" class="TextBar" onactivate="GameUI.SwapFrame('xxwar_store')">
+					<Panel class="Left"/>
+					<Panel class="Middle">
+						<Label text="#xxwar_close" />
+					</Panel>
+					<Panel class="Right"/>
+				</Button>
+			</Panel>
+
+			<Panel id="Tier1" hittest="false">
+				<Panel id="Content" onactivate="">
+
+					<Button id="StoreHome" onactivate="SwitchSubFrame('StoreHome')">
+						<Label text="#xxwar_store_home" />
+					</Button>
+
+					<Button id="MyInventroy" onactivate="SwitchSubFrame('MyInventroy')">
+						<Label text="#xxwar_store_mine" />
+					</Button>
+
+					<Label style="margin-top: 75px;margin-left: 20px;" text="" />
+
+					<!-- 钻石显示，充值按钮 -->
+					<Panel id="CoinBar" class="TextBar" hittest="false">
+						<Panel class="Left"/>
+						<Panel class="Middle">
+							<Label text="xxwar_diamond" />
+							<Label class="coinAmount" id="txtDiamond" text="" />
+							<Label text="xxwar_bullion" />
+							<Label class="coinAmount" id="txtBullion" text="" />
+							<Label text="xxwar_respawn_coin" />
+							<Label class="coinAmount" id="txtRespawnCoin" text="" />
+						</Panel>
+						<Panel class="Right"/>
+						<Button class="line exchange" onactivate="OpenSubWindow('ContentTier3')">
+							<Panel class="Left"/>
+							<Panel class="Middle">
+								<Label text="#xxwar_button_topup" />
+							</Panel>
+							<Panel class="Right"/>
+						</Button>
+						<Button class="line exchange" onactivate="RefreshInfo()">
+							<Panel class="Left"/>
+							<Panel class="Middle">
+								<Label text="#xxwar_button_refresh" />
+							</Panel>
+							<Panel class="Right"/>
+						</Button>
+					</Panel>
+					
+					<!-- 商品 -->
+					<Panel id="ContentTier1" hittest="false">
+
+						<!-- 商城首页 -->
+						<Panel id="StoreItemContent">
+							<Panel id="StoreSortList" >
+								<Label class="title" text="#xxwar_kind" />
+							</Panel>
+							<Panel id="StoreItemList" >
+							</Panel>
+						</Panel>
+
+						<!-- 玩家仓库 -->
+						<Panel id="PlayerInventroy" >
+						</Panel>
+					</Panel>
+
+					<!-- 支付界面 -->
+					<Panel id="ContentTier2" onactivate="CloseAll()">
+						<Panel id="BuyItemDialog" onactivate="">
+							<Panel id="BuyItemDialogContent" hittest="false">
+								<Label class="title" text="#xxwar_confirm_buy" />
+								<Panel class="line">
+									<Panel class="down col1">
+										<Label text="#xxwar_confirm_buy_itemname" />
+										<Label text="{s:StoreItemName}" />
+									</Panel>
+									<Panel class="down col2">
+										<Label text="#xxwar_confirm_buy_quantity" />
+										<TextEntry id="txtStoreItemCount" class="buyCount" maxchars="2" text="1" />
+									</Panel>
+									<Panel class="down col3">
+										<Label text="#xxwar_confirm_buy_total_price" />
+										<Label text="{s:StoreItemAmount}{s:StoreItemPriceType}" />
+									</Panel>
+								</Panel>
+								<Button id="BuyStoreItemButton" class="TextBar" onactivate="BuyItemConfirm()">
+									<Panel class="Left"/>
+									<Panel class="Middle">
+										<Label text="#xxwar_confirm_buy" />
+									</Panel>
+									<Panel class="Right"/>
+								</Button>
+							</Panel>
+						</Panel>
+						<Button id="BuyItemDialogCloseButton" onactivate="CloseAll()"/>
+					</Panel>
+
+					<!-- 充值界面 -->
+					<Panel id="ContentTier3" onactivate="CloseAll()">
+						<Panel id="RechargeDialog" onactivate="">
+							<Panel id="RechargeDialogContent" hittest="false">
+								<Panel id="RechargeQrCodePanel" hittest="false">
+									<DOTAHTMLPanel id="RechargeHtml" url="" ></DOTAHTMLPanel>
+									<Button class="btn" onactivate="">
+										<Label text="#xxwar_button_back" />
+									</Button>
+								</Panel>
+								<Panel id="RechargePreForm" hittest="false">
+									<Label class="center margin-sm" text="#xxwar_pay_input" />
+									<Panel class="line center" hittest="false">
+										<Panel id="DiamondNumber">
+											<TextEntry id="txtTopupAmount" maxchars="4" text="10" />
+										</Panel>
+										<Label class="title" text="#xxwar_store_diamond" />
+									</Panel>
+									<Panel id="AddDiamondNumber">
+										<Button class="btn" onactivate="AddAmount(10)">
+											<Label text="+10" />
+										</Button>
+										<Button class="btn" onactivate="AddAmount(50)">
+											<Label text="+50" />
+										</Button>
+										<Button class="btn" onactivate="AddAmount(100)">
+											<Label text="+100" />
+										</Button>
+									</Panel>
+									<Panel id="PrePayButton" >
+										<Label class="title" html="true" text="#xxwar_prepay_amount" />
+										<Panel class="line center">
+											<Button class="pay-btn alipay" onactivate="OnClickPay('alipay')">
+												<Image src="file://{resources}/images/custom_game/alipay.png" />
+												<Label text="#xxwar_button_alipay" />
+											</Button>
+											<Button class="pay-btn wechatpay" onactivate="OnClickPay('wechat')">
+												<Image src="file://{resources}/images/custom_game/wechatpay.png" />
+												<Label text="#xxwar_button_wechat" />
+											</Button>
+										</Panel>
+										<Label class="center margin-sm" text="#xxwar_pay_tips" />
+									</Panel>
+								</Panel>
+							</Panel>
+						</Panel>
+						<Button id="RechargeDialogCloseButton" onactivate="CloseAll()"/>
+					</Panel>
+
+					<!-- 兑换界面 -->
+					<Panel id="ContentTier4" onactivate="CloseAll()">
+						<Panel id="ExchangeDialog" onactivate="">
+							<Panel id="ExchangeDialogContent" >
+								<Label text="#xxwar_redeem_gift_tips" />
+								<TextEntry id="txtWechatNo" maxchars="30" text="" />
+								<Button id="ExchangeButton" onactivate="RedeemGift()" >
+									<Label text="#xxwar_redeem_gift_button" />
+								</Button>
+							</Panel>
+						</Panel>
+						<Button id="ExchangeDialogCloseButton" onactivate="CloseAll()"/>
+					</Panel>
+
+					<!-- 消息对话框 -->
+					<Panel id="ContentTier6" onactivate="CloseAll()">
+						<Panel id="MessageDialog" onactivate="">
+							<Panel id="MessageDialogContent" >
+								<Label id="Message" html="true" text="" />
+								<Image id="MessageImage" src="" />
+								<Button id="MessageButton" onactivate="CloseAll()">
+									<Label text="#xxwar_button_ok" />
+								</Button>
+							</Panel>
+						</Panel>
+						<Button id="MessageDialogCloseButton" onactivate="CloseAll()"/>
+					</Panel>
+
+					<!-- 执行中 -->
+					<Panel id="ContentTier5" onactivate="">
+						<Panel id="Loading" >
+							<Panel class="spinner">
+								<Panel class="dot1"></Panel>
+								<Panel class="dot2"></Panel>
+							</Panel>
+							<Label text="Loading..." />
+						</Panel>
+						<Button id="TimeoutCloseAllButton" onactivate="CloseAll()">
+							<Label text="#xxwar_button_timeout" />
+						</Button>
+					</Panel>
+
+					<!-- 赠送界面 -->
+					<Panel id="ContentTier7" onactivate="CloseAll()">
+						<Panel id="PresentDialog" onactivate="">
+							<Panel id="PresentDialogContent" >
+								<Label text="#xxwar_present_gift_tips" />
+								<TextEntry id="txtSteamAccount" maxchars="20" text="" />
+								<Button id="PresentButton" onactivate="PresentGift()" >
+									<Label text="#xxwar_present_gift_button" />
+								</Button>
+							</Panel>
+						</Panel>
+						<Button id="PresentDialogCloseButton" onactivate="CloseAll()"/>
+					</Panel>
+
+				</Panel>
+			</Panel>
+		</Panel>
+	</Panel>
+</root>

@@ -1,0 +1,58 @@
+<root>
+    <styles>
+        <include src="s2r://panorama/styles/dotastyles.css" />
+        <include src="file://{resources}/layout/custom_game/frames/event/event.css" />
+    </styles>
+
+    <scripts>
+        <include src="file://{resources}/layout/custom_game/frames/event/event.js" />
+    </scripts>
+
+	<Panel hittest="false" class="RootPanel All">
+        <Panel id="eventRoot">
+            <Panel id="top">
+                <Label id="tips" text="?" onactivate="OpenTips()"/>
+                <Label id="title" text="#xxwar_event"/>
+                <Panel class="CloseButton" onactivate="OnBtnClick()"/>
+            </Panel>
+            <Label id="content" text="#xxwar_event_content"/>
+            <Panel id="imgList">
+                <Panel class="imgRow">
+                    <Image class="imageItem" id="imageItem_1" />
+                    <Image class="imageItem" id="imageItem_2" />
+                    <Image class="imageItem" id="imageItem_3" />
+                </Panel>
+                <Panel class="imgRow">
+                    <Image class="imageItem" id="imageItem_4" />
+                    <Image class="imageItem" id="imageItem_5" />
+                    <Image class="imageItem" id="imageItem_6" />
+                </Panel>
+                <Panel class="imgRow">
+                    <Image class="imageItem" id="imageItem_7" />
+                    <Image class="imageItem" id="imageItem_8" />
+                    <Image class="imageItem" id="imageItem_9" />
+                </Panel>
+            </Panel>
+            <TextButton id="button" text="#xxwar_award" disabled="true" onactivate="GetAward()"/>
+        </Panel>
+        <Panel class="RootPanel" id="tipsRoot">
+            <Panel id="tipsTop">
+                <Label id="tipsTitle" text="#xxwar_img_tips"/>
+                <Panel class="CloseButton" onactivate="OpenTips()"/>
+            </Panel>
+            <Label id="tipsContent" text="#xxwar_img_tips_content"/>
+        </Panel>
+
+        <Panel class="RootPanel" id="selectImgPanel">
+            <Panel id="tipsTop">
+                <Label id="tipsTitle" text="#xxwar_select_img"/>
+                <Panel class="CloseButton" onactivate="OpenSelectImgPanel()"/>
+            </Panel>
+            <Panel id="selectImgList">
+                <Image class="imageItem" src="file://{images}/custom_game/event/Crystal_Maiden_icon.png" onactivate="SelectImg('Crystal_Maiden_icon')"/>
+                <Image class="imageItem" src="file://{images}/custom_game/event/Meepo_icon.png" onactivate="SelectImg('Meepo_icon')"/>
+                <Image class="imageItem" src="file://{images}/custom_game/event/Shadow_Fiend_icon.png" onactivate="SelectImg('Shadow_Fiend_icon')"/>
+            </Panel>
+        </Panel>
+	</Panel>
+</root>

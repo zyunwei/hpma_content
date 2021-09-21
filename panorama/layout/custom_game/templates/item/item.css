@@ -1,0 +1,33 @@
+
+#ItemImage{
+	width: 100%;
+	height: 100%;
+	background-image: url("file://{images}/custom_game/emptyitembg.png");
+}
+
+#ItemImage.default1{
+	background-image: url('file://{images}/custom_game/equipments/hat.png');
+}
+#ItemImage.default2{
+	background-image: url('file://{images}/custom_game/equipments/clothes.png');
+}
+#ItemImage.default3{
+	background-image: url('file://{images}/custom_game/equipments/shoes.png');
+}
+#ItemImage.default4{
+	background-image: url('file://{images}/custom_game/equipments/trinket.png');
+}
+#ItemImage.default5{
+	background-image: url('file://{images}/custom_game/equipments/trinket.png');
+}
+#ItemImage.default6{
+	background-image: url('file://{images}/custom_game/equipments/weapon.png');
+}
+
+#ItemCharges{
+	color: #fff;
+	text-shadow: #000 0px 0px 4px 4.0;
+	horizontal-align: right;
+	vertical-align: bottom;
+	margin-right: 5px;
+}

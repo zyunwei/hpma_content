@@ -1,0 +1,52 @@
+#MessageBox{
+	width: 400px;
+	height: 220px;
+	vertical-align: middle;
+	margin-left:25px;
+	transform: translateY(100px);
+	flow-children: down;
+}
+
+#MessageBox Label{
+	text-shadow: #000 0px 0px 2px 2.0;
+}
+
+#MessageBoxContent{
+	flow-children: down;
+	vertical-align: bottom;
+	overflow: squish scroll;
+}
+
+#MessageBox.show{
+	opacity: 1;
+}
+
+.message-box-msg{
+	opacity: 1;
+	flow-children: right;
+	margin-left: 10px;
+
+	transition-property: opacity;
+	transition-duration: 1s;
+}
+
+VerticalScrollBar{    
+	horizontal-align:left;
+	opacity: 0;
+}
+
+.message-box-msg #role{
+	color: #EE4600;
+}
+
+.message-box-msg #list{
+	flow-children: down;
+}
+
+.message-box-msg #list Label{
+	color: #fff;
+}
+
+.message-box-msg.invisible{
+	opacity: 0;
+}

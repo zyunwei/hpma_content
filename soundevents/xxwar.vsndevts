@@ -1,0 +1,134 @@
+"XXWAR.RIM_SOUND_1"
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"		"sos_reference_stack"
+				"reference_stack"		"dota_src1_3d"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+						"value"
+						{
+							"value0"		"sounds/abilities_01_pacific_rim_a.vsnd"
+						}
+					}
+					"volume"            {   "value"     "50.00000"  }
+                    "pitch"             {   "value"     "1.00000"  }
+				}
+			}
+		}
+	}
+}
+
+"XXWAR.RIM_SOUND_2"
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"		"sos_reference_stack"
+				"reference_stack"		"dota_src1_3d"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+						"value"
+						{
+							"value0"		"sounds/abilities_01_pacific_rim_b.vsnd"
+						}
+					}
+					"volume"            {   "value"     "5.00000"  }
+                    "pitch"             {   "value"     "1.00000"  }
+				}
+			}
+		}
+	}
+}
+
+"XXWAR.QING_TIAN"
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"		"sos_reference_stack"
+				"reference_stack"		"dota_src1_3d"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+						"value"
+						{
+							"value0"		"sounds/abilities_02_qingtian.vsnd"
+						}
+					}
+					"volume"            {   "value"     "20.00000"  }
+                    "pitch"             {   "value"     "1.00000"  }
+				}
+			}
+		}
+	}
+}
+
+"XXWAR.XIAFENG"
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"		"sos_reference_stack"
+				"reference_stack"		"dota_src1_3d"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+						"value"
+						{
+							"value0"		"sounds/abilities_03_xiafeng.vsnd"
+						}
+					}
+					"volume"            {   "value"     "50.00000"  }
+                    "pitch"             {   "value"     "1.00000"  }
+				}
+			}
+		}
+	}
+}
+
+"XXWAR.XIAODAOHUI"
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"		"sos_reference_stack"
+				"reference_stack"		"dota_src1_3d"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+						"value"
+						{
+							"value0"		"sounds/abilities_04_xiaodaohuixuqu.vsnd"
+						}
+					}
+					"volume"            {   "value"     "50.00000"  }
+                    "pitch"             {   "value"     "1.00000"  }
+				}
+			}
+		}
+	}
+}

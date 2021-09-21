@@ -1,0 +1,390 @@
+.Root{
+	width: 100%;
+	height: 100%;
+}
+
+#MiniMapPanel{
+}
+
+#HeroIconsContainer{
+    vertical-align: top;
+	margin-left: 0px;
+    horizontal-align: left;
+    margin-top:5px;
+    flow-children: down;
+    margin-top:180px;
+}
+
+.heroInfoContainer{
+    horizontal-align: left;
+    vertical-align: top;
+    margin-top: 4px;
+}
+
+.heroInfo {
+    flow-children: down;
+}
+
+.abilityInfo {
+    flow-children: down;
+}
+
+.heroInfoContainer.dead{
+	saturation: 0;
+}
+
+.heroInfo .heroIcon{
+    width: 100px;
+    height: 56px;
+}
+
+.heroInfo .healthBar{
+    width: 100%;
+    height: 6px;
+    background-color: #44f242;
+}
+
+.heroInfo .manaBar{
+    width: 100%;
+    height: 6px;
+    background-color: #467ede;
+}
+
+.heroInfoContainer.dead .healthBar{
+	visibility: collapse;
+}
+
+.heroInfoContainer.dead .manaBar{
+	visibility: collapse;
+}
+
+#AbilitiesPanel{
+    flow-children: right;
+    margin-bottom: 90px;
+    horizontal-align: middle;
+}
+
+#AbilityList{
+    flow-children: right;
+    margin-left:150px;
+    ui-scale: 75%;
+}
+#BuffsFrame{
+    margin-top: 50px;
+    margin-left: 160px;
+    ui-scale: 50%;
+}
+#PetStatBranch{
+    margin-left: 102px;
+    margin-top: 2px;
+    width: 62px;
+    height: 62px;
+    ui-scale: 85%;
+}
+
+#ability-img{
+    border-radius: 50%;
+    width: 57px;
+    height: 57px;
+    vertical-align: middle;
+    horizontal-align: middle;
+    background-image: url("file://{images}/custom_game/emptyitembg64.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+.ability-btn{
+    width: 70px;
+    height: 70px;
+    tooltip-position: top;
+    tooltip-body-position: 50% 50%;
+    transition-property: transform, brightness;
+    transition-duration: 0.2s;
+    visibility: collapse;
+    vertical-align: bottom;
+}
+
+.ability-btn .bar{
+    width: 100%;
+    height: 100%;
+    background-image: url("file://{images}/custom_game/hero_frame/ability_bar.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+#charge_panel{
+    background-color: gradient( linear, 0% 0%, 0% 100%, from( #444 ), to( black ) );
+    border-radius: 50%;
+    visibility: collapse;
+}
+
+.ability-btn #charge_panel{
+    horizontal-align: right;
+    vertical-align: bottom;
+    width: 20px;
+    height: 20px;
+    margin-right:15px;
+    margin-bottom:13px;
+}
+
+.ability-btn.small #charge_panel{
+    horizontal-align: right;
+    vertical-align: bottom;
+    width: 20px;
+    height: 20px;
+    margin-right:8px;
+    margin-bottom:8px;
+}
+
+.ability-btn #charge_bar {
+    width: 100%;
+    height: 100%;
+    border: 2px solid #86d64c;
+    border-radius: 50%;
+}
+
+.ability-btn.not-activated #charge_bar{
+    border: 2px solid #eacc54;
+}
+
+.ability-btn #charges{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    horizontal-align: center;
+    vertical-align: center;
+    /* margin-bottom: 2px; */
+    color: #fff;
+    font-size: 16px;
+    text-shadow: #000 0px 0px 2px 2.0;
+    padding-right:1px;
+    padding-top:1px;
+}
+
+.ability-btn.no-mana #ability-img{
+    wash-color: #1569be;
+}
+
+.ability-btn #cooldown{
+    width: 89%;
+    height: 89%;
+    tooltip-position: top;
+    tooltip-body-position: 50% 50%;
+    vertical-align: middle;
+    horizontal-align: middle;
+}
+
+.ability-btn.is-in-cd #ability-img{
+    saturation: 0.8;
+    wash-color: #AAA;
+}
+
+.ability-btn.is-in-cd #cooldown{
+    background-color: #000C;
+    border-radius: 50%;
+}
+
+.ability-btn #cd{
+    color: #A2DFFF;
+    text-shadow:#0e2b52 0px 0px 4px 3.7;
+    horizontal-align: middle;
+    vertical-align: middle;
+    visibility: collapse;
+}
+
+.ability-btn.is-in-cd #cd{
+    visibility: visible;
+}
+
+.ability-btn.is-in-cd{
+/*    transform: scale3d(0.85,0.85,1);*/
+}
+.ability-btn.active{
+/*    transform: scale3d(0.85,0.85,1);*/
+    brightness: 1.5;
+}
+
+.ability-btn.is-passive .bar{
+    background-image: url("file://{images}/custom_game/hero_frame/ability_bar_passive.png");
+}
+
+.ability-btn.is-toggle .bar{
+    background-image: url("file://{images}/custom_game/hero_frame/ability_bar_toggle.png");
+}
+
+.ability-btn.not-activated #ability-img{
+    saturation: 0;
+    wash-color: #999;
+}
+.ability-btn.not-learn #ability-img{
+    saturation: 0;
+    wash-color: #999;
+}
+
+.ability-btn .lock{
+    width: 100%;
+    height: 100%;
+    background-image: url("file://{images}/custom_game/hero_frame/ability_lock.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    visibility: collapse;
+}
+
+.ability-btn.not-learn .lock{
+    visibility: visible;
+}
+
+.ability-btn.auto-cast .bar,
+.ability-btn.is-toggle.toggle-enable .bar{
+    animation-name: AbilityToggleEnableRotate;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    brightness: 3;
+}
+
+@keyframes 'AbilityToggleEnableRotate'
+{
+    0%
+    {
+        transform: rotateZ(0deg);
+    }
+    50%
+    {
+        transform: rotateZ(180deg);
+    }
+    100%
+    {
+        transform: rotateZ(360deg);
+    }
+}
+
+#lblLifetime
+{
+    font-size: 22px;
+    margin-bottom: 5px;
+    text-align: left;
+    horizontal-align: left;
+    vertical-align: bottom;
+    color: #D5A409;
+    font-weight: thin;
+    text-shadow: 0px 0px 2px 2.5 #000000;
+    visibility: collapse;
+}
+
+#lifetimeBar
+{
+    vertical-align: bottom;
+    horizontal-align: left;
+    width: 50px;
+    margin-bottom: 2px;
+    height: 6px;
+    transform: rotateZ( 0deg );
+    border-radius: 4px;
+    border: 0px;
+    visibility: collapse;
+}
+
+#lifetimeBar_Left
+ {
+     background-color: gradient( linear, 0% 0%, 0% 100%, from( #efaf1b  ), color-stop( 0.2, #e9c70f ), color-stop( .5, #e9c70f), to( #c18104 ) );
+ }
+
+#lifetimeBar_Right
+{
+    background-color: gradient( linear, 0% 100%, 0% 0%, from( #272f32 ), color-stop( .25, #3e4a50), color-stop( .75, #3e4a50), to( #272f32 ) );
+}
+
+#ItemList{
+    margin-top: 72px;
+    flow-children: right;
+    ui-scale: 50%;
+}
+
+#heroLevel{
+    margin-top: 55px;
+    margin-left:114px;
+}
+
+#heroLevel Label {
+    font-size: 14px;
+    text-shadow: #000 0px 0px 10px 6.5;
+}
+
+/*================================================================================*/
+#BagHandyButtons{
+    flow-children: down;
+    transform: translateX(0px);
+    opacity: 0;
+    horizontal-align: center;
+    vertical-align: bottom;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    transition-property: opacity;
+    transition-duration: 0.2s;
+    horizontal-align: left;
+    vertical-align: bottom;
+    margin-bottom: 450px;
+    margin-left:18px;
+    ui-scale: 80%;
+}
+
+#BagHandyButtons.drag_start{
+    opacity: 1;
+}
+
+#BagHandyButtons .btn{
+    width: 306px;
+    height: 106px;
+    background-image: url("file://{images}/custom_game/bag/bag_handy_button.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    transition-property: background-image;
+    transition-duration: 0.2s;
+}
+
+#BagHandyButtons .btn .title{
+    color: #fff;
+    font-size: 24px;
+    text-shadow: #2a7fdd 0px 0px 13px 6.0;
+    horizontal-align: middle;
+    vertical-align: middle;
+    height:40px;
+    margin-top:15px;
+}
+
+#BagHandyButtons .btn .title.discard_btn{
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#BagHandyButtons .btn.drag_enter{
+    background-image: url("file://{images}/custom_game/bag/bag_handy_button_hover.png");
+}
+
+#BagHandyButtons #BagHandyButtons_PublicStash.btn .title{
+    margin-top: 0px;
+    vertical-align: middle;
+}
+
+#BagHandyButtons .btn:disabled{
+    background-image: url("file://{images}/custom_game/bag/bag_handy_button_disable.png");
+}
+#BagHandyButtons .btn.drag_enter:disabled{
+    background-image: url("file://{images}/custom_game/bag/bag_handy_button_disable.png");
+}
+#BagHandyButtons .btn:disabled .title{
+    color: #AAA;
+    text-shadow: #000 0px 0px 13px 6.0;
+}
+
+#tooltip{
+    width: 100px;
+    height: 56px;
+    horizontal-align:left;
+    vertical-align: top;
+}

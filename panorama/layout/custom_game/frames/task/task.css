@@ -1,0 +1,372 @@
+.RankingListRoot {
+    width: 100%;
+    height: 100%;
+}
+
+#RankingListFrame {
+    horizontal-align: middle;
+    vertical-align: middle;
+    opacity: 0;
+    transform: translate3d(1200px,900px,0px) scale3d(0.4,0.4,1);
+    transition-property: opacity, transform;
+    transition-duration: 0.3s;
+}
+
+    #RankingListFrame.show {
+        opacity: 1;
+        transform: rotateX(0deg) translateY(0px);
+    }
+
+#RankingListTitle {
+    font-size: 30px;
+    horizontal-align: middle;
+    margin: 10px;
+    color: #fff;
+}
+
+#Tier0 {
+    z-index: 2;
+    horizontal-align: middle;
+    overflow: noclip;
+}
+
+#Tier1 {
+    z-index: 1;
+    margin-top: 20px;
+    horizontal-align: middle;
+}
+
+#Topbar {
+    width: 1075px;
+    margin-top: 15px;
+    flow-children: right;
+}
+
+    #Topbar .Left {
+        width: 60px;
+        height: 30px;
+        background-image: url("s2r://panorama/images/custom_game/npc_frame/topbar_a_png.vtex");
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+
+    #Topbar .Middle {
+        width: fill-parent-flow(1);
+        height: 30px;
+        background-image: url("s2r://panorama/images/custom_game/npc_frame/topbar_b_png.vtex");
+        background-size: 100%;
+    }
+
+    #Topbar .Right {
+        width: 60px;
+        height: 30px;
+        background-image: url("s2r://panorama/images/custom_game/npc_frame/topbar_c_png.vtex");
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+
+#TitleBar {
+    width: 200px;
+    horizontal-align: center;
+}
+
+    #TitleBar Label {
+        width: 100%;
+        text-align: center;
+        vertical-align: middle;
+        color: #fff;
+        text-shadow: #112e4e 0px 0px 4px 2.0;
+    }
+
+    #TitleBar .Left {
+        width: 36px;
+        height: 42px;
+        background-image: url("s2r://panorama/images/custom_game/npc_frame/npc_name_a_png.vtex");
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+
+    #TitleBar .Middle {
+        width: fill-parent-flow(1);
+        height: 42px;
+        background-image: url("s2r://panorama/images/custom_game/npc_frame/npc_name_b_png.vtex");
+        background-size: 100%;
+    }
+
+    #TitleBar .Right {
+        width: 36px;
+        height: 42px;
+        background-image: url("s2r://panorama/images/custom_game/npc_frame/npc_name_c_png.vtex");
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+
+.TextBar {
+    flow-children: right;
+}
+
+    .TextBar Label {
+        text-align: center;
+        vertical-align: middle;
+        color: #fff;
+        text-shadow: #112e4e 0px 0px 4px 2.0;
+        transform: translateY(1px);
+    }
+
+    .TextBar .Left {
+        width: 36px;
+        height: 42px;
+        background-image: url("s2r://panorama/images/custom_game/npc_frame/textbar_a_png.vtex");
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+
+    .TextBar .Middle {
+        height: 42px;
+        background-image: url("s2r://panorama/images/custom_game/npc_frame/textbar_b_png.vtex");
+        background-size: 100%;
+    }
+
+    .TextBar .Right {
+        width: 36px;
+        height: 42px;
+        background-image: url("s2r://panorama/images/custom_game/npc_frame/textbar_c_png.vtex");
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+
+#CloseButton {
+    margin-right: 50px;
+    horizontal-align: right;
+    transition-property: brightness,transform;
+    transition-duration: 0.2s;
+}
+
+    #CloseButton.TextBar Label {
+        color: gradient( linear, 0% 100%, 0% 0%, from( #FF9785 ), to( #FF6F2B ) );
+    }
+
+    #CloseButton:hover {
+        brightness: 2;
+    }
+
+    #CloseButton:active {
+        transform: scale3d(0.9,0.9,1);
+    }
+
+    #CloseButton Image {
+        width: 20px;
+        height: 20px;
+        vertical-align: middle;
+    }
+
+#TableTitle {
+    color: #fff;
+    margin-top: 10px;
+}
+
+#Content {
+    width: 1045px;
+    height: 760px;
+    background-color: #232527;
+    horizontal-align: middle;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#ContentTier0 {
+    width: 100%;
+    height: 100%;
+    padding: 30px 20px;
+}
+
+#ContentTier1 {
+    width: 100%;
+    height: 100%;
+    padding: 30px 20px;
+    background-color: #000A;
+}
+
+#RefreshButton {
+    margin-right: 50px;
+    transition-property: brightness,transform;
+    transition-duration: 0.2s;
+}
+
+    #RefreshButton.TextBar Label {
+        color: gradient( linear, 0% 100%, 0% 0%, from( #00A627 ), to( #A8FEBA ) );
+    }
+
+    #RefreshButton:hover {
+        brightness: 2;
+    }
+
+    #RefreshButton:active {
+        transform: scale3d(0.9,0.9,1);
+    }
+
+.spinner {
+    horizontal-align: middle;
+    vertical-align: middle;
+    flow-children: down;
+    animation-name: sk-rotate;
+    animation-duration: 2.0s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+#Loading {
+    width: 128px;
+    height: 128px;
+    horizontal-align: middle;
+    vertical-align: middle;
+    overflow: noclip;
+}
+
+    #Loading Label {
+        horizontal-align: middle;
+        vertical-align: bottom;
+        transform: translateY(20px);
+        color: #35ADFE;
+    }
+
+.spinner .dot1,
+.spinner .dot2, {
+    width: 50px;
+    height: 50px;
+    background-color: #67C7FF55;
+    border-radius: 100%;
+    animation-name: sk-bounce;
+    animation-duration: 2.0s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.spinner .dot2 {
+    animation-delay: -1.0s;
+}
+
+@keyframes
+
+'sk-rotate' {
+    0%
+
+{
+    transform: rotateZ(0deg);
+}
+
+50% {
+    transform: rotateZ(-180deg);
+}
+
+100% {
+    transform: rotateZ(-360deg);
+}
+
+}
+@keyframes
+
+'sk-bounce' {
+    0%
+
+{
+    transform: scaleX(0.0) scaleY(0.0);
+}
+
+50% {
+    transform: scaleX(1.0) scaleY(1.0);
+}
+
+100% {
+    transform: scaleX(0.0) scaleY(0.0);
+}
+
+}
+
+#TimeoutCloseAllButton {
+    horizontal-align: center;
+    vertical-align: middle;
+    margin-top: 228px;
+    background-color: #333;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+    #TimeoutCloseAllButton Label {
+        color: #fff;
+    }
+
+    #TimeoutCloseAllButton:active {
+        transform: scale3d(0.9,0.9,1);
+    }
+
+#FilterList {
+    width: 100%;
+    flow-children: down;
+}
+
+.tips {
+    horizontal-align: right;
+    margin-top:20px;
+    margin-right:5px;
+}
+
+.TaskList {
+    width: 100%;
+    flow-children: down;
+    margin-top:50px;
+}
+
+.TaskLine {
+    flow-children: right;
+    width: 100%;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+
+.TaskLine.Middle {
+    flow-children: none;
+    width: 100%;
+}
+
+.TaskLine.Middle Button {
+    width: 250px;
+    height: 70px;
+    horizontal-align: center;
+    background-color: #363;
+    padding-left:10px;
+    padding-right:10px;
+}
+
+.TaskLine.Middle Button.Collected {
+    background-color: #266;
+}
+
+.TaskLine.Middle Button:hover {
+    brightness: 2.0;
+}
+
+.TaskLine.Middle Button Label {
+    vertical-align: center;
+    text-align: center;
+    width: 100%;
+}
+
+.TaskLabel{
+    width: 250px;
+    height: 65px;
+    background-color: #333;
+    margin-left:10px;
+    flow-children: down;
+    padding-top:10px;
+}
+
+.TaskLabel Label{
+    width: 100%;
+    text-align: center;
+    vertical-align: center;
+}
+
+.TaskLabel.Finished {
+    background-color: #363;
+}

@@ -1,0 +1,137 @@
+#Contents.BossTooltipRoot{
+	border: 0;
+	border-top: 2px solid #33ccff;
+	border-bottom: 2px solid #33ccff;
+	border-radius: 8px;
+	background-color: gradient( linear, 0% 100%, 0% 0%, from( #104658fe ), to( #1f2530fe ) );
+	padding: 10px;
+}
+
+.spinner {
+	horizontal-align: middle;
+	vertical-align: middle;
+	flow-children: down;
+
+	animation-name: sk-rotate;
+	animation-duration: 2.0s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+#Loading{
+	width: 128px;
+	height: 128px;
+	border-top: 2px solid #33ccff;
+	border-bottom: 2px solid #33ccff;
+	border-radius: 8px;
+	background-color: gradient( linear, 0% 100%, 0% 0%, from( #104658fe ), to( #1f2530fe ) );
+}
+
+.spinner .dot1,
+.spinner .dot2,{
+	width: 50px;
+	height: 50px;
+	background-color: #67C7FF55;
+	border-radius: 100%;
+
+	animation-name: sk-bounce;
+	animation-duration: 2.0s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+}
+
+.spinner .dot2 {
+	animation-delay: -1.0s;
+}
+
+
+#BossInfo{
+    flow-children:down;
+    min-height: 180px;
+}
+
+@keyframes 'sk-rotate' 
+{
+	0%
+	{
+		transform: rotateZ(0deg); 
+	}
+	50%
+	{
+		transform:  rotateZ(-180deg); 
+	}
+	100% 
+	{
+		transform: rotateZ(-360deg); 
+	}
+}
+
+@keyframes 'sk-bounce' {
+	0%
+	{ 
+		transform: scaleX(0.0) scaleY(0.0);
+	} 
+	50% {
+		transform: scaleX(1.0) scaleY(1.0);
+	}
+	100% 
+	{ 
+		transform: scaleX(0.0) scaleY(0.0);
+	} 
+}
+
+#KillBonus{
+    font-size: 20px;
+    color:#7AB5FE;
+}
+
+#ItemList{
+    flow-children: right;
+}
+
+.item{
+	width: 45px;
+	height: 45px;
+	border: 1px solid #000;
+	margin: 2px;
+}
+
+#ItemListRoot{
+    flow-children: down;
+}
+
+#BossName{
+    color: #fff;
+	font-size: 26px;
+}
+
+.BonusExpClass{
+	margin: 2px;
+    color:#90EE90;
+}
+
+#BonusExpRoot{
+    flow-children: right;
+}
+
+.BonusGoldClass{
+	margin: 2px;
+    color:#90EE90;
+}
+
+#BonusGoldRoot{
+    flow-children: right;
+}
+
+#Drop{
+    font-size: 20px;
+    color:#7AB5FE;
+}
+
+#BonusGold{
+    color:#FFD700;
+}
+
+#BonusExp{
+    color:#FFD700;
+}

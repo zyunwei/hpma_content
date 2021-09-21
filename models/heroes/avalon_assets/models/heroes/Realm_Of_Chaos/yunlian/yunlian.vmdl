@@ -1,0 +1,2156 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	m_meshList = 
+	{
+		m_meshList = 
+		[
+			{
+				m_meshName = "yunlian"
+				m_meshFile = "models/heroes/avalon_assets/models/heroes/Realm_Of_Chaos/yunlian/yunlian.fbx"
+				m_materialSearchPath = ""
+				m_bSkinParentedObjects = true
+				m_bLegacySkinParentedTransforms = false
+				m_bExpensiveTangents = false
+				m_bHighPrecisionTexCoords = false
+				m_bPerVertexCurvature = false
+				m_bBentNormals = false
+				m_bIgnoreCloth = false
+				m_bGetSkinningFromLod0 = false
+				m_bPreferHighDensityTrianglesInUvDensityCalculation = false
+				m_pMorphInfo = null
+			},
+		]
+	}
+	m_clothProxyMeshList = 
+	{
+		_class = "CVClothProxyMeshList"
+		m_flClothEnableThreshold = 0.05
+		m_bCreateStaticBone = false
+		m_nMaxBonesPerVertex = 4
+		m_bRemoveUnusedBonesEnabled = false
+		m_bDriveMeshesWithBacksolvedJointsOnly = true
+		m_flMatchProxiesToMeshes = 1.0
+		m_flFallbackEnvelope = 1.0
+		m_nReservedInt = 0
+		m_bSoftSkinAnimation = false
+		m_bReservedBool2 = false
+		m_bReservedBool3 = false
+		m_bReservedBool4 = false
+		m_clothProxyMeshList = [  ]
+	}
+	m_physicsMeshList = 
+	{
+		m_meshList = [  ]
+	}
+	m_pModelInfo = null
+	m_pBoneFlagList = 
+	{
+		m_pObject = null
+	}
+	m_pHitBoxSetLists = 
+	[
+		{
+			m_pObject = 
+			{
+				m_HitBoxSets = 
+				[
+					{
+						m_name = "default"
+						m_HitBoxes = 
+						[
+							{
+								m_name = "上半身"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "上半身"
+								m_vMinBounds = [ -20.651314, -2.621933, -16.135872 ]
+								m_vMaxBounds = [ 20.651337, 20.483536, 18.186699 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "下半身"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "下半身"
+								m_vMinBounds = [ -23.618605, -1.750854, -15.73498 ]
+								m_vMaxBounds = [ 23.618605, 45.514297, 15.923302 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "上半身2"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "上半身2"
+								m_vMinBounds = [ -20.651312, -4.452637, -18.374596 ]
+								m_vMaxBounds = [ 20.651339, 42.440918, 17.986862 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_0_0"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_0_0"
+								m_vMinBounds = [ -9.066361, 7.834213, -3.259291 ]
+								m_vMaxBounds = [ 9.06636, 8.264877, -2.963118 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_0_1"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_0_1"
+								m_vMinBounds = [ -3.535789, 0.613251, -6.507107 ]
+								m_vMaxBounds = [ 9.328144, 8.51384, 5.51053 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_0_2"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_0_2"
+								m_vMinBounds = [ -1.502869, -0.538483, -9.772612 ]
+								m_vMaxBounds = [ 2.217155, 7.985878, 2.490305 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_0_3"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_0_3"
+								m_vMinBounds = [ -7.221386, 7.022514, -7.613735 ]
+								m_vMaxBounds = [ 2.869743, 7.282188, 5.192238 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_0_4"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_0_4"
+								m_vMinBounds = [ -5.438862, 6.746262, -7.669094 ]
+								m_vMaxBounds = [ 7.713415, 7.141388, 0.376488 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_0_5"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_0_5"
+								m_vMinBounds = [ -7.71517, 6.867096, -2.309334 ]
+								m_vMaxBounds = [ 7.715171, 7.130257, -0.28093 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_0_6"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_0_6"
+								m_vMinBounds = [ -7.713413, 6.746262, -7.66909 ]
+								m_vMaxBounds = [ 5.438866, 7.141388, 0.376488 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_0_7"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_0_7"
+								m_vMinBounds = [ -2.869751, 7.02253, -7.613729 ]
+								m_vMaxBounds = [ 7.221384, 7.282204, 5.192238 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_0_8"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_0_8"
+								m_vMinBounds = [ -2.217163, -0.538483, -9.77261 ]
+								m_vMaxBounds = [ 1.502865, 7.985878, 2.490307 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_0_9"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_0_9"
+								m_vMinBounds = [ -9.328136, 0.613251, -6.507106 ]
+								m_vMaxBounds = [ 3.535793, 8.51384, 5.510529 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "肩.R"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "肩.R"
+								m_vMinBounds = [ -13.580292, -3.408798, -15.653229 ]
+								m_vMaxBounds = [ 14.262978, 18.222069, 7.452194 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "肩.L"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "肩.L"
+								m_vMinBounds = [ -14.404007, -3.887535, -15.653244 ]
+								m_vMaxBounds = [ 13.580284, 17.07869, 7.452194 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_1_0"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_1_0"
+								m_vMinBounds = [ -11.153354, 0.878342, -2.986862 ]
+								m_vMaxBounds = [ 11.153352, 13.403343, -1.462772 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_1_1"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_1_1"
+								m_vMinBounds = [ -5.082535, 0.322884, -6.990932 ]
+								m_vMaxBounds = [ 10.539886, 14.692947, 7.251559 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_1_2"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_1_2"
+								m_vMinBounds = [ -5.320137, 0.198524, -12.417656 ]
+								m_vMaxBounds = [ 3.251999, 14.21743, 5.645119 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_1_3"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_1_3"
+								m_vMinBounds = [ -8.263, 0.268921, -7.740976 ]
+								m_vMaxBounds = [ 3.984436, 13.494507, 6.541061 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_1_4"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_1_4"
+								m_vMinBounds = [ -14.313351, -0.457214, -6.655289 ]
+								m_vMaxBounds = [ 9.253662, 14.090981, 2.045567 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_1_5"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_1_5"
+								m_vMinBounds = [ -9.344497, 0.396858, -1.411232 ]
+								m_vMaxBounds = [ 9.344501, 13.191559, -0.406948 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_1_6"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_1_6"
+								m_vMinBounds = [ -9.253658, 0.346695, -6.655285 ]
+								m_vMaxBounds = [ 6.451664, 14.090958, 2.045567 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_1_7"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_1_7"
+								m_vMinBounds = [ -3.984436, 0.268936, -7.740973 ]
+								m_vMaxBounds = [ 8.263004, 13.494514, 6.541059 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_1_8"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_1_8"
+								m_vMinBounds = [ -3.252007, 0.198524, -12.417652 ]
+								m_vMaxBounds = [ 5.320133, 14.217422, 5.645126 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_1_9"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_1_9"
+								m_vMinBounds = [ -10.539886, 0.322884, -6.990935 ]
+								m_vMaxBounds = [ 5.082533, 14.692947, 7.251555 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "腕.R"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "腕.R"
+								m_vMinBounds = [ -10.453949, -4.714455, -13.449593 ]
+								m_vMaxBounds = [ 11.869316, 38.677322, 9.982605 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "腕.L"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "腕.L"
+								m_vMinBounds = [ -11.869331, -4.714439, -13.4496 ]
+								m_vMaxBounds = [ 10.453934, 37.344566, 9.982605 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_2_0"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_2_0"
+								m_vMinBounds = [ -12.995464, 10.80175, -2.241871 ]
+								m_vMaxBounds = [ 12.995462, 11.026016, -0.811373 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_2_1"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_2_1"
+								m_vMinBounds = [ -6.530252, 9.985443, -6.795516 ]
+								m_vMaxBounds = [ 8.798948, 12.213631, 6.612948 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_2_2"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_2_2"
+								m_vMinBounds = [ -5.45816, 9.134514, -11.763588 ]
+								m_vMaxBounds = [ 3.533707, 12.505363, 9.589283 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_2_3"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_2_3"
+								m_vMinBounds = [ -10.421162, 10.730606, -10.58065 ]
+								m_vMaxBounds = [ 6.229561, 11.752861, 9.896206 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_2_4"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_2_4"
+								m_vMinBounds = [ -7.471611, 10.742111, -6.585979 ]
+								m_vMaxBounds = [ 10.01528, 11.622803, 2.549568 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_2_5"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_2_5"
+								m_vMinBounds = [ -10.362052, 10.92514, -0.608047 ]
+								m_vMaxBounds = [ 10.362056, 11.159599, 0.598885 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_2_6"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_2_6"
+								m_vMinBounds = [ -10.015268, 10.742104, -6.585972 ]
+								m_vMaxBounds = [ 7.471619, 11.622803, 2.549568 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_2_7"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_2_7"
+								m_vMinBounds = [ -6.229557, 10.730621, -10.580648 ]
+								m_vMaxBounds = [ 10.421169, 11.752884, 9.89621 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_2_8"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_2_8"
+								m_vMinBounds = [ -3.533707, 9.134521, -11.763588 ]
+								m_vMaxBounds = [ 5.45816, 12.505371, 9.589283 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_2_9"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_2_9"
+								m_vMinBounds = [ -8.798935, 9.985435, -6.795516 ]
+								m_vMaxBounds = [ 6.530262, 12.213623, 6.612949 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "ひじ.R"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "ひじ.R"
+								m_vMinBounds = [ -7.979485, -2.172485, -9.361664 ]
+								m_vMaxBounds = [ 9.329735, 31.462326, 8.333038 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "ひじ.L"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "ひじ.L"
+								m_vMinBounds = [ -71.206154, 0.375153, -38.344597 ]
+								m_vMaxBounds = [ 8.745781, 64.027817, 8.290283 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "足.R"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "足.R"
+								m_vMinBounds = [ -12.458778, -1.769196, -12.221796 ]
+								m_vMaxBounds = [ 10.694668, 57.013073, 13.669743 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "足.L"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "足.L"
+								m_vMinBounds = [ -10.694666, -1.769196, -12.221792 ]
+								m_vMaxBounds = [ 12.458778, 57.013073, 13.669744 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_3_0"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_3_0"
+								m_vMinBounds = [ -14.965225, 10.854607, -1.759575 ]
+								m_vMaxBounds = [ 14.965223, 17.054817, 0.268713 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_3_1"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_3_1"
+								m_vMinBounds = [ -10.745323, 10.920433, -6.844715 ]
+								m_vMaxBounds = [ 9.040331, 15.593575, 9.526648 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_3_2"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_3_2"
+								m_vMinBounds = [ -6.542824, 9.897064, -12.323635 ]
+								m_vMaxBounds = [ 3.043827, 11.172501, 12.487774 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_3_3"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_3_3"
+								m_vMinBounds = [ -11.454193, 6.70797, -9.274075 ]
+								m_vMaxBounds = [ 6.297741, 17.777672, 12.050804 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_3_4"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_3_4"
+								m_vMinBounds = [ -8.470589, 7.889328, -4.525841 ]
+								m_vMaxBounds = [ 11.934681, 17.974556, 3.093269 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_3_5"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_3_5"
+								m_vMinBounds = [ -11.626961, 8.817024, -0.200516 ]
+								m_vMaxBounds = [ 11.626961, 10.000229, 1.802162 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_3_6"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_3_6"
+								m_vMinBounds = [ -11.934681, 7.88932, -4.525856 ]
+								m_vMaxBounds = [ 8.470589, 17.974556, 3.093254 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_3_7"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_3_7"
+								m_vMinBounds = [ -6.297749, 6.70797, -9.274071 ]
+								m_vMaxBounds = [ 11.454182, 17.777683, 12.050808 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_3_8"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_3_8"
+								m_vMinBounds = [ -3.043831, 9.897057, -12.323633 ]
+								m_vMaxBounds = [ 6.542831, 11.172485, 12.487772 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_3_9"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_3_9"
+								m_vMinBounds = [ -9.040325, 10.920425, -6.844718 ]
+								m_vMaxBounds = [ 10.745327, 15.593559, 9.526642 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "手首.R"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "手首.R"
+								m_vMinBounds = [ -6.295853, -3.197475, -8.13353 ]
+								m_vMaxBounds = [ 5.259781, 12.322781, 3.876709 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "手首.L"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "手首.L"
+								m_vMinBounds = [ -5.263481, -3.064884, -8.13356 ]
+								m_vMaxBounds = [ 6.2976, 12.322811, 3.730087 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "ひざ.R"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "ひざ.R"
+								m_vMinBounds = [ -12.411993, -7.020571, -8.293201 ]
+								m_vMaxBounds = [ 10.738707, 57.113525, 13.781796 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "ひざ.L"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "ひざ.L"
+								m_vMinBounds = [ -10.738707, -7.020538, -8.293201 ]
+								m_vMaxBounds = [ 12.411993, 57.11351, 13.781796 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_4_0"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_4_0"
+								m_vMinBounds = [ -17.329453, 7.37188, -2.390633 ]
+								m_vMaxBounds = [ 17.329449, 11.144291, -0.095116 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_4_1"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_4_1"
+								m_vMinBounds = [ -9.027678, 8.860085, -7.930149 ]
+								m_vMaxBounds = [ 8.90115, 18.67646, 10.939943 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_4_2"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_4_2"
+								m_vMinBounds = [ -7.455944, 2.110168, -13.769354 ]
+								m_vMaxBounds = [ 3.035973, 16.335968, 14.350473 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_4_3"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_4_3"
+								m_vMinBounds = [ -12.648571, 1.122879, -14.228401 ]
+								m_vMaxBounds = [ 6.695667, 10.13739, 12.504513 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_4_4"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_4_4"
+								m_vMinBounds = [ -12.00318, 7.4641, -2.736511 ]
+								m_vMaxBounds = [ 12.31007, 10.490585, 4.186615 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_4_5"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_4_5"
+								m_vMinBounds = [ -21.972332, 8.796322, -1.076103 ]
+								m_vMaxBounds = [ 21.972336, 9.639088, 2.872864 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_4_6"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_4_6"
+								m_vMinBounds = [ -12.310055, 7.464123, -2.736523 ]
+								m_vMaxBounds = [ 12.003185, 10.490604, 4.1866 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_4_7"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_4_7"
+								m_vMinBounds = [ -6.695686, 1.122849, -14.228401 ]
+								m_vMaxBounds = [ 12.648565, 10.137394, 12.504505 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_4_8"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_4_8"
+								m_vMinBounds = [ -3.035988, 2.110161, -13.76935 ]
+								m_vMaxBounds = [ 7.455944, 16.33596, 14.350477 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_4_9"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_4_9"
+								m_vMinBounds = [ -8.901154, 8.860065, -7.930155 ]
+								m_vMaxBounds = [ 9.027678, 18.67646, 10.939934 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "親指０.R"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "親指０.R"
+								m_vMinBounds = [ -2.716003, 0.241241, -1.781349 ]
+								m_vMaxBounds = [ 1.462402, 6.273697, 1.638844 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "人指１.R"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "人指１.R"
+								m_vMinBounds = [ -1.144974, 2.357346, -1.506622 ]
+								m_vMaxBounds = [ 1.526482, 3.532276, 0.926773 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "中指１.R"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "中指１.R"
+								m_vMinBounds = [ -1.747688, 1.945892, -1.160492 ]
+								m_vMaxBounds = [ 1.020409, 3.632332, 1.177109 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "薬指１.R"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "薬指１.R"
+								m_vMinBounds = [ -0.973389, 2.01083, -1.369965 ]
+								m_vMaxBounds = [ 1.600212, 3.331467, 0.953232 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "小指１.R"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "小指１.R"
+								m_vMinBounds = [ -0.967506, 1.983147, -1.119255 ]
+								m_vMaxBounds = [ 1.033096, 3.000626, 0.96434 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "親指０.L"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "親指０.L"
+								m_vMinBounds = [ -1.462418, 0.240273, -1.782261 ]
+								m_vMaxBounds = [ 2.715988, 6.273697, 1.638855 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "人指１.L"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "人指１.L"
+								m_vMinBounds = [ -1.526505, 2.357353, -1.50663 ]
+								m_vMaxBounds = [ 1.144951, 3.532276, 0.926758 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "中指１.L"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "中指１.L"
+								m_vMinBounds = [ -1.020409, 1.945892, -1.160492 ]
+								m_vMaxBounds = [ 1.747681, 3.632347, 1.177101 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "薬指１.L"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "薬指１.L"
+								m_vMinBounds = [ -1.600235, 2.010838, -1.369995 ]
+								m_vMaxBounds = [ 0.973366, 3.331478, 0.953209 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "小指１.L"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "小指１.L"
+								m_vMinBounds = [ -1.033134, 1.983154, -1.119293 ]
+								m_vMaxBounds = [ 0.967461, 3.000626, 0.96431 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "頭"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "頭"
+								m_vMinBounds = [ -16.763662, -17.138779, -18.375763 ]
+								m_vMaxBounds = [ 15.708323, 34.881348, 15.761169 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "足首.R"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "足首.R"
+								m_vMinBounds = [ -9.721119, -4.986968, -1.656288 ]
+								m_vMaxBounds = [ 4.423262, 28.244385, 18.565372 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "足首.L"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "足首.L"
+								m_vMinBounds = [ -4.423262, -4.986965, -1.656288 ]
+								m_vMaxBounds = [ 9.721123, 28.244385, 18.565372 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_5_0"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_5_0"
+								m_vMinBounds = [ -20.235233, 10.579323, -2.822634 ]
+								m_vMaxBounds = [ 20.235233, 11.155445, -2.267847 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_5_1"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_5_1"
+								m_vMinBounds = [ -9.076885, 4.02459, -9.072708 ]
+								m_vMaxBounds = [ 8.206127, 10.414059, 5.584324 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_5_2"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_5_2"
+								m_vMinBounds = [ -8.180916, 0.692242, -16.460505 ]
+								m_vMaxBounds = [ -3.081936, 3.700047, -9.993425 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_5_3"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_5_3"
+								m_vMinBounds = [ -14.654091, -0.319069, 2.586567 ]
+								m_vMaxBounds = [ 6.641117, 24.108128, 13.141819 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_5_4"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_5_4"
+								m_vMinBounds = [ 1.561718, 1.794395, -1.552204 ]
+								m_vMaxBounds = [ 15.412651, 21.71817, 5.07016 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_5_5"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_5_5"
+								m_vMinBounds = [ 0.000002, 4.56562, 3.822681 ]
+								m_vMaxBounds = [ 0.000002, 15.70224, 4.297657 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_5_6"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_5_6"
+								m_vMinBounds = [ -15.412638, 1.794388, -1.5522 ]
+								m_vMaxBounds = [ -1.561708, 21.718163, 5.07016 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_5_7"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_5_7"
+								m_vMinBounds = [ -6.641113, -0.319077, 2.586567 ]
+								m_vMaxBounds = [ 14.654091, 24.10813, 13.141804 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_5_8"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_5_8"
+								m_vMinBounds = [ 3.081936, 0.692245, -16.460503 ]
+								m_vMaxBounds = [ 8.180916, 3.700031, -9.99342 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_5_9"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_5_9"
+								m_vMinBounds = [ -8.206135, 4.024593, -9.072712 ]
+								m_vMaxBounds = [ 9.076878, 10.414047, 5.584324 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "親指１.R"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "親指１.R"
+								m_vMinBounds = [ -1.009186, -0.003517, -0.921417 ]
+								m_vMaxBounds = [ 1.428528, 3.888481, 1.582451 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "人指２.R"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "人指２.R"
+								m_vMinBounds = [ -0.978592, 0.138741, -1.312662 ]
+								m_vMaxBounds = [ 1.253235, 6.827888, 1.188993 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "中指２.R"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "中指２.R"
+								m_vMinBounds = [ -1.578461, -1.150848, -1.279278 ]
+								m_vMaxBounds = [ 1.382553, 5.906349, 1.026688 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "薬指２.R"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "薬指２.R"
+								m_vMinBounds = [ -0.980629, 0.147293, -0.988502 ]
+								m_vMaxBounds = [ 1.367836, 6.202415, 1.08652 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "小指２.R"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "小指２.R"
+								m_vMinBounds = [ -0.983742, -0.135788, -0.954246 ]
+								m_vMaxBounds = [ 1.002586, 5.241943, 0.906426 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "wuqi"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "wuqi"
+								m_vMinBounds = [ -11.824791, -13.13541, -2.41992 ]
+								m_vMaxBounds = [ 11.824814, 140.221771, 2.420039 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "親指１.L"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "親指１.L"
+								m_vMinBounds = [ -1.428543, -0.003502, -0.921413 ]
+								m_vMaxBounds = [ 1.009186, 3.888489, 1.582455 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "人指２.L"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "人指２.L"
+								m_vMinBounds = [ -1.253265, 0.138741, -1.312678 ]
+								m_vMaxBounds = [ 0.978561, 6.827888, 1.188977 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "中指２.L"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "中指２.L"
+								m_vMinBounds = [ -1.382553, -1.150879, -1.279274 ]
+								m_vMaxBounds = [ 1.578461, 5.906334, 1.026693 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "薬指２.L"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "薬指２.L"
+								m_vMinBounds = [ -1.367874, 0.147263, -0.988491 ]
+								m_vMaxBounds = [ 0.980598, 6.202385, 1.086531 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "小指２.L"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "小指２.L"
+								m_vMinBounds = [ -1.002617, -0.135773, -0.954254 ]
+								m_vMaxBounds = [ 0.983711, 5.241974, 0.906417 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "尻尾2"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "尻尾2"
+								m_vMinBounds = [ -14.242004, -2.357117, -20.510555 ]
+								m_vMaxBounds = [ 18.848259, 73.995377, 19.423565 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "马尾1"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "马尾1"
+								m_vMinBounds = [ -4.18662, -4.497559, -3.183346 ]
+								m_vMaxBounds = [ 4.186423, 31.395508, 4.584267 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "头带1.L"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "头带1.L"
+								m_vMinBounds = [ -1.55386, -3.059311, -0.677765 ]
+								m_vMaxBounds = [ 1.930462, 17.825699, 1.084656 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "头带1.R"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "头带1.R"
+								m_vMinBounds = [ -1.930462, -3.059311, -0.677765 ]
+								m_vMaxBounds = [ 1.55386, 17.825699, 1.084648 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "前发1.L"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "前发1.L"
+								m_vMinBounds = [ -2.523983, 12.231186, -3.15748 ]
+								m_vMaxBounds = [ 2.027914, 30.599213, 4.544989 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "前发1.R"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "前发1.R"
+								m_vMinBounds = [ -2.027914, 12.231186, -3.15748 ]
+								m_vMaxBounds = [ 2.523983, 30.599213, 4.54499 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "后发1.L"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "后发1.L"
+								m_vMinBounds = [ -0.740102, 13.072571, 0.184662 ]
+								m_vMaxBounds = [ 0.855825, 33.245087, 4.990719 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "后发1.R"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "后发1.R"
+								m_vMinBounds = [ -0.855825, 13.072571, 0.184662 ]
+								m_vMaxBounds = [ 0.740102, 33.245087, 4.990719 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+						]
+					},
+				]
+				m_AutoCreateSetName = ""
+			}
+		},
+	]
+	m_pAttachmentLists = 
+	[
+		{
+			m_pObject = 
+			{
+				m_name = ""
+				m_attachments = 
+				[
+					{
+						m_name = "attach_attack2"
+						m_influences = 
+						[
+							{
+								m_influenceName = "手捩2.R"
+								m_vTranslationOffset = [ 0.0, 0.0, 0.0 ]
+								m_vRotationOffset = [ 0.0, 0.0, 0.0 ]
+								m_flWeight = 1.0
+								m_bRoot = false
+							},
+						]
+					},
+					{
+						m_name = "attach_hitloc"
+						m_influences = 
+						[
+							{
+								m_influenceName = "上半身"
+								m_vTranslationOffset = [ 0.0, 0.0, 0.0 ]
+								m_vRotationOffset = [ 0.0, 0.0, 0.0 ]
+								m_flWeight = 1.0
+								m_bRoot = false
+							},
+						]
+					},
+					{
+						m_name = "follow_origin"
+						m_influences = 
+						[
+							{
+								m_influenceName = "全ての親"
+								m_vTranslationOffset = [ 0.0, 0.0, 0.0 ]
+								m_vRotationOffset = [ 0.0, 0.0, 0.0 ]
+								m_flWeight = 1.0
+								m_bRoot = false
+							},
+						]
+					},
+					{
+						m_name = "attach_wing"
+						m_influences = 
+						[
+							{
+								m_influenceName = "上半身"
+								m_vTranslationOffset = [ 0.0, 20.975555, -14.732649 ]
+								m_vRotationOffset = [ -90.0, 0.000001, -0.000007 ]
+								m_flWeight = 1.0
+								m_bRoot = false
+							},
+						]
+					},
+					{
+						m_name = "attach_attack1"
+						m_influences = 
+						[
+							{
+								m_influenceName = "wuqi"
+								m_vTranslationOffset = [ 0.000008, 0.000004, 0.000008 ]
+								m_vRotationOffset = [ -89.447853, 0.000006, -0.000075 ]
+								m_flWeight = 1.0
+								m_bRoot = false
+							},
+						]
+					},
+				]
+			}
+		},
+	]
+	m_pAnimGroup = 
+	{
+		m_pObject = 
+		{
+			m_Name = ""
+			m_pBoneFlagList = 
+			{
+				m_pObject = null
+			}
+			m_pSeqGroup = 
+			{
+				m_pObject = null
+			}
+			m_pAnimGroups = [  ]
+			m_Vanim = 
+			[
+				{
+					m_Animationname = "yunlian_die"
+					m_Filepath = "models/heroes/avalon_assets/models/heroes/Realm_Of_Chaos/yunlian/yunlian.fbx"
+					m_nStartframe = 1805
+					m_nEndframe = 1905
+					m_flFps = 30.0
+					m_Loop = 
+					{
+						m_bLoop = false
+						m_bSmoothLoop = false
+						m_nSmoothLoopStart = 0
+						m_nSmoothLoopEnd = 0
+						m_StartLoop = 
+						{
+							_class = "CVAnimCmdStartLoop"
+							m_bEnabled = false
+							m_nLoopRestart = 0
+						}
+					}
+					m_bHidden = false
+					m_bDisable = false
+					m_Activities = 
+					[
+						{
+							m_Name = "ACT_DOTA_DIE"
+							m_nWeight = 1
+						},
+					]
+					m_AnimationEvents = [  ]
+					m_MotionFrames = [  ]
+					m_pIkRules = [  ]
+					m_pAlignAnimation = null
+					m_adjustAnimation = 
+					{
+						m_translation = [ 0.0, 0.0, 0.0 ]
+						m_rotation = [ 0.0, 0.0, 0.0 ]
+					}
+					m_Keywords = [  ]
+					m_sequenceParams = 
+					{
+						m_flFadeInTime = 0.2
+						m_flFadeOutTime = 0.2
+					}
+					m_folderName = ""
+					m_MotionFramesRootBone = ""
+				},
+				{
+					m_Animationname = "yunlian_disabled"
+					m_Filepath = "models/heroes/avalon_assets/models/heroes/Realm_Of_Chaos/yunlian/yunlian_disabled.fbx"
+					m_nStartframe = 5
+					m_nEndframe = 60
+					m_flFps = 30.0
+					m_Loop = 
+					{
+						m_bLoop = true
+						m_bSmoothLoop = false
+						m_nSmoothLoopStart = 0
+						m_nSmoothLoopEnd = 0
+						m_StartLoop = 
+						{
+							_class = "CVAnimCmdStartLoop"
+							m_bEnabled = false
+							m_nLoopRestart = 0
+						}
+					}
+					m_bHidden = false
+					m_bDisable = false
+					m_Activities = 
+					[
+						{
+							m_Name = "ACT_DOTA_DISABLED"
+							m_nWeight = 1
+						},
+					]
+					m_AnimationEvents = [  ]
+					m_MotionFrames = [  ]
+					m_pIkRules = [  ]
+					m_pAlignAnimation = null
+					m_adjustAnimation = 
+					{
+						m_translation = [ 0.0, 0.0, 0.0 ]
+						m_rotation = [ 0.0, 0.0, 0.0 ]
+					}
+					m_Keywords = [  ]
+					m_sequenceParams = 
+					{
+						m_flFadeInTime = 0.2
+						m_flFadeOutTime = 0.2
+					}
+					m_folderName = ""
+					m_MotionFramesRootBone = ""
+				},
+				{
+					m_Animationname = "yunlian_idle"
+					m_Filepath = "models/heroes/avalon_assets/models/heroes/Realm_Of_Chaos/yunlian/yunlian.fbx"
+					m_nStartframe = 645
+					m_nEndframe = 765
+					m_flFps = 30.0
+					m_Loop = 
+					{
+						m_bLoop = true
+						m_bSmoothLoop = false
+						m_nSmoothLoopStart = 0
+						m_nSmoothLoopEnd = 0
+						m_StartLoop = 
+						{
+							_class = "CVAnimCmdStartLoop"
+							m_bEnabled = false
+							m_nLoopRestart = 0
+						}
+					}
+					m_bHidden = false
+					m_bDisable = false
+					m_Activities = 
+					[
+						{
+							m_Name = "ACT_DOTA_IDLE"
+							m_nWeight = 1
+						},
+					]
+					m_AnimationEvents = [  ]
+					m_MotionFrames = [  ]
+					m_pIkRules = [  ]
+					m_pAlignAnimation = null
+					m_adjustAnimation = 
+					{
+						m_translation = [ 0.0, 0.0, 0.0 ]
+						m_rotation = [ 0.0, 0.0, 0.0 ]
+					}
+					m_Keywords = [  ]
+					m_sequenceParams = 
+					{
+						m_flFadeInTime = 0.2
+						m_flFadeOutTime = 0.2
+					}
+					m_folderName = ""
+					m_MotionFramesRootBone = ""
+				},
+				{
+					m_Animationname = "yunlian_run1"
+					m_Filepath = "models/heroes/avalon_assets/models/heroes/Realm_Of_Chaos/yunlian/yunlian.fbx"
+					m_nStartframe = 45
+					m_nEndframe = 85
+					m_flFps = 30.0
+					m_Loop = 
+					{
+						m_bLoop = true
+						m_bSmoothLoop = false
+						m_nSmoothLoopStart = 0
+						m_nSmoothLoopEnd = 0
+						m_StartLoop = 
+						{
+							_class = "CVAnimCmdStartLoop"
+							m_bEnabled = false
+							m_nLoopRestart = 0
+						}
+					}
+					m_bHidden = false
+					m_bDisable = false
+					m_Activities = 
+					[
+						{
+							m_Name = "ACT_DOTA_RUN"
+							m_nWeight = 1
+						},
+					]
+					m_AnimationEvents = [  ]
+					m_MotionFrames = [  ]
+					m_pIkRules = [  ]
+					m_pAlignAnimation = null
+					m_adjustAnimation = 
+					{
+						m_translation = [ 0.0, 0.0, 0.0 ]
+						m_rotation = [ 0.0, 0.0, 0.0 ]
+					}
+					m_Keywords = [  ]
+					m_sequenceParams = 
+					{
+						m_flFadeInTime = 0.2
+						m_flFadeOutTime = 0.2
+					}
+					m_folderName = ""
+					m_MotionFramesRootBone = ""
+				},
+				{
+					m_Animationname = "yunlian_run2"
+					m_Filepath = "models/heroes/avalon_assets/models/heroes/Realm_Of_Chaos/yunlian/yunlian_run2.fbx"
+					m_nStartframe = 5
+					m_nEndframe = 21
+					m_flFps = 30.0
+					m_Loop = 
+					{
+						m_bLoop = true
+						m_bSmoothLoop = false
+						m_nSmoothLoopStart = 0
+						m_nSmoothLoopEnd = 0
+						m_StartLoop = 
+						{
+							_class = "CVAnimCmdStartLoop"
+							m_bEnabled = false
+							m_nLoopRestart = 0
+						}
+					}
+					m_bHidden = false
+					m_bDisable = false
+					m_Activities = 
+					[
+						{
+							m_Name = "ACT_DOTA_RUN"
+							m_nWeight = 1
+						},
+						{
+							m_Name = "high"
+							m_nWeight = 1
+						},
+					]
+					m_AnimationEvents = [  ]
+					m_MotionFrames = [  ]
+					m_pIkRules = [  ]
+					m_pAlignAnimation = null
+					m_adjustAnimation = 
+					{
+						m_translation = [ 0.0, 0.0, 0.0 ]
+						m_rotation = [ 0.0, 0.0, 0.0 ]
+					}
+					m_Keywords = [  ]
+					m_sequenceParams = 
+					{
+						m_flFadeInTime = 0.2
+						m_flFadeOutTime = 0.2
+					}
+					m_folderName = ""
+					m_MotionFramesRootBone = ""
+				},
+				{
+					m_Animationname = "yunlian_attack1"
+					m_Filepath = "models/heroes/avalon_assets/models/heroes/Realm_Of_Chaos/yunlian/yunlian.fbx"
+					m_nStartframe = 1070
+					m_nEndframe = 1105
+					m_flFps = 30.0
+					m_Loop = 
+					{
+						m_bLoop = false
+						m_bSmoothLoop = false
+						m_nSmoothLoopStart = 0
+						m_nSmoothLoopEnd = 0
+						m_StartLoop = 
+						{
+							_class = "CVAnimCmdStartLoop"
+							m_bEnabled = false
+							m_nLoopRestart = 0
+						}
+					}
+					m_bHidden = false
+					m_bDisable = false
+					m_Activities = 
+					[
+						{
+							m_Name = "ACT_DOTA_ATTACK"
+							m_nWeight = 1
+						},
+					]
+					m_AnimationEvents = [  ]
+					m_MotionFrames = [  ]
+					m_pIkRules = [  ]
+					m_pAlignAnimation = null
+					m_adjustAnimation = 
+					{
+						m_translation = [ 0.0, 0.0, 0.0 ]
+						m_rotation = [ 0.0, 0.0, 0.0 ]
+					}
+					m_Keywords = [  ]
+					m_sequenceParams = 
+					{
+						m_flFadeInTime = 0.2
+						m_flFadeOutTime = 0.2
+					}
+					m_folderName = ""
+					m_MotionFramesRootBone = ""
+				},
+				{
+					m_Animationname = "yunlian_attack2"
+					m_Filepath = "models/heroes/avalon_assets/models/heroes/Realm_Of_Chaos/yunlian/yunlian_attack2.fbx"
+					m_nStartframe = 5
+					m_nEndframe = 40
+					m_flFps = 30.0
+					m_Loop = 
+					{
+						m_bLoop = false
+						m_bSmoothLoop = false
+						m_nSmoothLoopStart = 0
+						m_nSmoothLoopEnd = 0
+						m_StartLoop = 
+						{
+							_class = "CVAnimCmdStartLoop"
+							m_bEnabled = false
+							m_nLoopRestart = 0
+						}
+					}
+					m_bHidden = false
+					m_bDisable = false
+					m_Activities = 
+					[
+						{
+							m_Name = "ACT_DOTA_ATTACK"
+							m_nWeight = 1
+						},
+					]
+					m_AnimationEvents = [  ]
+					m_MotionFrames = [  ]
+					m_pIkRules = [  ]
+					m_pAlignAnimation = null
+					m_adjustAnimation = 
+					{
+						m_translation = [ 0.0, 0.0, 0.0 ]
+						m_rotation = [ 0.0, 0.0, 0.0 ]
+					}
+					m_Keywords = [  ]
+					m_sequenceParams = 
+					{
+						m_flFadeInTime = 0.2
+						m_flFadeOutTime = 0.2
+					}
+					m_folderName = ""
+					m_MotionFramesRootBone = ""
+				},
+				{
+					m_Animationname = "yunlian_cast_recovery"
+					m_Filepath = "models/heroes/avalon_assets/models/heroes/Realm_Of_Chaos/yunlian/yunlian.fbx"
+					m_nStartframe = 1170
+					m_nEndframe = 1205
+					m_flFps = 30.0
+					m_Loop = 
+					{
+						m_bLoop = false
+						m_bSmoothLoop = false
+						m_nSmoothLoopStart = 0
+						m_nSmoothLoopEnd = 0
+						m_StartLoop = 
+						{
+							_class = "CVAnimCmdStartLoop"
+							m_bEnabled = false
+							m_nLoopRestart = 0
+						}
+					}
+					m_bHidden = false
+					m_bDisable = false
+					m_Activities = 
+					[
+						{
+							m_Name = ""
+							m_nWeight = 1
+						},
+					]
+					m_AnimationEvents = [  ]
+					m_MotionFrames = [  ]
+					m_pIkRules = [  ]
+					m_pAlignAnimation = null
+					m_adjustAnimation = 
+					{
+						m_translation = [ 0.0, 0.0, 0.0 ]
+						m_rotation = [ 0.0, 0.0, 0.0 ]
+					}
+					m_Keywords = [  ]
+					m_sequenceParams = 
+					{
+						m_flFadeInTime = 0.2
+						m_flFadeOutTime = 0.2
+					}
+					m_folderName = ""
+					m_MotionFramesRootBone = ""
+				},
+				{
+					m_Animationname = "yunlian_cast2"
+					m_Filepath = "models/heroes/avalon_assets/models/heroes/Realm_Of_Chaos/yunlian/yunlian.fbx"
+					m_nStartframe = 1270
+					m_nEndframe = 1305
+					m_flFps = 30.0
+					m_Loop = 
+					{
+						m_bLoop = false
+						m_bSmoothLoop = false
+						m_nSmoothLoopStart = 0
+						m_nSmoothLoopEnd = 0
+						m_StartLoop = 
+						{
+							_class = "CVAnimCmdStartLoop"
+							m_bEnabled = false
+							m_nLoopRestart = 0
+						}
+					}
+					m_bHidden = false
+					m_bDisable = false
+					m_Activities = 
+					[
+						{
+							m_Name = "ACT_DOTA_CAST_ABILITY_2"
+							m_nWeight = 1
+						},
+					]
+					m_AnimationEvents = [  ]
+					m_MotionFrames = [  ]
+					m_pIkRules = [  ]
+					m_pAlignAnimation = null
+					m_adjustAnimation = 
+					{
+						m_translation = [ 0.0, 0.0, 0.0 ]
+						m_rotation = [ 0.0, 0.0, 0.0 ]
+					}
+					m_Keywords = [  ]
+					m_sequenceParams = 
+					{
+						m_flFadeInTime = 0.2
+						m_flFadeOutTime = 0.2
+					}
+					m_folderName = ""
+					m_MotionFramesRootBone = ""
+				},
+				{
+					m_Animationname = "yunlian_cast3"
+					m_Filepath = "models/heroes/avalon_assets/models/heroes/Realm_Of_Chaos/yunlian/yunlian.fbx"
+					m_nStartframe = 1370
+					m_nEndframe = 1405
+					m_flFps = 30.0
+					m_Loop = 
+					{
+						m_bLoop = false
+						m_bSmoothLoop = false
+						m_nSmoothLoopStart = 0
+						m_nSmoothLoopEnd = 0
+						m_StartLoop = 
+						{
+							_class = "CVAnimCmdStartLoop"
+							m_bEnabled = false
+							m_nLoopRestart = 0
+						}
+					}
+					m_bHidden = false
+					m_bDisable = false
+					m_Activities = 
+					[
+						{
+							m_Name = "ACT_DOTA_CAST_ABILITY_3"
+							m_nWeight = 1
+						},
+					]
+					m_AnimationEvents = [  ]
+					m_MotionFrames = [  ]
+					m_pIkRules = [  ]
+					m_pAlignAnimation = null
+					m_adjustAnimation = 
+					{
+						m_translation = [ 0.0, 0.0, 0.0 ]
+						m_rotation = [ 0.0, 0.0, 0.0 ]
+					}
+					m_Keywords = [  ]
+					m_sequenceParams = 
+					{
+						m_flFadeInTime = 0.2
+						m_flFadeOutTime = 0.2
+					}
+					m_folderName = ""
+					m_MotionFramesRootBone = ""
+				},
+				{
+					m_Animationname = "yunlian_cast4"
+					m_Filepath = "models/heroes/avalon_assets/models/heroes/Realm_Of_Chaos/yunlian/yunlian_cast4.fbx"
+					m_nStartframe = 5
+					m_nEndframe = 40
+					m_flFps = 30.0
+					m_Loop = 
+					{
+						m_bLoop = false
+						m_bSmoothLoop = false
+						m_nSmoothLoopStart = 0
+						m_nSmoothLoopEnd = 0
+						m_StartLoop = 
+						{
+							_class = "CVAnimCmdStartLoop"
+							m_bEnabled = false
+							m_nLoopRestart = 0
+						}
+					}
+					m_bHidden = false
+					m_bDisable = false
+					m_Activities = 
+					[
+						{
+							m_Name = "ACT_DOTA_CAST_ABILITY_4"
+							m_nWeight = 1
+						},
+					]
+					m_AnimationEvents = [  ]
+					m_MotionFrames = [  ]
+					m_pIkRules = [  ]
+					m_pAlignAnimation = null
+					m_adjustAnimation = 
+					{
+						m_translation = [ 0.0, 0.0, 0.0 ]
+						m_rotation = [ 0.0, 0.0, 0.0 ]
+					}
+					m_Keywords = [  ]
+					m_sequenceParams = 
+					{
+						m_flFadeInTime = 0.2
+						m_flFadeOutTime = 0.2
+					}
+					m_folderName = ""
+					m_MotionFramesRootBone = ""
+				},
+				{
+					m_Animationname = "yunlian_idle_shanbi"
+					m_Filepath = "models/heroes/avalon_assets/models/heroes/Realm_Of_Chaos/yunlian/yunlian.fbx"
+					m_nStartframe = 1485
+					m_nEndframe = 1485
+					m_flFps = 30.0
+					m_Loop = 
+					{
+						m_bLoop = false
+						m_bSmoothLoop = false
+						m_nSmoothLoopStart = 0
+						m_nSmoothLoopEnd = 0
+						m_StartLoop = 
+						{
+							_class = "CVAnimCmdStartLoop"
+							m_bEnabled = false
+							m_nLoopRestart = 0
+						}
+					}
+					m_bHidden = false
+					m_bDisable = false
+					m_Activities = 
+					[
+						{
+							m_Name = "ACT_HOP"
+							m_nWeight = 1
+						},
+					]
+					m_AnimationEvents = [  ]
+					m_MotionFrames = [  ]
+					m_pIkRules = [  ]
+					m_pAlignAnimation = null
+					m_adjustAnimation = 
+					{
+						m_translation = [ 0.0, 0.0, 0.0 ]
+						m_rotation = [ 0.0, 0.0, 0.0 ]
+					}
+					m_Keywords = [  ]
+					m_sequenceParams = 
+					{
+						m_flFadeInTime = 0.2
+						m_flFadeOutTime = 0.2
+					}
+					m_folderName = ""
+					m_MotionFramesRootBone = ""
+				},
+				{
+					m_Animationname = "yunlian_run1_shanbi"
+					m_Filepath = "models/heroes/avalon_assets/models/heroes/Realm_Of_Chaos/yunlian/yunlian.fbx"
+					m_nStartframe = 1575
+					m_nEndframe = 1595
+					m_flFps = 30.0
+					m_Loop = 
+					{
+						m_bLoop = false
+						m_bSmoothLoop = false
+						m_nSmoothLoopStart = 0
+						m_nSmoothLoopEnd = 0
+						m_StartLoop = 
+						{
+							_class = "CVAnimCmdStartLoop"
+							m_bEnabled = false
+							m_nLoopRestart = 0
+						}
+					}
+					m_bHidden = false
+					m_bDisable = false
+					m_Activities = 
+					[
+						{
+							m_Name = "ACT_GLIDE"
+							m_nWeight = 1
+						},
+					]
+					m_AnimationEvents = [  ]
+					m_MotionFrames = [  ]
+					m_pIkRules = [  ]
+					m_pAlignAnimation = null
+					m_adjustAnimation = 
+					{
+						m_translation = [ 0.0, 0.0, 0.0 ]
+						m_rotation = [ 0.0, 0.0, 0.0 ]
+					}
+					m_Keywords = [  ]
+					m_sequenceParams = 
+					{
+						m_flFadeInTime = 0.2
+						m_flFadeOutTime = 0.2
+					}
+					m_folderName = ""
+					m_MotionFramesRootBone = ""
+				},
+				{
+					m_Animationname = "yunlian_run2_shanbi"
+					m_Filepath = "models/heroes/avalon_assets/models/heroes/Realm_Of_Chaos/yunlian/yunlian.fbx"
+					m_nStartframe = 1675
+					m_nEndframe = 1695
+					m_flFps = 30.0
+					m_Loop = 
+					{
+						m_bLoop = false
+						m_bSmoothLoop = false
+						m_nSmoothLoopStart = 0
+						m_nSmoothLoopEnd = 0
+						m_StartLoop = 
+						{
+							_class = "CVAnimCmdStartLoop"
+							m_bEnabled = false
+							m_nLoopRestart = 0
+						}
+					}
+					m_bHidden = false
+					m_bDisable = false
+					m_Activities = 
+					[
+						{
+							m_Name = "ACT_GLIDE"
+							m_nWeight = 1
+						},
+					]
+					m_AnimationEvents = [  ]
+					m_MotionFrames = [  ]
+					m_pIkRules = [  ]
+					m_pAlignAnimation = null
+					m_adjustAnimation = 
+					{
+						m_translation = [ 0.0, 0.0, 0.0 ]
+						m_rotation = [ 0.0, 0.0, 0.0 ]
+					}
+					m_Keywords = [  ]
+					m_sequenceParams = 
+					{
+						m_flFadeInTime = 0.2
+						m_flFadeOutTime = 0.2
+					}
+					m_folderName = ""
+					m_MotionFramesRootBone = ""
+				},
+				{
+					m_Animationname = "moluo_jump_start"
+					m_Filepath = "models/heroes/avalon_assets/models/heroes/Realm_Of_Chaos/yunlian/yunlian_jump.fbx"
+					m_nStartframe = 5
+					m_nEndframe = 19
+					m_flFps = 30.0
+					m_Loop = 
+					{
+						m_bLoop = false
+						m_bSmoothLoop = false
+						m_nSmoothLoopStart = 0
+						m_nSmoothLoopEnd = 0
+						m_StartLoop = 
+						{
+							_class = "CVAnimCmdStartLoop"
+							m_bEnabled = false
+							m_nLoopRestart = 0
+						}
+					}
+					m_bHidden = false
+					m_bDisable = false
+					m_Activities = 
+					[
+						{
+							m_Name = "ACT_JUMP_AUTOGUN"
+							m_nWeight = 1
+						},
+					]
+					m_AnimationEvents = [  ]
+					m_MotionFrames = 
+					[
+						{
+							m_nFrame = 0
+							m_bExtractTX = true
+							m_bExtractTY = true
+							m_bExtractTZ = false
+							m_bExtractRX = false
+							m_bExtractRY = false
+							m_bExtractRZ = false
+							m_bDiscardTX = false
+							m_bDiscardTY = false
+							m_bDiscardTZ = false
+							m_bDiscardRX = false
+							m_bDiscardRY = false
+							m_bDiscardRZ = false
+						},
+					]
+					m_pIkRules = [  ]
+					m_pAlignAnimation = null
+					m_adjustAnimation = 
+					{
+						m_translation = [ 0.0, 0.0, 0.0 ]
+						m_rotation = [ 0.0, 0.0, 0.0 ]
+					}
+					m_Keywords = [  ]
+					m_sequenceParams = 
+					{
+						m_flFadeInTime = 0.2
+						m_flFadeOutTime = 0.2
+					}
+					m_folderName = ""
+					m_MotionFramesRootBone = ""
+				},
+				{
+					m_Animationname = "moluo_jump"
+					m_Filepath = "models/heroes/avalon_assets/models/heroes/Realm_Of_Chaos/yunlian/yunlian_jump.fbx"
+					m_nStartframe = 65
+					m_nEndframe = 185
+					m_flFps = 30.0
+					m_Loop = 
+					{
+						m_bLoop = false
+						m_bSmoothLoop = false
+						m_nSmoothLoopStart = 0
+						m_nSmoothLoopEnd = 0
+						m_StartLoop = 
+						{
+							_class = "CVAnimCmdStartLoop"
+							m_bEnabled = false
+							m_nLoopRestart = 0
+						}
+					}
+					m_bHidden = false
+					m_bDisable = false
+					m_Activities = 
+					[
+						{
+							m_Name = "ACT_JUMP"
+							m_nWeight = 1
+						},
+					]
+					m_AnimationEvents = [  ]
+					m_MotionFrames = 
+					[
+						{
+							m_nFrame = 0
+							m_bExtractTX = true
+							m_bExtractTY = true
+							m_bExtractTZ = false
+							m_bExtractRX = false
+							m_bExtractRY = false
+							m_bExtractRZ = false
+							m_bDiscardTX = false
+							m_bDiscardTY = false
+							m_bDiscardTZ = false
+							m_bDiscardRX = false
+							m_bDiscardRY = false
+							m_bDiscardRZ = false
+						},
+					]
+					m_pIkRules = [  ]
+					m_pAlignAnimation = null
+					m_adjustAnimation = 
+					{
+						m_translation = [ 0.0, 0.0, 0.0 ]
+						m_rotation = [ 0.0, 0.0, 0.0 ]
+					}
+					m_Keywords = [  ]
+					m_sequenceParams = 
+					{
+						m_flFadeInTime = 0.2
+						m_flFadeOutTime = 0.2
+					}
+					m_folderName = ""
+					m_MotionFramesRootBone = ""
+				},
+				{
+					m_Animationname = "moluo_jump_end"
+					m_Filepath = "models/heroes/avalon_assets/models/heroes/Realm_Of_Chaos/yunlian/yunlian_jump.fbx"
+					m_nStartframe = 185
+					m_nEndframe = 225
+					m_flFps = 30.0
+					m_Loop = 
+					{
+						m_bLoop = false
+						m_bSmoothLoop = false
+						m_nSmoothLoopStart = 0
+						m_nSmoothLoopEnd = 0
+						m_StartLoop = 
+						{
+							_class = "CVAnimCmdStartLoop"
+							m_bEnabled = false
+							m_nLoopRestart = 0
+						}
+					}
+					m_bHidden = false
+					m_bDisable = false
+					m_Activities = 
+					[
+						{
+							m_Name = "ACT_JUMP_DUAL"
+							m_nWeight = 1
+						},
+					]
+					m_AnimationEvents = [  ]
+					m_MotionFrames = 
+					[
+						{
+							m_nFrame = 0
+							m_bExtractTX = true
+							m_bExtractTY = true
+							m_bExtractTZ = false
+							m_bExtractRX = false
+							m_bExtractRY = false
+							m_bExtractRZ = false
+							m_bDiscardTX = false
+							m_bDiscardTY = false
+							m_bDiscardTZ = false
+							m_bDiscardRX = false
+							m_bDiscardRY = false
+							m_bDiscardRZ = false
+						},
+					]
+					m_pIkRules = [  ]
+					m_pAlignAnimation = null
+					m_adjustAnimation = 
+					{
+						m_translation = [ 0.0, 0.0, 0.0 ]
+						m_rotation = [ 0.0, 0.0, 0.0 ]
+					}
+					m_Keywords = [  ]
+					m_sequenceParams = 
+					{
+						m_flFadeInTime = 0.2
+						m_flFadeOutTime = 0.2
+					}
+					m_folderName = ""
+					m_MotionFramesRootBone = ""
+				},
+			]
+			m_sScripts = [  ]
+			m_folderNames = [  ]
+			m_sCompileScripts = [  ]
+			m_pActivityWhiteList = 
+			{
+				m_pObject = null
+			}
+		}
+	}
+	m_pMaterialGroupList = 
+	{
+		m_pObject = null
+	}
+	m_pMeshGroupList = 
+	{
+		m_pObject = null
+	}
+	m_pLodGroupList = 
+	{
+		m_pObject = null
+	}
+	m_pPropBreakableList = 
+	{
+		m_pObject = null
+	}
+	m_pPropDataList = 
+	{
+		m_pObject = null
+	}
+	m_pConstraintLists = [  ]
+	m_collision = ""
+	m_softbody = ""
+	m_sMDLFilename = ""
+	m_sOffsetHitboxSets = [  ]
+	m_vHitboxSetOffset = [ 0.0, 0.0, 0.0 ]
+	m_scriptFiles = [  ]
+	m_pMaterialRemapList = 
+	{
+		m_vMaterialRemapList = 
+		[
+			{
+				m_sSearchMaterial = "toufa.vmat"
+				m_sReplaceMaterial = "materials/avalon_assets/models/heroes/yunlian/toufa_color.vmat"
+			},
+			{
+				m_sSearchMaterial = "mawei.vmat"
+				m_sReplaceMaterial = "materials/avalon_assets/models/heroes/yunlian/toufa_color.vmat"
+			},
+			{
+				m_sSearchMaterial = "shenti.vmat"
+				m_sReplaceMaterial = "materials/avalon_assets/models/heroes/yunlian/shenti_color.vmat"
+			},
+			{
+				m_sSearchMaterial = "shou.vmat"
+				m_sReplaceMaterial = "materials/avalon_assets/models/heroes/yunlian/shenti_color.vmat"
+			},
+			{
+				m_sSearchMaterial = "jiao.vmat"
+				m_sReplaceMaterial = "materials/avalon_assets/models/heroes/yunlian/shenti_color.vmat"
+			},
+			{
+				m_sSearchMaterial = "lian.vmat"
+				m_sReplaceMaterial = "materials/avalon_assets/models/heroes/yunlian/lian_color.vmat"
+			},
+			{
+				m_sSearchMaterial = "wuqi.vmat"
+				m_sReplaceMaterial = "materials/avalon_assets/models/heroes/yunlian/wuqi_color.vmat"
+			},
+		]
+	}
+	m_flFbxScale = 1.0
+	m_flQCScale = 1.0
+	m_vOrigin = [ 0.0, 0.0, 0.0 ]
+	m_bEmbedAnimsInAnimGroup = false
+	m_pPsfList = null
+	m_keyValueText = ""
+	m_bStaticProp = false
+	m_bEnableClothProcessing = true
+	m_flClothEnableThreshold = 0.05
+	m_nMaxClothVertsPerMesh = 2048
+	m_bBuildClothBoneHierarchy = false
+	m_nNavType = "AUTH_NAV_MESH"
+	m_bMakeUniqueVMeshes = false
+	m_bMakeImplicitBindPoseSequence = false
+	m_bAdjustSkeletonFromBoneFlags = false
+	m_bHiddenAssetFlag = false
+	m_pAnimGroups = [  ]
+}

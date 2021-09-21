@@ -1,0 +1,158 @@
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/dotastyles.css" />
+		<include src="file://{resources}/styles/custom_game/avalon.css" />
+		<include src="file://{resources}/layout/custom_game/frames/hero_frame/hero_frame.css" />
+	</styles>
+	<scripts>
+		<include src="file://{resources}/layout/custom_game/frames/hero_frame/hero_frame.js" />
+	</scripts>
+	<snippets>
+		<!-- 技能按钮 -->
+		<snippet name="ability-btn">
+			<Button class="ability-btn">
+				<DOTAAbilityImage id="ability-img" />
+				<Panel id="charge_panel">
+					<Panel id="charge_bar" />
+					<Label id="charges" text="" />
+				</Panel>
+				<Panel id="cooldown" />
+				<Label id="cd" text="" />
+				<Panel class="bar" />
+				<Panel class="lock" />
+				<Panel id="Hotkey">
+					<Label text="" />
+				</Panel>
+			</Button>
+		</snippet>
+
+		<!-- 快捷物品 -->
+		<snippet name="quickly-item">
+			<Button hittestchildren="false" class="quickly-item">
+				<DOTAItemImage id="item-img" />
+				<Label id="charges" text="" />
+				<Panel id="cooldown"/>
+				<Label id="cd" text="" />
+				<Panel class="bar" />
+				<Panel id="Hotkey">
+					<Label text="" />
+				</Panel>
+			</Button>
+		</snippet>
+
+		<!-- 技能加点 -->
+		<snippet name="level-up-tab">
+			<Button class="LevelUpTab" hittest="true"><Panel id="LevelUpButton"><Panel id="LevelUpIcon" /></Panel></Button>
+		</snippet>
+	</snippets>
+	<Panel hittest="false" class="HeroFrameRoot" >
+		<Panel id="HeroFrame" hittest="false">
+			<Image class="bottom" onactivate="OnNull()" src="file://{images}/custom_game/hero_frame/frame_bar.png" />
+
+			<Panel id="Tier0" hittest="false">
+				<!-- 属性 -->
+				<Panel id="AttributesPanel" >
+					<!-- 力量 -->
+					<Panel class="attribute" 
+						onmouseover="DOTAShowTextTooltip(#xxwar_ability_special_bonus_strength)" 
+						onmouseout="DOTAHideTextTooltip()"
+						>
+						<Image class="icon" src="file://{images}/custom_game/hero_frame/attr_str.png" />
+						<Label text="{s:strength}" id="txtStrength" class="initHiddenText" />
+					</Panel>
+					<!-- 敏捷 -->
+					<Panel class="attribute" 
+						onmouseover="DOTAShowTextTooltip(#xxwar_ability_special_bonus_agility)" 
+						onmouseout="DOTAHideTextTooltip()"
+						>
+						<Image class="icon" src="file://{images}/custom_game/hero_frame/attr_agi.png" />
+						<Label text="{s:agility}" id="txtAgility" class="initHiddenText" />
+					</Panel>
+					<!-- 智力 -->
+					<Panel class="attribute" 
+						onmouseover="DOTAShowTextTooltip(#xxwar_ability_special_bonus_intellect)" 
+						onmouseout="DOTAHideTextTooltip()"
+						>
+						<Image class="icon" src="file://{images}/custom_game/hero_frame/attr_int.png" />
+						<Label text="{s:intellect}" id="txtIntellect" class="initHiddenText" />
+					</Panel>
+				</Panel>
+				<Panel id="CrystalBar">
+					<Panel id="RealmButton" onmouseover="ShowDOTATooltip('RealmButton');" onmouseout="HideDOTATooltip();">
+						<Label id="lblRealmText" text=""></Label>
+					</Panel>
+					<Panel id="CrystalPercentBar">
+						<Panel class="CrystalItem" id="CrystalItem_0" />
+						<Panel class="CrystalItem" id="CrystalItem_1" />
+						<Panel class="CrystalItem" id="CrystalItem_2" />
+						<Panel class="CrystalItem" id="CrystalItem_3" />
+						<Panel class="CrystalItem" id="CrystalItem_4" />
+						<Panel class="CrystalItem" id="CrystalItem_5" />
+						<Panel class="CrystalItem" id="CrystalItem_6" />
+						<Panel class="CrystalItem" id="CrystalItem_7" />
+						<Panel class="CrystalItem" id="CrystalItem_8" />
+						<Panel class="CrystalItem" id="CrystalItem_9" />
+					</Panel>
+				</Panel>
+				<!-- 生命条 -->
+				<Panel id="HealthBar" >
+					<Panel id="HealthPercentBar" />
+					<Label id="HealthText" text="{s:HealthText}" class="initHiddenText" />
+					<Label id="HealthPercentText" text="{s:HealthPercentText}" class="initHiddenText" />
+				</Panel>
+				<!-- 魔法条 -->
+				<Panel id="ManaBar" >
+					<Panel id="ManaPercentBar" />
+					<Label id="ManaText" text="{s:ManaText}" class="initHiddenText" />
+					<Label id="ManaPercentText" text="{s:ManaPercentText}" class="initHiddenText" />
+				</Panel>
+				<!-- 英雄头像 -->
+				<Panel id="HeroPortraitPanel" 
+					onactivate="OnClickPortrait()"
+					onmouseover="UIShowCustomLayoutTooltip( HeroAttributes, file://{resources}/layout/custom_game/tooltips/hero_attributes/hero_attributes.xml )"
+					onmouseout="UIHideCustomLayoutTooltip( HeroAttributes )"
+					>
+					<Image id="HeroPortraitImg" src="file://{images}/custom_game/hero_frame/npc_dota_hero_crystal_maiden.png" />
+					<Panel id="HeroPortraitCircle" />
+					<Panel id="HeroExpRing" />
+					<Panel id="HeroLevel">
+						<Label text="{d:HeroLevel}" />
+					</Panel>
+					<Label id="lblRespawnTime" class="hero-respawn-time" text="{d:RespawnTime}" />
+				</Panel>
+				<!-- 玩家名称 -->
+				<Panel id="UserNamePanel" >
+					<DOTAUserName id="UserName" hittest="false" hittestchildren="false" />
+				</Panel>
+				<!-- 快捷物品栏 -->
+				<Panel id="QuicklyItemList" >
+				</Panel>
+			</Panel>
+
+			<Panel id="Tier1" hittest="false">
+				<Panel id="AbilitiesPanel" >
+					<!-- 技能列表 -->
+					<Panel id="AbilityList" >
+					</Panel>
+				</Panel>
+			</Panel>
+
+			<Panel id="Tier2" hittest="false">
+				<!-- BUFF条 -->
+				<Panel id="BuffsFrame"/>
+			</Panel>
+
+			<Panel id="Tier3" hittest="false">
+				<Panel id="BagHandyButtons" >
+					<Panel id="BagHandyButtons_Discard" class="btn" hittestchildren="false">
+						<Label class="title discard_btn" id="txtHandyButton" text="#xxwar_button_discard" />
+					</Panel>
+				</Panel>
+			</Panel>
+
+			<Panel id="HeroAttributeTabPanel">
+				<!-- 按TAB弹出的属性框-->
+			</Panel>
+		</Panel>
+	</Panel>
+</root>

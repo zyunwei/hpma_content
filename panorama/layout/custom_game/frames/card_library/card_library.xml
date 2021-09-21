@@ -1,0 +1,30 @@
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/dotastyles.css" />
+		<include src="file://{resources}/styles/custom_game/avalon.css" />
+		<include src="file://{resources}/layout/custom_game/frames/card_library/card_library.css" />
+	</styles>
+	<scripts>
+		<include src="file://{resources}/layout/custom_game/frames/card_library/card_library.js" />
+	</scripts>
+	<snippets>
+		<snippet name="Tower">
+			<Panel class="Tower" >
+				<!-- <Label id="xxx" text="x" />
+				<Label id="Count" text="" /> -->
+				<Panel id="mask" hittest="false">
+					<DOTAAbilityImage id="Item" itemname="" hittest="false" />
+				</Panel>
+				<Panel class="CrystalImg" />
+				<Label id="xxx" text="x" />
+				<Label id="CrystalCost" text="" />
+			</Panel>
+		</snippet>
+	</snippets>
+	<Panel class="CardLibraryRoot" hittest="false" >
+        <TextButton id="CardLibraryButton" text="#xxwar_card_group" onactivate="OpenCardLibrary()"/>
+        <Panel id="CardLibrary">
+
+        </Panel>
+	</Panel>
+</root>

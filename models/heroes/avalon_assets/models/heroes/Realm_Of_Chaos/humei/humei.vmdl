@@ -1,0 +1,3174 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	m_meshList = 
+	{
+		m_meshList = 
+		[
+			{
+				m_meshName = "humei"
+				m_meshFile = "models/heroes/avalon_assets/models/heroes/Realm_Of_Chaos/humei/humei.fbx"
+				m_materialSearchPath = ""
+				m_bSkinParentedObjects = true
+				m_bLegacySkinParentedTransforms = false
+				m_bExpensiveTangents = false
+				m_bHighPrecisionTexCoords = false
+				m_bPerVertexCurvature = false
+				m_bBentNormals = false
+				m_bIgnoreCloth = false
+				m_bGetSkinningFromLod0 = false
+				m_bPreferHighDensityTrianglesInUvDensityCalculation = false
+				m_pMorphInfo = null
+			},
+		]
+	}
+	m_clothProxyMeshList = 
+	{
+		_class = "CVClothProxyMeshList"
+		m_flClothEnableThreshold = 0.05
+		m_bCreateStaticBone = false
+		m_nMaxBonesPerVertex = 4
+		m_bRemoveUnusedBonesEnabled = false
+		m_bDriveMeshesWithBacksolvedJointsOnly = true
+		m_flMatchProxiesToMeshes = 1.0
+		m_flFallbackEnvelope = 1.0
+		m_nReservedInt = 0
+		m_bSoftSkinAnimation = false
+		m_bReservedBool2 = false
+		m_bReservedBool3 = false
+		m_bReservedBool4 = false
+		m_clothProxyMeshList = [  ]
+	}
+	m_physicsMeshList = 
+	{
+		m_meshList = [  ]
+	}
+	m_pModelInfo = null
+	m_pBoneFlagList = 
+	{
+		m_pObject = null
+	}
+	m_pHitBoxSetLists = 
+	[
+		{
+			m_pObject = 
+			{
+				m_HitBoxSets = 
+				[
+					{
+						m_name = "default"
+						m_HitBoxes = 
+						[
+							{
+								m_name = "上半身"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "上半身"
+								m_vMinBounds = [ -13.373396, -3.333282, -13.429655 ]
+								m_vMaxBounds = [ 13.680897, 14.837143, 11.640642 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "下半身"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "下半身"
+								m_vMinBounds = [ -18.476563, -6.064819, -11.279264 ]
+								m_vMaxBounds = [ 21.372139, 27.683426, 31.651339 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "上半身2"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "上半身2"
+								m_vMinBounds = [ -16.524055, -4.295868, -12.585392 ]
+								m_vMaxBounds = [ 16.524017, 38.584686, 16.0481 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_0_1.001"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_0_1.001"
+								m_vMinBounds = [ -3.617828, 3.789474, -2.981649 ]
+								m_vMaxBounds = [ 6.509224, 12.153931, 1.848867 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_0_2.001"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_0_2.001"
+								m_vMinBounds = [ -2.954018, 1.4048, -7.739262 ]
+								m_vMaxBounds = [ 3.35807, 12.544083, 7.996918 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_0_5"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_0_5"
+								m_vMinBounds = [ -8.266676, 2.107574, -4.126238 ]
+								m_vMaxBounds = [ 5.129116, 11.513031, 2.426571 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_0_7"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_0_7"
+								m_vMinBounds = [ -5.099876, 2.746841, -3.787012 ]
+								m_vMaxBounds = [ 6.790331, 11.444351, 2.706852 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_0_9"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_0_9"
+								m_vMinBounds = [ -3.010643, 1.540634, -8.426485 ]
+								m_vMaxBounds = [ 2.869415, 12.945755, 5.613256 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_0_11"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_0_11"
+								m_vMinBounds = [ -6.749538, 3.66568, -6.054007 ]
+								m_vMaxBounds = [ 17.342371, 18.93425, 2.029531 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "肩.R"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "肩.R"
+								m_vMinBounds = [ -9.435524, -2.331123, -5.633606 ]
+								m_vMaxBounds = [ 8.078865, 11.73243, 6.254578 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_1_1.001"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_1_1.001"
+								m_vMinBounds = [ -2.646606, 0.256119, -3.383102 ]
+								m_vMaxBounds = [ 7.568081, 7.546494, 2.166286 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_1_2.001"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_1_2.001"
+								m_vMinBounds = [ -3.473343, -1.430435, -8.284301 ]
+								m_vMaxBounds = [ 3.563324, 5.433212, 1.358563 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_0_3.001"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_0_3.001"
+								m_vMinBounds = [ -2.836716, 1.536743, -8.581463 ]
+								m_vMaxBounds = [ 3.243103, 12.87825, 5.568438 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_0_4"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_0_4"
+								m_vMinBounds = [ -3.552204, 1.997849, -1.84584 ]
+								m_vMaxBounds = [ 2.701225, 9.598129, 2.601349 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_1_5"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_1_5"
+								m_vMinBounds = [ -18.89295, -1.379166, -0.403349 ]
+								m_vMaxBounds = [ 5.740149, 9.208267, 4.792261 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_1_7"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_1_7"
+								m_vMinBounds = [ -5.786369, 0.077347, 0.027086 ]
+								m_vMaxBounds = [ 8.029017, 9.706467, 4.868744 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_0_8"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_0_8"
+								m_vMinBounds = [ -2.465981, 1.912628, -1.896008 ]
+								m_vMaxBounds = [ 3.601585, 9.590942, 2.368568 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_1_9"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_1_9"
+								m_vMinBounds = [ -2.940208, -0.184723, -8.486021 ]
+								m_vMaxBounds = [ 2.570213, 0.44014, 5.19743 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_1_11"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_1_11"
+								m_vMinBounds = [ -7.79929, 0.249634, -6.30229 ]
+								m_vMaxBounds = [ 21.793594, 21.067474, 2.302589 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "腕.R"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "腕.R"
+								m_vMinBounds = [ -10.912453, -4.124466, -10.256218 ]
+								m_vMaxBounds = [ 9.643394, 29.339554, 13.453041 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_2_1.001"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_2_1.001"
+								m_vMinBounds = [ -1.482475, 2.441833, -3.262672 ]
+								m_vMaxBounds = [ 11.02747, 9.767899, 3.289096 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_2_2.001"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_2_2.001"
+								m_vMinBounds = [ -5.411362, 1.024368, -9.071043 ]
+								m_vMaxBounds = [ 9.139168, 11.331314, 8.05715 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_1_3.001"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_1_3.001"
+								m_vMinBounds = [ -2.25766, -0.330017, -8.707794 ]
+								m_vMaxBounds = [ 3.240761, 0.661591, 4.958809 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_1_4"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_1_4"
+								m_vMinBounds = [ -2.569057, 0.497528, -1.906988 ]
+								m_vMaxBounds = [ 3.20068, 0.646378, 3.694527 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_2_5"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_2_5"
+								m_vMinBounds = [ -23.791553, 3.26059, 0.637125 ]
+								m_vMaxBounds = [ 9.472477, 12.654282, 6.821602 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_2_7"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_2_7"
+								m_vMinBounds = [ -9.409946, 4.250916, 0.562794 ]
+								m_vMaxBounds = [ 5.268278, 13.12603, 6.757895 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_1_8"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_1_8"
+								m_vMinBounds = [ -2.879883, 0.494553, -2.202568 ]
+								m_vMaxBounds = [ 2.880569, 0.609177, 3.409296 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_2_9"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_2_9"
+								m_vMinBounds = [ -8.350342, 1.139236, -19.411068 ]
+								m_vMaxBounds = [ 5.917343, 10.847176, 5.310352 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_2_11"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_2_11"
+								m_vMinBounds = [ -11.08609, 2.450699, -7.196463 ]
+								m_vMaxBounds = [ 26.380177, 22.585381, 3.210054 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_1_1"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_1_1"
+								m_vMinBounds = [ -8.92931, 6.13974, -1.565651 ]
+								m_vMaxBounds = [ -0.054981, 6.708099, 1.04217 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_3_1.001"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_3_1.001"
+								m_vMinBounds = [ -2.278616, 4.375343, -4.025145 ]
+								m_vMaxBounds = [ 11.432774, 10.168251, 3.707924 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_3_2.001"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_3_2.001"
+								m_vMinBounds = [ -5.34848, 1.449554, -10.362717 ]
+								m_vMaxBounds = [ 7.732224, 13.068359, 7.939362 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_2_3.001"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_2_3.001"
+								m_vMinBounds = [ -2.919525, 2.002304, -8.918025 ]
+								m_vMaxBounds = [ 8.134872, 10.977707, 5.248167 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_2_4"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_2_4"
+								m_vMinBounds = [ -6.655865, 2.604462, -2.649611 ]
+								m_vMaxBounds = [ 3.420883, 11.229416, 10.937614 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_3_5"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_3_5"
+								m_vMinBounds = [ -21.920658, 2.610199, 0.917519 ]
+								m_vMaxBounds = [ 13.154224, 12.875427, 6.237888 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_3_7"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_3_7"
+								m_vMinBounds = [ -13.135826, 2.813225, 0.958666 ]
+								m_vMaxBounds = [ 5.613205, 12.922699, 6.269072 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_2_8"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_2_8"
+								m_vMinBounds = [ -3.396591, 2.557983, -2.612671 ]
+								m_vMaxBounds = [ 6.664211, 11.437241, 10.811211 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_3_10"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_3_10"
+								m_vMinBounds = [ -7.619972, 1.735497, -10.744839 ]
+								m_vMaxBounds = [ 5.325172, 13.351639, 7.937445 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_3_11"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_3_11"
+								m_vMinBounds = [ -11.443269, 4.347916, -8.622866 ]
+								m_vMaxBounds = [ 26.967377, 23.453087, 3.668602 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "手首.R"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "手首.R"
+								m_vMinBounds = [ -3.489716, -0.758427, -9.184341 ]
+								m_vMaxBounds = [ 5.860565, 15.898785, 3.440674 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_3_1"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_3_1"
+								m_vMinBounds = [ -11.127531, -0.570236, -1.510317 ]
+								m_vMaxBounds = [ 0.210735, 0.550972, 1.323997 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_1_2"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_1_2"
+								m_vMinBounds = [ -2.0, -2.0, -2.0 ]
+								m_vMaxBounds = [ 2.0, 2.0, 2.0 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_4_1.001"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_4_1.001"
+								m_vMinBounds = [ -2.923185, 7.431503, -5.287378 ]
+								m_vMaxBounds = [ 7.572323, 11.780891, 1.263256 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_4_2.001"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_4_2.001"
+								m_vMinBounds = [ -5.961342, 0.790543, -12.009059 ]
+								m_vMaxBounds = [ 5.589363, 9.33046, 5.65521 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_3_3.001"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_3_3.001"
+								m_vMinBounds = [ -1.709141, 0.797462, -10.293327 ]
+								m_vMaxBounds = [ 7.75325, 12.415253, 9.634171 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_3_4"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_3_4"
+								m_vMinBounds = [ -8.020977, 1.442398, -2.217808 ]
+								m_vMaxBounds = [ 9.716156, 12.017601, 10.682323 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_4_5"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_4_5"
+								m_vMinBounds = [ -25.140202, 1.824837, 0.961639 ]
+								m_vMaxBounds = [ 10.230667, 4.425713, 3.917595 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_4_7"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_4_7"
+								m_vMinBounds = [ -10.218639, 1.865509, 0.993698 ]
+								m_vMaxBounds = [ 5.423391, 4.475838, 3.91642 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_3_8"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_3_8"
+								m_vMinBounds = [ -9.720219, 1.444992, -2.35421 ]
+								m_vMaxBounds = [ 7.995159, 11.879356, 10.594217 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_3_9"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_3_9"
+								m_vMinBounds = [ -8.003483, 0.79464, -10.259607 ]
+								m_vMaxBounds = [ 1.420322, 12.416626, 9.676786 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_4_10"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_4_10"
+								m_vMinBounds = [ -5.477764, 1.277802, -12.057466 ]
+								m_vMaxBounds = [ 5.962879, 9.903725, 5.640433 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_4_11"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_4_11"
+								m_vMinBounds = [ -7.566353, 7.421883, -5.22081 ]
+								m_vMaxBounds = [ 2.935116, 11.776886, 1.308182 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "wuqi"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "wuqi"
+								m_vMinBounds = [ -30.997766, -135.433685, -5.687427 ]
+								m_vMaxBounds = [ 30.997782, 135.433807, 5.687222 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "肩.L"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "肩.L"
+								m_vMinBounds = [ -8.078876, -2.331249, -5.633621 ]
+								m_vMaxBounds = [ 9.435513, 11.732372, 6.254547 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_4_1"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_4_1"
+								m_vMinBounds = [ -2.0, -2.0, -2.0 ]
+								m_vMaxBounds = [ 2.0, 2.0, 2.0 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_3_2"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_3_2"
+								m_vMinBounds = [ -2.0, -2.0, -2.0 ]
+								m_vMaxBounds = [ 2.0, 2.0, 2.0 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_1_3"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_1_3"
+								m_vMinBounds = [ -2.0, -2.0, -2.0 ]
+								m_vMaxBounds = [ 2.0, 2.0, 2.0 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_5_1.001"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_5_1.001"
+								m_vMinBounds = [ -2.0, -2.0, -2.0 ]
+								m_vMaxBounds = [ 2.0, 2.0, 2.0 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_5_2.001"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_5_2.001"
+								m_vMinBounds = [ -2.407173, 4.420654, -6.480794 ]
+								m_vMaxBounds = [ 5.607292, 10.250748, 8.019092 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_4_3.001"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_4_3.001"
+								m_vMinBounds = [ -1.88797, -0.164764, -8.058268 ]
+								m_vMaxBounds = [ 4.248539, 3.154518, 8.139633 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_4_4"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_4_4"
+								m_vMinBounds = [ -9.834217, 0.390259, -2.429504 ]
+								m_vMaxBounds = [ 5.7593, 3.760368, 8.222164 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_5_5"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_5_5"
+								m_vMinBounds = [ -29.536617, 5.706474, -0.001026 ]
+								m_vMaxBounds = [ 11.781779, 8.631279, 3.379013 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_5_7"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_5_7"
+								m_vMinBounds = [ -11.778557, 5.956223, 0.012856 ]
+								m_vMaxBounds = [ 4.957941, 8.682274, 3.384239 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_4_8"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_4_8"
+								m_vMinBounds = [ -5.814491, 0.374641, -2.370886 ]
+								m_vMaxBounds = [ 9.769287, 3.738815, 8.305428 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_4_9"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_4_9"
+								m_vMinBounds = [ -4.412868, -0.128586, -8.019844 ]
+								m_vMaxBounds = [ 1.811455, 3.157578, 8.182562 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_5_10"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_5_10"
+								m_vMinBounds = [ -5.577583, 4.937592, -6.518515 ]
+								m_vMaxBounds = [ 2.382759, 10.77018, 8.019636 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_5_11"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_5_11"
+								m_vMinBounds = [ -2.0, -2.0, -2.0 ]
+								m_vMaxBounds = [ 2.0, 2.0, 2.0 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "武器2"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "武器2"
+								m_vMinBounds = [ -36.458069, -8.046539, 5.170973 ]
+								m_vMaxBounds = [ 36.458122, -8.046524, 5.281939 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "腕.L"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "腕.L"
+								m_vMinBounds = [ -9.643433, -4.124481, -10.256287 ]
+								m_vMaxBounds = [ 10.912415, 29.339508, 13.45298 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "首"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "首"
+								m_vMinBounds = [ -4.791019, -0.253098, -7.356487 ]
+								m_vMaxBounds = [ 4.79089, 7.752029, 4.913406 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_5_1"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_5_1"
+								m_vMinBounds = [ -2.0, -2.0, -2.0 ]
+								m_vMaxBounds = [ 2.0, 2.0, 2.0 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_5_2"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_5_2"
+								m_vMinBounds = [ -2.0, -2.0, -2.0 ]
+								m_vMaxBounds = [ 2.0, 2.0, 2.0 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_3_3"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_3_3"
+								m_vMinBounds = [ -2.0, -2.0, -2.0 ]
+								m_vMaxBounds = [ 2.0, 2.0, 2.0 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_6_1.001"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_6_1.001"
+								m_vMinBounds = [ -2.0, -2.0, -2.0 ]
+								m_vMaxBounds = [ 2.0, 2.0, 2.0 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_6_2.001"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_6_2.001"
+								m_vMinBounds = [ 3.420612, 8.514618, -2.884362 ]
+								m_vMaxBounds = [ 5.812828, 10.376198, 8.212317 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_5_3.001"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_5_3.001"
+								m_vMinBounds = [ -1.204697, 3.81601, -8.224697 ]
+								m_vMaxBounds = [ 3.678951, 4.181114, 5.727987 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_5_4"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_5_4"
+								m_vMinBounds = [ -9.827187, 4.437813, -2.848245 ]
+								m_vMaxBounds = [ 4.987206, 5.425667, 8.346123 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_6_5"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_6_5"
+								m_vMinBounds = [ 5.169714, 10.001976, -1.007263 ]
+								m_vMaxBounds = [ 13.504557, 11.400352, 2.811226 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_6_7"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_6_7"
+								m_vMinBounds = [ -13.502754, 10.050613, -0.993574 ]
+								m_vMaxBounds = [ -5.16436, 11.448608, 2.817305 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_5_8"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_5_8"
+								m_vMinBounds = [ -5.06694, 4.443489, -2.740606 ]
+								m_vMaxBounds = [ 9.739433, 5.415756, 8.465744 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_5_9"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_5_9"
+								m_vMinBounds = [ -3.406319, 3.759308, -8.296577 ]
+								m_vMaxBounds = [ 1.437981, 4.123024, 5.670882 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_6_10"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_6_10"
+								m_vMinBounds = [ -5.797726, 9.02739, -2.87861 ]
+								m_vMaxBounds = [ -3.425232, 10.904259, 8.220163 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_6_11"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_6_11"
+								m_vMinBounds = [ -2.0, -2.0, -2.0 ]
+								m_vMaxBounds = [ 2.0, 2.0, 2.0 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "武器_0_0"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "武器_0_0"
+								m_vMinBounds = [ 0.391586, 10.527679, -5.006099 ]
+								m_vMaxBounds = [ 0.409019, 22.434555, -4.895434 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "武器_0_1"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "武器_0_1"
+								m_vMinBounds = [ -26.153748, 10.500122, -5.006454 ]
+								m_vMaxBounds = [ 10.336845, 22.506882, -4.895487 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "武器_0_2"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "武器_0_2"
+								m_vMinBounds = [ -32.166718, 10.527939, -5.007054 ]
+								m_vMaxBounds = [ 0.185158, 22.527481, -5.006965 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "武器_0_3"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "武器_0_3"
+								m_vMinBounds = [ 0.635178, 10.528076, -5.007202 ]
+								m_vMaxBounds = [ 0.639297, 22.434967, -5.007034 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "武器_0_4"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "武器_0_4"
+								m_vMinBounds = [ -9.516724, 10.52861, -5.006297 ]
+								m_vMaxBounds = [ -0.387466, 22.440964, -5.006257 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "頭"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "頭"
+								m_vMinBounds = [ -12.339403, -17.334839, -14.485471 ]
+								m_vMaxBounds = [ 12.339338, 33.65596, 15.721066 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "尻尾１"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "尻尾１"
+								m_vMinBounds = [ -14.431864, -0.105442, -14.443474 ]
+								m_vMaxBounds = [ 14.431644, 35.510834, 14.103577 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_6_1"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_6_1"
+								m_vMinBounds = [ -16.256615, 7.44783, -2.085043 ]
+								m_vMaxBounds = [ 0.749512, 7.847946, 0.766829 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_6_2"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_6_2"
+								m_vMinBounds = [ -2.0, -2.0, -2.0 ]
+								m_vMaxBounds = [ 2.0, 2.0, 2.0 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_4_3"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_4_3"
+								m_vMinBounds = [ -2.0, -2.0, -2.0 ]
+								m_vMaxBounds = [ 2.0, 2.0, 2.0 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_7_1.001"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_7_1.001"
+								m_vMinBounds = [ 0.896282, 3.502426, -1.77075 ]
+								m_vMaxBounds = [ 9.976282, 10.807579, 2.161551 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_7_2.001"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_7_2.001"
+								m_vMinBounds = [ -11.835876, 1.942612, -10.92293 ]
+								m_vMaxBounds = [ 4.680977, 13.190109, 8.417681 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_6_3.001"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_6_3.001"
+								m_vMinBounds = [ -1.629105, 7.82312, -8.386808 ]
+								m_vMaxBounds = [ 3.075844, 8.186005, 5.628557 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_6_4"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_6_4"
+								m_vMinBounds = [ -9.694271, 8.522034, -3.465016 ]
+								m_vMaxBounds = [ 5.311176, 9.697464, 8.253876 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_7_5"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_7_5"
+								m_vMinBounds = [ -33.783913, -2.645996, 0.024078 ]
+								m_vMaxBounds = [ -4.299923, 0.459335, 2.879169 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_7_7"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_7_7"
+								m_vMinBounds = [ -2.0, -2.0, -2.0 ]
+								m_vMaxBounds = [ 2.0, 2.0, 2.0 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_6_8"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_6_8"
+								m_vMinBounds = [ -5.303352, 8.514893, -3.472582 ]
+								m_vMaxBounds = [ 9.691273, 9.70681, 8.258492 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_6_9"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_6_9"
+								m_vMinBounds = [ -3.059517, 7.829163, -8.394275 ]
+								m_vMaxBounds = [ 1.593094, 8.191605, 5.638371 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_7_10"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_7_10"
+								m_vMinBounds = [ -4.631771, 2.463959, -10.983763 ]
+								m_vMaxBounds = [ 11.791473, 13.708904, 8.436819 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_7_11"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_7_11"
+								m_vMinBounds = [ -9.726429, 3.269417, -1.807344 ]
+								m_vMaxBounds = [ -0.805088, 10.792809, 2.07633 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "武器_1_0"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "武器_1_0"
+								m_vMinBounds = [ 0.400085, 7.852066, -4.886962 ]
+								m_vMaxBounds = [ 0.409042, 19.759003, -4.781106 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "武器_1_1"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "武器_1_1"
+								m_vMinBounds = [ -26.190956, 7.743027, -5.005659 ]
+								m_vMaxBounds = [ 10.315712, 19.799454, -4.783691 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "武器_1_2"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "武器_1_2"
+								m_vMinBounds = [ -32.17836, 7.75708, -5.005919 ]
+								m_vMaxBounds = [ 0.173973, 19.757874, -5.004162 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "武器_1_3"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "武器_1_3"
+								m_vMinBounds = [ 0.64592, 7.849838, -5.00633 ]
+								m_vMaxBounds = [ 0.653809, 19.756714, -5.004926 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "武器_1_4"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "武器_1_4"
+								m_vMinBounds = [ -9.497101, 7.850616, -5.005636 ]
+								m_vMaxBounds = [ -0.35968, 19.769196, -5.004614 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "手首.L"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "手首.L"
+								m_vMinBounds = [ -5.860596, -0.758446, -9.184479 ]
+								m_vMaxBounds = [ 3.489685, 15.898758, 3.440536 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "后发"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "后发"
+								m_vMinBounds = [ -10.304806, -1.042404, -4.124115 ]
+								m_vMaxBounds = [ 10.304806, 1.042343, 4.124249 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "足.R"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "足.R"
+								m_vMinBounds = [ -9.91007, -5.269302, -14.124474 ]
+								m_vMaxBounds = [ 10.671438, 63.592743, 13.878075 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "足.L"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "足.L"
+								m_vMinBounds = [ -10.671568, -5.269302, -14.124475 ]
+								m_vMaxBounds = [ 9.910006, 63.592743, 13.878071 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "尻尾2"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "尻尾2"
+								m_vMinBounds = [ -16.505449, -3.718275, -17.014225 ]
+								m_vMaxBounds = [ 16.505262, 60.798935, 16.480366 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_8_1"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_8_1"
+								m_vMinBounds = [ -17.980045, 5.584839, -1.927464 ]
+								m_vMaxBounds = [ -3.57449, 5.92527, 0.702799 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_8_2"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_8_2"
+								m_vMinBounds = [ 5.440102, 6.882935, -0.985689 ]
+								m_vMaxBounds = [ 19.975163, 8.052277, 0.399551 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_6_3"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_6_3"
+								m_vMinBounds = [ -2.0, -2.0, -2.0 ]
+								m_vMaxBounds = [ 2.0, 2.0, 2.0 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_8_1.001"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_8_1.001"
+								m_vMinBounds = [ -2.0, -2.0, -2.0 ]
+								m_vMaxBounds = [ 2.0, 2.0, 2.0 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_8_2.001"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_8_2.001"
+								m_vMinBounds = [ -2.835011, 1.042732, -5.994978 ]
+								m_vMaxBounds = [ 5.990673, 7.132744, 1.716372 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_7_3.001"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_7_3.001"
+								m_vMinBounds = [ -1.828407, 12.482319, -1.883377 ]
+								m_vMaxBounds = [ 1.180637, 12.621628, 5.591044 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_7_4"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_7_4"
+								m_vMinBounds = [ -2.0, -2.0, -2.0 ]
+								m_vMaxBounds = [ 2.0, 2.0, 2.0 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_8_5"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_8_5"
+								m_vMinBounds = [ -37.996361, 2.557106, -2.350958 ]
+								m_vMaxBounds = [ 14.607388, 7.34502, 2.332272 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_8_7"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_8_7"
+								m_vMinBounds = [ -14.607487, 2.612183, -2.334372 ]
+								m_vMaxBounds = [ 3.871656, 7.394283, 2.327734 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_7_8"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_7_8"
+								m_vMinBounds = [ -2.0, -2.0, -2.0 ]
+								m_vMaxBounds = [ 2.0, 2.0, 2.0 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_7_9"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_7_9"
+								m_vMinBounds = [ -1.179489, 12.477421, -1.886482 ]
+								m_vMaxBounds = [ 1.802338, 12.620056, 5.598769 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_8_10"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_8_10"
+								m_vMinBounds = [ -5.980267, 1.562981, -6.01423 ]
+								m_vMaxBounds = [ 2.808056, 7.651535, 1.740894 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_8_11"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_8_11"
+								m_vMinBounds = [ -2.0, -2.0, -2.0 ]
+								m_vMaxBounds = [ 2.0, 2.0, 2.0 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "人指１.R"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "人指１.R"
+								m_vMinBounds = [ -0.98777, 3.12941, -1.091057 ]
+								m_vMaxBounds = [ 1.159973, 4.151886, 1.229897 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "中指１.R"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "中指１.R"
+								m_vMinBounds = [ -1.187469, 4.171463, -0.916885 ]
+								m_vMaxBounds = [ 1.302307, 4.797234, 1.087929 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "薬指１.R"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "薬指１.R"
+								m_vMinBounds = [ -0.895493, 2.660835, -0.950081 ]
+								m_vMaxBounds = [ 1.1064, 3.357018, 0.850426 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "小指１.R"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "小指１.R"
+								m_vMinBounds = [ -0.931435, 2.661957, -0.093811 ]
+								m_vMaxBounds = [ 0.025543, 3.310104, 0.834633 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "武器_2_0"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "武器_2_0"
+								m_vMinBounds = [ 0.374596, 5.187195, -4.978539 ]
+								m_vMaxBounds = [ 0.389442, 19.055557, -4.823517 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "武器_2_1"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "武器_2_1"
+								m_vMinBounds = [ -26.202766, 5.140488, -5.002829 ]
+								m_vMaxBounds = [ 10.297897, 19.121536, -4.889538 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "武器_2_2"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "武器_2_2"
+								m_vMinBounds = [ -32.199646, 5.173828, -4.997695 ]
+								m_vMaxBounds = [ 0.119347, 19.045227, -4.982938 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "武器_2_3"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "武器_2_3"
+								m_vMinBounds = [ 0.640289, 5.176468, -4.999032 ]
+								m_vMaxBounds = [ 0.653381, 19.045242, -4.985376 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "武器_2_4"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "武器_2_4"
+								m_vMinBounds = [ -9.532913, 5.141891, -5.003319 ]
+								m_vMaxBounds = [ -0.367279, 19.039246, -5.001402 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "人指１.L"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "人指１.L"
+								m_vMinBounds = [ -1.16011, 3.129425, -1.091156 ]
+								m_vMaxBounds = [ 0.987686, 4.151909, 1.229767 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "中指１.L"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "中指１.L"
+								m_vMinBounds = [ -1.302399, 4.171494, -0.916988 ]
+								m_vMaxBounds = [ 1.187325, 4.797249, 1.087845 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "薬指１.L"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "薬指１.L"
+								m_vMinBounds = [ -1.106476, 2.660858, -0.950165 ]
+								m_vMaxBounds = [ 0.895447, 3.35704, 0.850342 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "小指１.L"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "小指１.L"
+								m_vMinBounds = [ -0.539055, 2.355377, -0.594566 ]
+								m_vMaxBounds = [ 0.931335, 3.31012, 0.834534 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "后发1"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "后发1"
+								m_vMinBounds = [ -11.066736, -0.444351, -1.821068 ]
+								m_vMaxBounds = [ 11.066736, 0.091736, 3.604473 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "ひざ.R"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "ひざ.R"
+								m_vMinBounds = [ -6.145885, 0.680534, -7.489483 ]
+								m_vMaxBounds = [ 6.129408, 64.496391, 13.380432 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "ひざ.L"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "ひざ.L"
+								m_vMinBounds = [ -6.129536, 0.680519, -7.489487 ]
+								m_vMaxBounds = [ 6.145826, 64.496384, 13.380424 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "尻尾3"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "尻尾3"
+								m_vMinBounds = [ -20.128597, -2.611115, -20.546303 ]
+								m_vMaxBounds = [ 20.128368, 40.266792, 19.783287 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_8_0"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_8_0"
+								m_vMinBounds = [ -2.0, -2.0, -2.0 ]
+								m_vMaxBounds = [ 2.0, 2.0, 2.0 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_9_1"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_9_1"
+								m_vMinBounds = [ -2.0, -2.0, -2.0 ]
+								m_vMaxBounds = [ 2.0, 2.0, 2.0 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_9_2"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_9_2"
+								m_vMinBounds = [ -2.0, -2.0, -2.0 ]
+								m_vMaxBounds = [ 2.0, 2.0, 2.0 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_8_3"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_8_3"
+								m_vMinBounds = [ -2.0, -2.0, -2.0 ]
+								m_vMaxBounds = [ 2.0, 2.0, 2.0 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_9_1.001"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_9_1.001"
+								m_vMinBounds = [ 1.545324, 4.52747, -1.98785 ]
+								m_vMaxBounds = [ 12.461056, 13.503616, 3.080057 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_9_2.001"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_9_2.001"
+								m_vMinBounds = [ -12.594574, 2.331062, -11.222709 ]
+								m_vMaxBounds = [ 6.433876, 12.338326, 8.582002 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_8_3.001"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_8_3.001"
+								m_vMinBounds = [ -2.0, -2.0, -2.0 ]
+								m_vMaxBounds = [ 2.0, 2.0, 2.0 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_8_4"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_8_4"
+								m_vMinBounds = [ -9.60936, 1.676022, 4.259954 ]
+								m_vMaxBounds = [ -1.166409, 3.021271, 7.610025 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_9_5"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_9_5"
+								m_vMinBounds = [ 8.036392, 7.62899, -3.737467 ]
+								m_vMaxBounds = [ 15.866512, 10.254131, 0.138813 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_9_7"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_9_7"
+								m_vMinBounds = [ -15.860043, 7.684578, -3.728523 ]
+								m_vMaxBounds = [ -8.025135, 10.307178, 0.139702 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_8_8"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_8_8"
+								m_vMinBounds = [ 1.133183, 1.665661, 4.299648 ]
+								m_vMaxBounds = [ 9.570282, 3.014145, 7.663143 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_8_9"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_8_9"
+								m_vMinBounds = [ -2.0, -2.0, -2.0 ]
+								m_vMaxBounds = [ 2.0, 2.0, 2.0 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_9_10"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_9_10"
+								m_vMinBounds = [ -6.425125, 2.850399, -11.288707 ]
+								m_vMaxBounds = [ 12.539082, 12.859383, 8.601977 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_0_10"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_0_10"
+								m_vMinBounds = [ -3.418434, 1.763474, -8.288752 ]
+								m_vMaxBounds = [ 2.799259, 12.968246, 7.223817 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_9_11"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_9_11"
+								m_vMinBounds = [ -12.504448, 4.516006, -1.969099 ]
+								m_vMaxBounds = [ -1.619299, 13.54483, 3.070763 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "親指０.R"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "親指０.R"
+								m_vMinBounds = [ -1.83316, -0.596237, -1.852932 ]
+								m_vMaxBounds = [ 1.618942, 4.830269, 2.11327 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "人指２.R"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "人指２.R"
+								m_vMinBounds = [ -1.039673, -0.050705, -1.094906 ]
+								m_vMaxBounds = [ 1.210152, 3.800781, 1.104273 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "中指２.R"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "中指２.R"
+								m_vMinBounds = [ -1.208199, 0.119598, -0.97924 ]
+								m_vMaxBounds = [ 1.364876, 3.497818, 1.073687 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "薬指２.R"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "薬指２.R"
+								m_vMinBounds = [ -1.043373, -0.028496, -0.920834 ]
+								m_vMaxBounds = [ 1.105217, 3.606163, 0.838642 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "小指２.R"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "小指２.R"
+								m_vMinBounds = [ -0.867386, -0.014618, -0.840805 ]
+								m_vMaxBounds = [ 0.940056, 3.738113, 0.91128 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "武器_3_0"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "武器_3_0"
+								m_vMinBounds = [ -1.987473, 5.317383, -4.721654 ]
+								m_vMaxBounds = [ 2.730019, 26.389946, -4.675232 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "武器_3_1"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "武器_3_1"
+								m_vMinBounds = [ -26.166817, 5.197662, -4.99911 ]
+								m_vMaxBounds = [ 10.290894, 26.383331, -4.777083 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "武器_3_2"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "武器_3_2"
+								m_vMinBounds = [ -32.198944, 5.311081, -4.970781 ]
+								m_vMaxBounds = [ 0.906746, 26.388458, -4.779521 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "武器_3_3"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "武器_3_3"
+								m_vMinBounds = [ -0.171997, 5.310944, -4.973783 ]
+								m_vMaxBounds = [ 29.191925, 26.406273, -4.782633 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "武器_3_4"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "武器_3_4"
+								m_vMinBounds = [ -9.546692, 5.271454, -5.000045 ]
+								m_vMaxBounds = [ 24.585762, 26.379631, -4.821104 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "親指０.L"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "親指０.L"
+								m_vMinBounds = [ -1.619034, -0.596176, -1.85297 ]
+								m_vMaxBounds = [ 1.832993, 4.830299, 2.113213 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "人指２.L"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "人指２.L"
+								m_vMinBounds = [ -1.210312, -0.050644, -1.094994 ]
+								m_vMaxBounds = [ 1.039597, 3.800827, 1.104186 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "中指２.L"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "中指２.L"
+								m_vMinBounds = [ -1.364975, 0.119644, -0.979317 ]
+								m_vMaxBounds = [ 1.208031, 3.497849, 1.073605 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "薬指２.L"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "薬指２.L"
+								m_vMinBounds = [ -1.105316, -0.028427, -0.920925 ]
+								m_vMaxBounds = [ 1.043289, 3.606209, 0.838531 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "小指２.L"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "小指２.L"
+								m_vMinBounds = [ -0.940193, -0.014587, -0.840881 ]
+								m_vMaxBounds = [ 0.867256, 3.738159, 0.9112 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "后发2"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "后发2"
+								m_vMinBounds = [ -12.401965, -2.484253, -1.516924 ]
+								m_vMaxBounds = [ 12.4019, -0.002731, 3.394726 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "足首.R"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "足首.R"
+								m_vMinBounds = [ -8.062599, -7.19398, -1.569159 ]
+								m_vMaxBounds = [ 5.228058, 36.10503, 23.699175 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "足首.L"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "足首.L"
+								m_vMinBounds = [ -5.228118, -7.193971, -1.569159 ]
+								m_vMaxBounds = [ 8.062468, 36.105034, 23.699175 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "尻尾4"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "尻尾4"
+								m_vMinBounds = [ -12.507023, 9.845856, -12.554131 ]
+								m_vMaxBounds = [ 12.506859, 42.50354, 12.604416 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_9_0"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_9_0"
+								m_vMinBounds = [ -2.0, -2.0, -2.0 ]
+								m_vMaxBounds = [ 2.0, 2.0, 2.0 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_10_1"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_10_1"
+								m_vMinBounds = [ -2.0, -2.0, -2.0 ]
+								m_vMaxBounds = [ 2.0, 2.0, 2.0 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_10_2"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_10_2"
+								m_vMinBounds = [ -2.0, -2.0, -2.0 ]
+								m_vMaxBounds = [ 2.0, 2.0, 2.0 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_9_3"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_9_3"
+								m_vMinBounds = [ -2.0, -2.0, -2.0 ]
+								m_vMaxBounds = [ 2.0, 2.0, 2.0 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_0_0.001"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_0_0.001"
+								m_vMinBounds = [ -7.54147, -11.188339, -0.354916 ]
+								m_vMaxBounds = [ 7.479732, -5.579254, 1.347411 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_10_1.001"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_10_1.001"
+								m_vMinBounds = [ -2.0, -2.0, -2.0 ]
+								m_vMaxBounds = [ 2.0, 2.0, 2.0 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_10_2.001"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_10_2.001"
+								m_vMinBounds = [ -2.0, -2.0, -2.0 ]
+								m_vMaxBounds = [ 2.0, 2.0, 2.0 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_9_3.001"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_9_3.001"
+								m_vMinBounds = [ -1.70039, 4.60265, -8.52952 ]
+								m_vMaxBounds = [ 2.555889, 4.961086, 5.629168 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_9_4"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_9_4"
+								m_vMinBounds = [ -9.335804, 5.2589, -5.037155 ]
+								m_vMaxBounds = [ 6.09417, 8.795109, 6.858269 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_10_5"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_10_5"
+								m_vMinBounds = [ -42.070496, -1.721081, -1.538317 ]
+								m_vMaxBounds = [ -3.268707, 1.817684, 1.638233 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_0_6"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_0_6"
+								m_vMinBounds = [ -7.388635, -11.960007, -1.658747 ]
+								m_vMaxBounds = [ 7.503665, -3.213684, 4.744349 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_10_7"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_10_7"
+								m_vMinBounds = [ -2.0, -2.0, -2.0 ]
+								m_vMaxBounds = [ 2.0, 2.0, 2.0 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_9_8"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_9_8"
+								m_vMinBounds = [ -6.124218, 5.251156, -4.996128 ]
+								m_vMaxBounds = [ 9.289993, 8.791721, 6.918434 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_9_9"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_9_9"
+								m_vMinBounds = [ -2.529324, 4.599705, -8.537935 ]
+								m_vMaxBounds = [ 1.676109, 4.958298, 5.635923 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_10_10"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_10_10"
+								m_vMinBounds = [ -2.0, -2.0, -2.0 ]
+								m_vMaxBounds = [ 2.0, 2.0, 2.0 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_1_10"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_1_10"
+								m_vMinBounds = [ -3.981762, -5.260788, 0.369081 ]
+								m_vMaxBounds = [ 4.598333, 1.227814, 8.535048 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "スカート_10_11"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "スカート_10_11"
+								m_vMinBounds = [ -2.0, -2.0, -2.0 ]
+								m_vMaxBounds = [ 2.0, 2.0, 2.0 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "親指１.R"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "親指１.R"
+								m_vMinBounds = [ -1.149727, -0.051788, -1.081968 ]
+								m_vMaxBounds = [ 1.14505, 4.132614, 1.173256 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "人指３.R"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "人指３.R"
+								m_vMinBounds = [ -0.997452, -1.225746, -1.665909 ]
+								m_vMaxBounds = [ 1.363869, 2.065804, 1.028839 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "中指３.R"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "中指３.R"
+								m_vMinBounds = [ -0.824989, -1.129395, -2.471893 ]
+								m_vMaxBounds = [ 1.94725, 2.609802, 0.737946 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "薬指３.R"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "薬指３.R"
+								m_vMinBounds = [ -0.932213, -1.142315, -1.904053 ]
+								m_vMaxBounds = [ 1.765648, 2.460972, 0.571762 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "小指３.R"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "小指３.R"
+								m_vMinBounds = [ -0.963638, -1.057632, -1.280991 ]
+								m_vMaxBounds = [ 1.359444, 1.750282, 0.646973 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "武器_4_0"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "武器_4_0"
+								m_vMinBounds = [ -2.043686, 6.888603, -4.81463 ]
+								m_vMaxBounds = [ 2.717728, 34.99157, -4.703951 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "武器_4_1"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "武器_4_1"
+								m_vMinBounds = [ -23.878731, 6.908592, -4.820207 ]
+								m_vMaxBounds = [ 0.862579, 35.096313, -4.817941 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "武器_4_2"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "武器_4_2"
+								m_vMinBounds = [ -28.506462, 6.854042, -4.797538 ]
+								m_vMaxBounds = [ 0.893631, 35.004639, -4.783015 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "武器_4_3"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "武器_4_3"
+								m_vMinBounds = [ -0.168274, 6.89119, -4.804954 ]
+								m_vMaxBounds = [ 29.193993, 35.002289, -4.786973 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "武器_4_4"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "武器_4_4"
+								m_vMinBounds = [ -0.097153, 6.910522, -4.820959 ]
+								m_vMaxBounds = [ 24.57653, 35.038986, -4.820389 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "袖子1.R"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "袖子1.R"
+								m_vMinBounds = [ -19.322365, -8.857315, -12.801378 ]
+								m_vMaxBounds = [ 12.636852, 68.890747, 9.088995 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "親指１.L"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "親指１.L"
+								m_vMinBounds = [ -1.145149, -0.051727, -1.082042 ]
+								m_vMaxBounds = [ 1.149551, 4.132675, 1.173192 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "人指３.L"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "人指３.L"
+								m_vMinBounds = [ -1.363869, -1.225853, -1.666077 ]
+								m_vMaxBounds = [ 0.997459, 2.065739, 1.028687 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "中指３.L"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "中指３.L"
+								m_vMinBounds = [ -1.947281, -1.129509, -2.472076 ]
+								m_vMaxBounds = [ 0.824951, 2.609741, 0.737778 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "薬指３.L"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "薬指３.L"
+								m_vMinBounds = [ -1.765656, -1.142395, -1.90419 ]
+								m_vMaxBounds = [ 0.932205, 2.460949, 0.571655 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "小指３.L"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "小指３.L"
+								m_vMinBounds = [ -1.359474, -1.05777, -1.281128 ]
+								m_vMaxBounds = [ 0.9636, 1.750198, 0.646805 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "袖子1.L"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "袖子1.L"
+								m_vMinBounds = [ -12.625637, -8.856155, -12.802098 ]
+								m_vMaxBounds = [ 19.328499, 68.889191, 9.088012 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "耳1.L"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "耳1.L"
+								m_vMinBounds = [ -3.484734, -3.724609, -4.324303 ]
+								m_vMaxBounds = [ 3.137321, 8.451309, 4.793701 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "耳1.R"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "耳1.R"
+								m_vMinBounds = [ -3.055351, -3.660156, -4.261787 ]
+								m_vMaxBounds = [ 3.520161, 8.48967, 4.883293 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "后发3"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "后发3"
+								m_vMinBounds = [ -14.389122, -1.658539, -5.51152 ]
+								m_vMaxBounds = [ 11.870445, 7.735428, 4.708511 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "前发1.L"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "前发1.L"
+								m_vMinBounds = [ -4.190024, -7.063461, -9.312675 ]
+								m_vMaxBounds = [ 2.728379, 17.156616, 5.239555 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "前发1.R"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "前发1.R"
+								m_vMinBounds = [ -2.728446, -7.060715, -9.313118 ]
+								m_vMaxBounds = [ 4.189892, 17.155136, 5.2407 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+						]
+					},
+				]
+				m_AutoCreateSetName = ""
+			}
+		},
+	]
+	m_pAttachmentLists = 
+	[
+		{
+			m_pObject = 
+			{
+				m_name = ""
+				m_attachments = 
+				[
+					{
+						m_name = "attach_hitloc"
+						m_influences = 
+						[
+							{
+								m_influenceName = "上半身2"
+								m_vTranslationOffset = [ 0.0, 0.0, 0.0 ]
+								m_vRotationOffset = [ 0.0, 0.0, 0.0 ]
+								m_flWeight = 1.0
+								m_bRoot = false
+							},
+						]
+					},
+					{
+						m_name = "attach_attack1"
+						m_influences = 
+						[
+							{
+								m_influenceName = "武器2"
+								m_vTranslationOffset = [ 0.0, -55.364685, 0.00001 ]
+								m_vRotationOffset = [ -0.00001, 0.000005, 0.000003 ]
+								m_flWeight = 1.0
+								m_bRoot = false
+							},
+						]
+					},
+					{
+						m_name = "attach_attack2"
+						m_influences = 
+						[
+							{
+								m_influenceName = "武器2"
+								m_vTranslationOffset = [ 0.0, 0.0, 0.0 ]
+								m_vRotationOffset = [ 0.0, 0.0, 0.0 ]
+								m_flWeight = 1.0
+								m_bRoot = false
+							},
+						]
+					},
+					{
+						m_name = "follow_origin"
+						m_influences = 
+						[
+							{
+								m_influenceName = "全ての親"
+								m_vTranslationOffset = [ 0.0, 0.0, 0.0 ]
+								m_vRotationOffset = [ 0.0, 0.0, 0.0 ]
+								m_flWeight = 1.0
+								m_bRoot = false
+							},
+						]
+					},
+					{
+						m_name = "attach_wing"
+						m_influences = 
+						[
+							{
+								m_influenceName = "上半身2"
+								m_vTranslationOffset = [ -0.000001, 7.381226, -13.215389 ]
+								m_vRotationOffset = [ 100.0, -180.0, 180.0 ]
+								m_flWeight = 1.0
+								m_bRoot = false
+							},
+						]
+					},
+					{
+						m_name = "attach_weapon_effect"
+						m_influences = 
+						[
+							{
+								m_influenceName = "wuqi"
+								m_vTranslationOffset = [ 0.0, 111.114929, -0.000038 ]
+								m_vRotationOffset = [ 89.994095, 0.000014, 0.000002 ]
+								m_flWeight = 1.0
+								m_bRoot = false
+							},
+						]
+					},
+				]
+			}
+		},
+	]
+	m_pAnimGroup = 
+	{
+		m_pObject = 
+		{
+			m_Name = ""
+			m_pBoneFlagList = 
+			{
+				m_pObject = null
+			}
+			m_pSeqGroup = 
+			{
+				m_pObject = null
+			}
+			m_pAnimGroups = [  ]
+			m_Vanim = 
+			[
+				{
+					m_Animationname = "humei_die"
+					m_Filepath = "models/heroes/avalon_assets/models/heroes/Realm_Of_Chaos/humei/humei_die.fbx"
+					m_nStartframe = 35
+					m_nEndframe = 135
+					m_flFps = 30.0
+					m_Loop = 
+					{
+						m_bLoop = false
+						m_bSmoothLoop = false
+						m_nSmoothLoopStart = 0
+						m_nSmoothLoopEnd = 0
+						m_StartLoop = 
+						{
+							_class = "CVAnimCmdStartLoop"
+							m_bEnabled = false
+							m_nLoopRestart = 0
+						}
+					}
+					m_bHidden = false
+					m_bDisable = false
+					m_Activities = 
+					[
+						{
+							m_Name = "ACT_DOTA_DIE"
+							m_nWeight = 1
+						},
+					]
+					m_AnimationEvents = [  ]
+					m_MotionFrames = [  ]
+					m_pIkRules = [  ]
+					m_pAlignAnimation = null
+					m_adjustAnimation = 
+					{
+						m_translation = [ 0.0, 0.0, 0.0 ]
+						m_rotation = [ 0.0, 0.0, 0.0 ]
+					}
+					m_Keywords = [  ]
+					m_sequenceParams = 
+					{
+						m_flFadeInTime = 0.2
+						m_flFadeOutTime = 0.2
+					}
+					m_folderName = ""
+					m_MotionFramesRootBone = ""
+				},
+				{
+					m_Animationname = "humei_disabled"
+					m_Filepath = "models/heroes/avalon_assets/models/heroes/Realm_Of_Chaos/humei/humei.fbx"
+					m_nStartframe = 50
+					m_nEndframe = 105
+					m_flFps = 30.0
+					m_Loop = 
+					{
+						m_bLoop = true
+						m_bSmoothLoop = false
+						m_nSmoothLoopStart = 0
+						m_nSmoothLoopEnd = 0
+						m_StartLoop = 
+						{
+							_class = "CVAnimCmdStartLoop"
+							m_bEnabled = false
+							m_nLoopRestart = 0
+						}
+					}
+					m_bHidden = false
+					m_bDisable = false
+					m_Activities = 
+					[
+						{
+							m_Name = "ACT_DOTA_DISABLED"
+							m_nWeight = 1
+						},
+					]
+					m_AnimationEvents = [  ]
+					m_MotionFrames = [  ]
+					m_pIkRules = [  ]
+					m_pAlignAnimation = null
+					m_adjustAnimation = 
+					{
+						m_translation = [ 0.0, 0.0, 0.0 ]
+						m_rotation = [ 0.0, 0.0, 0.0 ]
+					}
+					m_Keywords = [  ]
+					m_sequenceParams = 
+					{
+						m_flFadeInTime = 0.2
+						m_flFadeOutTime = 0.2
+					}
+					m_folderName = ""
+					m_MotionFramesRootBone = ""
+				},
+				{
+					m_Animationname = "humei_idle"
+					m_Filepath = "models/heroes/avalon_assets/models/heroes/Realm_Of_Chaos/humei/humei.fbx"
+					m_nStartframe = 495
+					m_nEndframe = 615
+					m_flFps = 30.0
+					m_Loop = 
+					{
+						m_bLoop = true
+						m_bSmoothLoop = false
+						m_nSmoothLoopStart = 0
+						m_nSmoothLoopEnd = 0
+						m_StartLoop = 
+						{
+							_class = "CVAnimCmdStartLoop"
+							m_bEnabled = false
+							m_nLoopRestart = 0
+						}
+					}
+					m_bHidden = false
+					m_bDisable = false
+					m_Activities = 
+					[
+						{
+							m_Name = "ACT_DOTA_IDLE"
+							m_nWeight = 1
+						},
+					]
+					m_AnimationEvents = [  ]
+					m_MotionFrames = [  ]
+					m_pIkRules = [  ]
+					m_pAlignAnimation = null
+					m_adjustAnimation = 
+					{
+						m_translation = [ 0.0, 0.0, 0.0 ]
+						m_rotation = [ 0.0, 0.0, 0.0 ]
+					}
+					m_Keywords = [  ]
+					m_sequenceParams = 
+					{
+						m_flFadeInTime = 0.2
+						m_flFadeOutTime = 0.2
+					}
+					m_folderName = ""
+					m_MotionFramesRootBone = ""
+				},
+				{
+					m_Animationname = "humei_run1"
+					m_Filepath = "models/heroes/avalon_assets/models/heroes/Realm_Of_Chaos/humei/humei_run1.fbx"
+					m_nStartframe = 145
+					m_nEndframe = 165
+					m_flFps = 30.0
+					m_Loop = 
+					{
+						m_bLoop = true
+						m_bSmoothLoop = false
+						m_nSmoothLoopStart = 0
+						m_nSmoothLoopEnd = 0
+						m_StartLoop = 
+						{
+							_class = "CVAnimCmdStartLoop"
+							m_bEnabled = false
+							m_nLoopRestart = 0
+						}
+					}
+					m_bHidden = false
+					m_bDisable = false
+					m_Activities = 
+					[
+						{
+							m_Name = "ACT_DOTA_RUN"
+							m_nWeight = 1
+						},
+					]
+					m_AnimationEvents = [  ]
+					m_MotionFrames = [  ]
+					m_pIkRules = [  ]
+					m_pAlignAnimation = null
+					m_adjustAnimation = 
+					{
+						m_translation = [ 0.0, 0.0, 0.0 ]
+						m_rotation = [ 0.0, 0.0, 0.0 ]
+					}
+					m_Keywords = [  ]
+					m_sequenceParams = 
+					{
+						m_flFadeInTime = 0.2
+						m_flFadeOutTime = 0.2
+					}
+					m_folderName = ""
+					m_MotionFramesRootBone = ""
+				},
+				{
+					m_Animationname = "humei_run2"
+					m_Filepath = "models/heroes/avalon_assets/models/heroes/Realm_Of_Chaos/humei/humei_run2.fbx"
+					m_nStartframe = 21
+					m_nEndframe = 69
+					m_flFps = 30.0
+					m_Loop = 
+					{
+						m_bLoop = true
+						m_bSmoothLoop = false
+						m_nSmoothLoopStart = 0
+						m_nSmoothLoopEnd = 0
+						m_StartLoop = 
+						{
+							_class = "CVAnimCmdStartLoop"
+							m_bEnabled = false
+							m_nLoopRestart = 0
+						}
+					}
+					m_bHidden = false
+					m_bDisable = false
+					m_Activities = 
+					[
+						{
+							m_Name = "ACT_DOTA_RUN"
+							m_nWeight = 1
+						},
+						{
+							m_Name = "high"
+							m_nWeight = 1
+						},
+					]
+					m_AnimationEvents = [  ]
+					m_MotionFrames = [  ]
+					m_pIkRules = [  ]
+					m_pAlignAnimation = null
+					m_adjustAnimation = 
+					{
+						m_translation = [ 0.0, 0.0, 0.0 ]
+						m_rotation = [ 0.0, 0.0, 0.0 ]
+					}
+					m_Keywords = [  ]
+					m_sequenceParams = 
+					{
+						m_flFadeInTime = 0.2
+						m_flFadeOutTime = 0.2
+					}
+					m_folderName = ""
+					m_MotionFramesRootBone = ""
+				},
+				{
+					m_Animationname = "humei_attack1"
+					m_Filepath = "models/heroes/avalon_assets/models/heroes/Realm_Of_Chaos/humei/humei.fbx"
+					m_nStartframe = 770
+					m_nEndframe = 805
+					m_flFps = 30.0
+					m_Loop = 
+					{
+						m_bLoop = false
+						m_bSmoothLoop = false
+						m_nSmoothLoopStart = 0
+						m_nSmoothLoopEnd = 0
+						m_StartLoop = 
+						{
+							_class = "CVAnimCmdStartLoop"
+							m_bEnabled = false
+							m_nLoopRestart = 0
+						}
+					}
+					m_bHidden = false
+					m_bDisable = false
+					m_Activities = 
+					[
+						{
+							m_Name = "ACT_DOTA_ATTACK"
+							m_nWeight = 1
+						},
+					]
+					m_AnimationEvents = [  ]
+					m_MotionFrames = [  ]
+					m_pIkRules = [  ]
+					m_pAlignAnimation = null
+					m_adjustAnimation = 
+					{
+						m_translation = [ 0.0, 0.0, 0.0 ]
+						m_rotation = [ 0.0, 0.0, 0.0 ]
+					}
+					m_Keywords = [  ]
+					m_sequenceParams = 
+					{
+						m_flFadeInTime = 0.2
+						m_flFadeOutTime = 0.2
+					}
+					m_folderName = ""
+					m_MotionFramesRootBone = ""
+				},
+				{
+					m_Animationname = "humei_attack2"
+					m_Filepath = "models/heroes/avalon_assets/models/heroes/Realm_Of_Chaos/humei/humei.fbx"
+					m_nStartframe = 870
+					m_nEndframe = 905
+					m_flFps = 30.0
+					m_Loop = 
+					{
+						m_bLoop = false
+						m_bSmoothLoop = false
+						m_nSmoothLoopStart = 0
+						m_nSmoothLoopEnd = 0
+						m_StartLoop = 
+						{
+							_class = "CVAnimCmdStartLoop"
+							m_bEnabled = false
+							m_nLoopRestart = 0
+						}
+					}
+					m_bHidden = false
+					m_bDisable = false
+					m_Activities = 
+					[
+						{
+							m_Name = "ACT_DOTA_ATTACK"
+							m_nWeight = 1
+						},
+					]
+					m_AnimationEvents = [  ]
+					m_MotionFrames = [  ]
+					m_pIkRules = [  ]
+					m_pAlignAnimation = null
+					m_adjustAnimation = 
+					{
+						m_translation = [ 0.0, 0.0, 0.0 ]
+						m_rotation = [ 0.0, 0.0, 0.0 ]
+					}
+					m_Keywords = [  ]
+					m_sequenceParams = 
+					{
+						m_flFadeInTime = 0.2
+						m_flFadeOutTime = 0.2
+					}
+					m_folderName = ""
+					m_MotionFramesRootBone = ""
+				},
+				{
+					m_Animationname = "humei_cast1"
+					m_Filepath = "models/heroes/avalon_assets/models/heroes/Realm_Of_Chaos/humei/humei_cast.fbx"
+					m_nStartframe = 70
+					m_nEndframe = 105
+					m_flFps = 30.0
+					m_Loop = 
+					{
+						m_bLoop = false
+						m_bSmoothLoop = false
+						m_nSmoothLoopStart = 0
+						m_nSmoothLoopEnd = 0
+						m_StartLoop = 
+						{
+							_class = "CVAnimCmdStartLoop"
+							m_bEnabled = false
+							m_nLoopRestart = 0
+						}
+					}
+					m_bHidden = false
+					m_bDisable = false
+					m_Activities = 
+					[
+						{
+							m_Name = "ACT_DOTA_CAST_ABILITY_1"
+							m_nWeight = 1
+						},
+					]
+					m_AnimationEvents = [  ]
+					m_MotionFrames = [  ]
+					m_pIkRules = [  ]
+					m_pAlignAnimation = null
+					m_adjustAnimation = 
+					{
+						m_translation = [ 0.0, 0.0, 0.0 ]
+						m_rotation = [ 0.0, 0.0, 0.0 ]
+					}
+					m_Keywords = [  ]
+					m_sequenceParams = 
+					{
+						m_flFadeInTime = 0.2
+						m_flFadeOutTime = 0.2
+					}
+					m_folderName = ""
+					m_MotionFramesRootBone = ""
+				},
+				{
+					m_Animationname = "humei_cast2"
+					m_Filepath = "models/heroes/avalon_assets/models/heroes/Realm_Of_Chaos/humei/humei_cast.fbx"
+					m_nStartframe = 970
+					m_nEndframe = 1005
+					m_flFps = 30.0
+					m_Loop = 
+					{
+						m_bLoop = false
+						m_bSmoothLoop = false
+						m_nSmoothLoopStart = 0
+						m_nSmoothLoopEnd = 0
+						m_StartLoop = 
+						{
+							_class = "CVAnimCmdStartLoop"
+							m_bEnabled = false
+							m_nLoopRestart = 0
+						}
+					}
+					m_bHidden = false
+					m_bDisable = false
+					m_Activities = 
+					[
+						{
+							m_Name = "ACT_DOTA_CAST_ABILITY_2"
+							m_nWeight = 1
+						},
+					]
+					m_AnimationEvents = [  ]
+					m_MotionFrames = [  ]
+					m_pIkRules = [  ]
+					m_pAlignAnimation = null
+					m_adjustAnimation = 
+					{
+						m_translation = [ 0.0, 0.0, 0.0 ]
+						m_rotation = [ 0.0, 0.0, 0.0 ]
+					}
+					m_Keywords = [  ]
+					m_sequenceParams = 
+					{
+						m_flFadeInTime = 0.2
+						m_flFadeOutTime = 0.2
+					}
+					m_folderName = ""
+					m_MotionFramesRootBone = ""
+				},
+				{
+					m_Animationname = "humei_cast3"
+					m_Filepath = "models/heroes/avalon_assets/models/heroes/Realm_Of_Chaos/humei/humei_cast.fbx"
+					m_nStartframe = 595
+					m_nEndframe = 625
+					m_flFps = 30.0
+					m_Loop = 
+					{
+						m_bLoop = false
+						m_bSmoothLoop = false
+						m_nSmoothLoopStart = 0
+						m_nSmoothLoopEnd = 0
+						m_StartLoop = 
+						{
+							_class = "CVAnimCmdStartLoop"
+							m_bEnabled = false
+							m_nLoopRestart = 0
+						}
+					}
+					m_bHidden = false
+					m_bDisable = false
+					m_Activities = 
+					[
+						{
+							m_Name = "ACT_DOTA_CAST_ABILITY_3"
+							m_nWeight = 1
+						},
+					]
+					m_AnimationEvents = [  ]
+					m_MotionFrames = [  ]
+					m_pIkRules = [  ]
+					m_pAlignAnimation = null
+					m_adjustAnimation = 
+					{
+						m_translation = [ 0.0, 0.0, 0.0 ]
+						m_rotation = [ 0.0, 0.0, 0.0 ]
+					}
+					m_Keywords = [  ]
+					m_sequenceParams = 
+					{
+						m_flFadeInTime = 0.2
+						m_flFadeOutTime = 0.2
+					}
+					m_folderName = ""
+					m_MotionFramesRootBone = ""
+				},
+				{
+					m_Animationname = "humei_cast4"
+					m_Filepath = "models/heroes/avalon_assets/models/heroes/Realm_Of_Chaos/humei/humei_cast.fbx"
+					m_nStartframe = 225
+					m_nEndframe = 345
+					m_flFps = 30.0
+					m_Loop = 
+					{
+						m_bLoop = false
+						m_bSmoothLoop = false
+						m_nSmoothLoopStart = 0
+						m_nSmoothLoopEnd = 0
+						m_StartLoop = 
+						{
+							_class = "CVAnimCmdStartLoop"
+							m_bEnabled = false
+							m_nLoopRestart = 0
+						}
+					}
+					m_bHidden = false
+					m_bDisable = false
+					m_Activities = 
+					[
+						{
+							m_Name = "ACT_DOTA_CAST_ABILITY_4"
+							m_nWeight = 1
+						},
+					]
+					m_AnimationEvents = [  ]
+					m_MotionFrames = [  ]
+					m_pIkRules = [  ]
+					m_pAlignAnimation = null
+					m_adjustAnimation = 
+					{
+						m_translation = [ 0.0, 0.0, 0.0 ]
+						m_rotation = [ 0.0, 0.0, 0.0 ]
+					}
+					m_Keywords = [  ]
+					m_sequenceParams = 
+					{
+						m_flFadeInTime = 0.2
+						m_flFadeOutTime = 0.2
+					}
+					m_folderName = ""
+					m_MotionFramesRootBone = ""
+				},
+				{
+					m_Animationname = "humei_jump_start"
+					m_Filepath = "models/heroes/avalon_assets/models/heroes/Realm_Of_Chaos/humei/humei2.fbx"
+					m_nStartframe = 105
+					m_nEndframe = 119
+					m_flFps = 30.0
+					m_Loop = 
+					{
+						m_bLoop = false
+						m_bSmoothLoop = false
+						m_nSmoothLoopStart = 0
+						m_nSmoothLoopEnd = 0
+						m_StartLoop = 
+						{
+							_class = "CVAnimCmdStartLoop"
+							m_bEnabled = false
+							m_nLoopRestart = 0
+						}
+					}
+					m_bHidden = false
+					m_bDisable = false
+					m_Activities = 
+					[
+						{
+							m_Name = "ACT_JUMP_AUTOGUN"
+							m_nWeight = 1
+						},
+					]
+					m_AnimationEvents = [  ]
+					m_MotionFrames = [  ]
+					m_pIkRules = [  ]
+					m_pAlignAnimation = null
+					m_adjustAnimation = 
+					{
+						m_translation = [ 0.0, 0.0, 0.0 ]
+						m_rotation = [ 0.0, 0.0, 0.0 ]
+					}
+					m_Keywords = [  ]
+					m_sequenceParams = 
+					{
+						m_flFadeInTime = 0.2
+						m_flFadeOutTime = 0.2
+					}
+					m_folderName = ""
+					m_MotionFramesRootBone = ""
+				},
+				{
+					m_Animationname = "humei_jump"
+					m_Filepath = "models/heroes/avalon_assets/models/heroes/Realm_Of_Chaos/humei/humei2.fbx"
+					m_nStartframe = 165
+					m_nEndframe = 285
+					m_flFps = 30.0
+					m_Loop = 
+					{
+						m_bLoop = false
+						m_bSmoothLoop = false
+						m_nSmoothLoopStart = 0
+						m_nSmoothLoopEnd = 0
+						m_StartLoop = 
+						{
+							_class = "CVAnimCmdStartLoop"
+							m_bEnabled = false
+							m_nLoopRestart = 0
+						}
+					}
+					m_bHidden = false
+					m_bDisable = false
+					m_Activities = 
+					[
+						{
+							m_Name = "ACT_JUMP"
+							m_nWeight = 1
+						},
+					]
+					m_AnimationEvents = [  ]
+					m_MotionFrames = [  ]
+					m_pIkRules = [  ]
+					m_pAlignAnimation = null
+					m_adjustAnimation = 
+					{
+						m_translation = [ 0.0, 0.0, 0.0 ]
+						m_rotation = [ 0.0, 0.0, 0.0 ]
+					}
+					m_Keywords = [  ]
+					m_sequenceParams = 
+					{
+						m_flFadeInTime = 0.2
+						m_flFadeOutTime = 0.2
+					}
+					m_folderName = ""
+					m_MotionFramesRootBone = ""
+				},
+				{
+					m_Animationname = "humei_jump_end"
+					m_Filepath = "models/heroes/avalon_assets/models/heroes/Realm_Of_Chaos/humei/humei2.fbx"
+					m_nStartframe = 285
+					m_nEndframe = 325
+					m_flFps = 30.0
+					m_Loop = 
+					{
+						m_bLoop = false
+						m_bSmoothLoop = false
+						m_nSmoothLoopStart = 0
+						m_nSmoothLoopEnd = 0
+						m_StartLoop = 
+						{
+							_class = "CVAnimCmdStartLoop"
+							m_bEnabled = false
+							m_nLoopRestart = 0
+						}
+					}
+					m_bHidden = false
+					m_bDisable = false
+					m_Activities = 
+					[
+						{
+							m_Name = "ACT_JUMP_DUAL"
+							m_nWeight = 1
+						},
+					]
+					m_AnimationEvents = [  ]
+					m_MotionFrames = [  ]
+					m_pIkRules = [  ]
+					m_pAlignAnimation = null
+					m_adjustAnimation = 
+					{
+						m_translation = [ 0.0, 0.0, 0.0 ]
+						m_rotation = [ 0.0, 0.0, 0.0 ]
+					}
+					m_Keywords = [  ]
+					m_sequenceParams = 
+					{
+						m_flFadeInTime = 0.2
+						m_flFadeOutTime = 0.2
+					}
+					m_folderName = ""
+					m_MotionFramesRootBone = ""
+				},
+				{
+					m_Animationname = "humei_dodge"
+					m_Filepath = "models/heroes/avalon_assets/models/heroes/Realm_Of_Chaos/humei/humei2.fbx"
+					m_nStartframe = 375
+					m_nEndframe = 395
+					m_flFps = 30.0
+					m_Loop = 
+					{
+						m_bLoop = false
+						m_bSmoothLoop = false
+						m_nSmoothLoopStart = 0
+						m_nSmoothLoopEnd = 0
+						m_StartLoop = 
+						{
+							_class = "CVAnimCmdStartLoop"
+							m_bEnabled = false
+							m_nLoopRestart = 0
+						}
+					}
+					m_bHidden = false
+					m_bDisable = false
+					m_Activities = 
+					[
+						{
+							m_Name = "ACT_GLIDE"
+							m_nWeight = 1
+						},
+					]
+					m_AnimationEvents = [  ]
+					m_MotionFrames = [  ]
+					m_pIkRules = [  ]
+					m_pAlignAnimation = null
+					m_adjustAnimation = 
+					{
+						m_translation = [ 0.0, 0.0, 0.0 ]
+						m_rotation = [ 0.0, 0.0, 0.0 ]
+					}
+					m_Keywords = [  ]
+					m_sequenceParams = 
+					{
+						m_flFadeInTime = 0.2
+						m_flFadeOutTime = 0.2
+					}
+					m_folderName = ""
+					m_MotionFramesRootBone = ""
+				},
+				{
+					m_Animationname = "humei_dodge_hop"
+					m_Filepath = "models/heroes/avalon_assets/models/heroes/Realm_Of_Chaos/humei/humei2.fbx"
+					m_nStartframe = 385
+					m_nEndframe = 385
+					m_flFps = 30.0
+					m_Loop = 
+					{
+						m_bLoop = false
+						m_bSmoothLoop = false
+						m_nSmoothLoopStart = 0
+						m_nSmoothLoopEnd = 0
+						m_StartLoop = 
+						{
+							_class = "CVAnimCmdStartLoop"
+							m_bEnabled = false
+							m_nLoopRestart = 0
+						}
+					}
+					m_bHidden = false
+					m_bDisable = false
+					m_Activities = 
+					[
+						{
+							m_Name = "ACT_HOP"
+							m_nWeight = 1
+						},
+					]
+					m_AnimationEvents = [  ]
+					m_MotionFrames = [  ]
+					m_pIkRules = [  ]
+					m_pAlignAnimation = null
+					m_adjustAnimation = 
+					{
+						m_translation = [ 0.0, 0.0, 0.0 ]
+						m_rotation = [ 0.0, 0.0, 0.0 ]
+					}
+					m_Keywords = [  ]
+					m_sequenceParams = 
+					{
+						m_flFadeInTime = 0.2
+						m_flFadeOutTime = 0.2
+					}
+					m_folderName = ""
+					m_MotionFramesRootBone = ""
+				},
+			]
+			m_sScripts = [  ]
+			m_folderNames = [  ]
+			m_sCompileScripts = [  ]
+			m_pActivityWhiteList = 
+			{
+				m_pObject = null
+			}
+		}
+	}
+	m_pMaterialGroupList = 
+	{
+		m_pObject = null
+	}
+	m_pMeshGroupList = 
+	{
+		m_pObject = null
+	}
+	m_pLodGroupList = 
+	{
+		m_pObject = null
+	}
+	m_pPropBreakableList = 
+	{
+		m_pObject = null
+	}
+	m_pPropDataList = 
+	{
+		m_pObject = null
+	}
+	m_pConstraintLists = [  ]
+	m_collision = ""
+	m_softbody = ""
+	m_sMDLFilename = ""
+	m_sOffsetHitboxSets = [  ]
+	m_vHitboxSetOffset = [ 0.0, 0.0, 0.0 ]
+	m_scriptFiles = [  ]
+	m_pMaterialRemapList = 
+	{
+		m_vMaterialRemapList = 
+		[
+			{
+				m_sSearchMaterial = "wuqi.vmat"
+				m_sReplaceMaterial = "materials/avalon_assets/models/heroes/humei/weapon.vmat"
+			},
+			{
+				m_sSearchMaterial = "wuqi2.vmat"
+				m_sReplaceMaterial = "materials/avalon_assets/models/heroes/humei/weapon.vmat"
+			},
+			{
+				m_sSearchMaterial = "shenti.vmat"
+				m_sReplaceMaterial = "materials/avalon_assets/models/heroes/humei/colormap.vmat"
+			},
+			{
+				m_sSearchMaterial = "toufa.vmat"
+				m_sReplaceMaterial = "materials/avalon_assets/models/heroes/humei/colormap.vmat"
+			},
+			{
+				m_sSearchMaterial = "shouer.vmat"
+				m_sReplaceMaterial = "materials/avalon_assets/models/heroes/humei/colormap.vmat"
+			},
+			{
+				m_sSearchMaterial = "xiuzi.vmat"
+				m_sReplaceMaterial = "materials/avalon_assets/models/heroes/humei/colormap.vmat"
+			},
+			{
+				m_sSearchMaterial = "qunzi.vmat"
+				m_sReplaceMaterial = "materials/avalon_assets/models/heroes/humei/colormap.vmat"
+			},
+			{
+				m_sSearchMaterial = "qianqun.vmat"
+				m_sReplaceMaterial = "materials/avalon_assets/models/heroes/humei/colormap.vmat"
+			},
+			{
+				m_sSearchMaterial = "piaodai.vmat"
+				m_sReplaceMaterial = "materials/avalon_assets/models/heroes/humei/colormap.vmat"
+			},
+			{
+				m_sSearchMaterial = "weiba.vmat"
+				m_sReplaceMaterial = "materials/avalon_assets/models/heroes/humei/colormap.vmat"
+			},
+		]
+	}
+	m_flFbxScale = 1.0
+	m_flQCScale = 1.0
+	m_vOrigin = [ 0.0, 0.0, 0.0 ]
+	m_bEmbedAnimsInAnimGroup = false
+	m_pPsfList = null
+	m_keyValueText = ""
+	m_bStaticProp = false
+	m_bEnableClothProcessing = true
+	m_flClothEnableThreshold = 0.05
+	m_nMaxClothVertsPerMesh = 2048
+	m_bBuildClothBoneHierarchy = false
+	m_nNavType = "AUTH_NAV_MESH"
+	m_bMakeUniqueVMeshes = false
+	m_bMakeImplicitBindPoseSequence = false
+	m_bAdjustSkeletonFromBoneFlags = false
+	m_bHiddenAssetFlag = false
+	m_pAnimGroups = [  ]
+}

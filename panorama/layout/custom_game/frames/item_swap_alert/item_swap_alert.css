@@ -1,0 +1,74 @@
+.Root{
+	width: 100%;
+	height: 100%;
+}
+
+#SwapDialogList{
+	flow-children: down;
+	margin-bottom: 200px;
+	margin-right: 360px;
+	vertical-align: bottom;
+	horizontal-align: right;
+	max-height: 568px;
+	overflow: clip;
+}
+
+.swap-item-mini-frame{
+	width: 300px;
+	border: 2px solid #999;
+	background-color: #222222EE;
+	flow-children: down;
+	margin-top: 10px;
+}
+
+#swap-item, #current-item{
+	width: 64px;
+	height: 64px;
+	box-shadow: #FFBC12 0px 0px 4px;
+}
+
+#button-list{
+	width: 100%;
+	flow-children: right;
+}
+
+#button-list Button{
+	padding: 6px 0px;
+	width: fill-parent-flow(1);
+	horizontal-align: center;
+}
+
+#button-list Button:hover{
+	background-color: #555;
+}
+
+#button-list Button Label{
+	width: 100%;
+	text-align: center;
+	color: #fff;
+}
+
+#button-yes{
+	background-color: #005C28;
+}
+#button-no{
+	background-color: #5C0F00;
+}
+#button-cancel{
+	background-color: #00385D;
+}
+
+.itemBox {
+	flow-children: right;
+	margin-left:30px;
+}
+
+#RightArrow {
+	background-image: url("file://{images}/control_icons/arrow_solid_right.png");
+	background-repeat: no-repeat;
+	background-size: 15px 30px;
+	background-position: center;
+	wash-color: #666;
+	width: 60px;
+	height: 100%;
+}

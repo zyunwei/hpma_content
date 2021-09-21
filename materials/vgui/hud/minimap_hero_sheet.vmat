@@ -1,0 +1,9 @@
+Layer0
+{
+	shader "ui.vfx"
+
+	F_STENCIL_MASKING 1
+
+	//---- Color ----
+	Texture "materials/vgui/hud/minimap_hero_sheet.psd"
+}

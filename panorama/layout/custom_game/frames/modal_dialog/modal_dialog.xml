@@ -1,0 +1,48 @@
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/dotastyles.css" />
+		<include src="file://{resources}/styles/custom_game/avalon.css" />
+		<include src="file://{resources}/layout/custom_game/frames/modal_dialog/modal_dialog.css" />
+	</styles>
+	<scripts>
+		<include src="file://{resources}/layout/custom_game/frames/modal_dialog/modal_dialog.js" />
+	</scripts>
+	<snippets>
+		<snippet name="NormalButton">
+			<Button class="btn">
+				<Label text="Yes" />
+			</Button>
+		</snippet>
+	</snippets>
+	<Panel hittest="false" class="Root" >
+		<Panel id="ModalDialogFrame" onactivate="OnClose()">
+			
+			<!-- 通用对话框 -->
+			<Panel id="CommonDialog" class="dialog">
+				<Panel id="CommonDialogContent" class="dialog-content" >
+					<Label id="CommonDialogTitle" html="true" text="" />
+					<Label id="CommonDialogText" html="true" text="" />
+				</Panel>
+				<Panel id="CommonDialogButtonList" >
+				</Panel>
+				<Panel class="dialog-close" onactivate="OnClose()" >
+					<Panel class="icon"/>
+				</Panel>
+			</Panel>
+
+			<!-- 通用对话框 -->
+			<Panel id="CommonForLuaDialog" class="dialog">
+				<Panel id="CommonForLuaDialogContent" class="dialog-content" >
+					<Label id="CommonForLuaDialogTitle" html="true" text="" />
+					<Label id="CommonForLuaDialogText" html="true" text="" />
+				</Panel>
+				<Panel id="CommonForLuaDialogButtonList" >
+				</Panel>
+				<Panel class="dialog-close" onactivate="OnClose()" >
+					<Panel class="icon"/>
+				</Panel>
+			</Panel>
+			
+		</Panel>
+	</Panel>
+</root>

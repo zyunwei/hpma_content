@@ -1,0 +1,270 @@
+.ComposeFrameRoot{
+	width: 100%;
+	height: 100%;
+}
+
+#ComposeFrame{
+	border: 2px solid #666;
+	flow-children: down;
+	background-color: #222;
+	opacity: 0;
+	transform: translateY(100px);
+	
+	horizontal-align: right;
+	vertical-align: bottom;
+	margin-right: 355px;
+	margin-bottom: 200px;
+
+	transition-property: opacity,transform;
+	transition-duration: 0.2s;
+}
+
+#ComposeFrame.show{
+	opacity: 1;
+	transform: translateY(0px);
+	sound: "CustomGameUI.OpenFrame";
+}
+
+#TopBar{
+	width: 100%;
+	border-bottom: 2px solid #666;
+}
+
+#TopBar Label{
+	color: #fff;
+	width: 100%;
+	text-align: center;
+}
+
+#Content{
+	padding: 10px;
+	min-height: 300px;
+}
+
+#KindList{
+	min-width: 100px;
+	border: 1px solid #666;
+	flow-children: down;
+}
+
+#KindList .top-bar{
+	width: 100%;
+	border-bottom: 1px solid #666;
+}
+
+#KindList .top-bar Label{
+	color: #fff;
+	width: 100%;
+	text-align: center;
+}
+
+.kind-btn{
+	width: 100%;
+}
+
+.kind-btn:hover{
+	background-color: #444;
+}
+
+.kind-btn:selected{
+	background-color: #555;
+}
+
+.kind-btn{
+	width: 100%;
+	padding: 5px 0px;
+}
+
+.kind-btn Label{
+	width: 100%;
+	text-align: center;
+	margin-left: 0px;
+}
+
+.kind-btn .RadioBox{
+	visibility: collapse;
+}
+
+#ComposeItemPanel{
+	min-width: 100px;
+	flow-children: down;
+	margin-left: 10px;
+}
+
+#ComposeItemListPanel{
+	flow-children: right;
+}
+
+#ComposeItemList{
+	flow-children: down;
+	margin-top: 8px;
+	vertical-align: middle;
+}
+
+#LeftArrow,
+#RightArrow{
+	width: 20px;
+	height: 170px;
+	border: 1px solid #fff;
+	vertical-align: middle;
+
+	transition-property: wash-color;
+	transition-duration: 0.2s;
+}
+#LeftArrow:hover,
+#RightArrow:hover{
+	wash-color: #999;
+}
+
+#LeftArrow{
+	background-image: url("file://{images}/control_icons/arrow_solid_left.png");
+	background-repeat: no-repeat;
+	background-size: 15px 30px;
+	background-position: center;
+	wash-color: #666;
+	margin-right: 8px;
+}
+
+#RightArrow{
+	background-image: url("file://{images}/control_icons/arrow_solid_right.png");
+	background-repeat: no-repeat;
+	background-size: 15px 30px;
+	background-position: center;
+	wash-color: #666;
+}
+
+.compose-item{
+	width: 200px;
+	margin-right: 8px;
+	margin-bottom: 8px;
+	background-color: #333;
+	vertical-align: middle;
+	box-shadow: #666 0px 0px 4px;
+	overflow: clip;
+
+	transition-property: box-shadow;
+	transition-duration: 0.2s;
+}
+
+.compose-item #item-img{
+	width: 50px;
+	height: width-percentage(100%);
+	background-image: url("file://{images}/custom_game/emptyitembg.png");
+}
+
+.compose-item #item-name{
+	color: #fff;
+	vertical-align: middle;
+	margin-left: 5px;
+}
+
+.compose-item.selected{
+	box-shadow: #fff 0px 0px 6px;
+}
+
+#ComposeRequireItemListPanel{
+	flow-children: down;
+}
+
+#ComposeRequireItemList{
+	flow-children: right;
+}
+
+#ComposeRequireItemList .item{
+	margin-top: 8px;
+	margin-right: 8px;
+	background-color: #333;
+	vertical-align: middle;
+	/*box-shadow: #900 0px 0px 4px;*/
+	border: 2px solid #900;
+	overflow: clip;
+	saturation: 0.7;
+	brightness: 0.7;
+	wash-color: #AAA;
+
+	transition-property: box-shadow;
+	transition-duration: 0.2s;
+}
+
+#ComposeRequireItemList .item #count{
+	color: #8FE7FF;
+	horizontal-align: right;
+	vertical-align: bottom;
+	text-shadow: #000 0px 0px 5px 5.0;
+}
+
+#ComposeRequireItemList .item.has-item{
+	box-shadow: inset #090A 0px 0px 10px;
+	border: 2px solid #0C0;
+	saturation: 1.0;
+	brightness: 1.0;
+	wash-color: #FFF;
+}
+
+#ComposeRequireItemList #item-img{
+	width: 50px;
+	height: width-percentage(100%);
+}
+
+#Buttons{
+	flow-children: right;
+	margin-top: 10px;
+	width:80%;
+	horizontal-align: middle;
+}
+
+#PurchaseButton{
+	width: 150px;
+	height: 30px;
+	background-color: #444;
+	horizontal-align: middle;
+	border-radius: 20px;
+	padding: 0px;
+	flow-children: none;
+	box-shadow: #888 0px 0px 2px;
+	visibility: collapse;
+}
+
+#PurchaseButton Label{
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+	horizontal-align: middle;
+	vertical-align: middle;
+	color: #fff;
+	text-shadow: #000 0px 0px 2px 2.0;
+}
+
+#PurchaseButton:hover {
+	background-color: #666;
+}
+
+#CloseButton {
+	width: 150px;
+	height:30px;
+	background-color: #444;
+	horizontal-align: middle;
+	border-radius: 20px;
+	padding: 0px;
+	box-shadow: #888 0px 0px 2px;
+}
+
+#CloseButton:hover {
+	background-color: #666;
+}
+
+#CloseButton Label {
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	text-align: center;
+	horizontal-align: middle;
+	vertical-align: middle;
+	color: #fff;
+	text-shadow: #000 0px 0px 2px 2.0;
+}
+
+#tooltip{
+	width: 100%;
+	height: 100%;
+}

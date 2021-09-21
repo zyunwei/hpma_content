@@ -1,0 +1,71 @@
+// THIS FILE IS AUTO-GENERATED
+
+Layer0
+{
+	shader "hero.vfx"
+
+	//---- 2-Sided Rendering ----
+	F_RENDER_BACKFACES 1
+
+	//---- Masks ----
+	F_MASKS_1 1
+	F_MASKS_2 1
+
+	//---- Blend To Full ----
+	g_flEnvMapBlendToFull "0.000"
+	g_flMetalnessBlendToFull "0.000"
+	g_flReflectionsTintByBaseBlendToNone "0.000"
+	g_flSelfIllumBlendToFull "0.000"
+	g_flSpecularBlendToFull "0.000"
+	g_flSpecularExponentBlendToFull "0.000"
+
+	//---- Cloak ----
+	g_flCloakBlurAmount "0.005"
+	g_flCloakIntensity "0.850"
+	g_flCloakRefractAmount "0.100"
+	g_flMaterialCloakFactor "0.000"
+	g_vCloakColorTint "[1.000 1.000 1.000]"
+
+	//---- Color ----
+	g_flDiffuseModulationAmount "1.000"
+	g_flTexCoordRotation "0.000"
+	g_vTexCoordOffset "[0.000 0.000]"
+	g_vTexCoordScale "[1.000 1.000]"
+	TextureColor "materials/avalon_assets/models/heroes/muyue/muyue.tga"
+
+	//---- Fresnel ----
+	g_flFresnelModulatesAlpha "0.000"
+	TextureFresnelWarpColor "materials/default/default_fresnelwarpcolor.tga"
+	TextureFresnelWarpRim "materials/default/default_fresnelwarprim.tga"
+	TextureFresnelWarpSpec "materials/default/default_fresnelwarpspec.tga"
+
+	//---- Lighting ----
+	g_flAmbientScale "0.300"
+	g_flBloomScale "0.400"
+	g_flBloomShift "1.000"
+	g_vBloomColor "[0.952941 0.635294 0.047059 0.000000]"
+
+	//---- Mask 1 ----
+	TextureDetailMask "materials/default/default_detailmask.tga"
+	TextureDiffuseWarpMask "materials/default/default_diffusemask.tga"
+	TextureMetalnessMask "materials/avalon_assets/models/heroes/muyue/muyue_matalness_mask.tga"
+	TextureSelfIllumMask "materials/avalon_assets/models/heroes/muyue/muyue_self_illumination_mask.tga"
+
+	//---- Mask 2 ----
+	TextureRimMask "materials/avalon_assets/models/heroes/muyue/muyue_rim_mask.tga"
+	TextureSpecularExponent "[0.600000 0.600000 0.600000 0.000000]"
+	TextureSpecularMask "materials/avalon_assets/models/heroes/muyue/muyue_specular_mask.tga"
+	TextureTintByBaseMask "materials/avalon_assets/models/heroes/muyue/muyue_basetint_mask.tga"
+
+	//---- Normal Map ----
+	TextureNormal "materials/avalon_assets/models/heroes/muyue/muyue_normal.tga"
+
+	//---- Rim ----
+	g_flRimLightScale "3.000"
+	g_vRimLightColor "[0.937255 0.400000 0.113725 0.000000]"
+
+	//---- Specular ----
+	g_flSpecularExponent "25.000"
+	g_flSpecularScale "8.000"
+	g_vSpecularColor "[0.764706 0.576471 0.294118 1.000000]"
+}

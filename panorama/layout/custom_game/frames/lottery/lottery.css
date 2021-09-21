@@ -1,0 +1,568 @@
+.XXWarStoreRoot{
+	width: 100%;
+	height: 100%;
+}
+
+#XXWarLotteryFrame{
+	horizontal-align: middle;
+	vertical-align: middle;
+	opacity: 0;
+	transform: translate3d(1200px,900px,0px) scale3d(0.4,0.4,1);
+
+	transition-property: opacity, transform;
+	transition-duration: 0.3s;
+}
+
+#XXWarLotteryFrame.show{
+	opacity: 1;
+	transform: rotateX(0deg) translateY(0px);
+}
+
+#Tier0{
+	z-index: 2;
+	horizontal-align: middle;
+	overflow: noclip;
+}
+
+#Tier1{
+	z-index: 1;
+	margin-top: 20px;
+	horizontal-align: middle;
+}
+
+#Topbar{
+	width: 675px;
+	margin-top: 15px;
+	flow-children: right;
+}
+#Topbar .Left{
+	width: 60px;
+	height: 30px;
+	background-image: url("file://{resources}/images/custom_game/npc_frame/topbar_a.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+#Topbar .Middle{
+	width: fill-parent-flow(1);
+	height: 30px;
+	background-image: url("file://{resources}/images/custom_game/npc_frame/topbar_b.png");
+	background-size: 100%;
+}
+
+#Topbar .Right{
+	width: 60px;
+	height: 30px;
+	background-image: url("file://{resources}/images/custom_game/npc_frame/topbar_c.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+#TitleBar{
+	width: 200px;
+	horizontal-align: center;
+}
+
+#TitleBar Label{
+	width: 100%;
+	text-align: center;
+	vertical-align: middle;
+	color: #fff;
+	text-shadow: #112e4e 0px 0px 4px 2.0;
+}
+
+#TitleBar .Left{
+	width: 36px;
+	height: 42px;
+	background-image: url("file://{resources}/images/custom_game/npc_frame/npc_name_a.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+#TitleBar .Middle{
+	width: fill-parent-flow(1);
+	height: 42px;
+	background-image: url("file://{resources}/images/custom_game/npc_frame/npc_name_b.png");
+	background-size: 100%;
+}
+
+#TitleBar .Right{
+	width: 36px;
+	height: 42px;
+	background-image: url("file://{resources}/images/custom_game/npc_frame/npc_name_c.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+/*---------------------------------------------------------------------*/
+.spinner {
+	horizontal-align: middle;
+	vertical-align: middle;
+	flow-children: down;
+
+	animation-name: sk-rotate;
+	animation-duration: 2.0s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+#Loading{
+	width: 128px;
+	height: 128px;
+	horizontal-align: middle;
+	vertical-align: middle;
+	overflow: noclip;
+}
+
+#Loading Label{
+	horizontal-align: middle;
+	vertical-align: bottom;
+	transform: translateY(20px);
+	color: #35ADFE;
+}
+
+.spinner .dot1,
+.spinner .dot2,{
+	width: 50px;
+	height: 50px;
+	background-color: #67C7FF55;
+	border-radius: 100%;
+
+	animation-name: sk-bounce;
+	animation-duration: 2.0s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+}
+
+.spinner .dot2 {
+	animation-delay: -1.0s;
+}
+
+@keyframes 'sk-rotate' 
+{
+	0%
+	{
+		transform: rotateZ(0deg); 
+	}
+	50%
+	{
+		transform: rotateZ(-180deg); 
+	}
+	100% 
+	{
+		transform: rotateZ(-360deg); 
+	}
+}
+
+@keyframes 'sk-bounce' {
+	0%
+	{ 
+		transform: scaleX(0.0) scaleY(0.0);
+	} 
+	50% {
+		transform: scaleX(1.0) scaleY(1.0);
+	}
+	100% 
+	{ 
+		transform: scaleX(0.0) scaleY(0.0);
+	} 
+}
+/*---------------------------------------------------------------------*/
+
+#Content{
+	width: 645px;
+	height: 600px;
+	background-color: #232527;
+	horizontal-align: middle;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+#ContentTier1,
+#ContentTier2,
+#ContentTier3,
+#ContentTier4,
+#ContentTier5,
+#ContentTier6{
+	width: 100%;
+	height: 100%;
+	padding: 50px 20px 20px 20px;
+}
+
+#ContentTier1{
+	transition-property: blur;
+	transition-duration: 0.3s;
+}
+
+#ContentTier1.BeCovered{
+	blur: gaussian( 3.0 );
+}
+
+#ContentTier2,
+#ContentTier3,
+#ContentTier4,
+#ContentTier5,
+#ContentTier6{
+	transition-property: opacity,background-color;
+	transition-duration: 0.3s;
+	opacity: 0;
+}
+
+#ContentTier2.show,
+#ContentTier3.show,
+#ContentTier4.show,
+#ContentTier5.show,
+#ContentTier6.show{
+	opacity: 1;
+	background-color: #000E;
+}
+
+.TextBar{
+	flow-children: right;
+}
+
+.TextBar Label{
+	text-align: center;
+	vertical-align: middle;
+	color: #fff;
+	text-shadow: #112e4e 0px 0px 4px 2.0;
+	transform: translateY(1px);
+}
+
+.TextBar .Left{
+	width: 36px;
+	height: 42px;
+	background-image: url("file://{resources}/images/custom_game/npc_frame/textbar_a.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+.TextBar .Middle{
+	height: 42px;
+	background-image: url("file://{resources}/images/custom_game/npc_frame/textbar_b.png");
+	background-size: 100%;
+}
+
+.TextBar .Right{
+	width: 36px;
+	height: 42px;
+	background-image: url("file://{resources}/images/custom_game/npc_frame/textbar_c.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+#CloseButton{
+	margin-right: 50px;
+	horizontal-align: right;
+	transition-property: brightness,transform;
+	transition-duration: 0.2s;
+}
+
+#CloseButton.TextBar Label{
+	color: gradient( linear, 0% 100%, 0% 0%, from( #FF9785 ), to( #FF6F2B ) );
+}
+
+#CloseButton:hover{
+	brightness: 2;
+}
+
+#CloseButton:active{
+	transform: scale3d(0.9,0.9,1);
+}
+
+
+/*-----------------------------------------------------------------------*/
+#MessageDialog{
+	border-radius: 8px;
+	width: 500px;
+	height: 300px;
+	horizontal-align: middle;
+	vertical-align: middle;
+	background-color: #232527;
+	box-shadow: #222 0px 0px 16px;
+	transform: scale3d(0.5,0.5,1);
+	opacity: 0;
+	transition-property: opacity,transform;
+	transition-duration: 0.3s;
+}
+
+#ContentTier6.show #MessageDialog{
+	opacity: 1;
+	transform: scale3d(1,1,1);
+}
+
+#ContentTier6 #MessageImage{
+	width: 128px;
+	height: 128px;
+	visibility: collapse;
+	horizontal-align: center;
+	margin: 15px 0 5px 0;
+}
+
+#MessageDialogCloseButton{
+	border-radius: 50%;
+	width: 30px;
+	height: 30px;
+	background-image: url("file://{images}/control_icons/x_close.png");
+	background-repeat: no-repeat;
+	background-size: 50%;
+	background-position: center;
+	background-color: #232527;
+	horizontal-align: middle;
+	vertical-align: middle;
+	box-shadow: #444 0px 0px 4px;
+	transform: translateX(2500px) translateY(-1500px) scale3d(0.1,0.1,1);
+	opacity: 0;
+	transition-property: opacity,transform;
+	transition-duration: 0.3s;
+	transition-delay: 0.3s;
+}
+
+#ContentTier6.show #MessageDialogCloseButton{
+	opacity: 1;
+	transform: translateX(250px) translateY(-150px) scale3d(1,1,1);
+	transition-delay: 0s;
+}
+
+#MessageDialogCloseButton:hover{
+	box-shadow: #5B0700 0px 0px 4px;
+}
+
+#MessageDialogContent{
+	horizontal-align: middle;
+	vertical-align: middle;
+	text-align: center;
+	flow-children: down;
+}
+
+#MessageDialogContent #Message{
+	text-align: center;
+	vertical-align: middle;
+	margin: 1px 4px;
+	color: #CCC;
+	font-size: 30px;
+	max-width: 400px;
+}
+
+#MessageButton{
+	background-color: gradient( linear, 0% 100%, 0% 0%, from( #006405 ), color-stop(0.1,#009913), color-stop(0.9,#36FE53), to( #72FE87 ) );
+	padding: 5px 10px;
+	border-radius: 5px;
+	margin: 15px;
+	horizontal-align: middle;
+}
+
+#MessageButton Label{
+	font-size: 25px;
+	color: #fff;
+	text-shadow: #000 0px 0px 6px 1.0;
+}
+
+#MessageButton:active{
+	transform: scale3d(0.9,0.9,1);
+}
+
+@keyframes 'white-to-yellow'{
+	0% {
+	 	background-color: #fff;
+	}
+	100% {
+	  	background-color: #d7a945;
+	}
+}
+
+@keyframes 'yellow-to-white'{
+	0% {
+	 	background-color: #d7a945;
+	}
+	100% {
+	  	background-color: #fff;
+	}
+}
+
+@keyframes 'heartbeat' {
+	0% {
+  		transform: scale3d(1,1,1);
+	}
+	25% {
+	  	transform: scale3d(0.8,0.8,1);
+	}
+	50% {
+	  	transform: scale3d(1.2,1.2,1);
+	}
+	75% {
+	  	transform: scale3d(0.9,0.9,1);
+	}
+	100% {
+	  	transform: scale3d(1,1,1);
+	}
+}
+
+.turntable-wrap {
+	width: 500px;
+	height: 500px;
+	border: 7px solid #8f8c81;
+	border-radius: 50%;  
+	box-shadow: 0 0 20px #b2a98d22;
+	horizontal-align: center;
+	background-color: #e0ddd1;
+}
+
+#turntable_light {
+	width: 95%;
+	height: 95%;
+	horizontal-align: center;
+	vertical-align: center;
+}
+
+.turntable-wrap .light {
+	width: 100%;
+	height: 100%;
+}
+
+.light_blink {
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: #fff;
+	horizontal-align: left;
+	vertical-align: center;
+	animation-name: white-to-yellow;
+	animation-duration: 1.0s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+.odd .light_blink {
+	background-color: #d7a945;
+	animation-name: yellow-to-white;
+	animation-duration: 1.0s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+.turntable-wrap .turntable {
+    margin: 20px;
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    background-color: #fff;
+    horizontal-align: center;
+    vertical-align: center;
+}
+
+.turntable-wrap .turntable .bg {
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+	border: 2px solid #b2a98d;
+	border-radius: 50%;
+	transform: rotateZ(90deg);
+}
+
+.turntable-wrap .turntable .bg .fragment {
+    width: 1px;
+    height: 100%;
+    background-color: #dfd8be;
+    horizontal-align: center;
+    vertical-align: center;
+    box-shadow: fill 0 1px 1px #00000022;
+ }
+
+.turntable-wrap .pointer {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0 0 0 7px #b9a046;
+    horizontal-align: center;
+    vertical-align: center;
+}
+
+.turntable-wrap .pointer:hover {
+    background-color: #eee;
+}
+
+.turntable-wrap .pointer Label{
+	width:100%;
+	height:100%;
+	text-align: center;
+	font-size: 24px;
+    color: #b9a046;
+    text-overflow: shrink;
+    vertical-align: center;
+    margin-top:15px;
+    font-weight: bold;
+	text-shadow: 0px 0px 0px 1.5 #66666633;
+}
+
+.turntable-wrap .pointer:hover Label {
+    color: #e4bf38;
+}
+
+#turntable {
+	transition-timing-function: ease-out;
+	transition-property:pre-transform-rotate2d;
+	pre-transform-rotate2d: 0deg;
+	transition-duration: 0.1s;
+}
+
+.pointer-arrow {
+	width:20px;
+	height:10px;
+	background-image: url("file://{resources}/images/custom_game/bubble_arrow.png");
+	background-size: 100% 100%;
+	horizontal-align: center;
+	pre-transform-rotate2d: 180deg;
+    horizontal-align: center;
+    vertical-align: center;
+    transform: translateY(-55px);
+}
+
+.turntable-wrap .turntable .gift {
+    width: 100%;
+    height: 100%;
+}
+
+.gift_item{
+	width:48%;
+	height:48%;
+	margin-left:50%;
+	margin-top:50%;
+    transform-origin:0% 0%;
+}
+
+.gift_item Label{
+    color:red;
+    width:100%;
+    height:30px;
+    border-radius: 5px;
+    horizontal-align: center;
+    text-align: center;
+    margin-left:60px;
+    margin-top:20px;
+    transform-origin:0% 0%;
+    transform: rotateZ(30deg);
+    font-size:24px;
+    text-overflow: shrink;
+    text-shadow: #ffd700 0px 0px 4px 1.5;
+}
+
+.gift_item.type-2 Label{
+    height:30px;
+	color:green;
+	text-shadow: #eeeeee 0px 0px 4px 2.0;
+}
+
+.lottery_info{
+	flow-children: down;
+}
+
+.lottery_info_item{
+	flow-children: right;
+	height:30px;
+}
+
+#pnlTenDraw{
+	visibility: collapse;
+}

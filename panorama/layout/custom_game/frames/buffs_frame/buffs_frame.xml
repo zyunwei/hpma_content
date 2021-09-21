@@ -1,0 +1,27 @@
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/dotastyles.css" />
+		<include src="file://{resources}/styles/custom_game/avalon.css" />
+		<include src="file://{resources}/layout/custom_game/frames/buffs_frame/buffs_frame.css" />
+	</styles>
+	<scripts>
+		<include src="file://{resources}/layout/custom_game/frames/buffs_frame/buffs_frame.js" />
+	</scripts>
+	<snippets>
+		<snippet name="buff">
+			<Panel class="buff" hittestchildren="false" >
+				<Button class="buffBorder">
+					<DOTAItemImage id="item" />
+					<DOTAAbilityImage id="ability" />
+					<Image id="buffImage" src="" scaling="stretch-to-fit-y-preserve-aspect" />
+					<Label id="stack-count" text="" />
+					<Panel id="CircularDuration" />
+				</Button>
+			</Panel>
+		</snippet>
+	</snippets>
+	<Panel hittest="false">
+		<Panel id="BuffList" >
+		</Panel>
+	</Panel>
+</root>

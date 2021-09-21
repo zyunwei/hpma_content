@@ -1,0 +1,149 @@
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/dotastyles.vcss_c" />
+		<include src="file://panorama/styles/custom_game/avalon.css" />
+		<include src="file://panorama/layout/custom_game/frames/task/task.css" />
+	</styles>
+	<scripts>
+		<include src="file://panorama/layout/custom_game/frames/task/task.js" />
+	</scripts>
+	<Panel hittest="false" class="RankingListRoot" >
+		<Panel id="RankingListFrame" >
+			<Panel id="Tier0" hittest="false">
+				<!-- 顶部栏背景 -->
+				<Panel id="Topbar" >
+					<Panel class="Left"/>
+					<Panel class="Middle"/>
+					<Panel class="Right"/>
+				</Panel>
+
+				<!-- 标题 -->
+				<Panel id="TitleBar" >
+					<Panel class="line">
+						<Panel class="Left"/>
+						<Panel class="Middle"/>
+						<Panel class="Right"/>
+					</Panel>
+					<Label text="#xxwar_task_title" />
+				</Panel>
+
+				<!-- 关闭按钮 -->
+				<Button id="CloseButton" class="TextBar" onactivate="GameUI.SwapFrame('xxwar_task')">
+					<Panel class="Left"/>
+					<Panel class="Middle">
+						<Label text="#xxwar_close" />
+					</Panel>
+					<Panel class="Right"/>
+				</Button>
+			</Panel>
+
+			<Panel id="Tier1" hittest="false">
+				<Panel id="Content" onactivate="">
+					
+					<Panel id="ContentTier0" >
+						<Panel id="FilterList" >
+
+							<Button id="RefreshButton" class="TextBar" onactivate="OnRefresh()" >
+								<Panel class="Left"/>
+								<Panel class="Middle">
+									<Label text="#xxwar_ranking_list_refresh"/>
+								</Panel>
+								<Panel class="Right"/>
+							</Button>
+
+							<Panel class="TaskList">
+								<Panel class="TaskLine">
+									<Panel class="TaskLabel">
+										<Label text="#xxwar_task_1" />
+										<Label id="lblTask1" text="" />
+									</Panel>
+									<Panel class="TaskLabel">
+										<Label text="#xxwar_task_2" />
+										<Label id="lblTask2" text="" />
+									</Panel>
+									<Panel class="TaskLabel">
+										<Label text="#xxwar_task_3" />
+										<Label id="lblTask3" text="" />
+									</Panel>
+									<Panel class="TaskLabel">
+										<Label text="#xxwar_task_4" />
+										<Label id="lblTask4" text="" />
+									</Panel>
+								</Panel>
+								<Panel class="TaskLine Middle">
+									<Button id="btnPostTask1" onactivate="FinishTask(1)" >
+										<Label id="txtPostTask1" text="#xxwar_task_award_1" />
+									</Button>
+								</Panel>
+								<Panel class="TaskLine">
+									<Panel class="TaskLabel">
+										<Label text="#xxwar_task_5" />
+										<Label id="lblTask5" text="" />
+									</Panel>
+									<Panel class="TaskLabel">
+										<Label text="#xxwar_task_6" />
+										<Label id="lblTask6" text="" />
+									</Panel>
+									<Panel class="TaskLabel">
+										<Label text="#xxwar_task_7" />
+										<Label id="lblTask7" text="" />
+									</Panel>
+									<Panel class="TaskLabel">
+										<Label text="#xxwar_task_8" />
+										<Label id="lblTask8" text="" />
+									</Panel>
+								</Panel>
+								<Panel class="TaskLine Middle">
+									<Button id="btnPostTask2" onactivate="FinishTask(2)" >
+										<Label id="txtPostTask2" text="#xxwar_task_award_2" />
+									</Button>
+								</Panel>
+								<Panel class="TaskLine">
+									<Panel class="TaskLabel">
+										<Label text="#xxwar_task_9" />
+										<Label id="lblTask9" text="" />
+									</Panel>
+									<Panel class="TaskLabel">
+										<Label text="#xxwar_task_10" />
+										<Label id="lblTask10" text="" />
+									</Panel>
+									<Panel class="TaskLabel">
+										<Label text="#xxwar_task_11" />
+										<Label id="lblTask11" text="0" />
+									</Panel>
+									<Panel class="TaskLabel">
+										<Label text="#xxwar_task_12" />
+										<Label id="lblTask12" text="" />
+									</Panel>
+								</Panel>
+								<Panel class="TaskLine Middle">
+									<Button id="btnPostTask3" onactivate="FinishTask(3)" >
+										<Label id="txtPostTask3" text="#xxwar_task_award_3" />
+									</Button>
+								</Panel>
+							</Panel>
+						</Panel>
+						<Label class="tips" text="xxwar_task_tips" />
+					</Panel>
+
+					<!-- 执行中 -->
+					<Panel id="ContentTier1" onactivate="">
+						<Panel id="Loading" >
+							<Panel class="spinner">
+								<Panel class="dot1"></Panel>
+								<Panel class="dot2"></Panel>
+							</Panel>
+							<Label text="Loading..." />
+						</Panel>
+						<Button id="TimeoutCloseAllButton" onactivate="CloseAll()">
+							<Label text="#xxwar_button_timeout" />
+						</Button>
+					</Panel>
+
+				</Panel>
+			</Panel>
+
+		</Panel>
+
+	</Panel>
+</root>

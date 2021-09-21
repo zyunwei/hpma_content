@@ -1,0 +1,29 @@
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/dotastyles.vcss_c" />
+		<include src="file://{resources}/styles/custom_game/avalon.css" />
+		<include src="file://{resources}/layout/custom_game/context_menu/split_item/split_item.css" />
+	</styles>
+	<scripts>
+		<include src="file://{resources}/layout/custom_game/context_menu/split_item/split_item.js" />
+	</scripts>
+	<Panel hittest="false">
+		<Panel id="SplitItemFrame">
+			<Panel id="SplitItemTextEntryPanel" class="line">
+				<Panel class="arrow-panel left" onactivate="OnMinus()"><Panel class="arrow"/></Panel>
+				<Panel class="text-entry-panel" onactivate="SetInputFocus(SplitItemTextEntry)">
+					<TextEntry id="SplitItemTextEntry" multiline="false" textmode="normal" ontextentrychange="OnTextChange()" oninputsubmit="OnSubmitted()"/>
+				</Panel>
+				<Panel class="arrow-panel right" onactivate="OnAdd()"><Panel class="arrow"/></Panel>
+			</Panel>
+			<Panel id="ButtonList" class="line">
+				<Button id="OkButton" class="btn" onactivate="OnSubmitted()">
+					<Label text="#DOTA_UI_Ok" />
+				</Button>
+				<Button id="CancelButton" class="btn" onactivate="OnCancel()">
+					<Label text="DOTA_UI_Cancel" />
+				</Button>
+			</Panel>
+		</Panel>
+	</Panel>
+</root>

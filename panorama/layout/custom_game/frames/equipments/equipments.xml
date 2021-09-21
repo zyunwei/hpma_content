@@ -1,0 +1,27 @@
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/dotastyles.css" />
+		<include src="file://{resources}/styles/custom_game/avalon.css" />
+		<include src="file://{resources}/layout/custom_game/frames/equipments/equipments.css" />
+	</styles>
+	<scripts>
+		<include src="file://{resources}/layout/custom_game/frames/equipments/equipments.js" />
+	</scripts>
+	<snippets>
+		<!-- 装备 -->
+		<snippet name="equipment">
+			<Panel class="equipment" hittestchildren="false">
+				<DOTAItemImage id="item-img" />
+				<Panel id="cooldown" hittest="false"/>
+				<Panel id="tooltip"/>
+			</Panel>
+		</snippet>
+	</snippets>
+	<Panel hittest="false" >
+		<Panel id="EquipmentsFrame">
+			<Label class="title" text="#xxwar_equipments_title" />
+			<Panel id="EquipmentsItemList" >
+			</Panel>
+		</Panel>
+	</Panel>
+</root>

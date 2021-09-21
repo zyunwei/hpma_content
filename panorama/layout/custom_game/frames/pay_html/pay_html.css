@@ -1,0 +1,77 @@
+Label{
+	font-size: 14px;
+	color: white;
+	font-family: Radiance, FZLanTingHei-R-GBK, TH Sarabun New, YDYGO 540, Gulim, MingLiU;
+	text-shadow: 1px 1px 1px 1.0 #000000ff;
+}
+
+.panel_pay{
+    vertical-align: center;
+    horizontal-align:center;
+}
+
+#main_panel {
+	width:0px;
+	height:0px;
+    background-size:100% 100%;
+    box-shadow: fill #111111FF -4px -4px 8px 8px;
+    vertical-align: center;
+    horizontal-align:center;
+    opacity: 0;
+    transform: translate3d(1200px,900px,0px) scale3d(0.4,0.4,1);
+	transition-property: opacity, transform, width, height;
+	transition-duration: 0.3s;
+}
+
+#main_panel.show {
+	width:1000px;
+	height:750px;
+	opacity: 1;
+	transform: rotateX(0deg) translateY(0px);
+}
+
+.pay_content{
+	width:990px;
+	height:700px;
+	margin-top:45px;
+	flow-children:down;
+}
+
+.pay_header{
+	margin-left:20px;
+	margin-top:15px;
+	height:40px;
+}
+
+.pay_header Label{
+	font-size:18px;
+}
+
+#btnClose{
+	horizontal-align:right;
+	height:20px;
+	width:20px;
+	margin-top:10px;
+	margin-right:10px;
+	transition-property:transform;
+	transition-duration:0.2s;
+
+	background-size: 100%;
+	background-position: center;
+	background-image: url("file://{images}/control_icons/x_close.png");
+}
+
+#btnClose:hover{
+	transform: scale3d( 1.1, 1.1, 1.1);
+}
+
+#qrcode_iframe{
+    width: 100%;
+    height: 100%;
+    horizontal-align: middle;
+    vertical-align: middle;
+}
+
+#MousePanningImage{
+	visibility: collapse;
+}

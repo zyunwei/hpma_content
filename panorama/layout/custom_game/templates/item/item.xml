@@ -1,0 +1,14 @@
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/dotastyles.css" />
+		<include src="file://{resources}/styles/custom_game/avalon.css" />
+		<include src="file://{resources}/layout/custom_game/templates/item/item.css" />
+	</styles>
+	<scripts>
+		<include src="file://{resources}/layout/custom_game/templates/item/item.js" />
+	</scripts>
+	<Panel hittestchildren="false" onmouseover="OnMouseOver()" onmouseout="OnMouseOut()">
+		<DOTAItemImage id="ItemImage" itemname="" />
+		<Label id="ItemCharges" text="" />
+	</Panel>
+</root>

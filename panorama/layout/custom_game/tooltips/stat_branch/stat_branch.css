@@ -1,0 +1,27 @@
+.UIStatBranch{
+    width: 420px;
+    height: 270px;
+    background-image: url("s2r://panorama/images/hud/reborn/statbranch_background_psd.vtex");
+    background-size:420px 270px;
+    background-repeat:no-repeat;
+    horizontal-align:center;
+    overflow:noclip;
+}
+
+#MainBranchContainer{
+    margin-top: 25px;
+    margin-left: -18px;
+    overflow:noclip;
+}
+
+#BranchTitle{
+	margin-top: 0;
+}
+
+.BranchPair{
+    height: 52px;
+}
+
+.BranchChoiceContainer.RightBranch{
+    margin-left:-5px;
+}

@@ -1,0 +1,46 @@
+<root>	
+	<styles>
+		<include src="s2r://panorama/styles/dotastyles.css" />
+		<include src="s2r://panorama/styles/hudstyles.css" />
+		<include src="s2r://panorama/styles/hud/hud_reborn.css" />
+		<include src="s2r://panorama/styles/hud/dota_hud_stat_branch.css" />	
+		<include src="file://{resources}/layout/custom_game/frames/stat_branch/stat_branch.css" />
+	</styles>
+
+	<scripts>
+		<include src="file://{resources}/layout/custom_game/frames/stat_branch/stat_branch.js" />
+	</scripts>
+
+	<Panel onmouseover="MouseOverTalentTree()" onmouseout="MouseOutTalentTree()" >
+		<Panel id="tooltip" />
+		<Panel id="StatBranchBG"/>
+		<Panel id="StatBranchGraphics" require-composition-layer="true" always-cache-composition-layer="true">
+			<Panel id="StatBranchChannel">
+				<Panel id="StatPipContainer" class="">
+					<Panel id="StatRow25" class="StatBranchRow">
+						<Panel class="StatBranchPip LeftBranchPip"/>
+						<Panel class="StatBranchPip RightBranchPip"/>
+					</Panel>
+					<Panel id="StatRow20" class="StatBranchRow">
+						<Panel class="StatBranchPip LeftBranchPip"/>
+						<Panel class="StatBranchPip RightBranchPip"/>
+					</Panel>
+					<Panel id="StatRow15" class="StatBranchRow">
+						<Panel class="StatBranchPip LeftBranchPip"/>
+						<Panel class="StatBranchPip RightBranchPip"/>
+					</Panel>
+					<Panel id="StatRow10" class="StatBranchRow">
+						<Panel class="StatBranchPip LeftBranchPip"/>
+						<Panel class="StatBranchPip RightBranchPip"/>
+					</Panel>
+				</Panel>
+				<Panel class="LevelProgress">
+					<ProgressBar id="StatLevelProgressBar" min="0" max="26" value="25"/>
+				</Panel>
+				<Panel class="LevelProgressBlur">
+					<ProgressBar id="StatLevelProgressBarBlur" min="0" max="26" value="25"/>
+				</Panel>
+			</Panel>
+		</Panel>
+	</Panel>
+</root>

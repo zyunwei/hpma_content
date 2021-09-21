@@ -1,0 +1,44 @@
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/dotastyles.css" />
+		<include src="file://{resources}/styles/custom_game/avalon.css" />
+		<include src="file://{resources}/layout/custom_game/frames/message/message.css" />
+	</styles>
+	<scripts>
+		<include src="file://{resources}/layout/custom_game/frames/message/message.js" />
+	</scripts>
+	<snippets>
+		<snippet name="icon_msg">
+			<Panel class="icon_msg">
+				<Image id="msg_icon" class="middle" />
+				<Label id="msg_text" class="middle" html="true" text="message_test" />
+			</Panel>
+		</snippet>
+		<snippet name="message-box-msg">
+			<Panel class="message-box-msg">
+				<Label id="role" html="true" text="" />
+				<Panel id="list" >
+				</Panel>
+			</Panel>
+		</snippet>
+	</snippets>
+	<Panel hittest="false" class="full" >
+
+		<!-- 底部消息 -->
+		<Panel id="BottomMsgPanel" hittest="false" hittestchildren="false">
+			<Label id="BottomMsg" html="true" text=""/>
+		</Panel>
+
+		<!-- 消息日志 -->
+		<Panel id="MessageLog" >
+		</Panel>
+
+		<!-- 左边消息 -->
+		<Panel id="LeftMsgPanel" hittest="false" hittestchildren="false">
+		</Panel>
+		
+		<Button id="Log" class="muted" onactivate="ShowMessageLog()" onmouseover="ShowDOTATooltip('Log')" onmouseout="HideDOTATooltip()">
+			<Image id="img" src="file://{resources}/images/custom_game/laba.png" />
+		</Button>
+	</Panel>
+</root>

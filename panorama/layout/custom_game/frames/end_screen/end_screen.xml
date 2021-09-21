@@ -1,0 +1,40 @@
+<root>
+	<styles>
+		<include src="file://{resources}/layout/custom_game/frames/end_screen/end_screen.css" />
+	</styles>
+
+	<scripts>
+		<include src="file://{resources}/layout/custom_game/frames/end_screen/end_screen.js" />
+	</scripts>
+
+	<Panel hittest="false" class="EndScreenRoot">
+		<Panel hittest="false" id="EndScreenBackground"></Panel>
+		<Panel hittest="false" class="EndScreenWindow">
+			<Panel id="VictoryRow">
+				<Panel id="WinningTeamLogo">
+				</Panel>
+				<Label id="EndScreenVictory" text="#custom_end_screen_victory_message" />
+			</Panel>
+			<Panel class="Legend">
+				<Panel class="LegendPanel ScoreCol_TeamInfo" />
+				<Label class="LegendPanel ScoreCol_Rank" text="#XXW_LEGEND_RANK" />
+				<Panel class="LegendPanel ScoreCol_Avatar" />
+				<Label class="LegendPanel ScoreCol_PlayerDetails" text="#XXW_LEGEND_NAME" />
+				<Label class="LegendPanel ScoreCol_Kills" text="#XXW_LEGEND_KILLS" />
+				<Label class="LegendPanel ScoreCol_Deaths" text="#XXW_LEGEND_DEATHS" />
+				<Label class="LegendPanel ScoreCol_Assists" text="#XXW_LEGEND_ASSISTS" />
+				<Label class="LegendPanel ScoreCol_Items" text="#XXW_LEGEND_ITEMS" />
+				<Label class="LegendPanel ScoreCol_Gold" text="#XXW_LEGEND_GOLD" />
+				<Label class="LegendPanel ScoreCol_Bullion" text="#XXW_LEGEND_BULLION" />
+				<Label class="LegendPanel ScoreCol_Bullion" text="#XXW_LEGEND_BULLION_JACKPOT" />
+				<Label class="LegendPanel ScoreCol_Time" text="#XXW_LEGEND_TIME" />
+				<Label class="LegendPanel ScoreCol_Score" text="#XXW_LEGEND_SCORE" />
+				<Label class="LegendPanel ScoreCol_Grade" text="#XXW_LEGEND_GRADE" />
+			</Panel>
+			<Panel id="TeamsContainer" />
+			<Button id="CloseButton" onactivate="Game.FinishGame();">
+				<Label text="#BUTTON_CLOSE_GAME" />
+			</Button>
+		</Panel>
+	</Panel>
+</root>

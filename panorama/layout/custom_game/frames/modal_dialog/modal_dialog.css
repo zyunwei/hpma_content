@@ -1,0 +1,359 @@
+.Root{
+	width: 100%;
+	height: 100%;
+}
+
+#ModalDialogFrame{
+	width: 100%;
+	height: 100%;
+	/*background-color: #0005;*/
+}
+
+.dialog {
+	opacity: 1;
+	transform: scale3d(1,1,1);
+	horizontal-align: middle;
+	vertical-align: middle;
+
+	transition-property: opacity,transform;
+	transition-duration: 0.2s;
+}
+
+.dialog.show{
+	animation-name: DialogOpen;
+	animation-duration: 0.2s;
+}
+
+.dialog.close{
+	opacity: 0;
+	transform: scale3d(0.5,0.5,1);
+}
+
+@keyframes 'DialogOpen'
+{
+	0%
+	{
+		opacity: 0;
+		transform: scale3d(1.5,1.5,1);
+	}
+}
+
+.dialog-content{
+	min-width: 400px;
+	min-height: 200px;
+	horizontal-align: middle;
+	vertical-align: middle;
+}
+
+#CommonDialog{
+}
+
+#CommonDialog.warning #CommonDialogTitle{
+	color: #F8B900;
+}
+#CommonDialog.warning #CommonDialogContent{
+	border: 2px solid #F8B900;
+}
+
+#CommonDialogContent{
+	background-color: #000E;
+	border: 2px solid #DDD;
+	border-radius: 10px;
+	box-shadow: #000 0px 0px 10px;
+	margin: 8px;
+	padding: 20px;
+	flow-children: down;
+}
+
+.dialog-close{
+	width: 30px;
+	height: 30px;
+	horizontal-align: right;
+	border-radius: 50%;
+	background-color: #fff;
+	box-shadow: #000 0px 0px 5px;
+}
+
+.dialog-close:hover{
+	background-color: #DDD;
+}
+
+.dialog-close .icon{
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: 60%;
+	background-position: center;
+	background-image: url("file://{images}/control_icons/x_close.png");
+	wash-color: #00CB21;
+}
+
+#CommonDialogTitle{
+	color: #EEE;
+	font-size: 40px;
+}
+
+#CommonDialogText{
+	color: #EEE;
+	font-size: 22px;
+}
+
+#CommonDialogButtonList{
+	flow-children: right;
+	horizontal-align: right;
+	vertical-align: bottom;
+	margin-bottom: 20px;
+	margin-right: 20px;
+}
+
+#CommonDialogButtonList .btn{
+	padding: 5px 10px;
+	border: 2px solid #fff0;
+	border-radius: 5px;
+}
+
+#CommonDialogButtonList .btn Label{
+	color: #eee;
+}
+
+#CommonDialogButtonList .btn:hover{
+	border: 2px solid #CCC;
+}
+
+/*==============================================================*/
+#SelectDefaultAcceptQuestTypeContent{
+	background-color: #000E;
+	border: 2px solid #DDD;
+	border-radius: 10px;
+	box-shadow: #000 0px 0px 10px;
+	margin: 8px;
+	padding: 20px;
+	flow-children: down;
+}
+
+#SelectDefaultAcceptQuestTypeContent .title{
+	color: #EEE;
+	font-size: 25px;
+}
+
+#SelectDefaultAcceptQuestTypeContent .btn-list{
+	flow-children: right;
+	horizontal-align: middle;
+	vertical-align: middle;
+}
+
+#SelectDefaultAcceptQuestType .btn-bad{
+	padding: 10px;
+	border-bottom: 3px solid #6A0054;
+}
+#SelectDefaultAcceptQuestType .btn-bad:hover{
+	background-color: #6A0054;
+}
+#SelectDefaultAcceptQuestType .btn-bad Label{
+	color: #FF64EE;
+	font-size: 22px;
+}
+
+#SelectDefaultAcceptQuestType .btn-none{
+	padding: 10px;
+	border-bottom: 3px solid #444;
+}
+#SelectDefaultAcceptQuestType .btn-none:hover{
+	background-color: #444;
+}
+#SelectDefaultAcceptQuestType .btn-none Label{
+	color: #ddd;
+	font-size: 22px;
+}
+
+#SelectDefaultAcceptQuestType .btn-good{
+	padding: 10px;
+	border-bottom: 3px solid #612100;
+}
+#SelectDefaultAcceptQuestType .btn-good:hover{
+	background-color: #612100;
+}
+#SelectDefaultAcceptQuestType .btn-good Label{
+	color: #FFCA3C;
+	font-size: 22px;
+}
+
+#SelectDefaultAcceptQuestType .btn-free{
+	padding: 10px;
+	border-bottom: 3px solid #003E7E;
+}
+#SelectDefaultAcceptQuestType .btn-free:hover{
+	background-color: #003E7E;
+}
+#SelectDefaultAcceptQuestType .btn-free Label{
+	color: #C1E6FF;
+	font-size: 22px;
+}
+
+/*==============================================================*/
+#CommonForLuaDialog.warning #CommonForLuaDialogTitle{
+	color: #F8B900;
+}
+#CommonForLuaDialog.warning #CommonForLuaDialogContent{
+	border: 2px solid #F8B900;
+}
+
+#CommonForLuaDialogContent{
+	background-color: #000E;
+	border: 2px solid #DDD;
+	border-radius: 10px;
+	box-shadow: #000 0px 0px 10px;
+	margin: 8px;
+	padding: 20px;
+	flow-children: down;
+}
+#CommonForLuaDialogTitle{
+	color: #EEE;
+	font-size: 40px;
+}
+
+#CommonForLuaDialogText{
+	color: #EEE;
+	font-size: 22px;
+	margin-top: 12px;
+	margin-bottom: 25px;
+}
+#CommonForLuaDialogButtonList{
+	flow-children: right;
+	horizontal-align: right;
+	vertical-align: bottom;
+	margin-bottom: 20px;
+	margin-right: 20px;
+}
+#CommonForLuaDialogButtonList .btn{
+	min-width: 100px;
+	padding: 5px 10px;
+	border: 2px solid #555;
+	border-radius: 5px;
+	background-color: #333;
+	margin: 0px 5px 5px 5px;
+
+	transition-property: border,background-color;
+	transition-duration: 0.2s;
+}
+
+#CommonForLuaDialogButtonList .btn Label{
+	color: #eee;
+	width: 100%;
+	text-align: center;
+}
+
+#CommonForLuaDialogButtonList .btn:hover{
+	border: 2px solid #666;
+	background-color: #444;
+}
+
+/*-------------------------*/
+#FateDialog{
+	border-radius: 8px;
+	width: 500px;
+	height: 400px;
+	horizontal-align: middle;
+	vertical-align: middle;
+	background-color: #232527;
+	box-shadow: #222 0px 0px 16px;
+	transform: scale3d(0.5,0.5,1);
+	opacity: 0;
+	transition-property: opacity,transform;
+	transition-duration: 0.3s;
+	overflow: noclip;
+}
+
+#FateDialog.show{
+	opacity: 1;
+	transform: scale3d(1,1,1);
+}
+
+#FateDialog.again{
+	animation-name: FateDialogAgain;
+	animation-duration: 0.3s;
+}
+
+@keyframes 'FateDialogAgain'
+{
+	50%
+	{
+		transform: scale3d(0.5,0.5,1);
+	}
+}
+
+#FateDialogContent{
+	horizontal-align: middle;
+	vertical-align: middle;
+	text-align: center;
+	flow-children: down;
+}
+
+#FateDialogContent .title{
+	font-size: 40px;
+	color: gradient( linear, 0% 100%, 0% 0%, from( #FF6DB6 ), to( #AC0073 ) );
+	horizontal-align: middle;
+	margin: 15px;
+}
+
+#FateName{
+	font-size: 50px;
+	color: gradient( linear, 0% 100%, 0% 0%, from( #FFED71 ), to( #EDA600 ) );
+	horizontal-align: middle;
+}
+
+#FateDescription{
+	max-width: 350px;
+	text-align: center;
+	color: #AAA;
+	horizontal-align: middle;
+}
+
+.fate-button-yes,
+.fate-button-cancel,
+.fate-button-again{
+	padding: 5px 18px;
+	margin: 10px;
+	border-radius: 2px;
+}
+
+.fate-button-yes:active,
+.fate-button-cancel:active,
+.fate-button-again:active{
+	transform: scale3d(0.9,0.9,1.0);
+}
+
+.fate-button-yes:hover,
+.fate-button-cancel:hover,
+.fate-button-again:hover{
+	brightness: 1.5;
+}
+
+.fate-button-yes Label,
+.fate-button-cancel Label,
+.fate-button-again Label{
+	color: #fff;
+	font-size: 25px;
+	text-shadow: #000 0px 0px 2px 2.0;
+}
+
+.fate-button-yes{
+	background-color: gradient( linear, 0% 100%, 0% 0%, from( #007C1A ), to( #28FF6D ) );
+}
+
+.fate-button-cancel{
+	background-color: gradient( linear, 0% 100%, 0% 0%, from( #870C00 ), to( #FF6958 ) );
+}
+
+.fate-button-again{
+	background-color: gradient( linear, 0% 100%, 0% 0%, from( #885800 ), to( #FFDE3C ) );
+}
+
+#FateList{
+	horizontal-align: middle;
+	margin: 10px 0px;
+}
+
+#FateList Label{
+	font-size: 25px;
+}

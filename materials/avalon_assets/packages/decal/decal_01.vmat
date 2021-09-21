@@ -1,0 +1,45 @@
+// THIS FILE IS AUTO-GENERATED
+
+Layer0
+{
+	shader "global_lit_simple.vfx"
+
+	//---- Normal Maps ----
+	F_NORMAL_MAP 1
+
+	//---- Specular ----
+	F_SPECULAR 1
+
+	//---- Translucent ----
+	F_ADDITIVE_BLEND 1
+	F_TRANSLUCENT 1
+
+	//---- Color ----
+	g_vColorTint "[0.764706 0.596078 0.098039 1.000000]"
+	g_vTexCoordOffset "[0.000 0.000]"
+	g_vTexCoordScale "[1.000 1.000]"
+	TextureColor "materials/avalon_assets/packages/decal/decal_01_color.tga"
+
+	//---- Normal Map ----
+	g_flBumpStrength "1.000"
+	TextureNormal "[0.501961 0.752941 1.000000 0.000000]"
+
+	//---- Self Illum ----
+	TextureSelfIllumMask "[0.000000 0.000000 0.000000 0.000000]"
+
+	//---- Specular ----
+	g_flSpecularBloom "10.000"
+	g_flSpecularIntensity "0.250"
+	TextureBloom "[1.000000 1.000000 1.000000 0.000000]"
+	TextureReflectance "materials/default/default_refl.tga"
+
+	//---- Translucent ----
+	g_flOpacityScale "1.000"
+	g_flOverbrightFactor "2.000"
+	TextureTranslucency "materials/avalon_assets/packages/decal/decal_01_trans.tga"
+
+	DynamicParams
+	{
+		g_flOpacityScale "5 * sin(time) + 5"
+	}
+}

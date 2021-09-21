@@ -1,0 +1,135 @@
+.DeathPanelRoot{
+    vertical-align: center;
+	horizontal-align: center;
+}
+
+#DeathPanelRoot{
+    width: 400px;
+    height: 320px;
+	background-color: #171c23F0;
+	border-radius: 2px;
+    visibility: collapse;
+    /* flow-children: down; */
+}
+
+#RankRoot{
+    width: 400px;
+    height: 320px;
+    background-color: #171c23;
+    border-radius: 2px;
+    visibility: collapse;
+}
+
+.yellowline{
+	height: 7px;
+	width: 100%;
+	border-radius: 4px;
+	border: 1px solid #11111160;
+	box-shadow: #000000 0px 0px 6px 0px;
+	background-color: gradient( linear, 0% 0%, 0% 100%,  from( #d59d35 ), color-stop( 0.5, #fdbf3a ), to( #906932 ) );
+}
+
+#death_text{
+	horizontal-align: center;
+    font-size: 50px;
+    color: red;
+    margin-top:30px;
+}
+
+#coin{
+    transform: translateY(135px);
+}
+
+#diamond{
+    transform: translateY(165px);
+}
+
+.ButtonRoot{
+    horizontal-align: center;
+    vertical-align: bottom;
+    flow-children:right;
+    margin-bottom: 20px;
+}
+
+.button{
+    height: 40px;
+    width: 90px;
+    font-size: 50px;
+    border-radius: 3px;
+    background-color: #DE8800;
+    margin: 10px;
+}
+
+.button Label{
+    font-size: 20px;
+    horizontal-align: center;
+    vertical-align: center;
+    color: #fff;
+}
+
+.button:active{
+	transform: scale3d(0.9,0.9,1);
+}
+
+#rankTitle{
+    horizontal-align: center;
+    transform: translateY(30px);
+    font-size: 50px;
+    color: #fff;
+}
+
+#rank{
+    horizontal-align: center;
+    transform: translateY(95px);
+    font-size: 50px;
+    color: #fff; 
+}
+
+.assetInfo{
+    flow-children:right;
+    margin-top:15px;
+    margin-left:150px;
+}
+
+.assetTitle{
+    font-size: 20px;
+    color: yellow;
+}
+
+.assetAmount{
+    font-size: 20px;
+    color: yellow;
+    text-overflow: shrink;
+}
+
+.pnlTips{
+    width:100%;
+    flow-children:right;
+    transform: translateY(210px);
+}
+
+.pnlTips Label{
+    width:100%;
+    text-align: center;
+}
+
+.CloseButton{
+    width: 40px;
+	height: 40px;
+	background-image: url("file://{images}/custom_game/ability_select/close_button_png.png");
+	background-size: contain;
+	background-position: center;
+    background-repeat: no-repeat;
+    horizontal-align: right;
+    margin-top: 10px;
+}
+
+#CloseButton:hover {
+	brightness: 2.0;
+}
+
+#txtCountdown{
+    font-size: 50px;
+    margin-top:70px;
+    margin-left:32px;
+}

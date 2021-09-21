@@ -1,0 +1,1204 @@
+.XXWarStoreRoot{
+	width: 100%;
+	height: 100%;
+}
+
+#XXWarStoreFrame{
+	horizontal-align: middle;
+	vertical-align: middle;
+	opacity: 0;
+	transform: translate3d(1200px,900px,0px) scale3d(0.4,0.4,1);
+
+	transition-property: opacity, transform;
+	transition-duration: 0.3s;
+}
+
+#XXWarStoreFrame.show{
+	opacity: 1;
+	transform: rotateX(0deg) translateY(0px);
+}
+
+#Tier0{
+	z-index: 2;
+	horizontal-align: middle;
+	overflow: noclip;
+}
+
+#Tier1{
+	z-index: 1;
+	margin-top: 20px;
+	horizontal-align: middle;
+}
+
+#Topbar{
+	width: 1075px;
+	margin-top: 15px;
+	flow-children: right;
+}
+#Topbar .Left{
+	width: 60px;
+	height: 30px;
+	background-image: url("file://{resources}/images/custom_game/npc_frame/topbar_a.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+#Topbar .Middle{
+	width: fill-parent-flow(1);
+	height: 30px;
+	background-image: url("file://{resources}/images/custom_game/npc_frame/topbar_b.png");
+	background-size: 100%;
+}
+
+#Topbar .Right{
+	width: 60px;
+	height: 30px;
+	background-image: url("file://{resources}/images/custom_game/npc_frame/topbar_c.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+#TitleBar{
+	width: 200px;
+	horizontal-align: center;
+}
+
+#TitleBar Label{
+	width: 100%;
+	text-align: center;
+	vertical-align: middle;
+	color: #fff;
+	text-shadow: #112e4e 0px 0px 4px 2.0;
+}
+
+#TitleBar .Left{
+	width: 36px;
+	height: 42px;
+	background-image: url("file://{resources}/images/custom_game/npc_frame/npc_name_a.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+#TitleBar .Middle{
+	width: fill-parent-flow(1);
+	height: 42px;
+	background-image: url("file://{resources}/images/custom_game/npc_frame/npc_name_b.png");
+	background-size: 100%;
+}
+
+#TitleBar .Right{
+	width: 36px;
+	height: 42px;
+	background-image: url("file://{resources}/images/custom_game/npc_frame/npc_name_c.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+#MyInventroy{
+	margin-left:135px;
+	transition-property: brightness,transform,background-image;
+	transition-duration: 0.2s;
+	margin-top: 30px;
+
+	width: 110px;
+	height: 34px;
+	background-image: url("file://{resources}/images/custom_game/store/store_switch_btn.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+#MyInventroy.checked{
+	background-image: url("file://{resources}/images/custom_game/store/store_switch_btn_checked.png");
+}
+
+#MyInventroy Label{
+	color: #fff;
+	width: 100%;
+	text-align: center;
+	vertical-align: middle;
+	transform: translateY(1px);
+}
+
+#MyInventroy:hover{
+	brightness: 2;
+}
+
+#MyInventroy:active{
+	transform: scale3d(0.9,0.9,1);
+}
+
+#StoreHome{
+	margin-left:18px;
+	transition-property: brightness,transform,background-image;
+	transition-duration: 0.2s;
+	margin-top: 30px;
+
+	width: 110px;
+	height: 34px;
+	background-image: url("file://{resources}/images/custom_game/store/store_switch_btn.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+#StoreHome.checked{
+	background-image: url("file://{resources}/images/custom_game/store/store_switch_btn_checked.png");
+}
+
+#StoreHome Label{
+	color: #fff;
+	width: 100%;
+	text-align: center;
+	vertical-align: middle;
+	transform: translateY(1px);
+}
+
+#StoreHome:hover{
+	brightness: 2;
+}
+
+#StoreHome:active{
+	transform: scale3d(0.9,0.9,1);
+}
+
+#CoinBar{
+	/*transform: translateX(360px);*/
+	flow-children: right;
+	margin-top: 30px;
+	margin-right: 37px;
+	horizontal-align: right;
+}
+
+#CoinBar .Left{
+	width: 36px;
+	height: 42px;
+	background-image: url("file://{resources}/images/custom_game/store/gubibar_a.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+#CoinBar .Middle{
+	height: 42px;
+	background-image: url("file://{resources}/images/custom_game/store/gubibar_b.png");
+	background-size: 100%;
+	flow-children: right;
+}
+
+.coinAmount {
+	margin-left:0px;
+	margin-right:15px;
+}
+
+#CoinBar .Right{
+	width: 36px;
+	height: 42px;
+	background-image: url("file://{resources}/images/custom_game/store/gubibar_c.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+#CoinBar Label{
+	color: gradient( linear, 0% 100%, 0% 0%, from( #FFED83 ), to( #DE8B00 ) );
+}
+
+#CoinBar Button{
+	transition-property: brightness,transform;
+	transition-duration: 0.2s;
+}
+
+#CoinBar Button:hover{
+	brightness: 2;
+}
+
+#CoinBar Button:active{
+	transform: scale3d(0.9,0.9,1);
+}
+
+#CoinBar .exchange .Left{
+	background-image: url("file://{resources}/images/custom_game/store/store_btn_a.png");
+}
+#CoinBar .exchange .Middle{
+	background-image: url("file://{resources}/images/custom_game/store/store_btn_b.png");
+}
+#CoinBar .exchange .Right{
+	background-image: url("file://{resources}/images/custom_game/store/store_btn_c.png");
+}
+
+.TextBar{
+	flow-children: right;
+}
+
+.TextBar Label{
+	text-align: center;
+	vertical-align: middle;
+	color: #fff;
+	text-shadow: #112e4e 0px 0px 4px 2.0;
+	transform: translateY(1px);
+}
+
+.TextBar .Left{
+	width: 36px;
+	height: 42px;
+	background-image: url("file://{resources}/images/custom_game/npc_frame/textbar_a.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+.TextBar .Middle{
+	height: 42px;
+	background-image: url("file://{resources}/images/custom_game/npc_frame/textbar_b.png");
+	background-size: 100%;
+}
+
+.TextBar .Right{
+	width: 36px;
+	height: 42px;
+	background-image: url("file://{resources}/images/custom_game/npc_frame/textbar_c.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+#CloseButton{
+	margin-right: 50px;
+	horizontal-align: right;
+	transition-property: brightness,transform;
+	transition-duration: 0.2s;
+}
+
+#CloseButton.TextBar Label{
+	color: gradient( linear, 0% 100%, 0% 0%, from( #FF9785 ), to( #FF6F2B ) );
+}
+
+#CloseButton:hover{
+	brightness: 2;
+}
+
+#CloseButton:active{
+	transform: scale3d(0.9,0.9,1);
+}
+
+/*---------------------------------------------------------------------*/
+
+#StoreItemContent{
+	width: 100%;
+	height: 100%;
+	flow-children: right;
+}
+
+#StoreSortList{
+	width: 200px;
+	height: 100%;
+	background-color: #111;
+	margin-top: 5px;
+	flow-children: down;
+}
+
+#StoreSortList .title{
+	width: 100%;
+	font-size: 20px;
+	background-color: #000;
+	padding: 5px 5px;
+	color: #CCC;
+}
+
+#StoreSortList .list{
+	padding: 15px;
+	width: 100%;
+}
+
+#StoreSortList .list Label{
+	font-size: 23px;
+	color: #666;
+	margin-bottom: 5px;
+	width:100%;
+}
+
+#StoreSortList .list Label:hover{
+	font-size: 23px;
+	color: #CCC;
+}
+
+#StoreSortList .list Label.checked{
+	color: #FFF;
+}
+
+#StoreItemList{
+	flow-children: right-wrap;
+	overflow: squish scroll;
+	width: 100%;
+	height: 100%;
+	background-color: #111;
+	margin-top: 5px;
+	margin-left: 5px;
+	padding-top: 10px;
+}
+
+#StoreItemList .VerticalScrollThumb{
+	background-color: #186da3;
+	opacity: 0.2;
+	border-radius: 5px;
+}
+
+.store-item{
+	width: 250px;
+	flow-children: down;
+	background-color: gradient( linear, 0% 100%, 0% 0%, from( #000 ), to( #000 ) );
+	padding: 10px;
+	border: 1px solid #444;
+	margin-top: 0px;
+	margin-left: 8px;
+	margin-right: 8px;
+	margin-bottom: 10px;
+}
+
+.store-item:hover{
+	background-color: gradient( linear, 0% 100%, 0% 0%, from( #222 ), to( #000 ) );
+}
+
+.store-item .buy.TextBar Label{
+	color: gradient( linear, 0% 100%, 0% 0%, from( #FFED83 ), to( #DE8B00 ) );
+	horizontal-align: center;
+}
+
+.store-item .buy{
+	transition-property: brightness,transform;
+	transition-duration: 0.2s;
+}
+
+.store-item .buy:hover{
+	brightness: 2;
+}
+
+.store-item .buy:active{
+	transform: scale3d(0.9,0.9,1);
+}
+
+#StoreItemLogo{
+	horizontal-align: center;
+	width:128px;
+	height: 128px;
+	background-color: #333;
+}
+
+#StoreItemName{
+	horizontal-align: center;
+	color: #fff;
+	margin-top: 5px;
+	height:20px;
+}
+
+#StoreItemPrice{
+	font-size: 20px;
+	horizontal-align: center;
+	color: gradient( linear, 0% 100%, 0% 0%, from( #FFED83 ), to( #DE8B00 ) );
+}
+
+/*---------------------------------------------------------------------*/
+.spinner {
+	horizontal-align: middle;
+	vertical-align: middle;
+	flow-children: down;
+
+	animation-name: sk-rotate;
+	animation-duration: 2.0s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+#Loading{
+	width: 128px;
+	height: 128px;
+	horizontal-align: middle;
+	vertical-align: middle;
+	overflow: noclip;
+}
+
+#Loading Label{
+	horizontal-align: middle;
+	vertical-align: bottom;
+	transform: translateY(20px);
+	color: #35ADFE;
+}
+
+.spinner .dot1,
+.spinner .dot2,{
+	width: 50px;
+	height: 50px;
+	background-color: #67C7FF55;
+	border-radius: 100%;
+
+	animation-name: sk-bounce;
+	animation-duration: 2.0s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+}
+
+.spinner .dot2 {
+	animation-delay: -1.0s;
+}
+
+@keyframes 'sk-rotate' 
+{
+	0%
+	{
+		transform: rotateZ(0deg); 
+	}
+	50%
+	{
+		transform:  rotateZ(-180deg); 
+	}
+	100% 
+	{
+		transform: rotateZ(-360deg); 
+	}
+}
+
+@keyframes 'sk-bounce' {
+	0%
+	{ 
+		transform: scaleX(0.0) scaleY(0.0);
+	} 
+	50% {
+		transform: scaleX(1.0) scaleY(1.0);
+	}
+	100% 
+	{ 
+		transform: scaleX(0.0) scaleY(0.0);
+	} 
+}
+/*---------------------------------------------------------------------*/
+
+#Content{
+	width: 1045px;
+	height: 700px;
+	background-color: #232527;
+	horizontal-align: middle;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+#ContentTier1,
+#ContentTier2,
+#ContentTier3,
+#ContentTier4,
+#ContentTier5,
+#ContentTier6,
+#ContentTier7{
+	width: 100%;
+	height: 100%;
+	padding: 100px 20px 20px 20px;
+}
+
+#ContentTier1{
+	transition-property: blur;
+	transition-duration: 0.3s;
+}
+
+#ContentTier1.BeCovered{
+	blur: gaussian( 3.0 );
+}
+
+#ContentTier2,
+#ContentTier3,
+#ContentTier4,
+#ContentTier5,
+#ContentTier6,
+#ContentTier7{
+	transition-property: opacity,background-color;
+	transition-duration: 0.3s;
+	opacity: 0;
+}
+
+#ContentTier2.show,
+#ContentTier3.show,
+#ContentTier4.show,
+#ContentTier5.show,
+#ContentTier6.show,
+#ContentTier7.show{
+	opacity: 1;
+	background-color: #000E;
+}
+
+/*====================================================================*/
+/*赠送界面*/
+#PresentDialog{
+	border-radius: 8px;
+	width: 500px;
+	height: 300px;
+	horizontal-align: middle;
+	vertical-align: middle;
+	background-color: #232527;
+	box-shadow: #222 0px 0px 16px;
+	transform: scale3d(0.5,0.5,1);
+	opacity: 0;
+	transition-property: opacity,transform;
+	transition-duration: 0.3s;
+}
+
+#ContentTier4.show #PresentDialog{
+	opacity: 1;
+	transform: scale3d(1,1,1);
+}
+
+#PresentDialogCloseButton{
+	border-radius: 50%;
+	width: 30px;
+	height: 30px;
+	background-image: url("file://{images}/control_icons/x_close.png");
+	background-repeat: no-repeat;
+	background-size: 50%;
+	background-position: center;
+	background-color: #232527;
+	horizontal-align: middle;
+	vertical-align: middle;
+	box-shadow: #444 0px 0px 4px;
+	transform: translateX(2500px) translateY(-1500px) scale3d(0.1,0.1,1);
+	opacity: 0;
+	transition-property: opacity,transform;
+	transition-duration: 0.3s;
+	transition-delay: 0.3s;
+}
+
+#ContentTier7.show #PresentDialogCloseButton{
+	opacity: 1;
+	transform: translateX(250px) translateY(-150px) scale3d(1,1,1);
+	transition-delay: 0s;
+}
+
+#ContentTier7.show #PresentDialog{
+	opacity: 1;
+	transform: scale3d(1,1,1);
+}
+
+#PresentDialogCloseButton:hover{
+	box-shadow: #5B0700 0px 0px 4px;
+}
+
+#PresentDialogContent{
+	horizontal-align: middle;
+	vertical-align: middle;
+	text-align: center;
+	flow-children: down;
+}
+
+#PresentDialogContent Label{
+	text-align: center;
+	width: 100%;
+	vertical-align: middle;
+}
+
+#PresentButton{
+	width: 128px;
+	padding: 10px 5px;
+	border-radius: 5px;
+	margin: 15px;
+	horizontal-align: middle;
+	background-color: gradient( linear, 0% 0%, 0% 100%, from( #FF0C97 ), to( #47002D ) );
+}
+
+#PresentButton:hover{
+	brightness: 1.5;
+}
+
+#PresentButton Label{
+	color: #fff;
+	font-size: 20px;
+}
+
+#PresentButton:active{
+	transform: scale3d(0.9,0.9,1);
+}
+
+/*====================================================================*/
+/*兑换界面*/
+#ExchangeDialog{
+	border-radius: 8px;
+	width: 500px;
+	height: 300px;
+	horizontal-align: middle;
+	vertical-align: middle;
+	background-color: #232527;
+	box-shadow: #222 0px 0px 16px;
+	transform: scale3d(0.5,0.5,1);
+	opacity: 0;
+	transition-property: opacity,transform;
+	transition-duration: 0.3s;
+}
+
+#ContentTier4.show #ExchangeDialog{
+	opacity: 1;
+	transform: scale3d(1,1,1);
+}
+
+#ExchangeDialogCloseButton{
+	border-radius: 50%;
+	width: 30px;
+	height: 30px;
+	background-image: url("file://{images}/control_icons/x_close.png");
+	background-repeat: no-repeat;
+	background-size: 50%;
+	background-position: center;
+	background-color: #232527;
+	horizontal-align: middle;
+	vertical-align: middle;
+	box-shadow: #444 0px 0px 4px;
+	transform: translateX(2500px) translateY(-1500px) scale3d(0.1,0.1,1);
+	opacity: 0;
+	transition-property: opacity,transform;
+	transition-duration: 0.3s;
+	transition-delay: 0.3s;
+}
+
+#ContentTier4.show #ExchangeDialogCloseButton{
+	opacity: 1;
+	transform: translateX(250px) translateY(-150px) scale3d(1,1,1);
+	transition-delay: 0s;
+}
+
+#ExchangeDialogCloseButton:hover{
+	box-shadow: #5B0700 0px 0px 4px;
+}
+
+#ExchangeDialogContent{
+	horizontal-align: middle;
+	vertical-align: middle;
+	text-align: center;
+	flow-children: down;
+}
+
+#ExchangeDialogContent Label{
+	text-align: center;
+	width: 100%;
+	vertical-align: middle;
+}
+
+#ExchangeButton{
+	width: 128px;
+	padding: 10px 5px;
+	border-radius: 5px;
+	margin: 15px;
+	horizontal-align: middle;
+	background-color: gradient( linear, 0% 0%, 0% 100%, from( #FF0C97 ), to( #47002D ) );
+}
+
+#ExchangeButton:hover{
+	brightness: 1.5;
+}
+
+#ExchangeButton Label{
+	color: #fff;
+	font-size: 20px;
+}
+
+#ExchangeButton:active{
+	transform: scale3d(0.9,0.9,1);
+}
+
+
+/*====================================================================*/
+/*兑换界面*/
+#RechargeDialog{
+	border-radius: 8px;
+	width: 900px;
+	height: 800px;
+	horizontal-align: middle;
+	vertical-align: middle;
+	background-color: #232527;
+	box-shadow: #222 0px 0px 16px;
+	transform: scale3d(0.5,0.5,1);
+	opacity: 0;
+	transition-property: opacity,transform;
+	transition-duration: 0.3s;
+}
+
+#ContentTier3.show #RechargeDialog{
+	opacity: 1;
+	transform: scale3d(1,1,1);
+}
+
+#RechargeDialogCloseButton{
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	background-image: url("file://{images}/control_icons/x_close.png");
+	background-repeat: no-repeat;
+	background-size: 50%;
+	background-position: center;
+	background-color: #232527;
+	horizontal-align: middle;
+	vertical-align: middle;
+	box-shadow: #444 0px 0px 4px;
+	transform: translateX(4500px) translateY(-3000px) scale3d(0.1,0.1,1);
+	opacity: 0;
+	transition-property: opacity,transform;
+	transition-duration: 0.3s;
+	transition-delay: 0.3s;
+}
+
+#ContentTier3.show #RechargeDialogCloseButton{
+	opacity: 1;
+	transform: translateX(450px) translateY(-300px) scale3d(1,1,1);
+	transition-delay: 0s;
+}
+
+#RechargeDialogCloseButton:hover{
+	box-shadow: #5B0700 0px 0px 4px;
+}
+
+#RechargeDialogContent{
+	horizontal-align: middle;
+	vertical-align: middle;
+	overflow: noclip;
+}
+
+#RechargePreForm{
+	horizontal-align: middle;
+	vertical-align: middle;
+	flow-children: down;
+	transition-property: opacity, transform;
+	transition-duration: 0.3s;
+}
+
+#DiamondNumberPanel{
+	width: 120px;
+	background-color: #000;
+	vertical-align: middle;
+}
+
+#DiamondNumber{
+	width: fit-children;
+	background-color: none;
+	text-align: right;
+	text-overflow: clip;
+	horizontal-align: center;
+	border: 0;
+	font-size: 25px;
+	min-width: 20px;
+	color: gradient( linear, 0% 100%, 0% 0%, from( #FFED83 ), to( #DE8B00 ) );
+	margin-left:19px;
+}
+
+#RechargePreForm .title{
+	font-size: 30px;
+	color: gradient( linear, 0% 100%, 0% 0%, from( #FFED83 ), to( #DE8B00 ) );
+	vertical-align: middle;
+	margin-left:5px;
+}
+
+#PrePayButton{
+	horizontal-align: center;
+	margin: 20px;
+	flow-children: down;
+}
+
+#PrePayButton .title{
+	font-size: 20px;
+	color: gradient( linear, 0% 100%, 0% 0%, from( #FFED83 ), to( #DE8B00 ) );
+	text-shadow: #000 0px 0px 4px 1.0;
+	margin-top: 2px;
+	horizontal-align: center;
+}
+
+#PrePayButton .pay-btn{
+	padding: 10px 15px;
+	flow-children: right;
+	border-radius: 5px;
+}
+
+#PrePayButton .pay-btn:disabled{
+
+}
+
+#PrePayButton .pay-btn.alipay{
+	background-color: #108EE9;
+}
+
+#PrePayButton .pay-btn.wechatpay{
+	background-color: #3eb94e;
+	margin-left: 10px;
+}
+
+#PrePayButton .pay-btn Image{
+	width: 20px;
+	height: 20px;
+}
+
+#PrePayButton .pay-btn Label{
+	font-size: 20px;
+	color: #fff;
+	margin-left: 5px;
+}
+
+#PrePayButton .pay-btn.alipay:hover{
+	box-shadow: #108EE9 0px 0px 4px;
+}
+
+#PrePayButton .pay-btn.wechatpay:hover{
+	box-shadow: #3eb94e 0px 0px 4px;
+}
+
+#PrePayButton .pay-btn:active{
+	transform: scale3d(0.9,0.9,1);
+}
+
+#AddDiamondNumber{
+	horizontal-align: center;
+	margin-top: 15px;
+	flow-children: right;
+}
+
+#AddDiamondNumber .btn{
+	background-color: #414141;
+	padding: 2px 4px;
+	border-radius: 5px;
+	margin: 0px 3px;
+}
+
+#AddDiamondNumber .btn Label{
+	margin-top: 3px;
+	color: gradient( linear, 0% 100%, 0% 0%, from( #FFED83 ), to( #DE8B00 ) );
+}
+
+
+#AddDiamondNumber .btn:hover{
+	brightness: 2;
+}
+
+#AddDiamondNumber .btn:active{
+	transform: scale3d(0.9,0.9,1);
+}
+
+#RechargeQrCodePanel{
+	opacity: 0;
+	transform: translateY(300px);
+	flow-children: down;
+	horizontal-align: middle;
+	vertical-align: middle;
+	transition-property: opacity, transform;
+	transition-duration: 0.3s;
+}
+
+#RechargeQrCodePanel .btn{
+	horizontal-align: middle;
+	margin: 5px;
+	background-color: #414141;
+	padding: 5px 10px;
+	border-radius: 5px;
+}
+
+#RechargeQrCodePanel .btn Label{
+	color: #9BD8FE;
+	font-size: 22px;
+}
+
+#RechargeQrCodePanel .btn:active{
+	transform: scale3d(0.9,0.9,1);
+}
+
+#RechargeHtml{
+	width: 700px;
+	height: 450px;
+	border: 1px solid #000;
+	background-color: #111;
+	overflow: clip;
+}
+
+#RechargeDialogContent.ShowQrCode #RechargePreForm{
+	opacity: 0;
+	transform: translateY(-300px);
+}
+
+#RechargeDialogContent.ShowQrCode #RechargeQrCodePanel{
+	opacity: 1;
+	transform: translateY(0px);
+}
+
+/*-----------------------------------------------------------------------*/
+#BuyItemDialog{
+	border-radius: 8px;
+	width: 500px;
+	height: 300px;
+	horizontal-align: middle;
+	vertical-align: middle;
+	background-color: #232527;
+	box-shadow: #222 0px 0px 16px;
+	transform: scale3d(0.5,0.5,1);
+	opacity: 0;
+	transition-property: opacity,transform;
+	transition-duration: 0.3s;
+}
+
+#ContentTier2.show #BuyItemDialog{
+	opacity: 1;
+	transform: scale3d(1,1,1);
+}
+
+#BuyItemDialogCloseButton{
+	border-radius: 50%;
+	width: 30px;
+	height: 30px;
+	background-image: url("file://{images}/control_icons/x_close.png");
+	background-repeat: no-repeat;
+	background-size: 50%;
+	background-position: center;
+	background-color: #232527;
+	horizontal-align: middle;
+	vertical-align: middle;
+	box-shadow: #444 0px 0px 4px;
+	transform: translateX(2500px) translateY(-1500px) scale3d(0.1,0.1,1);
+	opacity: 0;
+	transition-property: opacity,transform;
+	transition-duration: 0.3s;
+	transition-delay: 0.3s;
+}
+
+#ContentTier2.show #BuyItemDialogCloseButton{
+	opacity: 1;
+	transform: translateX(250px) translateY(-150px) scale3d(1,1,1);
+	transition-delay: 0s;
+}
+
+#BuyItemDialogCloseButton:hover{
+	box-shadow: #5B0700 0px 0px 4px;
+}
+
+#BuyItemDialogContent{
+	horizontal-align: middle;
+	vertical-align: middle;
+	text-align: center;
+	flow-children: down;
+}
+
+#BuyItemDialogContent Label{
+	text-align: center;
+	vertical-align: middle;
+	margin: 1px 4px;
+	color: #CCC;
+}
+
+#BuyItemDialogContent .col1{
+	width: fill-parent-flow(0.8);
+}
+
+#BuyItemDialogContent .col1 Label{
+	width: 100%;
+}
+
+#BuyItemDialogContent .col2{
+	width: fill-parent-flow(0.2);
+}
+
+#BuyItemDialogContent .col3{
+	width: fill-parent-flow(0.4);
+}
+
+#BuyItemDialogContent .title{
+	font-size: 25px;
+	color: #DDD;
+	horizontal-align: middle;
+	margin: 15px;
+}
+
+#BuyStoreItemButton{
+	margin: 20px;
+	horizontal-align: middle;
+}
+
+#BuyStoreItemButton.TextBar Label{
+	color: gradient( linear, 0% 100%, 0% 0%, from( #FFED83 ), to( #DE8B00 ) );
+	horizontal-align: center;
+}
+#BuyStoreItemButton{
+	transition-property: brightness,transform;
+	transition-duration: 0.2s;
+}
+
+#BuyStoreItemButton:hover{
+	brightness: 2;
+}
+
+#BuyStoreItemButton:active{
+	transform: scale3d(0.9,0.9,1);
+}
+
+/*-----------------------------------------------------------------------*/
+#MessageDialog{
+	border-radius: 8px;
+	width: 500px;
+	height: 300px;
+	horizontal-align: middle;
+	vertical-align: middle;
+	background-color: #232527;
+	box-shadow: #222 0px 0px 16px;
+	transform: scale3d(0.5,0.5,1);
+	opacity: 0;
+	transition-property: opacity,transform;
+	transition-duration: 0.3s;
+}
+
+#ContentTier6.show #MessageDialog{
+	opacity: 1;
+	transform: scale3d(1,1,1);
+}
+
+#ContentTier6 #MessageImage{
+	width: 128px;
+	height: 128px;
+	visibility: collapse;
+	horizontal-align: center;
+	margin: 15px 0 5px 0;
+}
+
+#MessageDialogCloseButton{
+	border-radius: 50%;
+	width: 30px;
+	height: 30px;
+	background-image: url("file://{images}/control_icons/x_close.png");
+	background-repeat: no-repeat;
+	background-size: 50%;
+	background-position: center;
+	background-color: #232527;
+	horizontal-align: middle;
+	vertical-align: middle;
+	box-shadow: #444 0px 0px 4px;
+	transform: translateX(2500px) translateY(-1500px) scale3d(0.1,0.1,1);
+	opacity: 0;
+	transition-property: opacity,transform;
+	transition-duration: 0.3s;
+	transition-delay: 0.3s;
+}
+
+#ContentTier6.show #MessageDialogCloseButton{
+	opacity: 1;
+	transform: translateX(250px) translateY(-150px) scale3d(1,1,1);
+	transition-delay: 0s;
+}
+
+#MessageDialogCloseButton:hover{
+	box-shadow: #5B0700 0px 0px 4px;
+}
+
+#MessageDialogContent{
+	horizontal-align: middle;
+	vertical-align: middle;
+	text-align: center;
+	flow-children: down;
+}
+
+#MessageDialogContent #Message{
+	text-align: center;
+	vertical-align: middle;
+	margin: 1px 4px;
+	color: #CCC;
+	font-size: 30px;
+	max-width: 400px;
+}
+
+#MessageButton{
+	background-color: gradient( linear, 0% 100%, 0% 0%, from( #006405 ), color-stop(0.1,#009913), color-stop(0.9,#36FE53), to( #72FE87 ) );
+	padding: 5px 10px;
+	border-radius: 5px;
+	margin: 15px;
+	horizontal-align: middle;
+}
+
+#MessageButton Label{
+	font-size: 25px;
+	color: #fff;
+	text-shadow: #000 0px 0px 6px 1.0;
+}
+
+#MessageButton:active{
+	transform: scale3d(0.9,0.9,1);
+}
+
+/*-------------------------------------------------------------------------*/
+
+#PlayerInventroy{
+	width: 100%;
+	height: 100%;
+	background-color: #111;
+	flow-children: right-wrap;
+	overflow: squish scroll;
+	margin-top: 5px;
+}
+
+.inventroy-item{
+	width: 230px;
+	flow-children: down;
+	background-color: gradient( linear, 0% 100%, 0% 0%, from( #000 ), to( #000 ) );
+	padding: 10px;
+	border: 1px solid #444;
+	margin-top: 0px;
+	margin-left: 8px;
+	margin-right: 8px;
+	margin-bottom: 10px;
+}
+
+.inventroy-item:hover{
+	background-color: gradient( linear, 0% 100%, 0% 0%, from( #222 ), to( #000 ) );
+}
+
+#UseItemButton, #UseItemButton2{
+	horizontal-align: center;
+}
+
+#UseItemButton:hover, #UseItemButton2:hover{
+	brightness: 2;
+}
+
+#UseItemButton:active, #UseItemButton2:active{
+	transform: scale3d(0.9,0.9,1);
+}
+
+#TimeoutCloseAllButton{
+	horizontal-align: center;
+	vertical-align: middle;
+	margin-top: 228px;
+	background-color: #333;
+	padding: 5px 15px;
+	border-radius: 5px;
+}
+
+#TimeoutCloseAllButton Label{
+	color: #fff;
+}
+
+#TimeoutCloseAllButton:active{
+	transform: scale3d(0.9,0.9,1);
+}
+
+.buyCount{
+	width:50px;
+}
+
+.inventory-button-list{
+	flow-children: right;
+	width: 100%;
+}
+
+.inventory-button-list .TextBar .Left{
+	width:20px;
+}
+
+.inventory-button-list .TextBar .Right{
+	width: 20px;
+}
+
+.inventory-button-list .TextBar .Middle{
+	text-align: center;
+	width: 55px;
+}
+
+.inventory-button-list .TextBar .Middle Label{
+	horizontal-align: center;
+	text-overflow: shrink;
+	vertical-align: center;
+}	
+
+#UseItemButton{
+	margin-left:42px;
+}
+
+#UseItemButton.BigButton .Middle{
+	width: 80px;
+}

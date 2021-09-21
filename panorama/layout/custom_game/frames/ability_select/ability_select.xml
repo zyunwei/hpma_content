@@ -1,0 +1,48 @@
+<root>
+    <styles>
+        <include src="s2r://panorama/styles/dotastyles.css"/>
+        <include src="file://{resources}/layout/custom_game/frames/ability_select/ability_select.css"/>
+    </styles>
+    <scripts>
+        <include src="file://{resources}/layout/custom_game/frames/ability_select/ability_select.js"/>
+    </scripts>
+    <snippets>
+        <snippet name="RewardOptionSnippet_Ability">
+            <Button class="RewardsRowContent">	
+                <Panel class="RewardContent">
+                    <DOTAAbilityImage id="RewardAbilityImage" class="RewardIcon" showtooltip="true"/>
+                    <Label html="true" class="RewardName" text="{s:reward_name}"/>
+                </Panel>
+            </Button>
+        </snippet>
+
+        <snippet name="RewardOptionSnippet_Replace">
+			<Button class="ability-btn">
+				<DOTAAbilityImage id="ability-img" />
+				<Panel class="bar" />
+			</Button>
+        </snippet>
+    </snippets>
+	<Panel hittest="false" class="AbilitySelectRoot">
+		<Panel id="SelectPanel" hittest="true" hittestchildren="true">
+            <Panel class="RewardBody">
+				<Panel class="RewardBodyHeader">
+					<Label id="RewardHeader" text="#xxwar_select_ability" html="true"/>
+                    <Panel id="RewardCloseButton" class="CusCloseButton" onactivate="ClosePanel()"/>
+				</Panel>
+				<Panel id="RewardsContainer">
+				</Panel>
+			</Panel>
+        </Panel>
+		<Panel id="ReplacePanel" hittest="true" hittestchildren="true">
+            <Panel class="ReplaceBody">
+				<Panel class="ReplaceBodyHeader">
+					<Label id="ReplaceHeader" text="#xxwar_replace_ability" html="true"/>
+                    <Panel id="ReplaceCloseButtonReplace" class="CusCloseButton" onactivate="ClosePanel()"/>
+				</Panel>
+				<Panel id="ReplaceContainer">
+				</Panel>
+			</Panel>
+        </Panel>
+	</Panel>
+</root>

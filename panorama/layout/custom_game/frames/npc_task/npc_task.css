@@ -1,0 +1,283 @@
+.NPCTaskRoot{
+	width: 100%;
+	height: 100%;
+}
+
+#NPCName{
+	color: #FFB212;
+	text-shadow: #000 0px 0px 8px 18.0;
+	font-size: 23px;
+	font-family: RadianceM,Radiance,FZLanTingHei-R-GBK,TH Sarabun New,YDYGO 540,Gulim,MingLiU;
+}
+
+#NPCTaskFrame{
+	horizontal-align: middle;
+	vertical-align: bottom;
+	transform: translateY(300px);
+
+	transition-property: transform;
+	transition-duration: 0.2s;
+}
+
+#NPCTaskFrame.show{
+	transform: translateY(0px);
+}
+
+#NPCTaskBox{
+	min-height: 100px;
+	min-width: 300px;
+	z-index: 1;
+	margin-top: 25px;
+}
+
+#NPCTaskBoxBg{
+	width: 100%;
+	height: 100%;
+	background-color: #232527;
+	padding-top: 25px;
+	padding-bottom: 5px;
+	padding-left: 30px;
+	padding-right: 30px;
+	clip: rect(0px,100%,100%,30px);
+	transform: translateX(-15px);
+}
+
+#ButtonList{
+	max-width: 800px;
+	flow-children: right-wrap;
+	horizontal-align: middle;
+	vertical-align: middle;
+	padding-top: 25px;
+	padding-bottom: 5px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+#ButtonList .btn{
+	width: 64px;
+	height: width-percentage(100%);
+	border: 2px solid #333;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-bottom: 10px;
+	/*border-radius: 5px;*/
+
+	transition-property: background-color,border,transform;
+	transition-duration: 0.15s;
+}
+
+#ButtonList #tooltip{
+	width: 64px;
+	height: width-percentage(100%);
+	border: 2px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+#ButtonList .btn:hover{
+	border-top: 2px solid #333;
+	border-left: 2px solid #333;
+	border-right: 2px solid #444;
+	border-bottom: 2px solid #444;
+	box-shadow: inset 0px 0px 6px 2px #000;
+}
+
+#ButtonList .btn #mid-text{
+	text-align: center;
+	color: #fff;
+}
+
+#ButtonList .quest .btn{
+	border: 2px solid #3330;
+}
+#ButtonList .quest .btn #mid-text{
+	width: 100%;
+	color: #AF8100;
+	font-size: 65px;
+}
+
+#ButtonList .submit-quest-items .btn #mid-text{
+	width: 100%;
+	color: #A70F00;
+	font-size: 75px;
+	transform: translateY(-10px);
+}
+#ButtonList .submit-quest-items{
+	tooltip-position: top;
+}
+
+#ButtonList .btn #item-img{
+	width: 100%;
+	height: width-percentage(100%);
+}
+
+#ButtonList .btn #item-cost{
+	color: #FFA214;
+	margin: 0px 5px;
+	font-size: 20px;
+	text-shadow: #000 0px 0px 4px 4.0;
+	horizontal-align: right;
+	vertical-align: bottom;
+}
+
+#ButtonList .btn:active{
+	transform: scaleX(0.95) scaleY(0.95);
+	sound: "CustomGameUI.ButtonClick01";
+}
+
+#ButtonList .quest-accepted .btn #mid-text{
+	color: #999;
+}
+
+#ButtonList .quest.quest-good .btn{
+	border: 2px solid #BB7F00;
+}
+
+#ButtonList .quest.quest-good .btn:hover{
+	border-top: 2px solid #BB7F00;
+	border-left: 2px solid #BB7F00;
+	border-right: 2px solid #EAB700;
+	border-bottom: 2px solid #EAB700;
+}
+
+#ButtonList .quest.quest-bad .btn{
+	border: 2px solid #8400AD;
+}
+
+#ButtonList .quest.quest-bad .btn:hover{
+	border-top: 2px solid #8400AD;
+	border-left: 2px solid #8400AD;
+	border-right: 2px solid #BE00D1;
+	border-bottom: 2px solid #BE00D1;
+}
+
+#ButtonList .quest.quest-none .btn{
+	border: 2px solid #666;
+}
+
+#ButtonList .btn #quest-img{
+	visibility: collapse;
+}
+
+#ButtonList .quest .btn #quest-img{
+	width: 100%;
+	height: 100%;
+	visibility: visible;
+}
+
+#ButtonList #hotkey{
+	font-size: 16px;
+	visibility: collapse;
+	horizontal-align: left;
+	margin-top: 5px;
+	margin-left: 6px;
+	color: #9BEBFF;
+}
+
+#ButtonList .quest #hotkey{
+	visibility: visible;
+}
+
+
+#ButtonList .quest.quest-shared{
+	tooltip-position: top;
+	tooltip-body-position: 50% 50%;
+}
+
+#Topbar{
+	width: 100%;
+	margin-top: 15px;
+	flow-children: right;
+	z-index: 2;
+}
+#Topbar .Left{
+	width: 60px;
+	height: 30px;
+	background-image: url("file://{images}/custom_game/npc_frame/topbar_a.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+#Topbar .Middle{
+	width: fill-parent-flow(1);
+	height: 30px;
+	background-image: url("file://{images}/custom_game/npc_frame/topbar_b.png");
+	background-size: 100%;
+}
+
+#Topbar .Right{
+	width: 60px;
+	height: 30px;
+	background-image: url("file://{images}/custom_game/npc_frame/topbar_c.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+#TitleBar{
+	z-index: 2;
+	margin-left: 50px;
+}
+
+#TitleBar Label{
+	text-align: center;
+	vertical-align: middle;
+	color: #fff;
+	text-shadow: #112e4e 0px 0px 4px 2.0;
+	font-size: 18px;
+}
+
+#TitleBar .Left{
+	width: 36px;
+	height: 42px;
+	background-image: url("file://{images}/custom_game/npc_frame/npc_name_a.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+#TitleBar .Middle{
+	height: 42px;
+	background-image: url("file://{images}/custom_game/npc_frame/npc_name_b.png");
+	background-size: 100%;
+}
+
+#TitleBar .Right{
+	width: 36px;
+	height: 42px;
+	background-image: url("file://{images}/custom_game/npc_frame/npc_name_c.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+.TextBar{
+	flow-children: right;
+}
+
+.TextBar Label{
+	text-align: center;
+	vertical-align: middle;
+	color: #fff;
+	text-shadow: #112e4e 0px 0px 4px 2.0;
+	transform: translateY(1px);
+}
+
+.TextBar .Left{
+	width: 36px;
+	height: 42px;
+	background-image: url("file://{images}/custom_game/npc_frame/textbar_a.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+.TextBar .Middle{
+	height: 42px;
+	background-image: url("file://{images}/custom_game/npc_frame/textbar_b.png");
+	background-size: 100%;
+}
+
+.TextBar .Right{
+	width: 36px;
+	height: 42px;
+	background-image: url("file://{images}/custom_game/npc_frame/textbar_c.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+}

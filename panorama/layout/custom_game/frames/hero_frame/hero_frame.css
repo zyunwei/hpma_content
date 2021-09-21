@@ -1,0 +1,973 @@
+.HeroFrameRoot{
+	width: 100%;
+	height: 100%;
+}
+
+#HeroFrame{
+	horizontal-align: middle;
+	vertical-align: bottom;
+	transform: translateY(350px);
+
+	transition-property: transform;
+	transition-duration: 0.2s;
+}
+
+.AspectRatio5x4 #HeroFrame{
+	x: 100px;
+}
+.AspectRatio4x3 #HeroFrame{
+	x: 100px;
+}
+
+#HeroFrame.show{
+	transform: translateY(0px);
+}
+
+#Tier0,
+#Tier1,
+#Tier2,
+#Tier3
+{
+	width: 100%;
+	horizontal-align: middle;
+	vertical-align: bottom;
+}
+
+#Tier0{
+	z-index: 2;
+}
+
+#Tier1{
+    z-index: 1;
+	margin-bottom:5px;
+}
+
+#Tier2{
+	margin-bottom: 205px;
+}
+
+#Tier3{
+	margin-bottom: 240px;
+}
+
+/*=============英雄头像===============*/
+#HeroPortraitPanel{
+	width: 112px;
+	height: 112px;
+	transform: translateY(12px);
+	horizontal-align: middle;
+	vertical-align: bottom;
+	tooltip-position: top;
+	tooltip-body-position: 50% 50%;
+}
+
+#HeroPortraitPanel.IsDeath #HeroPortraitImg{
+	saturation: 0;
+	wash-color: #999;
+	blur: gaussian( 2.0 );
+}
+
+#HeroPortraitPanel .hero-respawn-time{
+	font-size: 40px;
+	color: gradient( linear, 0% 0%, 0% 100%, from( #ff5522ee ), to( #cc0000dd ) );
+	text-shadow: 0px 0px 6px 5 #350000dd;
+	horizontal-align: middle;
+	vertical-align: middle;
+	visibility: collapse;
+}
+
+#HeroPortraitPanel.IsDeath .hero-respawn-time{
+	visibility: visible;
+	opacity: 0;
+}
+
+#HeroExpRing{
+	width: 100%;
+	height: 100%;
+	background-image: url("file://{images}/custom_game/hero_frame/exp_ring.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center;
+	transform: translateY(2px) rotateZ(135deg);
+}
+
+#HeroPortraitImg{
+	width: 100%;
+	height: 100%;
+	tooltip-position: top;
+	tooltip-body-position: 50% 50%;
+}
+
+#HeroPortraitCircle{
+	width: 100%;
+	height: 100%;
+	background-image: url("file://{images}/custom_game/hero_frame/hero_portriat.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center;
+}
+
+#HeroLevel{
+	width: 30px;
+	height: 30px;
+	background-image: url("file://{images}/custom_game/hero_frame/level.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center;
+	horizontal-align: right;
+	vertical-align: bottom;
+
+	transform: translateY(-6px) translateX(-4px);
+}
+
+#HeroLevel Label{
+	color: #E7D291;
+	text-shadow: 0px 0px 3px 3.7 #EC780E24;
+	width: 100%;
+	text-align: center;
+	transform: translateY(5px);
+}
+
+
+/*=============属性===============*/
+#AttributesPanel{
+	flow-children: down;
+	horizontal-align: middle;
+	vertical-align: bottom;
+	transform: translateX(-73px);
+}
+
+#AttributesPanel .attribute{
+	width: 125px;
+	height: 26px;
+	background-image: url("file://{images}/custom_game/hero_frame/attr_bar_normal.png");
+	background-repeat: no-repeat;
+	background-position: left center;
+	flow-children: right;
+	horizontal-align: right;
+
+	tooltip-position: left;
+	tooltip-body-position: 50% 50%;
+}
+
+#AttributesPanel.has_assign_points .attribute{
+	background-image: url("file://{images}/custom_game/hero_frame/attr_bar_add.png");
+}
+
+#AttributesPanel.has_assign_points .attribute:hover{
+	brightness: 2;
+}
+
+#AttributesPanel .attribute .icon{
+	width: 20px;
+	height: 20px;
+	vertical-align: middle;
+	margin-left: 22px;
+}
+
+#AttributesPanel .attribute Label{
+	color: #AAA;
+	vertical-align: middle;
+	transform: translateY(2px);
+	margin-left: 2px;
+}
+
+#AttributesPointsPanel{
+	horizontal-align: middle;
+	vertical-align: bottom;
+	transform: translateX(-160px) translateY(-45px);
+	tooltip-position: top;
+	tooltip-body-position: 50% 50%;
+}
+
+#AttributesPointsPanel Label{
+	horizontal-align: middle;
+	vertical-align: bottom;
+	font-size: 14px;
+	color: #FFD73B;
+	transform: translateY(-1px) translateX(1px);
+}
+
+/*=============生命条=============*/
+#HealthBar{
+	width: 306px;
+	height: 25px;
+	background-image: url("file://{images}/custom_game/hero_frame/health_bar.png");
+	background-repeat: no-repeat;
+	background-position: left center;
+	horizontal-align: middle;
+	vertical-align: bottom;
+	transform: translateX(-285px) translateY(-25px);
+}
+
+#HealthBar #HealthPercentBar{
+	width: 100%;
+	height: 100%;
+	background-image: url("file://{images}/custom_game/hero_frame/health_bar_bg.png");
+	background-repeat: no-repeat;
+	background-position: left;
+}
+
+#HealthBar Label{
+	color: #CCC;
+	font-size: 14px;
+	horizontal-align: middle;
+	vertical-align: middle;
+	transform: translateY(1px);
+	text-shadow: #000 0px 0px 2px 2.0;
+}
+
+#HealthBar #HealthPercentText{
+	horizontal-align: left;
+	margin-left: 10px;
+}
+
+/*=============魔法条=============*/
+#ManaBar{
+	width: 306px;
+	height: 25px;
+	background-image: url("file://{images}/custom_game/hero_frame/mana_bar.png");
+	background-repeat: no-repeat;
+	background-position: left center;
+	horizontal-align: middle;
+	vertical-align: bottom;
+	transform: translateX(-285px) translateY(0px);
+}
+
+#ManaBar #ManaPercentBar{
+	width: 100%;
+	height: 100%;
+	background-image: url("file://{images}/custom_game/hero_frame/mana_bar_bg.png");
+	background-repeat: no-repeat;
+	background-position: left;
+}
+
+#ManaBar Label{
+	color: #CCC;
+	font-size: 14px;
+	horizontal-align: middle;
+	vertical-align: middle;
+	transform: translateY(1px);
+	text-shadow: #000 0px 0px 2px 2.0;
+}
+
+#ManaBar #ManaPercentText{
+	horizontal-align: left;
+	margin-left: 10px;
+}
+
+/*=============能量水晶=============*/
+#CrystalBar{
+	width: 306px;
+	height: 25px;
+	background-image: url("file://{images}/custom_game/hero_frame/mana_bar.png");
+	background-repeat: no-repeat;
+	background-position: left center;
+	horizontal-align: middle;
+	vertical-align: bottom;
+	transform: translateX(-285px) translateY(-50px);
+	flow-children: right;
+}
+
+#CrystalBar #CrystalPercentBar{
+	width: 250px;
+	height: 25px;
+	background-repeat: no-repeat;
+	background-position: left;
+	flow-children: right;
+	padding-top:5px;
+}
+
+#CrystalBar #CrystalPercentBar .CrystalItem {
+	height: 18px;
+	width: 18px;
+	background-image: url("file://{images}/custom_game/hero_frame/crystal_full.png");
+	background-size: 18px 18px;
+	margin-right: 5px;
+}
+
+#CrystalBar #CrystalPercentBar .CrystalItem.Empty {
+	height: 18px;
+	width: 18px;
+	background-image: url("file://{images}/custom_game/hero_frame/crystal_empty.png");
+	background-size: 18px 18px;
+	margin-right: 5px;
+}
+
+#RealmButton {
+	background-image: url("file://{images}/custom_game/hero_frame/realm.png");
+	background-size: 100%;
+	width:70px;
+	height:26px;
+	horizontal-align: right;
+	margin-left:2px;
+	tooltip-position: top;
+}
+
+#RealmButton .full {
+	background-image: url("file://{images}/custom_game/hero_frame/realm_max.png");
+}
+
+#RealmButton Label{
+	height:26px;
+	font-family: FZLanTingHei-R-GBK, TH Sarabun New, YDYGO 540, Gulim, MingLiU;
+	font-size: 16px;
+	padding-left:30px;
+	padding-top:5px;
+}
+
+/*=======BUFF条=======*/
+#BuffsFrame{
+	vertical-align: bottom;
+	horizontal-align: center;
+}
+
+/*======玩家名称======*/
+#UserNamePanel{
+	margin-left: 495px;
+	vertical-align: bottom;
+	transform: translateX(81px) translateY(-50px);
+	padding: 10px;
+	flow-children: right;
+	visibility: collapse;
+}
+
+#UserName Label{
+	font-size: 20px;
+	text-shadow: #3887f325 0px 0px 3px 3.5;
+	max-width: 256px;
+}
+
+#HeroFate{
+	font-size: 20px;
+	color: #FF778C;
+	text-shadow: #AB0031 0px 0px 2px 2.0;
+}
+
+/*================快捷物品栏================*/
+#QuicklyItemList{
+	flow-children: right;
+	vertical-align: bottom;
+	horizontal-align: middle;
+	transform: translateX(247px);
+}
+
+.quickly-item{
+	width: 62px;
+	height: 62px;
+}
+
+.quickly-item .bar{
+	width: 100%;
+	height: 100%;
+	background-image: url("file://{images}/custom_game/hero_frame/item_quickly_bar.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100%;
+}
+
+.quickly-item #Hotkey{
+	width: 26px;
+	height: 26px;
+	background-image: url("file://{images}/custom_game/hero_frame/hotkey_box.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100%;
+	vertical-align: bottom;
+	horizontal-align: middle;
+	transform: translateY(2px);
+}
+
+.quickly-item #Hotkey Label{
+	color: #DDD;
+	font-size: 14px;
+	width: 100%;
+	text-align: center;
+	transform: translateY(6px);
+}
+
+
+.quickly-item #charges{
+	horizontal-align: right;
+	vertical-align: bottom;
+	margin-right: 7px;
+	color: #fff;
+	text-shadow: #000 0px 0px 2px 2.0;
+}
+
+.quickly-item #cooldown{
+	width: 100%;
+	height: 100%;
+	tooltip-position: top;
+	tooltip-body-position: 50% 50%;
+}
+
+.quickly-item.is-in-cd #item-img{
+	saturation: 0.8;
+	wash-color: #AAA;
+}
+
+.quickly-item.is-in-cd #cooldown{
+	background-color: #000C;
+}
+
+.quickly-item #cd{
+	color: #A2DFFF;
+	horizontal-align: middle;
+	vertical-align: middle;
+	visibility: collapse;
+}
+
+.quickly-item.is-in-cd #cd{
+	visibility: visible;
+}
+
+#item-img{
+	width: 100%;
+	height: 100%;
+	background-image: none;
+	background-image: url("file://{images}/custom_game/emptyitembg64.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100%;
+}
+
+.quickly-item.is-local-hero #Hotkey{
+	visibility: collapse;
+}
+
+/*==================技能列表==================*/
+#AbilitiesPanel{
+	flow-children: right;
+	margin-bottom: 92px;
+	horizontal-align: middle;
+}
+#AbilityList{
+	flow-children: right;
+}
+
+#ability-img{
+	border-radius: 50%;
+	width: 57px;
+	height: 57px;
+	vertical-align: middle;
+	horizontal-align: middle;
+
+	background-image: url("file://{images}/custom_game/emptyitembg64.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100%;
+}
+.ability-btn{
+	width: 84px;
+	height: 84px;
+	tooltip-position: top;
+	tooltip-body-position: 50% 50%;
+
+	transition-property: transform, brightness;
+	transition-duration: 0.12s;
+	visibility: collapse;
+	vertical-align: bottom;
+}
+
+.ability-btn.drag_start {
+	wash-color: #F67F00;
+}
+
+.ability-btn.drag_target {
+	wash-color: #F67F00;
+}
+
+.ability-btn .bar{
+	width: 100%;
+	height: 100%;
+	background-image: url("file://{images}/custom_game/hero_frame/ability_bar.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100%;
+}
+
+.ability-btn #Hotkey{
+	width: 50px;
+	height: 26px;
+	background-image: url("file://{images}/custom_game/hero_frame/hotkey_box.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	vertical-align: bottom;
+	horizontal-align: middle;
+	transform: translateY(2px);
+}
+
+.ability-btn #Hotkey Label{
+	color: #DDD;
+	font-size: 14px;
+	width: 50px;
+	text-align: center;
+	transform: translateY(4px);
+	text-shadow: #000 0px 0px 4px 4.0;
+}
+
+.is-passive #Hotkey Label{
+	color:#444;
+}
+
+#charge_panel{
+	background-color: gradient( linear, 0% 0%, 0% 100%, from( #444 ), to( black ) );
+	border-radius: 50%;
+	visibility: collapse;
+}
+
+.ability-btn #charge_panel{
+	horizontal-align: right;
+	vertical-align: bottom;
+	width: 20px;
+	height: 20px;
+	margin-right:20px;
+	margin-bottom:20px;
+}
+
+.ability-btn.small #charge_panel{
+	horizontal-align: right;
+	vertical-align: bottom;
+	width: 20px;
+	height: 20px;
+	margin-right:8px;
+	margin-bottom:8px;
+}
+
+.ability-btn #charge_bar {
+	width: 100%;
+	height: 100%;
+	border: 2px solid #86d64c;
+	border-radius: 50%;
+}
+
+.ability-btn.not-activated #charge_bar{
+	border: 2px solid #eacc54;
+}
+
+.ability-btn #charges{
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	horizontal-align: center;
+	vertical-align: center;
+	/* margin-bottom: 2px; */
+	color: #fff;
+	font-size: 16px;
+	text-shadow: #000 0px 0px 2px 2.0;
+	padding-right:1px;
+	padding-top:1px;
+}
+
+.ability-btn.no-mana #ability-img{
+	wash-color: #1569be;
+}
+
+.ability-btn #cooldown{
+	width: 85%;
+	height: 85%;
+	tooltip-position: top;
+	tooltip-body-position: 50% 50%;
+	vertical-align: middle;
+	horizontal-align: middle;
+}
+
+.ability-btn.is-in-cd #ability-img{
+	saturation: 0.8;
+	wash-color: #AAA;
+}
+
+.ability-btn.is-in-cd #cooldown{
+	background-color: #000C;
+	border-radius: 50%;
+}
+
+.ability-btn #cd{
+	color: #A2DFFF;
+	text-shadow:#0e2b52 0px 0px 4px 3.7;
+	horizontal-align: middle;
+	vertical-align: middle;
+	visibility: collapse;
+}
+
+.ability-btn.is-in-cd #cd{
+	visibility: visible;
+}
+
+.ability-btn.is-in-cd{
+/*	transform: scale3d(0.85,0.85,1);*/
+}
+.ability-btn.active{
+	transform: scale3d(0.9,0.9,1);
+	brightness: 1.5;
+}
+
+.ability-btn.is-passive .bar{
+	background-image: url("file://{images}/custom_game/hero_frame/ability_bar_passive.png");
+}
+
+.ability-btn.is-toggle .bar{
+	background-image: url("file://{images}/custom_game/hero_frame/ability_bar_toggle.png");
+}
+
+.ability-btn.not-activated #ability-img{
+	saturation: 0;
+	wash-color: #999;
+}
+.ability-btn.not-learn #ability-img{
+	saturation: 0;
+	wash-color: #999;
+}
+
+.ability-btn .lock{
+	width: 100%;
+	height: 100%;
+	background-image: url("file://{images}/custom_game/hero_frame/ability_lock.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	visibility: collapse;
+}
+
+.ability-btn.not-learn .lock{
+	visibility: visible;
+}
+
+.ability-btn.auto-cast .bar,
+.ability-btn.is-toggle.toggle-enable .bar{
+	animation-name: AbilityToggleEnableRotate;
+	animation-duration: 4s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	brightness: 3;
+}
+
+@keyframes 'AbilityToggleEnableRotate'
+{
+	0%
+	{
+		transform: rotateZ(0deg);
+	}
+	50%
+	{
+		transform: rotateZ(180deg);
+	}
+	100%
+	{
+		transform: rotateZ(360deg);
+	}
+}
+
+.ability-btn.small{
+	width: 48px;
+	height: 48px;
+	vertical-align: bottom;
+	margin: 5px;
+}
+
+.ability-btn.small{
+	width: 48px;
+	height: 48px;
+	vertical-align: bottom;
+}
+
+.ability-btn.small #ability-img {
+	width: 46px;
+	height: 46px;
+}
+
+.ability-btn.small .bar{
+	background-image: url("file://{images}/custom_game/hero_frame/ability_bar_small.png");
+}
+
+.ability-btn.small #Hotkey{
+	background-image: none;
+	transform: translateY(8px);
+}
+
+.ability-btn.small.is-in-cd{
+	transform: scale3d(1,1,1);
+}
+.ability-btn.small.active{
+	transform: scale3d(0.85,0.85,1);
+	brightness: 1.5;
+}
+
+/*================================*/
+.small-btn{
+	background-repeat: no-repeat;
+	background-size: 100%;
+	flow-children: down;
+	padding: 10px;
+	transition-property: opacity;
+	transition-duration: 0.3s;
+	horizontal-align: middle;
+}
+
+.small-btn Label{
+	color: #fff;
+	text-shadow: #000 0px 0px 4px 4.0;
+}
+
+.small-btn:hover{
+/*	background-image: url("file://{images}/textures/miniprofile_rock.psd");*/
+	background-color: #666;
+	opacity: 1;
+}
+
+.small-btn:active{
+	sound: "CustomGameUI.ButtonActive";
+}
+
+.small-btn .icon{
+	width: 40px;
+	height: 40px;
+	background-position: center;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	horizontal-align: middle;
+}
+
+.small-btn .icon.compose{
+	background-image: url("file://{images}/custom_game/hero_frame/icon_compose.png");
+}
+
+.small-btn .icon.quests{
+	background-image: url("file://{images}/custom_game/hero_frame/icon_quests.png");
+}
+
+.small-btn .icon.points_shop{
+	background-image: url("file://{images}/custom_game/hero_frame/icon_points_shop.png");
+}
+
+.small-btn .icon.help_book{
+	background-image: url("file://{images}/custom_game/hero_frame/icon_help.png");
+}
+
+.small-btn .icon.setting{
+	background-image: url("file://{images}/custom_game/hero_frame/icon_setting.png");
+}
+
+.LevelUpTab
+{
+	width: 100%;
+	height: 36px;
+
+	margin-top: -30px;
+	visibility: collapse;
+	
+	tooltip-position: top;
+	tooltip-body-position: 50% 50%;
+
+	z-index: 2;
+	transition-property: opacity, brightness;
+	transition-timing-function: ease-in-out;
+	transition-duration: .12s;	
+}
+
+#LevelUpButton
+{
+	width: 100%;
+	height: 36px;
+
+	background-image: url("file://{images}/hud/reborn/levelup_button.png");
+	background-size: 100% 100%;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	
+	transition-property: opacity, brightness, pre-transform-scale2d;
+	transition-timing-function: ease-in-out;
+	transition-duration: .12s;	
+	
+	margin-bottom: -4px;
+}
+
+#LevelUpIcon
+{
+	horizontal-align: center;
+	vertical-align: middle;
+	width: 24px;
+	height: 24px;
+	background-image: url("file://{images}/hud/reborn/levelup_plus_well.png");
+	background-size: 100% 100%;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	transition-property: background-image;
+	transition-duration: .12s;
+}
+
+.LevelUpTab:hover #LevelUpIcon
+{
+	background-image: url("file://{images}/hud/reborn/levelup_plus_fill.png");
+}
+
+.LevelUpTab:hover #LevelUpButton
+{
+	brightness: 1.4;
+}
+
+.LevelUpTab:active #LevelUpButton
+{
+	pre-transform-scale2d: .9;
+}
+
+.ability-btn.show_level_up_tab
+{
+    height: 124px;
+    padding-top: 40px;
+}
+
+.show_level_up_tab .LevelUpTab
+{
+	visibility: visible;
+}
+
+#HeroAttributeTabPanel { 
+	horizontal-align: center;
+	vertical-align: bottom;
+	background-color: gradient( linear, 0% 0%, 0% 100%, from( #03121EF5 ), to( #082D4BF5 ) );
+	border: 2px solid #fff;
+	flow-children: down;
+	min-width: 300px;
+	box-shadow: 0px 0px 5px #000;
+	border-radius: 6px;
+	margin-bottom:140px;
+	padding:16px;
+	visibility: collapse;
+}
+
+.initHiddenText {
+	visibility:collapse;
+}
+
+/*================================================================================*/
+#BagHandyButtons{
+	flow-children: down;
+	transform: translateX(0px);
+	opacity: 0;
+	horizontal-align: center;
+	vertical-align: bottom;
+	margin-bottom: 0px;
+	margin-right: 0px;
+	transition-property: opacity;
+	transition-duration: 0.2s;
+}
+
+#BagHandyButtons.drag_start{
+	opacity: 1;
+}
+
+#BagHandyButtons .btn{
+	width: 306px;
+	height: 106px;
+	background-image: url("file://{images}/custom_game/bag/bag_handy_button.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+
+	transition-property: background-image;
+	transition-duration: 0.2s;
+}
+
+#BagHandyButtons .btn .title{
+	color: #fff;
+	font-size: 24px;
+	text-shadow: #2a7fdd 0px 0px 13px 6.0;
+	horizontal-align: middle;
+	vertical-align: middle;
+	height:40px;
+	margin-top:15px;
+}
+
+#BagHandyButtons .btn .title.discard_btn{
+	width: 100%;
+	text-align: center;
+	vertical-align: middle;
+}
+
+#BagHandyButtons .btn.drag_enter{
+	background-image: url("file://{images}/custom_game/bag/bag_handy_button_hover.png");
+}
+
+#BagHandyButtons #BagHandyButtons_PublicStash.btn .title{
+	margin-top: 0px;
+	vertical-align: middle;
+}
+
+#BagHandyButtons .btn:disabled{
+	background-image: url("file://{images}/custom_game/bag/bag_handy_button_disable.png");
+}
+#BagHandyButtons .btn.drag_enter:disabled{
+	background-image: url("file://{images}/custom_game/bag/bag_handy_button_disable.png");
+}
+#BagHandyButtons .btn:disabled .title{
+	color: #AAA;
+	text-shadow: #000 0px 0px 13px 6.0;
+}
+
+#RealmUpTab {
+	width: 60px;
+	height: 30px;
+	tooltip-position: top;
+	tooltip-body-position: 50% 50%;
+	margin-left:95px;
+	z-index: 2;
+	transition-property: opacity, brightness;
+	transition-timing-function: ease-in-out;
+	transition-duration: .12s;
+	visibility: collapse;
+}
+
+#RealmUpButton {
+	width: 100%;
+	height: 36px;
+
+	background-image: url("file://{images}/hud/reborn/levelup_button.png");
+	background-size: 100% 100%;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	
+	transition-property: opacity, brightness, pre-transform-scale2d;
+	transition-timing-function: ease-in-out;
+	transition-duration: .12s;	
+	
+	margin-bottom: -4px;
+}
+
+#RealmUpIcon {
+	horizontal-align: center;
+	vertical-align: middle;
+	width: 12px;
+	height: 12px;
+	background-size: 100% 100%;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	transition-property: background-image;
+	transition-duration: .12s;
+}
+
+#RealmUpTab:hover #RealmUpButton {
+	brightness: 1.4;
+}
+
+#RealmUpTab:active #RealmUpButton {
+	pre-transform-scale2d: .9;
+}
+
+#RealmUpGold {
+	vertical-align: center;
+	horizontal-align: center;
+}
+
+#RealmUpGold Label{
+	color: #654505;
+}
+
+#RealmUpTab:hover #RealmUpGold Label {
+	color: #ffffd6;
+}
+
+.dragAbilityImage {
+	width: 84px;
+	height: 84px;
+	border-radius: 84px;
+}

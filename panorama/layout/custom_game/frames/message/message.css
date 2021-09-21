@@ -1,0 +1,221 @@
+
+#BottomMsgPanel{
+	horizontal-align: middle;
+	vertical-align: bottom;
+	margin: 260px 0px;
+	opacity: 0;
+	overflow: noclip;
+	transition-property: opacity;
+	transition-duration: 0.3s;
+}
+
+#BottomMsgPanel.show{
+	opacity: 1;
+
+	animation-name: MsgAnimation1;
+	animation-duration: 0.3s;
+	animation-timing-function: linear;
+}
+
+@keyframes 'MsgAnimation1'
+{
+	0%
+	{
+		opacity: 0.2;
+		transform: scaleX(2.0) scaleY(2.0);
+	}
+}
+
+#BottomMsgPanel Label{
+	font-size: 40px;
+	color: #fff;
+	text-shadow: #000 0px 0px 5px 5.0;
+}
+
+#BottomMsgPanel.error Label{
+	color: #FF533E;
+	text-shadow: #C11E00 0px 0px 5px 5.0;
+}
+
+#BottomMsgPanel.success Label{
+	color: #6AFE94;
+	text-shadow: #00C33A 0px 0px 5px 5.0;
+}
+
+#BottomMsgPanel.info Label{
+	color: #5DC4FF;
+	text-shadow: #006FD2 0px 0px 5px 5.0;
+}
+
+#BottomMsgPanel.warning Label{
+	color: #FFDB5F;
+	text-shadow: #C18900 0px 0px 5px 5.0;
+}
+
+/*------------------------------------------------------------------------*/
+
+#MessageLog{
+	width: 500px;
+	height: 900px;
+	padding: 20px;
+	border: 4px solid #666;
+	border-radius: 5px;
+	box-shadow: inset 0px 0px 10px #000;
+	background-color: #222;
+	vertical-align: middle;
+	margin-left: 10px;
+	overflow: squish scroll;
+	flow-children: down;
+	transform: translateX(-600px);
+
+	transition-property: transform;
+	transition-duration: 0.3s;
+}
+
+#MessageLog Label{
+	color: #fff;
+}
+
+#MessageLog.show{
+	transform: translateX(0px);
+}
+
+#MessageLog #VerticalScrollBar #ScrollThumb{
+	background-color: #BBB;
+}
+
+/*------------------------------------------------------------------------*/
+#Log{
+	width: 30px;
+	height: 30px;
+	vertical-align: bottom;
+	margin-bottom: 330px;
+}
+
+#Log:hover{
+	transform: scale3d(1.1, 1.1, 1.1);
+}
+
+#Log.muted {
+	saturation: 0;
+}
+
+/* #img{
+	width: 50px;
+	height: 50px;
+} */
+
+#LeftMsgPanel .icon_msg{
+	max-width: 500px;
+	flow-children: right;
+	padding: 5px 10px;
+	/*margin-bottom: 2px;*/
+	transform: translateX(-520px);
+
+	background-color: #232527;
+/*	border-top: 2px solid #222A;
+	border-right: 2px solid #222A;
+	border-bottom: 2px solid #222A;*/
+
+	transition-property: transform;
+	transition-duration: 0.3s;
+}
+
+#LeftMsgPanel .icon_msg.show{
+	transform: translateX(0);
+}
+
+#LeftMsgPanel .icon_msg.success Label{
+	color: #6AFE94;
+	text-shadow: #00C33A 0px 0px 2px;
+}
+#LeftMsgPanel .icon_msg.info Label{
+	color: #5DC4FF;
+	text-shadow: #006FD2 0px 0px 2px;
+}
+#LeftMsgPanel .icon_msg.warning Label{
+	color: #FFDB5F;
+	text-shadow: #C18900 0px 0px 2px;
+}
+#LeftMsgPanel .icon_msg.error Label{
+	color: #FF533E;
+	text-shadow: #C11E00 0px 0px 2px;
+} 
+
+#LeftMsgPanel .icon_msg.success{
+	/*background-color: #00BB0BA0;*/
+	/*border-top: 2px solid #00860AA0;*/
+	/*border-right: 2px solid #00860AA0;*/
+	/*border-bottom: 2px solid #00860AA0;*/
+}
+
+#LeftMsgPanel .icon_msg.info{
+	/*background-color: #007DCAA0;*/
+	/*border-top: 2px solid #00456CA0;*/
+	/*border-right: 2px solid #00456CA0;*/
+	/*border-bottom: 2px solid #00456CA0;*/
+}
+
+#LeftMsgPanel .icon_msg.warning{
+	/*background-color: #D99700A0;*/
+	/*border-top: 2px solid #9B5B00A0;*/
+	/*border-right: 2px solid #9B5B00A0;*/
+	/*border-bottom: 2px solid #9B5B00A0;*/
+}
+
+#LeftMsgPanel .icon_msg.error{
+	/*background-color: #A31900A0;*/
+	/*border-top: 2px solid #620900A0;*/
+	/*border-right: 2px solid #620900A0;*/
+	/*border-bottom: 2px solid #620900A0;*/
+}
+
+#LeftMsgPanel .icon_msg Label{
+	color: #fff;
+	text-shadow: 0px 0px 2px #000;
+}
+
+/*------------------------------------------------------------------------*/
+
+#MessageBox{
+	width: 800px;
+	height: 400px;
+	vertical-align: middle;
+	margin-left: 350px;
+	flow-children: down;
+
+	transform: translateY(158px);
+}
+
+#MessageBox Label{
+	text-shadow: #000 0px 0px 2px 2.0;
+}
+
+#MessageBoxContent{
+	flow-children: down;
+	vertical-align: bottom;
+}
+
+.message-box-msg{
+	opacity: 1;
+	flow-children: right;
+
+	transition-property: opacity;
+	transition-duration: 1s;
+}
+
+.message-box-msg #role{
+	color: #EE4600;
+}
+
+.message-box-msg #list{
+	flow-children: down;
+}
+
+.message-box-msg #list Label{
+	color: #fff;
+}
+
+.message-box-msg.invisible{
+	opacity: 0;
+}

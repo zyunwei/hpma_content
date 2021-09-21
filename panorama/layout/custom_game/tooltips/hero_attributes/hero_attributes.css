@@ -1,0 +1,42 @@
+
+#Contents.HeroAttributesRoot{
+	background-color: gradient( linear, 0% 0%, 0% 100%, from( #03121EF5 ), to( #082D4BF5 ) );
+	border: 2px solid #fff;
+	flow-children: down;
+	min-width: 300px;
+	box-shadow: 0px 0px 5px #000;
+	border-radius: 6px;
+}
+
+#HeroAttributes{
+	flow-children: down;
+}
+
+.attribute-panel{
+	width: 300px;
+	padding: 5px 10px;
+	background-color: gradient( linear, 0% 0%, 100% 0%, from( #00305B ), to( #0000 ) );
+	margin-bottom: 10px;
+}
+
+#pnlValue{
+	flow-children: right;
+	horizontal-align: right;
+}
+
+.attribute-panel #attribute-name{
+	color: #BDD5FE;
+}
+
+.attribute-panel #attribute-value{
+	color: #FFAC22;
+}
+
+.attribute-panel #attribute-val2{
+	color: #FFAC22;
+}
+
+.attribute-panel.second{
+	margin-left: 30px;
+	background-color: gradient( linear, 0% 0%, 100% 0%, from( #0000 ), to( #00305B ) );
+}

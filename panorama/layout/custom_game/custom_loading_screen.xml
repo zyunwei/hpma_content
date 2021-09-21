@@ -1,0 +1,32 @@
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/dotastyles.css" />
+		<include src="file://{resources}/styles/custom_game/avalon.css" />
+		<include src="file://{resources}/styles/custom_game/custom_loading_screen.css" />
+	</styles>
+	<scripts>
+		<include src="file://{resources}/scripts/custom_game/custom_loading_screen.js" />
+		<include src="file://{resources}/scripts/custom_game/avalon.js" />
+        <include src="file://{resources}/scripts/custom_game/copy_from_lua_config.js" />
+        <include src="file://{resources}/scripts/custom_game/compose_helper.js" />
+	</scripts>
+	<Panel>
+		<Panel class="full bg-black">
+		</Panel>
+        <Panel class="setting_box" id="setting_box">
+            <Panel class="inner_box">
+                <Panel class="setting_header">
+                    <Label text="#UI_BOT_SETTING"></Label>
+                </Panel>
+                <Panel class="hr_bar" />
+                <Panel class="setting_text">
+                    <Label text="#UI_CURRENT_BOT_COUNT"></Label>
+                    <Label text=".." id="lblBotCount"></Label>
+                </Panel>
+                <Button id="btn_add_bot" onactivate="add_bot_click();">
+                    <Label text="#UI_BOT_ADD"></Label>
+                </Button>
+            </Panel>
+        </Panel>
+	</Panel>
+</root>

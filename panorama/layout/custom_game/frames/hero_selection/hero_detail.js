@@ -1,0 +1,446 @@
+Hero_Detail = 
+{
+    legion_commander:
+    {
+        statusInfo:
+        {
+            str:
+            {
+                imgPath:"s2r://panorama/images/primary_attribute_icons/primary_attribute_icon_strength_psd.vtex",
+                content:"40 + 4.2",
+            },
+            agi:
+            {
+                imgPath:"s2r://panorama/images/primary_attribute_icons/primary_attribute_icon_agility_psd.vtex",
+                content:"30 + 2.0",
+            },
+            int:
+            {
+                imgPath:"s2r://panorama/images/primary_attribute_icons/primary_attribute_icon_intelligence_psd.vtex",
+                content:"25 + 1.2",
+            }
+        },
+        attackInfo:
+        {
+            attack:
+            {
+                imgPath:"s2r://panorama/images/hud/reborn/icon_damage_psd.vtex",
+                content:"35-45",
+            },
+            attackTime:
+            {
+                imgPath:"s2r://panorama/images/hud/reborn/icon_attack_speed2_psd.vtex",
+                content:"1.8",
+            },
+            attackRange:
+            {
+                imgPath:"s2r://panorama/images/hud/reborn/icon_attack_range_psd.vtex",
+                content:"300",
+            }
+        },
+        defenseInfo:
+        {
+            armor:
+            {
+                imgPath:"s2r://panorama/images/hud/reborn/icon_armor_psd.vtex",
+                content:"0",
+            },
+            magicResist:
+            {
+                imgPath:"s2r://panorama/images/hud/reborn/icon_magic_resist_psd.vtex",
+                content:"25",
+            }
+        },
+        movementInfo:
+        {
+            moveSpeed:
+            {
+                imgPath:"s2r://panorama/images/hud/reborn/icon_speed_psd.vtex",
+                content:"350",
+            },
+            turnRate:
+            {
+                imgPath:"s2r://panorama/images/hud/reborn/icon_turn_rate_psd.vtex",
+                content:"1",
+            },
+            vision:
+            {
+                imgPath:"s2r://panorama/images/hero_selection/minimap_ward_obs_png.vtex",
+                content:"800",
+            }
+        }
+    },
+
+spectre:
+    {
+        statusInfo:
+        {
+            str:
+            {
+                imgPath:"s2r://panorama/images/primary_attribute_icons/primary_attribute_icon_strength_psd.vtex",
+                content:"40 + 4.5",
+            },
+            agi:
+            {
+                imgPath:"s2r://panorama/images/primary_attribute_icons/primary_attribute_icon_agility_psd.vtex",
+                content:"30 + 2.0",
+            },
+            int:
+            {
+                imgPath:"s2r://panorama/images/primary_attribute_icons/primary_attribute_icon_intelligence_psd.vtex",
+                content:"30 + 2.0",
+            }
+        },
+        attackInfo:
+        {
+            attack:
+            {
+                imgPath:"s2r://panorama/images/hud/reborn/icon_damage_psd.vtex",
+                content:"35-45",
+            },
+            attackTime:
+            {
+                imgPath:"s2r://panorama/images/hud/reborn/icon_attack_speed2_psd.vtex",
+                content:"1.8",
+            },
+            attackRange:
+            {
+                imgPath:"s2r://panorama/images/hud/reborn/icon_attack_range_psd.vtex",
+                content:"150",
+            }
+        },
+        defenseInfo:
+        {
+            armor:
+            {
+                imgPath:"s2r://panorama/images/hud/reborn/icon_armor_psd.vtex",
+                content:"5",
+            },
+            magicResist:
+            {
+                imgPath:"s2r://panorama/images/hud/reborn/icon_magic_resist_psd.vtex",
+                content:"25",
+            }
+        },
+        movementInfo:
+        {
+            moveSpeed:
+            {
+                imgPath:"s2r://panorama/images/hud/reborn/icon_speed_psd.vtex",
+                content:"350",
+            },
+            turnRate:
+            {
+                imgPath:"s2r://panorama/images/hud/reborn/icon_turn_rate_psd.vtex",
+                content:"1",
+            },
+            vision:
+            {
+                imgPath:"s2r://panorama/images/hero_selection/minimap_ward_obs_png.vtex",
+                content:"800",
+            }
+        }
+    },
+
+slark:
+    {
+        statusInfo:
+        {
+            str:
+            {
+                imgPath:"s2r://panorama/images/primary_attribute_icons/primary_attribute_icon_strength_psd.vtex",
+                content:"30 + 2.0",
+            },
+            agi:
+            {
+                imgPath:"s2r://panorama/images/primary_attribute_icons/primary_attribute_icon_agility_psd.vtex",
+                content:"40 + 4.0",
+            },
+            int:
+            {
+                imgPath:"s2r://panorama/images/primary_attribute_icons/primary_attribute_icon_intelligence_psd.vtex",
+                content:"30 + 2.0",
+            }
+        },
+        attackInfo:{
+            attack:
+            {
+                imgPath:"s2r://panorama/images/hud/reborn/icon_damage_psd.vtex",
+                content:"35-45",
+            },
+            attackTime:
+            {
+                imgPath:"s2r://panorama/images/hud/reborn/icon_attack_speed2_psd.vtex",
+                content:"1.5",
+            },
+            attackRange:
+            {
+                imgPath:"s2r://panorama/images/hud/reborn/icon_attack_range_psd.vtex",
+                content:"300",
+            }
+        },
+        defenseInfo:
+        {
+            armor:
+            {
+                imgPath:"s2r://panorama/images/hud/reborn/icon_armor_psd.vtex",
+                content:"0",
+            },
+            magicResist:
+            {
+                imgPath:"s2r://panorama/images/hud/reborn/icon_magic_resist_psd.vtex",
+                content:"25",
+            }
+        },
+        movementInfo:
+        {
+            moveSpeed:
+            {
+                imgPath:"s2r://panorama/images/hud/reborn/icon_speed_psd.vtex",
+                content:"350",
+            },
+            turnRate:
+            {
+                imgPath:"s2r://panorama/images/hud/reborn/icon_turn_rate_psd.vtex",
+                content:"0.6",
+            },
+            vision:
+            {
+                imgPath:"s2r://panorama/images/hero_selection/minimap_ward_obs_png.vtex",
+                content:"800",
+            }
+        }
+    },
+
+    juggernaut:
+    {
+        statusInfo:
+        {
+            str:
+            {
+                imgPath:"s2r://panorama/images/primary_attribute_icons/primary_attribute_icon_strength_psd.vtex",
+                content:"30 + 2.0",
+            },
+            agi:
+            {
+                imgPath:"s2r://panorama/images/primary_attribute_icons/primary_attribute_icon_agility_psd.vtex",
+                content:"40 + 2.5",
+            },
+            int:
+            {
+                imgPath:"s2r://panorama/images/primary_attribute_icons/primary_attribute_icon_intelligence_psd.vtex",
+                content:"30 + 4.0",
+            }
+        },
+        attackInfo:
+        {
+            attack:
+            {
+                imgPath:"s2r://panorama/images/hud/reborn/icon_damage_psd.vtex",
+                content:"35-45",
+            },
+            attackTime:
+            {
+                imgPath:"s2r://panorama/images/hud/reborn/icon_attack_speed2_psd.vtex",
+                content:"1.5",
+            },
+            attackRange:
+            {
+                imgPath:"s2r://panorama/images/hud/reborn/icon_attack_range_psd.vtex",
+                content:"150",
+            }
+        },
+        defenseInfo:
+        {
+            armor:
+            {
+                imgPath:"s2r://panorama/images/hud/reborn/icon_armor_psd.vtex",
+                content:"0",
+            },
+            magicResist:
+            {
+                imgPath:"s2r://panorama/images/hud/reborn/icon_magic_resist_psd.vtex",
+                content:"25",
+            }
+        },
+        movementInfo:
+        {
+            moveSpeed:
+            {
+                imgPath:"s2r://panorama/images/hud/reborn/icon_speed_psd.vtex",
+                content:"350",
+            },
+            turnRate:
+            {
+                imgPath:"s2r://panorama/images/hud/reborn/icon_turn_rate_psd.vtex",
+                content:"0.6",
+            },
+            vision:
+            {
+                imgPath:"s2r://panorama/images/hero_selection/minimap_ward_obs_png.vtex",
+                content:"800",
+            }
+        }
+    },
+
+
+lina:
+    {
+        statusInfo:
+        {
+            str:
+            {
+                imgPath:"s2r://panorama/images/primary_attribute_icons/primary_attribute_icon_strength_psd.vtex",
+                content:"30 + 1.5",
+            },
+            agi:
+            {
+                imgPath:"s2r://panorama/images/primary_attribute_icons/primary_attribute_icon_agility_psd.vtex",
+                content:"30 + 2.0",
+            },
+            int:
+            {
+                imgPath:"s2r://panorama/images/primary_attribute_icons/primary_attribute_icon_intelligence_psd.vtex",
+                content:"40 + 3.5",
+            }
+        },
+        attackInfo:
+        {
+            attack:
+            {
+                imgPath:"s2r://panorama/images/hud/reborn/icon_damage_psd.vtex",
+                content:"45-55",
+            },
+            attackTime:
+            {
+                imgPath:"s2r://panorama/images/hud/reborn/icon_attack_speed2_psd.vtex",
+                content:"1.6",
+            },
+            attackRange:
+            {
+                imgPath:"s2r://panorama/images/hud/reborn/icon_attack_range_psd.vtex",
+                content:"650",
+            }
+        },
+        defenseInfo:
+        {
+            armor:
+            {
+                imgPath:"s2r://panorama/images/hud/reborn/icon_armor_psd.vtex",
+                content:"0",
+            },
+            magicResist:
+            {
+                imgPath:"s2r://panorama/images/hud/reborn/icon_magic_resist_psd.vtex",
+                content:"25",
+            }
+        },
+        movementInfo:
+        {
+            moveSpeed:
+            {
+                imgPath:"s2r://panorama/images/hud/reborn/icon_speed_psd.vtex",
+                content:"330",
+            },
+            turnRate:
+            {
+                imgPath:"s2r://panorama/images/hud/reborn/icon_turn_rate_psd.vtex",
+                content:"0.6",
+            },
+            vision:
+            {
+                imgPath:"s2r://panorama/images/hero_selection/minimap_ward_obs_png.vtex",
+                content:"800",
+            }
+        }
+    },
+
+templar_assassin:
+    {
+        statusInfo:
+        {
+            str:
+            {
+                imgPath:"s2r://panorama/images/primary_attribute_icons/primary_attribute_icon_strength_psd.vtex",
+                content:"30 + 1.2",
+            },
+            agi:
+            {
+                imgPath:"s2r://panorama/images/primary_attribute_icons/primary_attribute_icon_agility_psd.vtex",
+                content:"30 + 3.5",
+            },
+            int:
+            {
+                imgPath:"s2r://panorama/images/primary_attribute_icons/primary_attribute_icon_intelligence_psd.vtex",
+                content:"40 + 1.6",
+            }
+        },
+        attackInfo:
+        {
+            attack:
+            {
+                imgPath:"s2r://panorama/images/hud/reborn/icon_damage_psd.vtex",
+                content:"45-55",
+            },
+            attackTime:
+            {
+                imgPath:"s2r://panorama/images/hud/reborn/icon_attack_speed2_psd.vtex",
+                content:"1.6",
+            },
+            attackRange:
+            {
+                imgPath:"s2r://panorama/images/hud/reborn/icon_attack_range_psd.vtex",
+                content:"650",
+            }
+        },
+        defenseInfo:
+        {
+            armor:
+            {
+                imgPath:"s2r://panorama/images/hud/reborn/icon_armor_psd.vtex",
+                content:"0",
+            },
+            magicResist:
+            {
+                imgPath:"s2r://panorama/images/hud/reborn/icon_magic_resist_psd.vtex",
+                content:"25",
+            }
+        },
+        movementInfo:
+        {
+            moveSpeed:
+            {
+                imgPath:"s2r://panorama/images/hud/reborn/icon_speed_psd.vtex",
+                content:"330",
+            },
+            turnRate:
+            {
+                imgPath:"s2r://panorama/images/hud/reborn/icon_turn_rate_psd.vtex",
+                content:"0.6",
+            },
+            vision:
+            {
+                imgPath:"s2r://panorama/images/hero_selection/minimap_ward_obs_png.vtex",
+                content:"800",
+            }
+        } 
+    }
+}
+
+
+
+Hero_Introduction = {
+    legion_commander: "xxwar_hero_introduction_legion_commander",
+    spectre: "xxwar_hero_introduction_spectre",
+    slark: "xxwar_hero_introduction_slark",
+    juggernaut: "xxwar_hero_introduction_juggernaut",
+    lina: "xxwar_hero_introduction_lina",
+    templar_assassin: "xxwar_hero_introduction_templar_assassin"
+}
+
+Hero_Deatil_Localize_Map = {
+    statusInfo: "xxwar_hero_detail_status",
+    attackInfo: "xxwar_hero_detail_attack",
+    defenseInfo: "xxwar_hero_detail_defense",
+    movementInfo: "xxwar_hero_detail_movement",
+}

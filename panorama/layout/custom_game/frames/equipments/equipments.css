@@ -1,0 +1,110 @@
+
+#EquipmentsFrame{
+	horizontal-align: middle;
+	flow-children: down;
+	width: 358px;
+	height: 96px;
+	background-image: url("file://{images}/custom_game/bag/equipment_bg.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+#EquipmentsItemList{
+	flow-children: right;
+	horizontal-align: middle;
+}
+#EquipmentsFrame .title{
+	width: 100%;
+	text-align: center;
+	font-size: 18px;
+	text-shadow: #000 0px 0px 8px;
+	margin-top: 12px;
+	margin-bottom: 2px;
+	color: #EEE;
+}
+
+#EquipmentsFrame .equipment{
+	width: 58px;
+	height: 58px;
+
+	transition-property: background-color,box-shadow;
+	transition-duration: 0.2s;
+}
+
+#EquipmentsFrame .equipment.is-new-item{
+	/*box-shadow: #4B8EFF 0px 0px 4px;*/
+}
+
+#EquipmentsFrame .equipment.is-compose-active{
+	box-shadow: inset #ffd000 0px 0px 5px;
+	border: 3px solid #ec5f27;
+}
+
+#EquipmentsFrame .equipment #item-img{
+	width: 50px;
+	height: 50px;
+	horizontal-align: middle;
+	vertical-align: middle;
+}
+
+#EquipmentsFrame .equipment #item-img.is-compose-active{
+	box-shadow: inset #ffd000 0px 0px 5px;
+	border: 3px solid #ec5f27;
+}
+
+#EquipmentsFrame .equipment #item-img.hat{
+	background-image: url('file://{images}/custom_game/equipments/hat.png');
+}
+#EquipmentsFrame .equipment #item-img.clothes{
+	background-image: url('file://{images}/custom_game/equipments/clothes.png');
+}
+#EquipmentsFrame .equipment #item-img.shoes{
+	background-image: url('file://{images}/custom_game/equipments/shoes.png');
+}
+#EquipmentsFrame .equipment #item-img.trinket{
+	background-image: url('file://{images}/custom_game/equipments/trinket.png');
+}
+#EquipmentsFrame .equipment #item-img.gloves{
+	background-image: url('file://{images}/custom_game/equipments/gloves.png');
+}
+#EquipmentsFrame .equipment #item-img.weapon{
+	background-image: url('file://{images}/custom_game/equipments/weapon.png');
+}
+
+#EquipmentsFrame .equipment #tooltip{
+	width: 100%;
+	height: 100%;
+
+	background-image: url("file://{images}/custom_game/equipments/equipment_bar.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center;
+}
+
+#EquipmentsFrame .equipment.drag_enter #tooltip{
+	/*box-shadow: inset #4B8EFF 0px 0px 4px;*/
+	wash-color: #4B8EFF;
+}
+
+#EquipmentsFrame .equipment.drag_start #tooltip{
+	wash-color: #F67F00;
+	/*box-shadow: inset #F67F00 0px 0px 4px;*/
+}
+
+#EquipmentsFrame #cooldown{
+	width: 50px;
+	height: 50px;
+	horizontal-align: middle;
+	vertical-align: middle;
+	background-color: #0000;
+}
+
+#EquipmentsFrame .equipment.is-in-cd #item-img{
+	saturation: 0.8;
+	wash-color: #AAA;
+}
+
+
+#EquipmentsFrame .equipment.is-in-cd #cooldown{
+	background-color: #000A;
+}

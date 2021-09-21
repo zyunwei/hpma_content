@@ -1,0 +1,38 @@
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/dotastyles.css" />
+		<include src="file://{resources}/styles/custom_game/avalon.css" />
+		<include src="file://{resources}/layout/custom_game/frames/hero_health_bar/hero_health_bar.css" />
+	</styles>
+	<scripts>
+		<include src="file://{resources}/layout/custom_game/frames/hero_health_bar/hero_health_bar.js" />
+	</scripts>
+    <snippets>
+        <snippet name="HeroOverlay">
+            <Panel class="HeroOverlay" hittest="false" hittestchildren="false">
+                <Panel id="BountyBullion">
+                    <Image src="file://{images}/custom_game/bullion.png" />
+                    <Label id="txtBullion" text="" />
+                </Panel>
+            </Panel>
+        </snippet>
+    </snippets>
+    <Panel class="HealthbarRoot" hittest="false">
+        <Panel id="HeroOverlayContainer" hittest="false"></Panel>
+        <Panel id="CrystalBar">
+            <Panel id="Background"/>
+            <Panel id="CrystalPercentBar">
+                <Panel class="CrystalItem" id="CrystalItem_0" />
+                <Panel class="CrystalItem" id="CrystalItem_1" />
+                <Panel class="CrystalItem" id="CrystalItem_2" />
+                <Panel class="CrystalItem" id="CrystalItem_3" />
+                <Panel class="CrystalItem" id="CrystalItem_4" />
+                <Panel class="CrystalItem" id="CrystalItem_5" />
+                <Panel class="CrystalItem" id="CrystalItem_6" />
+                <Panel class="CrystalItem" id="CrystalItem_7" />
+                <Panel class="CrystalItem" id="CrystalItem_8" />
+                <Panel class="CrystalItem" id="CrystalItem_9" />
+            </Panel>
+        </Panel>
+    </Panel>
+</root>

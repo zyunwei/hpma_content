@@ -1,0 +1,222 @@
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/dotastyles.css" />
+		<include src="file://{resources}/styles/custom_game/avalon.css" />
+		<include src="file://{resources}/layout/custom_game/frames/hero_selection/hero_selection.css" />
+	</styles>
+	<scripts>
+		<include src="file://{resources}/layout/custom_game/frames/hero_selection/hero_selection.js" />
+		<include src="file://{resources}/layout/custom_game/frames/hero_selection/hero_detail.js" />
+	</scripts>
+	<snippets>
+		<snippet name="HeroImage">
+			<Panel class="pnlHeroImage">
+				<DOTAHeroImage id="heroImage" heroimagestyle="portrait" />
+				<Image id="maskImage" />
+			</Panel>
+		</snippet>
+		<snippet name="SelectedCard">
+			<Panel class="SelectedCard">
+				<Panel id="Content">
+					<Panel id="ItemInfo">
+						<DOTAAbilityImage id="ItemImage" hittest="false" />
+						<Label id="ItemName" html="true" text="" />
+					</Panel>
+					<Panel class="CrystalImg">
+						<Label id="CrystalCost" text="0" />
+					</Panel>
+					<Panel class="Count">
+						<Label id="txtCount" text="0/1" />
+					</Panel>
+				</Panel>
+			</Panel>
+		</snippet>
+		<snippet name="CardPoolCard">
+			<Panel class="Card">
+				<DOTAAbilityImage id="CardImage" hittest="false" />
+				<Panel class="CardMask" />
+				<Label id="AbilityName" html="true" text="" />
+				<Panel class="CrystalImg" id="CrystalImg">
+					<Label id="CrystalCost" text="" />
+				</Panel>
+				<Panel class="HookRoot">
+					<Image class="hook" id="RedHook" src="file://{resources}/images/custom_game/red_hook.png"/>
+					<Image class="hook" id="GreenHook" src="file://{resources}/images/custom_game/green_hook.png"/>
+					<Image class="hook" id="YellowHook" src="file://{resources}/images/custom_game/yellow_hook.png"/>
+				</Panel>
+			</Panel>
+		</snippet>
+		<snippet name="CardGroup">
+			<Panel class="CardGroup">
+				<Image class="star" id="star" src="file://{resources}/images/custom_game/star.png"/>
+				<Label id="CardGroupText" text="#xxwar_default_cardgroup"/>
+			</Panel>
+		</snippet>
+		<snippet name="PlayerInfo">
+			<Panel class="PlayerInfo">
+				<DOTAAvatarImage id="DOTAAvatarImage" steamid="local" />
+				<DOTAUserName id="DOTAUserName" steamid="local" />
+				<Label id="PlayerInfoState" text="#xxwar_msg_selecting"/>
+			</Panel>
+		</snippet>
+
+		<snippet name="HeroDetailCol">
+			<Panel class="HeroDetailCol">
+				<Label class="HeroDetailColTitle" id="HeroDetailColTitle"/>
+				<Panel class="HeroDetailColList" id="HeroDetailColList"/>
+			</Panel>
+		</snippet>
+
+		<snippet name="HeroDetailRow">
+			<Panel class="HeroDetailRow">
+				<Image class="HeroDetailRowIcon" id="HeroDetailRowIcon"/>
+				<Label class="HeroDetailRowText" id="HeroDetailRowText"/>
+			</Panel>
+		</snippet>
+		<snippet name="hsp_juggernaut"><Panel class="hero_scene_panel"><DOTAScenePanel id="scenePanel" light="global_light" camera="camera_1" map="scenes/npc_dota_hero_juggernaut" particleonly="false" antialias="true" /></Panel></snippet>
+		<snippet name="hsp_legion_commander"><Panel class="hero_scene_panel"><DOTAScenePanel id="scenePanel" light="global_light" camera="camera_1" map="scenes/npc_dota_hero_legion_commander" particleonly="false" antialias="true" /></Panel></snippet>
+		<snippet name="hsp_lina"><Panel class="hero_scene_panel"><DOTAScenePanel id="scenePanel" light="global_light" camera="camera_1" map="scenes/npc_dota_hero_lina" particleonly="false" antialias="true" /></Panel></snippet>
+		<snippet name="hsp_slark"><Panel class="hero_scene_panel"><DOTAScenePanel id="scenePanel" light="global_light" camera="camera_1" map="scenes/npc_dota_hero_slark" particleonly="false" antialias="true" /></Panel></snippet>
+		<snippet name="hsp_spectre"><Panel class="hero_scene_panel"><DOTAScenePanel id="scenePanel" light="global_light" camera="camera_1" map="scenes/npc_dota_hero_spectre" particleonly="false" antialias="true" /></Panel></snippet>
+		<snippet name="hsp_templar_assassin"><Panel class="hero_scene_panel"><DOTAScenePanel id="scenePanel" light="global_light" camera="camera_1" map="scenes/npc_dota_hero_templar_assassin" particleonly="false" antialias="true" /></Panel></snippet>
+	</snippets>
+	<Panel class="containerRoot">
+		<DOTAScenePanel id="containerBackground" hittest="false" allowrotation="true" map="backgrounds/pregame_phase" camera="shot_cameraA"/>
+		<Panel id="Guide" hittest="false"/>
+		<Button id="btnDashBoard" onactivate="DOTAShowDashboard()" />
+		<Button id="btnGuide" onactivate="Close()">
+			<Label text="#xxwar_guide"/>
+		</Button> 
+		<Panel id="pnlTopBar" hittest="false">
+			<Label id="lblTitle" text="#xxwar_button_select_hero"/>
+			<Label id="lblCountDown" text="00:00"/>
+		</Panel>
+		<Panel id="pageHeroSelection">
+			<Panel class="s1_line_l"></Panel>
+			<Panel class="s1_line_r"></Panel>
+			<Panel class="pageHeroSelectionContainer">
+				<Panel class="pnlHeroes" id="strength">
+					<Panel class="pnlHeroesTitle">
+						<Label text="#dota_ability_variable_str" />
+						<Image src="s2r://panorama/images/primary_attribute_icons/primary_attribute_icon_strength_psd.vtex"/>
+					</Panel>
+					<Panel class="pnlHeroesLine"></Panel>
+					<Panel class="pnlHeroContainerFrame">
+						<Panel class="pnlHeroContainer" id="pnlHeroContainer1"/>	
+					</Panel>
+				</Panel>
+				<Panel class="pnlHeroes" id="agility">
+					<Panel class="pnlHeroesTitle">
+						<Label text="#dota_ability_variable_agi" />
+						<Image src="s2r://panorama/images/primary_attribute_icons/primary_attribute_icon_agility_psd.vtex"/>
+					</Panel>
+					<Panel class="pnlHeroesLine"></Panel>
+					<Panel class="pnlHeroContainerFrame">
+						<Panel class="pnlHeroContainer" id="pnlHeroContainer2"/>	
+					</Panel>
+				</Panel>
+				<Panel class="pnlHeroes" id="intelligence">
+					<Panel class="pnlHeroesTitle">
+						<Label text="#dota_ability_variable_int" />
+						<Image src="s2r://panorama/images/primary_attribute_icons/primary_attribute_icon_intelligence_psd.vtex"/>
+					</Panel>
+					<Panel class="pnlHeroesLine"></Panel>
+					<Panel class="pnlHeroContainerFrame">
+						<Panel class="pnlHeroContainer" id="pnlHeroContainer3"/>	
+					</Panel>
+				</Panel>
+			</Panel>
+			<Panel class="heroAnimation" id="heroAnimation" hittest="false" hittestchildren="false">
+				<DOTAScenePanel id="scenePanel" light="global_light" camera="camera_1" map="" particleonly="false" antialias="true" />
+			</Panel>
+			<Label id="selectedHeroName" text="" />
+			<Panel id="heroDetail"/>
+			<Panel id="heroIntroduction">
+				<Label id="introTitle" text="#xxwar_hero_introduction"/>
+				<Label id="introContent"/>
+			</Panel>
+		</Panel>
+		<Panel id="pageCardSelection">
+			<Panel id="CardLibrary">
+				<Panel id="LeftFrame">
+					<Panel id="ConfigInfo">
+						<Panel id="HeroInfo">
+							<Image id="HeroInfoIcon" src="" />
+							<Label id="HeroInfoName" text="" />
+							<Panel id="HeroIconMask" />
+						</Panel>
+						<Panel id="CardGroupRoot">
+							<Panel id="CardGroupContent">
+							</Panel>
+							<Panel id="CardGroupButton">
+								<TextButton text="#xxwar_button_save" id="Save" onactivate="SaveCardGroup()"/>
+								<TextButton text="#xxwar_button_new" id="Create" onactivate="CreateCardGroup()"/>
+								<TextButton text="#xxwar_button_remove" id="Del" class="red" onactivate="DelCardGroup()"/>
+								<TextButton text="#xxwar_button_set_default" id="SetDefault" onactivate="SetDefault()"/>
+							</Panel>
+						</Panel>
+					</Panel>
+					<!-- 显示已选卡片 -->
+					<Panel id="SelectedCardList">
+						<Panel id="SelectedCardListTopBar">
+							<Label id="SelectedCardListTitle" text="#xxwar_card_selected"/>
+							<Label id="SelectedCount" text="0/20"/>
+						</Panel>
+
+						<Panel id="SelectedCardListContent"/>
+					</Panel>
+				</Panel>
+
+				<!-- 中间 - 卡池 -->
+				<Panel id="CardPool" class="show">
+					<Panel id="CardPoolContent">
+						<Panel class="s2_kapai_line">
+							<Label class="CardPoolTitle" text="#xxwar_card_pool_pet"/>	
+						</Panel>
+						<Panel id="PetCards">
+						</Panel>
+						<Panel class="s2_kapai_line">
+							<Label class="CardPoolTitle" text="#xxwar_card_pool_spell"/>	
+						</Panel>
+						<Panel id="ClassifyPanel">
+							<ToggleButton id="btnClassify1" onselect="SelectClassify(1)" ondeselect="UnSelectClassify(1)" text="#xxwar_minor_classify_1" />
+							<ToggleButton id="btnClassify2" onselect="SelectClassify(2)" ondeselect="UnSelectClassify(2)" text="#xxwar_minor_classify_2" />
+							<ToggleButton id="btnClassify3" onselect="SelectClassify(3)" ondeselect="UnSelectClassify(3)" text="#xxwar_minor_classify_3" />
+							<ToggleButton id="btnClassify4" onselect="SelectClassify(4)" ondeselect="UnSelectClassify(4)" text="#xxwar_minor_classify_4" />
+							<ToggleButton id="btnClassify5" onselect="SelectClassify(5)" ondeselect="UnSelectClassify(5)" text="#xxwar_minor_classify_5" />
+							<ToggleButton id="btnClassify6" onselect="SelectClassify(6)" ondeselect="UnSelectClassify(6)" text="#xxwar_minor_classify_6" />
+							<ToggleButton id="btnClassify7" onselect="SelectClassify(7)" ondeselect="UnSelectClassify(7)" text="#xxwar_minor_classify_7" />
+							<ToggleButton id="btnClassify8" onselect="SelectClassify(8)" ondeselect="UnSelectClassify(8)" text="#xxwar_minor_classify_8" />
+							<ToggleButton id="btnClassify9" onselect="SelectClassify(9)" ondeselect="UnSelectClassify(9)" text="#xxwar_minor_classify_9" />
+							<ToggleButton id="btnClassify10" onselect="SelectClassify(10)" ondeselect="UnSelectClassify(10)" text="#xxwar_minor_classify_10" />
+							<ToggleButton id="btnClassify11" onselect="SelectClassify(11)" ondeselect="UnSelectClassify(11)" text="#xxwar_minor_classify_11" />
+							<ToggleButton id="btnClassify12" onselect="SelectClassify(12)" ondeselect="UnSelectClassify(12)" text="#xxwar_minor_classify_12" />
+							<TextButton text="#xxwar_minor_classify_clear" onactivate="ClearClassify()"/>
+						</Panel>
+						<Panel id="SpellCards">
+						</Panel>
+					</Panel>
+				</Panel>
+
+				<Panel id="PlayerListRoot">
+					<Label id="PLayListTitle" text="#xxwar_player_state"/>
+					<Panel id="PlayerList">
+					</Panel>
+				</Panel>
+			</Panel>
+		</Panel>
+		<Panel id="BottomContent">
+			<Panel class="LeftRightFlow">
+				<Button id="btnNavLeft" onactivate="btnNavLeft_Click()">
+					<Label text="#xxwar_hero_select" />
+				</Button>
+				<Button id="btnNavRight" class="default" onactivate="btnNavRight_Click()">
+					<Label text="#xxwar_next" />
+				</Button>
+			</Panel>
+		</Panel>
+		<Panel id="BottomMsgPanel" hittest="false" hittestchildren="false">
+			<Label id="BottomMsg" html="true" text=""/>
+		</Panel>
+	</Panel>
+</root>

@@ -1,0 +1,67 @@
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/dotastyles.css" />
+		<include src="file://{resources}/styles/custom_game/avalon.css" />
+		<include src="file://{resources}/layout/custom_game/frames/select_teleport/select_teleport.css" />
+	</styles>
+	<scripts>
+		<include src="file://{resources}/layout/custom_game/frames/select_teleport/select_teleport.js" />
+	</scripts>
+
+	<Panel hittest="false" class="SelectTeleportRoot" >
+        <Image id="btnClose" src="file://{resources}/images/custom_game/cross.png" onactivate="btnClose_Click()" />
+		<Panel id="SelectRegionPanel" >
+			<Image class="full" src="file://{resources}/images/custom_game/minimap.png" />
+			<!-- <DOTAMinimap id="SelectRegionPanel" onactivate="" renderbackground="false" hittest="true" require-composition-layer="true"/> -->
+            <Panel id="SelectRegionButtonList">
+                <Button id="button_select_region_1">
+                    <Label text="#xxwar_region_1" />
+                    <Image class="SelectRegion" id="select_region_1" src = "file://{resources}/images/custom_game/minimap_region_state_selected/1.png"/>
+                </Button>
+                <Button id="button_select_region_2">
+                    <Label text="#xxwar_region_2" />
+                    <Image class="SelectRegion" id="select_region_2" src = "file://{resources}/images/custom_game/minimap_region_state_selected/2.png"/>
+                </Button>
+                <Button id="button_select_region_3">
+                    <Label text="#xxwar_region_3" />
+                    <Image class="SelectRegion" id="select_region_3" src = "file://{resources}/images/custom_game/minimap_region_state_selected/3.png"/>
+                </Button>
+                <Button id="button_select_region_4">
+                    <Label text="#xxwar_region_4" />
+                    <Image class="SelectRegion" id="select_region_4" src = "file://{resources}/images/custom_game/minimap_region_state_selected/4.png"/>
+                </Button>
+                <Button id="button_select_region_5">
+                    <Label text="#xxwar_region_5" />
+                    <Image class="SelectRegion" id="select_region_5" src = "file://{resources}/images/custom_game/minimap_region_state_selected/5.png"/>
+                </Button>
+                <Button id="button_select_region_6">
+                    <Label text="#xxwar_region_6" />
+                    <Image class="SelectRegion" id="select_region_6" src = "file://{resources}/images/custom_game/minimap_region_state_selected/6.png"/>
+                </Button>
+                <Button id="button_select_region_7">
+                    <Label text="#xxwar_region_7" />
+                    <Image class="SelectRegion" id="select_region_7" src = "file://{resources}/images/custom_game/minimap_region_state_selected/7.png"/>
+                </Button>
+                <Button id="button_select_region_8">
+                    <Label text="#xxwar_region_8" />
+                    <Image class="SelectRegion" id="select_region_8" src = "file://{resources}/images/custom_game/minimap_region_state_selected/8.png"/>
+                </Button>
+                <Button id="button_select_region_9">
+                    <Label text="#xxwar_region_9" />
+                    <Image class="SelectRegion" id="select_region_9" src = "file://{resources}/images/custom_game/minimap_region_state_selected/9.png"/>
+                </Button>
+            </Panel>
+            <Panel id="RegionList" hittest="false" hittestchildren="false">
+                <Image id="region_1" />
+                <Image id="region_2" />
+                <Image id="region_3" />
+                <Image id="region_4" />
+                <Image id="region_5" />
+                <Image id="region_6" />
+                <Image id="region_7" />
+                <Image id="region_8" />
+                <Image id="region_9" />
+            </Panel>
+		</Panel>
+    </Panel>
+</root>

@@ -1,0 +1,459 @@
+.Root{
+	width: 100%;
+	height: 100%;
+}
+
+#TopInfo{
+	width: 100%;
+}
+
+#LeftButton{
+	width: 108px;
+	height: 32px;
+	background-image: url("file://{images}/custom_game/fort/fort_upgrade.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	overflow: noclip;
+	transform: translateX(6px);
+}
+
+#LeftButton:hover{
+	brightness: 1.5;
+}
+
+#LeftButton Label{
+	color: #DDD;
+	vertical-align: middle;
+	horizontal-align: middle;
+}
+
+#LeftPanel{
+	horizontal-align: middle;
+	transform: translateX(-251px);
+	flow-children: right;
+}
+
+#LeftPanel .bg{
+	width: 315px;
+	height: 32px;
+	background-image: url("file://{images}/custom_game/fort/fort_health_bar_bg.png");
+	background-repeat: no-repeat;
+}
+
+#LeftPanel .bar{
+	width: 315px;
+	height: 32px;
+	background-image: url("file://{images}/custom_game/fort/fort_health_bar.png");
+	background-repeat: no-repeat;
+}
+
+#lblAreaName{
+	color: #fff;
+	horizontal-align: middle;
+	text-shadow: #000 0px 0px 2px 2.0;
+	vertical-align: middle;
+	transform: translateY(1px);
+	font-size: 16px;
+}
+
+#RightPanel{
+	horizontal-align: middle;
+	transform: translateX(250px);
+	flow-children: right;
+}
+
+#tooltipLeftPanel{
+	tooltip-position: bottom;
+	tooltip-body-position: 50% 50%;
+}
+
+.tooltipRightPanel{
+	tooltip-position: bottom;
+	tooltip-body-position: 50% 50%;
+}
+
+#RightPanel .bar{
+	width: 315px;
+	height: 32px;
+	background-image: url("file://{images}/custom_game/fort/attacking_process_bar.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+#RightPanel .bg{
+	width: 315px;
+	height: 32px;
+	background-image: url("file://{images}/custom_game/fort/attacking_process_bar_bg.png");
+	background-repeat: no-repeat;
+}
+
+#RightPanel .icon{
+	width: 18px;
+	height: 16px;
+	vertical-align: center;
+	background-image: url("file://{images}/custom_game/fort/user.png");
+	background-repeat: no-repeat;
+	horizontal-align:left;
+	margin-left:90px;
+}
+
+#lblSurviveCount{
+	color: #fff;
+	font-size: 16px;
+	text-shadow: #000 0px 0px 2px 2.0;
+	vertical-align: middle;
+	transform: translateY(1px);
+	horizontal-align:left;
+	margin-left: 120px;
+}
+
+#RightPanel .icon_bullion{
+	width: 18px;
+	height: 18px;
+	vertical-align: center;
+	background-image: url("file://{images}/custom_game/fort/bullion.png");
+	background-repeat: no-repeat;
+	horizontal-align:left;
+	margin-left:190px;
+}
+
+#lblJackpot{
+	color: #fff;
+	font-size: 16px;
+	text-shadow: #000 0px 0px 2px 2.0;
+	vertical-align: middle;
+	transform: translateY(1px);
+	horizontal-align:left;
+	margin-left: 220px;
+}
+
+#RightPanel.stopping{
+	wash-color: #FEBD07;
+}
+
+#RightButton{
+	width: 108px;
+	height: 32px;
+	background-image: url("file://{images}/custom_game/fort/attacking_stop.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	overflow: noclip;
+	transform: translateX(-6px);
+}
+
+#LeftButton.not_display{
+	saturation: 0;
+	wash-color: #999;
+}
+
+#RightButton:disabled{
+	brightness: 0.5;
+	saturation: 0;
+}
+
+#RightButton:hover{
+	brightness: 1.5;
+}
+#RightButton:disabled:hover{
+	brightness: 0.75;
+}
+
+#RightButton Image{
+	width: 18px;
+	height: 18px;
+}
+#RightButton Label{
+	color: #CCC;
+	vertical-align: middle;
+	horizontal-align: middle;
+}
+
+/*敌人信息*/
+#EnemyInfo{
+	overflow: noclip;
+	width: 100%;
+	height: 100%;
+	margin-top:20px;
+}
+#EnemyName{
+	color: white;
+	text-shadow: #000 0px 0px 7px 7.0;
+	horizontal-align: middle;
+	font-size: 18px;
+	transform: translateY(70px);
+	padding: 10px;
+	horizontal-align: middle;
+}
+#EnemyHealthBar{
+	width: 558px;
+	height: 29px;
+	transform: translateY(100px);
+	horizontal-align: middle;
+}
+#EnemyHealthBar .bar{
+	width: 100%;
+	height: 100%;
+	background-image: url("file://{images}/custom_game/enemy_info/enemy_info_bar.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+#EnemyHealthBar .bg{
+	width: 100%;
+	height: 100%;
+	background-image: url("file://{images}/custom_game/enemy_info/enemy_info_bar_bg.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+#EnemyHealthBarBackground{
+	width: 100%;
+	height: 100%;
+	background-image: url("file://{images}/custom_game/enemy_info/enemy_info_bar_w.png");
+	background-repeat: no-repeat;
+}
+#EnemyHealthBarBackground_2{
+	width: 100%;
+	height: 100%;
+	background-image: url("file://{images}/custom_game/enemy_info/enemy_info_bar_x.png");
+	background-repeat: no-repeat;
+	transition-property: width;
+	transition-timing-function: ease-in-out;
+	transition-duration:0.5s;	
+}
+#EnemyHealthValue{
+	color: #EEABAB;
+	width: 100%;
+	text-align: center;
+	font-size: 16px;
+	vertical-align: middle;
+	text-shadow: #000 0px 0px 4px 2.0;
+}
+
+#EnemyAttackDamage{
+	transform: translateY(135px) translateX(-225px);
+	horizontal-align: middle;
+	flow-children: right;
+	overflow: noclip;
+}
+#EnemyAttackDamage Label{
+	color: #fff;
+	text-shadow: #000 0px 0px 6px 3.0;
+	overflow: noclip;
+}
+#EnemyArmor{
+	transform: translateY(135px) translateX(225px);
+	horizontal-align: middle;
+	flow-children: right;
+	overflow: noclip;
+}
+#EnemyArmor Label{
+	color: #fff;
+	text-shadow: #000 0px 0px 6px 3.0;
+	overflow: noclip;
+}
+#EnemyMagicArmor{
+	color: white;
+	font-size: 15px;
+	margin-top: 54px;
+	margin-left: 270px;
+	tooltip-position: bottom;
+	tooltip-body-position: 50% 50%;
+}
+
+#BuffsFrame{
+	horizontal-align: center;
+	margin-top:135px;
+}
+
+#EnemyDropItemsFrame{
+	horizontal-align: center;
+	transform: translateY(135px);
+}
+#EnemyDropItemsFrame .title{
+	color: #FFF;
+	text-align: center;
+	font-size: 18px;
+	text-shadow: #000 0px 0px 7px 6.0;
+	padding: 7px;
+	horizontal-align: center;
+	margin-top: 35px;
+}
+
+#EnemyDropItemList{
+	margin-top: 63px;
+	horizontal-align: center;
+	flow-children: right;
+}
+
+.item{
+	width: 45px;
+	height: 45px;
+	border: 1px solid #000;
+	margin: 2px;
+}
+
+.item #tooltip,
+.item #item-img{
+	width: 100%;
+	height: 100%;
+}
+
+.stage_countdown{
+	width:500px;
+	height:70px;
+	horizontal-align:center;
+	vertical-align:top;
+	margin-top: 30px;
+}
+
+.stage_countdown Label{
+	margin-top:0px;
+	font-size:30px;
+	horizontal-align:center;
+	vertical-align:center;
+	font-weight:bold;
+	color:#eeeeee;
+	tooltip-position: bottom;
+	tooltip-body-position: 50% 50%;
+}
+
+#lblCountdownTeam1, #lblCountdownTeam2{
+	color: red;
+}
+
+#lblCountdownTeam1 {
+	margin-right:20px;
+}
+
+#occ_countdown{
+	flow-children: right;
+	horizontal-align: center;
+	margin-top:20px;
+	margin-left:20px;
+	visibility: collapse;
+}
+
+#occ_countdown Label {
+	font-size:18px;
+	text-shadow: #000 0px 0px 5px 2.5;
+}
+
+.occ_team{
+	width:500px;
+	height:140px;
+	horizontal-align:center;
+	vertical-align:top;
+	margin-top: 18px;
+}
+
+.occ_team Label{
+	margin-top:0px;
+	font-size:20px;
+	horizontal-align:center;
+	vertical-align:center;
+	font-weight:bold;
+	color:#f00;
+	tooltip-position: bottom;
+	tooltip-body-position: 50% 50%;
+	font-family: Radiance, FZLanTingHei-R-GBK, TH Sarabun New, YDYGO 540, Gulim, MingLiU;
+	visibility: collapse;
+	text-shadow: #000 0px 0px 5px 2.5;
+}
+
+#panel_jackpot_detail{
+	horizontal-align: right;
+	flow-children: down;
+	margin-right: 280px;
+	visibility: collapse;
+}
+
+#panel_jackpot_list{
+	width: 140px;
+	flow-children: down;
+	background-color: #33333366;
+	padding:0 5px 0px 5px;
+}
+
+#panel_jackpot_global_title {
+	width: 140px;
+	margin-top:5px;
+	background-color: #660000;
+	height: 24px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+#panel_jackpot_global_title Label {
+	width: 100%;
+	text-align: center;
+}
+
+#panel_jackpot_title {
+	width: 140px;
+	margin-top:5px;
+	background-color: #660000;
+	height: 24px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+#panel_jackpot_title Label {
+	width: 100%;
+	text-align: center;
+}
+
+.jackpot_line{
+	height: 25px;
+	width: 140px;
+	margin-top:2px;
+}
+
+.jackpot_line Label {
+	margin-left:2px;
+}
+
+.jackpot_line Image {
+	width: 25px;
+	height: 25px;
+	margin-left:55px;
+}
+
+#panel_jackpot_global_content {
+	background-color: #33333366;
+	width: 100%;
+	flow-children: right;
+}
+
+#panel_jackpot_global_content Image {
+	width: 25px;
+	height: 25px;
+	margin-left:10px;
+}
+
+#panel_jackpot_global_content Label {
+	color: gold;
+	horizontal-align: right;
+	text-align: right;
+	margin-right: 8px;
+	vertical-align: center;
+}
+
+#lblRank{
+
+}
+
+#lblBullion{
+	color: gold;
+	horizontal-align: right;
+	width: 50px;
+	height: 20px;
+	text-align: right;
+	margin-right:5px;
+}
+
+#LeftMenu{
+	width: 400px;
+	height: 40px;
+	margin-top: 10px;
+	vertical-align: top;
+	horizontal-align: left;
+	margin-left: 200px;
+}

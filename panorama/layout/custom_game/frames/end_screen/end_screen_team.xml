@@ -1,0 +1,16 @@
+<root>
+    <styles>
+		<include src="file://{resources}/layout/custom_game/frames/end_screen/end_screen.css" />
+    </styles>
+	<Panel hittest="false" class="FlyoutTeam">
+		<Panel class="FlyoutTeamData">
+			<Panel class="TeamInfo ScoreCol_TeamInfo">
+				<Panel id="TeamColor_GradentFromTransparentLeft" />
+				<Panel class="TeamName" >
+					<Label id="TeamName" text="" />
+				</Panel>
+			</Panel>
+			<Panel id="PlayersContainer" />
+		</Panel>
+	</Panel>
+</root>

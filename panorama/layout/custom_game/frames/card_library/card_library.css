@@ -1,0 +1,96 @@
+.CardLibraryRoot{
+	horizontal-align: right;
+	margin-top: 40px;
+    /* margin-right: 10px; */
+	flow-children: down;
+	background-color: #041127;
+	/* box-shadow: fill #000a -5px -5px 5px 10px; */
+	border: 1px solid #abffff;
+	opacity: 0.8;
+}
+
+#CardLibraryButton{
+	horizontal-align:center;
+    vertical-align: center;
+    width: 260px;
+    height: 50px;
+}
+
+#CardLibraryButton Label{
+	vertical-align: middle;
+	horizontal-align: middle;
+	font-size: 22px;
+	color: #fff;
+	text-shadow: #abffff 0px 0px 5px;
+}
+
+#CardLibraryButton:hover{
+	brightness: 1.8;
+}
+
+#CardLibrary{
+	width: 260px;
+	min-height: 200px;
+	max-height: 300px;
+    /* background-color: gradient( linear, 0% 0%, 0% 25%, from( #232326 ), to( #1c1d20 ) ); */
+    visibility: collapse;
+    flow-children: right-wrap;
+	overflow: squish scroll;
+	padding-bottom: 2px;
+}
+
+#CardLibrary.show{
+    visibility: visible;
+}
+
+.Tower {
+    flow-children: right;
+    height: 38px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-left: 10px;
+    background-color: #12213b;
+}
+
+.Tower #mask {
+    width: 38px;
+    height: 38px;
+    margin-left: 10px;
+}
+
+#mask.in_hands {
+    border: 1px solid #00f300;
+}
+
+#mask.fold_cards {
+    border: 1px solid #f81c1c;
+}
+    
+.Tower #mask DOTAAbilityImage {
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+}
+    
+.Tower #xxx {
+    font-size: 18px;
+    vertical-align: middle;
+    margin-left: 2px;
+    color: #fff;
+}
+    
+.Tower #CrystalCost {
+    width: 20px;
+    font-size: 20px;
+    vertical-align: middle;
+    color: #fff;
+}
+
+.CrystalImg {
+	height: 20px;
+	width: 20px;
+    vertical-align: center;
+	background-image: url("file://{images}/custom_game/hero_frame/crystal_full.png");
+	background-size: 100%;
+	margin-left: 6px;
+}

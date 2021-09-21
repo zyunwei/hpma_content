@@ -1,0 +1,47 @@
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/dotastyles.css" />
+		<include src="file://{resources}/styles/custom_game/avalon.css" />
+		<include src="file://{resources}/layout/custom_game/frames/death_frame/death_frame.css" />
+	</styles>
+	<scripts>
+		<include src="file://{resources}/layout/custom_game/frames/death_frame/death_frame.js" />
+	</scripts>
+    <Panel class="DeathPanelRoot">
+        <Panel id="DeathPanelRoot">
+            <Panel class="yellowline"/>
+            <Label id="death_text" text="#xxwar_death"/>
+            <Panel class="assetInfo" id="coin">
+                <Label class="assetTitle" text="xxwar_ui_respawn_coin_1"/>
+                <Label class="assetAmount" id="txtRespawnCoin" text=""/>
+            </Panel>
+            <Panel class="assetInfo" id="diamond">
+                <Label class="assetTitle" text="xxwar_ui_respawn_coin_2"/>
+                <Label class="assetAmount" id="txtXXCoin" text=""/>
+            </Panel>
+            <Panel class="assetInfo">
+                <Label id="txtCountdown" text=""/>
+            </Panel>
+            <Panel class="pnlTips" id="pnlTips">
+                <Label text="#xxwar_ui_respawn_tips" />
+            </Panel>
+            <Panel class="ButtonRoot">
+                <TextButton class="button" id="btnRespawn" text="#xxwar_respawn" onactivate="Respawn()"/>
+                <!-- <TextButton class="button" text="xxwar_close" onactivate="Close()"/> -->
+                <!-- <Panel id="CloseButton" onactivate="Close()"/> -->
+            </Panel>
+            <Panel class="CloseButton" onactivate="Close()"/>
+        </Panel>
+
+        <Panel id="RankRoot">
+            <Panel class="yellowline"/>
+            <Label id="rankTitle" text="#xxwar_rank"/>
+            <Label id="rank"  text=""/>
+            <Panel class="ButtonRoot">
+<!--                 <TextButton class="button" text="xxwar_close" onactivate="CloseRank()"/> -->
+                <TextButton class="button" text="xxwar_quit" onactivate="Game.Disconnect()"/>
+            </Panel>
+            <Panel class="CloseButton" onactivate="CloseRank()"/>
+        </Panel>
+    </Panel>
+</root>

@@ -1,0 +1,22 @@
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/dotastyles.css" />
+		<include src="file://{resources}/styles/custom_game/avalon.css" />
+		<include src="file://{resources}/layout/custom_game/tooltips/minimap/minimap.css" />
+	</styles>
+	<scripts>
+		<include src="file://{resources}/layout/custom_game/tooltips/minimap/minimap.js" />
+	</scripts>
+	<Panel class="Root" ontooltiploaded="SetupTooltip()" >
+		<Panel class="down">
+			<Panel id="MiniMapFrame" >
+				<Image id="MiniMap" src="file://{images}/custom_game/minimap.png" />
+				<Panel id="Point" >
+					<Panel class="point" />
+					<Panel class="point effect" />
+				</Panel>
+			</Panel>
+			<Label id="ItemName" text="" />
+		</Panel>
+	</Panel>
+</root>

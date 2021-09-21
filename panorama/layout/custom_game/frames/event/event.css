@@ -1,0 +1,142 @@
+.All{
+    width: 400px;
+    height: 480px;
+    vertical-align: center;
+    horizontal-align: center;
+    /* background-color: red; */
+}
+
+.RootPanel{
+    background-color: gradient( linear, 0% 0%, 0% 25%, from( #232326 ), to( #1c1d20 ) );
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: #00000099 0px 0px 8px 0px;
+    border: 2px solid #32383677;
+    opacity: 0;
+    transform: scale3d(0, 0, 0);
+    transition-property: opacity,transform;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+}
+
+#eventRoot{
+    width: 100%;
+    height: 100%;
+    flow-children:down;
+}
+
+.RootPanel.show{
+    opacity:1;
+    transform: scale3d(1, 1, 1);
+}
+
+#imgList{
+    width: 310px;
+    height: 310px;
+    vertical-align: center;
+    horizontal-align: center;
+    flow-children: down;
+}
+
+.imgRow{
+    width: 100%;
+    height: 100px;
+    flow-children:right;
+    border: 2px solid #5e091077;
+}
+
+.imageItem{
+    width: 100px;
+    height: 100px;
+    margin: 2px;
+    border: 2px solid #5e400977;
+}
+
+#title{
+    horizontal-align: center;
+    font-size: 40px;
+}
+
+#button{
+    height: 40px;
+    width: 90px;
+    border-radius: 3px;
+    background-color: grey;
+    horizontal-align: center;
+    margin-top: 10px;
+}
+
+#button.actived{
+    background-color: #DE8800;
+}
+
+#button Label{
+    font-size: 20px;
+    horizontal-align: center;
+    vertical-align: center;
+    color: #fff;
+}
+
+#button:active{
+	transform: scale3d(0.9,0.9,1);
+}
+
+#content{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.CloseButton{
+    horizontal-align: right;
+    vertical-align: top;
+}
+
+#top{
+  width: 100%;  
+}
+
+#tips{
+    width: 24px;
+    height: 24px;
+    font-size: 24px;
+    text-align: center;
+    brightness: 0.5;
+}
+
+#tips:hover{
+    brightness: 5;
+}
+
+#tipsRoot{
+    width: 100%;
+    height: 50%;
+    vertical-align: center;
+    flow-children:down;
+}
+
+.tipsRoot.show{
+    opacity:1;
+    transform: scale3d(1, 1, 1);
+}
+
+#tipsTitle{
+    horizontal-align: center;
+    font-size: 20px;
+}
+
+#tipsTop{
+    width: 100%;
+}
+
+#selectImgList{
+    width: 100%;
+    flow-children:right;
+}
+
+#selectImgPanel{
+    width: 310px;
+    height: 150px;
+    vertical-align: center;
+    flow-children:down;
+    horizontal-align: center;
+}

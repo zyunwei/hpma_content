@@ -1,0 +1,44 @@
+<root>
+	<scripts>
+		<include src="file://{resources}/scripts/custom_game/custom_ui.js" />
+	</scripts>
+    <Panel>
+    	<!-- <CustomUIElement type="Hud" layoutfile="file://{resources}/layout/custom_game/precache.xml" /> -->
+		<CustomUIElement type="Hud" layoutfile="file://{resources}/layout/custom_game/frames/event/event.xml" />
+		<CustomUIElement type="HeroSelection" layoutfile="file://{resources}/layout/custom_game/frames/hero_selection/hero_selection.xml" />
+
+		<!-- 1 -->
+		<CustomUIElement type="Hud" layoutfile="file://{resources}/layout/custom_game/game_ui_after.xml" />
+    	<CustomUIElement type="Hud" layoutfile="file://{resources}/layout/custom_game/master.xml" />
+		<CustomUIElement type="Hud" layoutfile="file://{resources}/layout/custom_game/frames/topbar/topbar.xml" />
+
+		<!-- 2 -->
+		<CustomUIElement type="Hud" layoutfile="file://{resources}/layout/custom_game/frames/hero_frame/hero_frame.xml" />
+		<CustomUIElement type="Hud" layoutfile="file://{resources}/layout/custom_game/frames/compose_frame/compose_frame.xml" />
+		<CustomUIElement type="Hud" layoutfile="file://{resources}/layout/custom_game/frames/npc_task/npc_task.xml" /> 
+		<CustomUIElement type="Hud" layoutfile="file://{resources}/layout/custom_game/frames/left_content/left_content.xml" />
+		<CustomUIElement type="Hud" layoutfile="file://{resources}/layout/custom_game/frames/treasures/treasures.xml" />
+		<CustomUIElement type="Hud" layoutfile="file://{resources}/layout/custom_game/frames/right_content/right_content.xml" />
+		<CustomUIElement type="Hud" layoutfile="file://{resources}/layout/custom_game/frames/select_teleport/select_teleport.xml" />
+		<CustomUIElement type="Hud" layoutfile="file://{resources}/layout/custom_game/frames/item_swap_alert/item_swap_alert.xml" />
+		<CustomUIElement type="Hud" layoutfile="file://{resources}/layout/custom_game/frames/death_frame/death_frame.xml" />
+		<CustomUIElement type="Hud" layoutfile="file://{resources}/layout/custom_game/frames/ability_select/ability_select.xml" />
+		<CustomUIElement type="Hud" layoutfile="file://{resources}/layout/custom_game/frames/hero_health_bar/hero_health_bar.xml" />
+		<CustomUIElement type="Hud" layoutfile="file://{resources}/layout/custom_game/frames/card_library/card_library.xml" />
+		<CustomUIElement type="Hud" layoutfile="file://{resources}/layout/custom_game/frames/ability_pool/ability_pool.xml" />
+		<CustomUIElement type="Hud" layoutfile="file://{resources}/layout/custom_game/frames/guide/guide.xml" />
+		<CustomUIElement type="Hud" layoutfile="file://{resources}/layout/custom_game/frames/ranking_list/ranking_list.xml" />
+		<CustomUIElement type="Hud" layoutfile="file://{resources}/layout/custom_game/frames/task/task.xml" />
+		<CustomUIElement type="Hud" layoutfile="file://{resources}/layout/custom_game/frames/store/store.xml" />
+		<CustomUIElement type="Hud" layoutfile="file://{resources}/layout/custom_game/frames/lottery/lottery.xml" />
+		<CustomUIElement type="Hud" layoutfile="file://{resources}/layout/custom_game/frames/pay_html/pay_html.xml" />
+		<CustomUIElement type="Hud" layoutfile="file://{resources}/layout/custom_game/frames/pet_bubble/pet_bubble.xml" />
+
+		<!-- 3 -->
+		<CustomUIElement type="Hud" layoutfile="file://{resources}/layout/custom_game/frames/message/message.xml" />
+		<CustomUIElement type="Hud" layoutfile="file://{resources}/layout/custom_game/frames/modal_dialog/modal_dialog.xml" />
+		<CustomUIElement type="Hud" layoutfile="file://{resources}/layout/custom_game/context_menu/manager/context_menu_manager.xml" />		
+
+		<CustomUIElement type="EndScreen" layoutfile="file://{resources}/layout/custom_game/frames/end_screen/end_screen.xml" />
+	</Panel>
+</root>

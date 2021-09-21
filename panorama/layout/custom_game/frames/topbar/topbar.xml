@@ -1,0 +1,110 @@
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/dotastyles.css" />
+		<include src="file://{resources}/styles/custom_game/avalon.css" />
+		<include src="file://{resources}/layout/custom_game/frames/topbar/topbar.css" />
+	</styles>
+	<scripts>
+		<include src="file://{resources}/layout/custom_game/frames/topbar/topbar.js" />
+	</scripts>
+	<snippets>
+		<snippet name="item">
+			<Panel class="item" hittestchildren="false">
+				<Panel id="tooltip"/>
+				<DOTAItemImage id="item-img" />
+			</Panel>
+		</snippet>
+		<snippet name="left_menu_button">
+			<Panel class="leftMenuButton" hittestchildren="false">
+				<Image id="menuImage"/>
+			</Panel>
+		</snippet>
+		<snippet name="jackpot_item">
+			<Panel class="jackpot_line">
+				<Label id="lblRank" text="No.1" />
+        		<Image src="file://{images}/custom_game/bullion.png" />
+				<Label id="lblBullion" text="0" />
+			</Panel>
+		</snippet>
+	</snippets>
+	<Panel hittest="false" class="Root">
+		<Panel id="LeftMenu"/>
+		<Panel id="TopInfo" hittest="false">
+			<Panel id="LeftPanel">
+				<Button id="LeftButton" hittestchildren="false">
+					<Label text="#xxwar_topbar_game_goal" />
+				</Button>
+				<Panel id="tooltipLeftPanel">
+					<Panel class="bg" />
+					<Panel class="bar" />
+					<Label id="lblAreaName" text="#xxwar_topbar_game_goal_desc" />
+				</Panel>
+			</Panel>
+			<Panel id="RightPanel" hittest="false">
+				<Panel hittest="false">
+					<Panel class="bg" />
+					<Panel class="bar" />
+					<Panel class="icon tooltipRightPanel" onmouseover="ShowDOTATooltip('lblSurviveCount')" onmouseout="HideDOTATooltip()" />
+					<Label id="lblSurviveCount" text="" class="tooltipRightPanel" onmouseover="ShowDOTATooltip('lblSurviveCount')" onmouseout="HideDOTATooltip()" />
+					<Panel class="icon_bullion tooltipRightPanel" onmouseover="ShowDOTATooltip('lblJackpot')" onmouseout="HideDOTATooltip()" />
+					<Label id="lblJackpot" text="" class="tooltipRightPanel" onmouseover="ShowDOTATooltip('lblJackpot')" onmouseout="HideDOTATooltip()" />
+				</Panel>
+				<Button id="RightButton" hittestchildren="false">
+					<Label text="#xxwar_topbar_survivors" />
+				</Button>
+			</Panel>
+		</Panel>
+		<Panel class="stage_countdown">
+            <Label id="lblStageCountdown" text="00:00" onmouseover="ShowDOTATooltip('lblStageCountdown')" onmouseout="HideDOTATooltip()"></Label>
+            <Panel id="occ_countdown">
+	            <Label id="occ_teamname1" text="Dota_Custom1"></Label>
+	            <Label text="xxwar_occ_countdown"></Label>
+	            <Label id="lblCountdownTeam1" />
+	            <Label id="occ_teamname2" text="Dota_Custom2"></Label>
+	            <Label text="xxwar_occ_countdown"></Label>
+	            <Label id="lblCountdownTeam2" />
+	        </Panel>
+        </Panel>
+        <Panel class="occ_team">
+            <Label id="lblOccTeam" text=""></Label>
+        </Panel>
+        <Panel id="panel_jackpot_detail">
+        	<Panel id="panel_jackpot_global_title">
+        		<Label text="#xxwar_topbar_jackpot_global" />
+    		</Panel>
+    		<Panel id="panel_jackpot_global_content">
+        		<Image src="file://{images}/custom_game/bullion.png" />
+				<Label id="lblGlobalJackpot" text="" />
+    		</Panel>
+        	<Panel id="panel_jackpot_title">
+        		<Label text="#xxwar_topbar_jackpot_title" />
+    		</Panel>
+    		<Panel id="panel_jackpot_list">
+    		</Panel>
+    	</Panel>
+		<!-- 目标信息 -->
+		<Panel id="EnemyInfo" hittest="false">
+			<Label id="EnemyName" text="" hittest="false" />
+			<Panel id="EnemyHealthBar" hittest="false" hittestchildren="false">
+				<Panel class="bg" />
+				<Panel id="EnemyHealthBarBackground_2" />
+				<Panel id="EnemyHealthBarBackground" />
+				<Label id="EnemyHealthValue" text="" />
+				<Panel class="bar" />
+			</Panel>
+			<Panel id="EnemyDropItemsFrame" hittest="false">
+				<Label class="title" hittest="false" text="#xxwar_text_unit_maybe_drop_items"/>
+				<Panel id="EnemyDropItemList" hittest="false"></Panel>
+			</Panel>
+			<Panel id="EnemyAttackDamage" hittest="false" hittestchildren="false">
+				<Image src="file://{images}/custom_game/enemy_info/enemy_attack.png"/>
+				<Label text="{s:EnemyAttackDamage}" />
+			</Panel>
+			<Panel id="EnemyArmor" hittest="false" hittestchildren="false">
+				<Image src="file://{images}/custom_game/enemy_info/enemy_armor.png"/>
+				<Label text="{s:EnemyArmor}" />
+			</Panel>
+			<Panel id="BuffsFrame" />
+		</Panel>
+	</Panel>
+</root>

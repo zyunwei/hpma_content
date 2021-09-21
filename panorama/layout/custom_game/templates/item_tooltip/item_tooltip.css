@@ -1,0 +1,271 @@
+.item-view{
+	flow-children: down;
+}
+
+#current-equipment-title-panel{
+	width: 100%;
+	background-color: #03121E;
+	border: 2px solid #fff;
+	border-radius: 6px;
+	padding: 2px 0px;
+	opacity: 0;
+}
+#current-equipment-title-panel.IsEquipped{
+	opacity: 1;
+}
+#current-equipment-title-panel Label{
+	color: #fff;
+	font-size: 18px;
+	width: 100%;
+	text-align: center;
+	margin-top: 3px;
+	font-family: Goudy Trajan Medium,FZKai-Z03,TH Sarabun New,YDYGO 540;
+}
+
+.item-info-view{
+	width: 350px;
+	margin-top: 5px;
+}
+
+#item-header{
+	width: 100%;
+	height: 72px;
+	z-index: 2;
+	flow-children: right;
+	background-image: url("file://{images}/custom_game/tooltips/item_header_bar_d.png");
+	
+	background-repeat: no-repeat;
+	background-position: -2px -1px;
+	overflow: noclip;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+.E #item-header{
+	background-image: url("file://{images}/custom_game/tooltips/item_header_bar_e.png");
+}
+.D #item-header{
+	background-image: url("file://{images}/custom_game/tooltips/item_header_bar_d.png");
+}
+.C #item-header{
+	background-image: url("file://{images}/custom_game/tooltips/item_header_bar_c.png");
+}
+.B #item-header{
+	background-image: url("file://{images}/custom_game/tooltips/item_header_bar_b.png");
+}
+.A #item-header{
+	background-image: url("file://{images}/custom_game/tooltips/item_header_bar_a.png");
+}
+.S #item-header{
+	background-image: url("file://{images}/custom_game/tooltips/item_header_bar_s.png");
+}
+.Z #item-header{
+	background-image: url("file://{images}/custom_game/tooltips/item_header_bar_z.png");
+}
+.EX #item-header{
+	background-image: url("file://{images}/custom_game/tooltips/item_header_bar_ex.png");
+}
+
+#item-img{
+	width: 54px;
+	height: width-percentage(100%);
+}
+
+#item-info-content{
+	width: 100%;
+	z-index: 1;
+	padding-top: 80px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 15px;
+	min-height: 168px;
+	border: 2px solid #fff;
+	border-radius: 6px;
+	flow-children: down;
+	background-color: gradient( linear, 0% 0%, 0% 100%, from( #03121EF5 ), to( #082D4BF5 ) );
+}
+
+#item-name{
+	z-index: 2;
+	font-size: 24px;
+	color: #9D9D9D;
+}
+.E #item-name{
+	color: #9D9D9D;
+}
+.D #item-name{
+	color: #FFFFFF;
+}
+.C #item-name{
+	color: #D0F694;
+	text-shadow: #D0F69470 0px 0px 6px;
+}
+.B #item-name{
+	color: #0096FF;
+	text-shadow: #0096FF70 0px 0px 6px;
+}
+.A #item-name{
+	color: #C600FF;
+	text-shadow: #C600FF70 0px 0px 6px;
+}
+.S #item-name{
+	color: #FFDB10;
+	text-shadow: #FFDB10 0px 0px 6px;
+}
+.Z #item-name{
+	color: #FF8000;
+	text-shadow: #FF800070 0px 0px 6px;
+}
+.EX #item-name{
+	color: #DE2C19;
+	text-shadow: #DE2C19 0px 0px 6px;
+}
+
+#item-kind{
+	font-size: 16px;
+}
+
+#item-gold{
+	font-size: 16px;
+	margin-left: 5px;
+}
+
+#item-quality{
+	z-index: 3;
+	margin-left: 220px;
+	font-size: 50px;
+	color: #FEB4FF;
+	text-shadow: #FE7AFC70 0px 0px 5px;
+	transform: translateY(0px);
+}
+
+#item-description{
+	min-width: 250px;
+	max-width: 350px;
+	font-size: 18px;
+	color: #DDD;
+	margin-bottom: 5px;
+	min-height: 30px;
+}
+
+#AbilitySpecial{
+	width: 310px;
+	flow-children: down;
+}
+
+.item-specials-label{
+	color: #fff;
+	margin-right: 10px;
+	min-width: 90px;
+}
+
+.one-line{
+	height: 1px;
+	background-color: #999;
+	width: 310px;
+	horizontal-align: middle;
+	margin: 5px 0px 10px 0px;
+}
+
+#SuitInfo{
+	flow-children: down;
+}
+
+#SuitName{
+	color: #fff;
+}
+
+#SuitReqireItems{
+	width: 310px;
+	flow-children: right-wrap;
+}
+
+.item_suit_disable_for_text{
+	color: #888;
+}
+.child-item-for-suit{
+	color: #FFF;
+	min-width: 150px;
+	max-width: 310px;
+}
+.child-item-for-suit.item_suit_disable_for_text{
+	color: #888;
+}
+.kind-title-for-suit{
+	color: #fff;
+	margin-top: 6px;
+}
+
+#SuitAttributes{
+	margin-left: 13px;
+	width: 295px;
+	flow-children: right-wrap;
+}
+
+.item-suit-attribute-label{
+	color: #fff;
+	margin-right: 15px;
+	min-width: 100px;
+}
+
+.item_suit_disable .item-suit-attribute-label{
+	wash-color: #888;
+}
+
+#item-spell-double-click{
+	color: #FEC30E;
+	horizontal-align: middle;
+}
+#item-spell-to-quickly-slot{
+	color: #FEC30E;
+	horizontal-align: middle;
+}
+
+#obtain-methods{
+	margin-top: 5px;
+	flow-children: right;
+}
+
+#obtain-methods .title{
+	color: #FEDF81;
+}
+
+#obtain-method-list{
+	flow-children: down;
+}
+
+#obtain-method-list .item{
+	color: #fff;
+}
+
+#item-compare{
+	color: #FEC30E;
+	horizontal-align: middle;
+}
+
+#item-compare-panel{
+	width: 310px;
+	flow-children: right-wrap;
+}
+
+#CustomAttributesPanel{
+	margin-top:10px;
+	flow-children: down;
+}
+#CustomAttributesPanel .title{
+	color: #FEDF81;
+}
+
+#CustomAttributes{
+	width: 310px;
+	flow-children: down;
+}
+
+#ComposablePanel{
+	width: 100%;
+	height: 20px;
+}
+
+#ComposablePanel Label {
+	text-align: center;
+	horizontal-align: center;
+}

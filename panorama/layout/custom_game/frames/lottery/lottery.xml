@@ -1,0 +1,114 @@
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/dotastyles.vcss_c" />
+		<include src="file://{resources}/styles/custom_game/avalon.css" />
+		<include src="file://{resources}/layout/custom_game/frames/lottery/lottery.css" />
+	</styles>
+	<scripts>
+		<include src="file://{resources}/layout/custom_game/frames/lottery/lottery.js" />
+	</scripts>
+	<snippets>
+		<snippet name="lottery_light">
+			<Panel class="light">
+				<Panel class="light_blink"></Panel>
+			</Panel>
+		</snippet>
+		<snippet name="lottery_fragment">
+			<Panel class="fragment">
+				<Panel class="fragment_line"></Panel>
+			</Panel>
+		</snippet>
+		<snippet name="lottery_gift">
+			<Panel class="gift_item">
+				<Label id="gift_name" text="test"></Label>
+			</Panel>
+		</snippet>
+	</snippets>
+	<Panel hittest="false" class="XXWarStoreRoot" >
+		<Panel id="XXWarLotteryFrame" onactivate="">
+			<Panel id="Tier0" hittest="false">
+				<!-- 顶部栏背景 -->
+				<Panel id="Topbar" >
+					<Panel class="Left"/>
+					<Panel class="Middle"/>
+					<Panel class="Right"/>
+				</Panel>
+
+				<!-- 标题 -->
+				<Panel id="TitleBar" >
+					<Panel class="line">
+						<Panel class="Left"/>
+						<Panel class="Middle"/>
+						<Panel class="Right"/>
+					</Panel>
+					<Label text="#xxwar_lottery" />
+				</Panel>
+
+				<!-- 关闭按钮 -->
+				<Button id="CloseButton" class="TextBar" onactivate="GameUI.SwapFrame('xxwar_lottery')">
+					<Panel class="Left"/>
+					<Panel class="Middle">
+						<Label text="#xxwar_close" />
+					</Panel>
+					<Panel class="Right"/>
+				</Button>
+			</Panel>
+
+			<Panel id="Tier1" hittest="false">
+				<Panel id="Content" onactivate="">
+					<Label style="margin-top: 75px; margin-left: 20px;" text="" />
+					<Panel id="ContentTier1" hittest="false">
+						<Panel class="lottery_info">
+							<Panel class="lottery_info_item">
+								<Label id="lblRemaingTitle" text="#xxwar_lottery_count" />
+								<Label id="lblRemaingCount" text="0" />
+							</Panel>
+							<Panel class="lottery_info_item" id="pnlTenDraw">
+								<ToggleButton id="btnTenDraw" onselect="SwitchTenDraw(true)" ondeselect="SwitchTenDraw(false)" text="#xxwar_lottery_ten_draw" />
+							</Panel>
+						</Panel>
+					    <Panel class="turntable-wrap">
+					    	<Panel id="turntable_light"></Panel>
+					    	<Panel class="turntable" id="turntable">
+								<Panel class="bg" id="turntable_bg"></Panel>
+								<Panel class="gift" id="turntable_gift"></Panel>
+					      	</Panel>
+					      	<Panel class="pointer disabled" id="turntable_pointer">					      		
+					      		<Label text="#xxwar_lottery_button" onactivate="StartRotate()" />
+					      	</Panel>
+					      	<Panel class="pointer-arrow"></Panel>
+					    </Panel>
+					</Panel>
+
+					<!-- 消息对话框 -->
+					<Panel id="ContentTier6" onactivate="CloseAll()">
+						<Panel id="MessageDialog" onactivate="">
+							<Panel id="MessageDialogContent" >
+								<Label id="Message" html="true" text="" />
+								<Image id="MessageImage" src="" />
+								<Button id="MessageButton" onactivate="CloseAll()">
+									<Label text="#xxwar_button_ok" />
+								</Button>
+							</Panel>
+						</Panel>
+						<Button id="MessageDialogCloseButton" onactivate="CloseAll()"/>
+					</Panel>
+
+					<!-- 执行中 -->
+					<Panel id="ContentTier5" onactivate="">
+						<Panel id="Loading" >
+							<Panel class="spinner">
+								<Panel class="dot1"></Panel>
+								<Panel class="dot2"></Panel>
+							</Panel>
+							<Label text="Loading..." />
+						</Panel>
+						<Button id="TimeoutCloseAllButton" onactivate="CloseAll()">
+							<Label text="#xxwar_button_timeout" />
+						</Button>
+					</Panel>
+				</Panel>
+			</Panel>
+		</Panel>
+	</Panel>
+</root>

@@ -1,0 +1,50 @@
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/dotastyles.css" />
+		<include src="file://{resources}/styles/custom_game/avalon.css" />
+		<include src="file://{resources}/layout/custom_game/frames/treasures/treasures.css" />
+	</styles>
+	<scripts>
+		<include src="file://{resources}/layout/custom_game/frames/treasures/treasures.js" />
+	</scripts>
+	<snippets>
+		<snippet name="btn">
+			<Panel>
+				<Panel id="tooltip" />
+				<Button class="btn" hittestchildren="false">
+					<Label id="mid-text" text="" />
+					<Image id="quest-img" />
+					<DOTAAbilityImage id="ability-img" abilityname="" />
+					<DOTAItemImage id="item-img" />
+				</Button>
+			</Panel>
+		</snippet>
+	</snippets>
+	<Panel hittest="false" class="NPCTaskRoot" >
+		<Panel id="NPCTreasuresFrame" >
+			<!-- 顶部栏背景 -->
+			<Panel id="Topbar" >
+				<Panel class="Left"/>
+				<Panel class="Middle"/>
+				<Panel class="Right"/>
+			</Panel>
+
+			<!-- 标题 -->
+			<Panel id="TitleBar" >
+				<Panel class="line">
+					<Panel class="Left"/>
+					<Panel class="Middle">
+						<Label id="NPCName" text="" />
+					</Panel>
+					<Panel class="Right"/>
+				</Panel>
+			</Panel>
+
+			<Panel id="NPCTreasureBox" >
+				<Panel id="NPCTreasureBoxBg"/>
+				<Panel id="ButtonList" >
+				</Panel>
+			</Panel>
+		</Panel>
+	</Panel>
+</root>

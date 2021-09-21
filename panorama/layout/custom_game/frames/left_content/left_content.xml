@@ -1,0 +1,57 @@
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/dotastyles.css" />
+		<include src="file://{resources}/styles/custom_game/avalon.css" />
+		<include src="file://{resources}/layout/custom_game/frames/left_content/left_content.css" />
+	</styles>
+	<scripts>
+		<include src="file://{resources}/layout/custom_game/frames/left_content/left_content.js" />
+	</scripts>
+	<snippets>
+        <snippet name="HeroInfoContainer">
+            <Panel class="heroInfoContainer">
+            	<Panel id="tooltip" />
+            	<Panel class="heroInfo" id="heroInfo">
+            		<Panel class="heroIcon">
+	                    <Image id="imgHero" src="" />
+                		<Label id="lblLifetime" text="" hittest="false" />
+						<ProgressBar id="lifetimeBar" class="MonoNumbersFont" hittest="false" />
+	                </Panel>
+	                <Panel class="healthBar" id="healthBar" />
+	                <Panel class="manaBar" id="manaBar" />
+        		</Panel>
+        		<Panel id="heroLevel">
+        			<Label id="txtLevel" text="" />
+    			</Panel>
+        		<Panel id="AbilityList" />
+				<Panel id="ItemList" />
+				<Panel id="BuffsFrame" />
+				<Panel id="PetStatBranch" />
+            </Panel>
+        </snippet>
+        <snippet name="ability-btn">
+			<Button class="ability-btn">
+				<DOTAAbilityImage id="ability-img" />
+				<Panel id="charge_panel">
+					<Panel id="charge_bar" />
+					<Label id="charges" text="" />
+				</Panel>
+				<Panel id="cooldown" />
+				<Label id="cd" text="" />
+				<Panel class="bar" />
+				<Panel class="lock" />
+			</Button>
+		</snippet>
+    </snippets>
+	<Panel hittest="false" class="Root" >
+		<Panel id="HeroIconsContainer" hittest="false">
+        </Panel>
+		<Panel id="BagHandyButtons">
+			<Panel id="BagHandyButtons_Discard" class="btn" hittestchildren="false">
+				<Label class="title discard_btn" id="txtHandyButton" text="#xxwar_button_discard" />
+			</Panel>
+		</Panel>
+		<Panel id="MiniMapPanel" hittest="false">
+		</Panel>
+	</Panel>
+</root>

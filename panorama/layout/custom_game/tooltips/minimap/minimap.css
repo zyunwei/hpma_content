@@ -1,0 +1,77 @@
+.Root{
+}
+
+#Point{
+	overflow: noclip;
+}
+
+#MiniMap{
+	width: 512px;
+	height: width-percentage(100%);
+}
+
+#Point.item_teleport_fushucun{
+	margin-left: 390px;
+	margin-top: 410px;
+}
+
+#Point.item_teleport_shushan{
+	margin-left: 290px;
+	margin-top: 300px;
+}
+
+#Point.item_teleport_qiannianxueshan{
+	margin-left: 345px;
+	margin-top: 165px;
+}
+
+#Point.item_teleport_chiyouzhong{
+	margin-left: 40px;
+	margin-top: 448px;
+}
+
+#Point.item_teleport_kunlun{
+	margin-left: 60px;
+	margin-top: 50px;
+}
+
+#ItemName{
+	width: 100%;
+	text-align: center;
+	font-size: 25px;
+	color: #fff;
+}
+
+.point{
+	width: 30px;
+	height: width-percentage(100%);
+	background-image: url("file://{images}/custom_game/target.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100%;
+	wash-color: #FF3720;
+}
+
+.point.effect{
+	opacity: 0.8;
+
+	animation-name: PointEffect;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes 'PointEffect'
+{
+	0%
+	{
+		transform: scale3d(0.5,0.5,1.0);
+	}
+	50%
+	{
+		transform: scale3d(2.0,2.0,1.0);
+	}
+	100%
+	{
+		transform: scale3d(0.5,0.5,1.0);
+	}
+}

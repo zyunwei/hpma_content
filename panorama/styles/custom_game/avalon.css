@@ -1,0 +1,382 @@
+Label{
+	font-family: Radiance, RadianceM,Goudy Trajan Medium,FZKai-Z03,TH Sarabun New,YDYGO 540;
+}
+
+/*横向排列*/
+.line{
+	flow-children:right;
+}
+.line-wrap {
+	flow-children:right-wrap;
+}
+
+/*纵向排列*/
+.down{
+	flow-children:down;
+}
+
+/*水平居左*/
+.left{
+	horizontal-align: left;
+}
+
+/*水平居中*/
+.center{
+	horizontal-align: center;
+}
+
+/*水平居右*/
+.right{
+	horizontal-align: right;
+}
+
+/*垂直居顶*/
+.top{
+	vertical-align: top;
+}
+
+/*垂直居中*/
+.middle{
+	vertical-align: middle;
+}
+
+/*垂直居低*/
+.bottom{
+	vertical-align: bottom;
+}
+
+/*横竖居中*/
+.mid{
+	horizontal-align: center;
+	vertical-align: middle;
+}
+
+/*长宽100%*/
+.full{
+	width: 100%;
+	height: 100%;
+}
+
+/*长100%*/
+.width-1{
+	width: 10%;
+}
+.width-2{
+	width: 20%;
+}
+.width-3{
+	width: 30%;
+}
+.width-4{
+	width: 40%;
+}
+.width-5{
+	width: 50%;
+}
+.width-6{
+	width: 60%;
+}
+.width-7{
+	width: 70%;
+}
+.width-8{
+	width: 80%;
+}
+.width-9{
+	width: 90%;
+}
+.width-f{
+	width: 100%;
+}
+
+/*宽100%*/
+.height-1{
+	height: 10%;
+}
+.height-2{
+	height: 20%;
+}
+.height-3{
+	height: 30%;
+}
+.height-4{
+	height: 40%;
+}
+.height-5{
+	height: 50%;
+}
+.height-6{
+	height: 60%;
+}
+.height-7{
+	height: 70%;
+}
+.height-8{
+	height: 80%;
+}
+.height-9{
+	height: 90%;
+}
+.height-f{
+	height: 100%;
+}
+
+/*显示*/
+.show{
+	visibility: visible;
+}
+
+/*隐藏*/
+.hide{
+	visibility: collapse;
+}
+
+/*文字居中*/
+.text-center{
+	text-align: center;
+}
+
+/*文字居右*/
+.text-right{
+	text-align: right;
+}
+
+/*文字居左*/
+.text-left{
+	text-align: left;
+}
+
+/*大写*/
+.text-uppercase{
+	text-transform: uppercase;
+}
+
+/*小写*/
+.text-lowercase{
+	text-transform: lowercase;
+}
+
+/*tooltip显示的位置*/
+.tooltip-left{
+	tooltip-position: left;
+}
+.tooltip-top{
+	tooltip-position: top;
+}
+.tooltip-right{
+	tooltip-position: right;
+}
+.tooltip-bottom{
+	tooltip-position: bottom;
+}
+.tooltip-center{
+	tooltip-body-position: 50% 50%;
+}
+
+/*长宽比重*/
+.line-w-1{
+	width: fill-parent-flow(0.1);
+}
+.line-w-2{
+	width: fill-parent-flow(0.2);
+}
+.line-w-3{
+	width: fill-parent-flow(0.3);
+}
+.line-w-4{
+	width: fill-parent-flow(0.4);
+}
+.line-w-5{
+	width: fill-parent-flow(0.5);
+}
+.line-w-6{
+	width: fill-parent-flow(0.6);
+}
+.line-w-7{
+	width: fill-parent-flow(0.7);
+}
+.line-w-8{
+	width: fill-parent-flow(0.8);
+}
+.line-w-9{
+	width: fill-parent-flow(0.9);
+}
+.line-w-f{
+	width: fill-parent-flow(1);
+}
+.down-w-1{
+	height: fill-parent-flow(0.1);
+}
+.down-w-2{
+	height: fill-parent-flow(0.2);
+}
+.down-w-3{
+	height: fill-parent-flow(0.3);
+}
+.down-w-4{
+	height: fill-parent-flow(0.4);
+}
+.down-w-5{
+	height: fill-parent-flow(0.5);
+}
+.down-w-6{
+	height: fill-parent-flow(0.6);
+}
+.down-w-7{
+	height: fill-parent-flow(0.7);
+}
+.down-w-8{
+	height: fill-parent-flow(0.8);
+}
+.down-w-9{
+	height: fill-parent-flow(0.9);
+}
+.down-w-f{
+	height: fill-parent-flow(1);
+}
+
+/*字体颜色*/
+.text-white{
+	color: white;
+}
+.text-red{
+	color: red;
+}
+.text-yellow{
+	color: yellow;
+}
+.text-green{
+	color: green;
+}
+.text-black{
+	color: black;
+}
+.text-blue{
+	color: blue;
+}
+.text-gold{
+	color: gold;
+}
+.text-orange{
+	color: orange;
+}
+.text-line-through{
+	text-decoration: line-through;
+}
+
+/*背景色*/
+.bg-white{
+	background-color: white;
+}
+.bg-red{
+	background-color: red;
+}
+.bg-yellow{
+	background-color: yellow;
+}
+.bg-green{
+	background-color: green;
+}
+.bg-black{
+	background-color: black;
+}
+.bg-blue{
+	background-color: blue;
+}
+.bg-gold{
+	background-color: gold;
+}
+.bg-orange{
+	background-color: orange;
+}
+
+/*透明度*/
+.opacity-0{
+	opacity: 0;
+}
+.opacity-1{
+	opacity: 0.1;
+}
+.opacity-2{
+	opacity: 0.2;
+}
+.opacity-3{
+	opacity: 0.3;
+}
+.opacity-4{
+	opacity: 0.4;
+}
+.opacity-5{
+	opacity: 0.5;
+}
+.opacity-6{
+	opacity: 0.6;
+}
+.opacity-7{
+	opacity: 0.7;
+}
+.opacity-8{
+	opacity: 0.8;
+}
+.opacity-9{
+	opacity: 0.9;
+}
+
+/*矩形*/
+.rect-128{
+	width: 128px;
+	height: 128px;
+}
+
+.rect-256{
+	width: 256px;
+	height: 256px;
+}
+
+.rect-512{
+	width: 512px;
+	height: 512px;
+}
+
+.rect-1024{
+	width: 1024px;
+	height: 1024px;
+}
+
+.scroll{
+	overflow: scroll;
+}
+
+.scroll-right{
+	overflow: squish scroll;
+}
+
+.scroll-bottom{
+	overflow: scroll squish;
+}
+
+.padding-xs{
+	padding: 5px;
+}
+.padding-sm{
+	padding: 10px;
+}
+.padding-lg{
+	padding: 20px;
+}
+.padding-xl{
+	padding: 30px;
+}
+
+.margin-xs{
+	margin: 5px;
+}
+.margin-sm{
+	margin: 10px;
+}
+.margin-lg{
+	margin: 20px;
+}
+.margin-xl{
+	margin: 30px;
+}

@@ -1,0 +1,54 @@
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/dotastyles.css" />
+		<include src="file://{resources}/styles/custom_game/avalon.css" />
+		<include src="file://{resources}/layout/custom_game/templates/item_tooltip/item_tooltip.css" />
+	</styles>
+	<scripts>
+		<include src="file://{resources}/layout/custom_game/templates/item_tooltip/item_tooltip.js" />
+	</scripts>
+	<Panel class="item-view">
+		<Panel id="current-equipment-title-panel" >
+			<Label text="#xxwar_equipment_tooltip_current_equipment" />
+		</Panel>
+		<Panel class="item-info-view">
+			<Panel id="item-header" >
+				<!-- 物品图标 -->
+				<Panel class="middle">
+					<DOTAItemImage id="item-img" itemname="item_0063" />
+				</Panel>
+				<!-- 物品名称，种类，品质，售价 -->
+				<Panel style="width:350px;margin-top:15px;margin-left:6px;">
+					<Label id="item-name" html="true" text="" />
+					<Panel class="line" style="margin-top:28px;margin-left:0px;">
+						<Label id="item-kind" html="true" text="#item_kind" />
+						<Label id="item-gold" html="true" text="" />
+					</Panel>
+					<Image id="item-quality" src="file://{resources}/images/custom_game/tooltips/e.png" />
+				</Panel>
+			</Panel>
+			<Panel id="item-info-content">
+				<!-- 物品描述 -->
+				<Label id="item-description" html="true" text="" />
+				<!-- 物品属性 -->
+				<Panel id="AbilitySpecial" >
+				</Panel>
+				<!-- 自定义属性 -->
+				<Panel id="CustomAttributesPanel" >
+				<Label class="title" text="#xxwar_attributes" />
+					<Panel id="CustomAttributes" >
+					</Panel>
+				</Panel>
+				<!-- 是否可合成 -->
+				<Panel id="FourthLine" class="one-line"/>
+				<Panel id="ComposablePanel" >
+					<Label id="txtComposable" class="title" text="#xxwar_composable_yes" />
+				</Panel>
+				<!-- 装备比较 -->
+				<Label id="item-compare" text="#xxwar_compare_item" />
+				<Panel id="item-compare-panel">
+				</Panel>
+			</Panel>
+		</Panel>
+	</Panel>
+</root>

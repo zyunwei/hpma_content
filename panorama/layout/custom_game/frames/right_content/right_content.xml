@@ -1,0 +1,76 @@
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/dotastyles.css" />
+		<include src="file://{resources}/styles/custom_game/avalon.css" />
+		<include src="file://{resources}/layout/custom_game/frames/right_content/right_content.css" />
+	</styles>
+	<scripts>
+		<include src="file://{resources}/layout/custom_game/frames/right_content/right_content.js" />
+	</scripts>
+	<Panel hittest="false" class="RightContentRoot" >
+		<Panel id="BagAndEquipment" onactivate="Null()">
+			<!-- 装备栏 -->
+			<Panel id="Equipments">
+			</Panel>
+			<!-- 背包 -->
+			<Panel id="Bag">
+			</Panel>
+			<!-- 可合成物品 -->
+			<Panel id="ItemToBeCompose">
+			</Panel>
+			<Panel id="Anything" >
+				<Panel id="Currencies">
+					<Panel class="line gold"
+						onmouseover="DOTAShowTextTooltip(#xxwar_currency_gold)"
+						onmouseout="DOTAHideTextTooltip()">
+						<Label text="{d:gbi}" />
+						<Image src="file://{images}/custom_game/bag/icon_gold.png" />
+					</Panel>
+				</Panel>
+				<Panel class="width-f line bottom">
+					<Button class="bottom-button" onactivate="GameUI.SwapFrame('compose_frame')">
+						<Panel class="line center compose">
+							<Panel class="icon" />
+							<Label text="#xxwar_shop" />
+						</Panel>
+					</Button>
+				</Panel>
+			</Panel>
+		</Panel>
+
+		<Panel id="BottomButtons" >
+			<Button class="btn help_book" onactivate="GameUI.SwapFrame('xxwar_task')">
+				<Panel class="icon" />
+				<Label text="#xxwar_task" />
+			</Button>
+			<Button class="btn store" onactivate="GameUI.SwapFrame('xxwar_store')">
+				<Panel class="icon" />
+				<Label text="#xxwar_store" />
+			</Button>
+			<Button class="btn quests" onactivate="GameUI.SwapFrame('xxwar_lottery')">
+				<Panel class="icon" />
+				<Label text="#xxwar_lottery" />
+			</Button>
+			<Button class="btn ranking_list" onactivate="GameUI.SwapFrame('ranking_list')">
+				<Panel class="icon" />
+				<Label text="#xxwar_ranking_list" />
+			</Button>
+		</Panel>
+
+		<!-- 背包快捷操作按钮 -->
+		<Panel id="BagHandyButtons" >
+			<Panel id="BagHandyButtons_Discard" class="btn" hittestchildren="false">
+				<Label class="title discard_btn" text="#DOTA_BackpackDiscard" />
+			</Panel>
+			<Panel id="BagHandyButtons_Replace" class="btn" hittestchildren="false">
+				<Label class="title" text="#xxwar_replace" />
+                <Panel id="ReplaceResultInfo">
+                    <Label id="ReplaceResultText" text="" />
+                </Panel>
+				<Label id="ReplaceDisabledText" text="#xxwar_replace_error_msg_quality" />
+			</Panel>
+		</Panel>
+
+		<DOTAScenePanel id="NewItemEffect" map="avalon/new_item" hittest="false" camera="default" />
+	</Panel>
+</root>

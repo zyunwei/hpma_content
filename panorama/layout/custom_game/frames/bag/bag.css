@@ -1,0 +1,198 @@
+.Root{
+	width: 100%;
+	height: 100%;
+}
+
+#BagFrame{
+	flow-children: down;
+	background-color: #232527;
+	horizontal-align: middle;
+}
+
+.bagTitle{
+	width: 100%;
+}
+
+#BagFrame .title{
+	width: 100%;
+	text-align: center;
+	font-size: 18px;
+	text-shadow: #000 0px 0px 8px;
+	margin-top: 8px;
+	color: #EEE;
+}
+
+#BagItemList{
+	flow-children: down;
+	height: 70px;
+	padding-right: 8px;
+	padding-left: 2px;
+	padding-top: 0px;
+	padding-bottom: 8px;
+
+	transition-property: height;
+	transition-duration: 0.2s;
+}
+#TurnBag{
+	width: 330px;
+	height: 20px;
+	sound: "CustomGameUI.CloseBag";
+	horizontal-align: middle;
+	transform: rotateZ(180deg);
+
+	background-image: url("file://{images}/custom_game/bag/close_bag.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center;
+
+	transition-property: background-image;
+	transition-duration: 0.2s;
+}
+#TurnBag:hover{
+	background-image: url("file://{images}/custom_game/bag/close_bag_hover.png");
+}
+#TurnBag.checked{
+	sound: "CustomGameUI.OpenBag";
+	transform: rotateZ(0deg);
+}
+
+#TurnBag .TickBox{
+	visibility: collapse;
+}
+
+#BagFrame .slot{
+	width: 50px;
+	height: 50px;
+	background-color: #333;
+	margin-top: 6px;
+	margin-left: 6px;
+	border: 1px solid #0000;
+
+	transition-property: background-color,box-shadow,border;
+	transition-duration: 0.2s;
+}
+
+#BagFrame .slot:hover{
+	box-shadow: #4B8EFF 0px 0px 4px;
+}
+
+#BagFrame .slot.is-new-item{
+	box-shadow: inset #0096ff 0px 0px 5px;
+	border: 1px solid #78b0ea;
+}
+
+#BagFrame .slot.is-compose-active{
+	box-shadow: inset #ffd000 0px 0px 5px;
+	border: 3px solid #ec5f27;
+}
+
+@keyframes 'NewItemLight'
+{
+	0%
+	{
+		box-shadow: #FFE076 0px 0px 1px;
+	}
+	50%
+	{
+		box-shadow: #F9AD00 0px 0px 6px;
+	}
+	100%
+	{
+		box-shadow: #FFE076 0px 0px 1px;
+	}
+}
+
+#BagFrame .slot #item-img{
+	width: 100%;
+	height: 100%;
+	background-image: url("file://{images}/custom_game/emptyitembg.png");
+}
+
+#BagItemList.checked{
+	height: 130px;
+}
+
+#BagFrame.HasExpandBag #BagItemList.checked{
+	height: 520px;
+}
+
+#BagItemList #tooltip{
+	width: 100%;
+	height: 100%;
+	background-color: #0000;
+}
+
+#BagItemList #tooltip.is-in-cd{
+	background-color: #000A;
+}
+
+#BagFrame .slot.drag_enter{
+	background-color: #444;
+	box-shadow: #4B8EFF 0px 0px 4px;
+	border: 1px solid #78b0ea;
+}
+
+#BagFrame .slot.drag_start{
+	box-shadow: #F67F00 0px 0px 4px;
+	border: 1px solid #F67F00;
+}
+
+#BagFrame .slot #item-charges{
+	color: #fff;
+	text-shadow: #000 0px 0px 2px 2.0;
+	horizontal-align: right;
+	vertical-align: bottom;
+	margin-right: 3px;
+}
+
+#SortBagItems{
+	width: 140px;
+	height: 32px;
+	background-image: url("file://{images}/custom_game/bag/button.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center;
+	horizontal-align: right;
+	margin: 5px 10px;
+
+	transition-property: background-image;
+	transition-duration: 0.2s;
+}
+#SortBagItems:hover{
+	background-image: url("file://{images}/custom_game/bag/button-hover.png");
+}
+#SortBagItems Label{
+	color: #fff;
+	width: 100%;
+	text-align: center;
+	vertical-align: middle;
+}
+
+#PublicStash{
+	width: 140px;
+	height: 32px;
+	background-image: url("file://{images}/custom_game/bag/button.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center;
+	margin: 5px 10px;
+
+	transition-property: background-image;
+	transition-duration: 0.2s;
+}
+#PublicStash:hover{
+	background-image: url("file://{images}/custom_game/bag/button-hover.png");
+}
+#PublicStash Label{
+	color: #fff;
+	width: 100%;
+	text-align: center;
+	vertical-align: middle;
+}
+
+#btnToggleAutoUse {
+	height: 20px;
+	vertical-align: center;
+	horizontal-align: right;
+	margin-top:8px;
+}

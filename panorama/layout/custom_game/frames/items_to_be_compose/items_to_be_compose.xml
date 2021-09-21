@@ -1,0 +1,30 @@
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/dotastyles.css" />
+		<include src="file://{resources}/styles/custom_game/avalon.css" />
+		<include src="file://{resources}/layout/custom_game/frames/items_to_be_compose/items_to_be_compose.css" />
+	</styles>
+	<scripts>
+		<include src="file://{resources}/layout/custom_game/frames/items_to_be_compose/items_to_be_compose.js" />
+	</scripts>
+	<snippets>
+		<snippet name="item">
+			<Panel class="item" hittestchildren="false">
+				<Panel id="tooltip"/>
+				<DOTAItemImage id="item-img" itemname="" />
+			</Panel>
+		</snippet>
+	</snippets>
+	<Panel hittest="false" class="ItemToBeComposeRoot">
+		<Panel id="ItemToBeComposeFrame" >
+			<Panel class="yellowline" />
+			<Label class="title" text="#item_to_be_compose" />
+			<Panel class="toggleMain">
+				<ToggleButton id="btnToggleEquipCompose" onselect="SwitchEquipmentCompose(true)" ondeselect="SwitchEquipmentCompose(false)" text="#xxwar_compose_use_equip" />
+				<ToggleButton id="btnToggleAutoCompose" selected="true" onselect="SwitchAutomaticCompose(true)" ondeselect="SwitchAutomaticCompose(false)" text="#xxwar_compose_automatic" />
+			</Panel>
+			<Panel id="ComposeItemList" >
+			</Panel>
+		</Panel>
+	</Panel>
+</root>

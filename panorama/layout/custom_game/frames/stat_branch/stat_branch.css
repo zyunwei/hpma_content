@@ -1,0 +1,159 @@
+/* .CustomStatBranch{
+    width: 62px;
+    height: 62px;
+    horizontal-align: center;
+    vertical-align: middle;
+    ui-scale:200%;
+} */
+#StatLevelProgressBarBlur{
+    visibility: visible;
+}
+#StatLevelProgressBar{
+    visibility: visible;
+}
+#tooltip{
+    horizontal-align: center;
+    vertical-align: middle;
+}
+
+/* #CustomStatBranchBG{
+    width: 100%;
+    height: 100%;
+    background-image: url("s2r://panorama/images/hud/reborn/statbranch_button_bg_psd.vtex");
+    background-size: cover;
+    background-position: center;
+    overflow: clip;
+} */
+
+/* #StatPipContainer{
+    width: 100%;
+    height: 100%;
+}
+
+#StatBranchGraphics{
+    width: 100%;
+    height: 100%;
+}
+
+.StatBranchRow{
+    flow-children: none;
+    horizontal-align: center;
+    overflow: noclip;
+}
+
+.StatBranchPip{
+    width: 62px;
+    height: 62px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition-property: opacity;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.4s;
+    z-index: 1;
+}
+
+#StatBranchChannel{
+    width: 100%;
+    height: 100%;
+}
+
+.ShowStatBranch .StatBranchPip{
+    opacity: 1;
+}
+
+#StatRowStar5 .StatBranchPip{
+    background-image: url("s2r://panorama/images/hud/reborn/statbranch_button_pip25_psd.vtex");
+}
+
+#StatRowStar4 .StatBranchPip{
+    background-image: url("s2r://panorama/images/hud/reborn/statbranch_button_pip20_psd.vtex");
+}
+
+#StatRowStar3 .StatBranchPip{
+    background-image: url("s2r://panorama/images/hud/reborn/statbranch_button_pip15_psd.vtex");
+}
+
+#StatRowStar2 .StatBranchPip{
+    background-image: url("s2r://panorama/images/hud/reborn/statbranch_button_pip10_psd.vtex");
+}
+
+.RightBranchPip .StatBranchPip{
+    horizontal-align: right;
+}
+
+.LeftBranchPip .StatBranchPip{
+    horizontal-align: left;
+    transform: scaleX(-1);
+}
+
+.LevelProgressBlur{
+    border-radius: 0px;
+    width: 50px;
+    height: 4px;
+    transform: rotateZ(-90deg) translateX(-6px) translateY(43px);
+    opacity-mask: url("s2r://panorama/images/hud/reborn/statbranch_progress_mask_psd.vtex") 1.0;
+    horizontal-align: right;
+}
+
+#StatBranch.ShowStatBranch #StatLevelProgressBar{
+    visibility: visible;
+}
+
+#StatLevelProgressBar{
+    width: 100%;
+    height: 6px;
+    vertical-align: middle;
+    border-radius: 1px;
+}
+
+ProgressBar{
+    overflow: noclip;
+}
+
+#StatLevelProgressBar .ProgressBarLeft{
+    background-color: gradient( linear, 0% 0%, 100% 0%, from( #E7D291 ), color-stop( .35, #E7D291 ), to( #f36f1d ) );
+}
+
+.LevelProgress .ProgressBarLeft{
+    border-radius: 2px;
+    transition-property: width;
+    transition-duration: 0.4s;
+    transition-timing-function: ease-in-out;
+}
+
+.ProgressBarLeft{
+    border-top: 1px solid #ffffff33;
+}
+
+.LevelProgressBlur{
+    height: 12px;
+    width: 50px;
+    blur: gaussian(3);
+    z-index: -1;
+    transform: rotateZ(-90deg) translateX(-6px) translateY(40px);
+    opacity-mask: url("s2r://panorama/images/hud/reborn/statbranch_progress_mask_psd.vtex") 1.0;
+    horizontal-align: right;
+}
+
+#StatLevelProgressBarBlur{
+    width: 100px;
+    height: 14px;
+    padding: 4px;
+    vertical-align: middle;
+}
+
+.LevelProgressBlur #StatLevelProgressBarBlur .ProgressBarLeft{
+    background-color: #FF6F0022;
+}
+
+.LevelProgressBlur #StatLevelProgressBarBlur .ProgressBarRight{
+    background-color: transparent;
+} */
+
+
+
+#StatBranchBG{
+    background-color: #00000044;
+    border-radius: 30px;
+}

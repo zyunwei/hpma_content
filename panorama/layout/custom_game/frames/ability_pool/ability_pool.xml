@@ -1,0 +1,30 @@
+<root>
+    <styles>
+        <include src="s2r://panorama/styles/dotastyles.css" />
+        <include src="file://{resources}/layout/custom_game/frames/ability_pool/ability_pool.css" />
+    </styles>
+
+    <scripts>
+        <include src="file://{resources}/layout/custom_game/frames/ability_pool/ability_pool.js" />
+    </scripts>
+
+    <snippets>
+        <snippet name="AbilityIconSnippet">
+            <Panel class="AbilityIcon">
+                <DOTAAbilityImage id="ability-img" />
+            </Panel>
+        </snippet>
+    </snippets>
+
+	<Panel hittest="false" class="AbilityPoolRoot">
+        <Panel id="AbilityPoolRootPanel">
+            <Panel id="TopBar">
+                <Image id="btnClose" src="s2r://panorama/images/control_icons/gear_return_png.vtex" onactivate="OnBtnClick()" />
+                <TextButton id="AbilityPoolType" text="#xxwar_main_abilities" onactivate="ChangeAbilityType()"/>
+                <Label id="AbilityPoolTitle" text="#xxwar_ability_pool" />
+            </Panel>
+            <Panel id="AbilityPool" />
+            <Panel id="MinorAbilityPool" />
+        </Panel>
+	</Panel>
+</root>
