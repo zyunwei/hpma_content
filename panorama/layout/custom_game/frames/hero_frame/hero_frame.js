@@ -2,14 +2,14 @@
 GameUI.LoadFrame($("#HeroFrame"),'hero_frame','bottom_unit_info',true,true);
 
 var ITEM_SLOT_START = 12;
-var HotKey = {'Q':0,'W':1,'E':2,'R':3,'V':4,'G':5,"N":6,"M":7,"L":8,"O":9,"P":10,'F':11,
+var HotKey = {'Q':0,'W':1,'E':2,'R':3,'T':4,'G':5,"N":6,"M":7,"L":8,"O":9,"P":10,'F':11,
 	'4':ITEM_SLOT_START,
 	'5':ITEM_SLOT_START + 1,
 	'6':ITEM_SLOT_START + 2,
 	'7':ITEM_SLOT_START + 3,
 	'8':ITEM_SLOT_START + 4,
 	'9':ITEM_SLOT_START + 5};
-var AbilityKeys = ['Q','W','E','R','V','G','N','M','L',"O","P"];
+var AbilityKeys = ['Q','W','E','R','T','G','N','M','L',"O","P"];
 var ItemKeys = ['4','5','6','7','8','9'];
 var AbilitiesChargeTime = {};
 
@@ -40,7 +40,6 @@ GameUI.HeroFrame_OnKeyPress = function (key) {
 		case 'P':
 		case 'Z':
 		case 'G':
-		case 'V':
 			AbilityPress(key);
 			return;
 		case '4':
@@ -413,7 +412,7 @@ function AutoUpdateAbilities() {
 			UpdateAbility($("#ability_minor_" + i), hero, i, null);		
 		}
 		
-		UpdateAbility($("#ability_jump"), hero, -1, "ability_xxwar_jump");
+		UpdateAbility($("#ability_jump"), hero, -1, "ability_xxwar_move");
 	}
 
 	$.Schedule(0.05, AutoUpdateAbilities);
@@ -663,7 +662,7 @@ function InitAbilities() {
 	$("#BuffsFrame").SetTargetUnit(hero);
 
     var initCount = 0;
-	var abilityJump = Entities.GetAbilityByName(hero, "ability_xxwar_jump");
+	var abilityJump = Entities.GetAbilityByName(hero, "ability_xxwar_move");
 	if(abilityJump >= 0) {
 		InitSmallAbility(abilityJump, "ability_jump", "", true);
 		initCount++;
@@ -726,27 +725,29 @@ function OnAbilityDragStart(btn, dragCallbacks) {
 		isSmallAbility = true;
 	}
 
-	if(btn.m_AbilityName == "ability_xxwar_jump") {
-		return false;
-	}
+	return false;
 
-	if(isSmallAbility && btn.BHasClass("is-in-cd")) {
-		return false;
-	}
+	// if(btn.m_AbilityName == "ability_xxwar_move") {
+	// 	return false;
+	// }
 
-	var hero = Players.GetLocalHero();
-	btn.SetHasClass('drag_start',true);
-	var displayPanel = $.CreatePanel('DOTAAbilityImage', $.GetContextPanel(), '');
-	displayPanel.SetHasClass("dragAbilityImage", true);
-	displayPanel.abilityname = btn.m_AbilityName;
-	displayPanel.m_DragCompleted = false;
-	displayPanel.m_Source = isSmallAbility ? "small_abilities" : "abilities";
-	dragCallbacks.displayPanel = displayPanel;
-	dragCallbacks.offsetX = 0;
-	dragCallbacks.offsetY = 0;
+	// if(isSmallAbility && btn.BHasClass("is-in-cd")) {
+	// 	return false;
+	// }
+
+	// var hero = Players.GetLocalHero();
+	// btn.SetHasClass('drag_start',true);
+	// var displayPanel = $.CreatePanel('DOTAAbilityImage', $.GetContextPanel(), '');
+	// displayPanel.SetHasClass("dragAbilityImage", true);
+	// displayPanel.abilityname = btn.m_AbilityName;
+	// displayPanel.m_DragCompleted = false;
+	// displayPanel.m_Source = isSmallAbility ? "small_abilities" : "abilities";
+	// dragCallbacks.displayPanel = displayPanel;
+	// dragCallbacks.offsetX = 0;
+	// dragCallbacks.offsetY = 0;
 	
-	ShowAbilityHandyButtons(isSmallAbility);
-	return true;
+	// ShowAbilityHandyButtons(isSmallAbility);
+	// return true;
 }
 
 function OnAbilityDragEnd(btn, draggedPanel) {
