@@ -20,29 +20,6 @@ function OnClickPortrait() {
 	GameUI.CloseAllFrame();
 }
 
-function ActiveJump() {
-	var hero = Players.GetLocalHero();
-	var cursorPos = GameUI.GetScreenWorldPosition(GameUI.GetCursorPosition());
-	GameEvents.SendCustomGameEventToServer("xxwar_cast_jump", {pos:cursorPos});
-
-	// var ability = Entities.GetAbilityByName(hero, 'ability_xxwar_jump');
-	// if(ability > -1) {
-	// 	Abilities.ExecuteAbility(ability, hero, false);	
-	// }
-}
-
-function ActiveToggleAi(){
-	var hero = Players.GetLocalHero();
-	var ability = Entities.GetAbilityByName(hero, 'ability_xxwar_toggle_ai');
-	if(ability > -1) {
-		Abilities.ExecuteAbility(ability, hero, false);
-	}
-}
-
-function ActivePickup(){
-	GameEvents.SendCustomGameEventToServer("xxwar_cast_pickup", {});
-}
-
 var heroAttrPanel = null;
 
 GameUI.HeroFrame_OnKeyPress = function (key) {
@@ -102,26 +79,13 @@ function HideAttrPanel() {
 }
 
 function AbilityPress(key) {
-	switch(key) 
-	{
-		case 'D':
-			ActiveJump();
-			return;
-		case 'Z':
-			ActiveToggleAi();
-			return;
-		case 'F':
-			ActivePickup();
-			return;
-	}
-
 	var hero = Players.GetLocalPlayerPortraitUnit();
 	if (Players.GetLocalHero() !== hero) {
 		return;
 	}
 
 	var abilityPanelList = $("#AbilityList");
-	for (var i = 8; i <= 11; i++) {
+	for (var i = 0; i <= 4; i++) {
 		var panel = abilityPanelList.GetChild(i);
 		if (panel && panel.visible == true && panel.HotKey== key) {
 			var ability = Entities.GetAbilityByName(hero, panel.m_AbilityName);
@@ -345,7 +309,7 @@ function UpdateAbility(btn, hero, slot, abilityName) {
 	}
 
 	var isMinorAbility = false;
-	for(var i = 8; i <= 11; i++) {
+	for(var i = 0; i <= 4; i++) {
 		if(btn.id == "ability_minor_" + i) {
 			isMinorAbility = true;
 			break;
@@ -383,7 +347,7 @@ function UpdateAbility(btn, hero, slot, abilityName) {
 
 	if (isInCD) {
 		var cd = Abilities.GetCooldownTimeRemaining(ability);
-		var deg = -360 * (cd / Abilities.GetCooldown(ability));
+		var deg = -360 * (cd / Abilities.GetCooldownLength(ability));
 		deg = (isFinite(deg))? deg : 0;
 		btn.FindChild('cooldown').style.clip = "radial(50% 50%,0deg," + deg.toFixed(2) + "deg)";
 		btn.FindChild('cd').text = Math.ceil(cd);
@@ -435,7 +399,7 @@ function AutoUpdateAbilities() {
 	var hero = GetDisplayingUnit();
 
 	var AbilitiesList = $("#AbilityList");
-	for (var i = 8; i <= 11; i++) {
+	for (var i = 0; i <= 4; i++) {
 		UpdateAbility(AbilitiesList.GetChild(i), hero, i, null);
 	}
 
@@ -445,14 +409,11 @@ function AutoUpdateAbilities() {
 	}
 
 	if(m_IsLocalHero) {
-		for (var i = 8; i <= 11; i++) {
+		for (var i = 0; i <= 4; i++) {
 			UpdateAbility($("#ability_minor_" + i), hero, i, null);		
 		}
 		
 		UpdateAbility($("#ability_jump"), hero, -1, "ability_xxwar_jump");
-		UpdateAbility($("#ability_toggle_ai"), hero, -1, "ability_xxwar_toggle_ai");
-		UpdateAbility($("#ability_teleport"), hero, -1, "ability_xxwar_teleport");
-		UpdateAbility($("#ability_collection"), hero, -1, "ability_xxwar_collection");
 	}
 
 	$.Schedule(0.05, AutoUpdateAbilities);
@@ -508,21 +469,12 @@ function UpdateHeroInfo() {
 		$("#HeroPortraitImg").SetImage("file://{images}/custom_game/hero_frame/" + Entities.GetUnitName(hero) + ".png");
 
 		var ability_jump = $("#ability_jump");
-		var ability_toggle_ai = $("#ability_toggle_ai");
-		var ability_teleport = $("#ability_teleport");
-		var ability_collection = $("#ability_collection");
 
 		if (m_IsLocalHero) {
 			if(ability_jump) ability_jump.visible = true;	
-			if(ability_toggle_ai) ability_toggle_ai.visible = true;
-			if(ability_teleport) ability_teleport.visible = true;
-			if(ability_collection) ability_collection.visible = true;
 		}
 		else {
 			if(ability_jump) ability_jump.visible = false;	
-			if(ability_toggle_ai) ability_toggle_ai.visible = false;
-			if(ability_teleport) ability_teleport.visible = false;
-			if(ability_collection) ability_collection.visible = false;
 		}
 	}
 	
@@ -598,7 +550,7 @@ function UpdateHeroInfo() {
 	// 主技能
 	var AbilityList = $("#AbilityList");
 	var keyIndex = 0;
-	for (var i = 8; i <= 11; i++) {
+	for (var i = 0; i <= 4; i++) {
 		var panel = AbilityList.GetChild(i);
 		if (!panel) {
 			panel = $.CreatePanel("Button", AbilityList, "ability_" + i);
@@ -713,35 +665,11 @@ function InitAbilities() {
     var initCount = 0;
 	var abilityJump = Entities.GetAbilityByName(hero, "ability_xxwar_jump");
 	if(abilityJump >= 0) {
-		InitSmallAbility(abilityJump, "ability_jump", "D", true);
-		initCount++;
-	}
-	var abilityToggleAi = Entities.GetAbilityByName(hero, "ability_xxwar_toggle_ai");
-	if(abilityToggleAi >= 0) {
-		InitSmallAbility(abilityToggleAi, "ability_toggle_ai", "Z", true);
+		InitSmallAbility(abilityJump, "ability_jump", "", true);
 		initCount++;
 	}
 
-	// for(var i = 8; i <= 11; i++) {
-	// 	var minorAbility = Entities.GetAbility(hero, i);
-	// 	if(minorAbility >= 0) {
-	// 		InitSmallAbility(minorAbility, "ability_minor_" + i, "", true);
-	// 		initCount++;
-	// 	}
-	// }
-
-	var abilityCollection = Entities.GetAbilityByName(hero, "ability_xxwar_collection");
-	if(abilityCollection >= 0){
-		InitSmallAbility(abilityCollection, "ability_collection", "F", false);
-		initCount++;
-	}
-	var abilityTeleport = Entities.GetAbilityByName(hero, "ability_xxwar_teleport");
-	if(abilityTeleport >= 0) {
-		InitSmallAbility(abilityTeleport, "ability_teleport", "", false);
-		initCount++;
-	}
-
-    if (initCount < 4) {
+    if (initCount < 1) {
         $.Schedule(0.5, InitAbilities);
     }
 
@@ -798,8 +726,7 @@ function OnAbilityDragStart(btn, dragCallbacks) {
 		isSmallAbility = true;
 	}
 
-	if(btn.m_AbilityName == "ability_xxwar_jump" || btn.m_AbilityName == "ability_xxwar_toggle_ai" ||
-		btn.m_AbilityName == "ability_xxwar_teleport" || btn.m_AbilityName == "ability_xxwar_collection") {
+	if(btn.m_AbilityName == "ability_xxwar_jump") {
 		return false;
 	}
 
