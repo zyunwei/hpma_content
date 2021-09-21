@@ -412,7 +412,8 @@ function AutoUpdateAbilities() {
 			UpdateAbility($("#ability_minor_" + i), hero, i, null);		
 		}
 		
-		UpdateAbility($("#ability_jump"), hero, -1, "ability_xxwar_move");
+		UpdateAbility($("#ability_move"), hero, -1, "ability_xxwar_move");
+		UpdateAbility($("#ability_pre"), hero, 5);
 	}
 
 	$.Schedule(0.05, AutoUpdateAbilities);
@@ -467,13 +468,13 @@ function UpdateHeroInfo() {
 		}
 		$("#HeroPortraitImg").SetImage("file://{images}/custom_game/hero_frame/" + Entities.GetUnitName(hero) + ".png");
 
-		var ability_jump = $("#ability_jump");
+		var ability_move = $("#ability_move");
 
 		if (m_IsLocalHero) {
-			if(ability_jump) ability_jump.visible = true;	
+			if(ability_move) ability_move.visible = true;	
 		}
 		else {
-			if(ability_jump) ability_jump.visible = false;	
+			if(ability_move) ability_move.visible = false;	
 		}
 	}
 	
@@ -664,9 +665,12 @@ function InitAbilities() {
     var initCount = 0;
 	var abilityJump = Entities.GetAbilityByName(hero, "ability_xxwar_move");
 	if(abilityJump >= 0) {
-		InitSmallAbility(abilityJump, "ability_jump", "", true);
+		InitSmallAbility(abilityJump, "ability_move", "", true);
 		initCount++;
 	}
+
+	var abilityPre = Entities.GetAbility(hero, 5);
+	InitSmallAbility(abilityPre, "ability_pre", "", false);
 
     if (initCount < 1) {
         $.Schedule(0.5, InitAbilities);
