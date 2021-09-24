@@ -234,10 +234,10 @@ function RegisterAbilityEvent(btn) {
     	}
     }(btn));
 
-	if(btn.FindChildTraverse("LevelUpTab") == null) {
-		var panel = $.CreatePanel("Panel", btn, "LevelUpTab");
-        panel.BLoadLayoutSnippet("level-up-tab");
-	}
+	// if(btn.FindChildTraverse("LevelUpTab") == null) {
+	// 	var panel = $.CreatePanel("Panel", btn, "LevelUpTab");
+ //        panel.BLoadLayoutSnippet("level-up-tab");
+	// }
 }
 
 function StudyAbility(abilityName){
@@ -323,23 +323,23 @@ function UpdateAbility(btn, hero, slot, abilityName) {
 		}
 	}
 
-	if(Entities.GetAbilityPoints(hero) > 0 && Abilities.CanAbilityBeUpgraded(ability) == AbilityLearnResult_t.ABILITY_CAN_BE_UPGRADED 
-		&& isOwnHero && isSmallAbility == false){
-		btn.SetHasClass("show_level_up_tab", true);
+	// if(Entities.GetAbilityPoints(hero) > 0 && Abilities.CanAbilityBeUpgraded(ability) == AbilityLearnResult_t.ABILITY_CAN_BE_UPGRADED 
+	// 	&& isOwnHero && isSmallAbility == false){
+	// 	btn.SetHasClass("show_level_up_tab", true);
 
-		var levelUpButton = btn.FindChildTraverse("LevelUpTab");
-		if(levelUpButton && levelUpButton.StudyAbilityName != btn.m_AbilityName) {
-			levelUpButton.StudyAbilityName = btn.m_AbilityName;
-			levelUpButton.ClearPanelEvent("onactivate");
-			levelUpButton.SetPanelEvent("onactivate", function(abilityName){
-		        return function(){
-		        	StudyAbility(abilityName);
-		        }
-		    }(btn.m_AbilityName));
-		}
-	} else {
-		btn.SetHasClass("show_level_up_tab", false);
-	}
+	// 	var levelUpButton = btn.FindChildTraverse("LevelUpTab");
+	// 	if(levelUpButton && levelUpButton.StudyAbilityName != btn.m_AbilityName) {
+	// 		levelUpButton.StudyAbilityName = btn.m_AbilityName;
+	// 		levelUpButton.ClearPanelEvent("onactivate");
+	// 		levelUpButton.SetPanelEvent("onactivate", function(abilityName){
+	// 	        return function(){
+	// 	        	StudyAbility(abilityName);
+	// 	        }
+	// 	    }(btn.m_AbilityName));
+	// 	}
+	// } else {
+	// 	btn.SetHasClass("show_level_up_tab", false);
+	// }
 
 	var isInCD = !Abilities.IsCooldownReady(ability);
 	btn.SetHasClass('is-in-cd',isInCD);
