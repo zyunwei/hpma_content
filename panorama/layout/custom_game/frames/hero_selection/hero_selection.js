@@ -2,9 +2,7 @@ var CARD_COUNT_LIMIT = 10;
 var SUMMON_CARD_LIMIT = 2;
 var GROUP_COUNT_LIMIT = 5;
 var HEROES_LIST = {
-    "1" : ["legion_commander", "spectre"],
-    "2" : ["slark", "templar_assassin"],
-    "3" : ["juggernaut", "lina"],
+    "3" : ["templar_assassin", "lina"],
 };
 
 var SelectedHero = "";
