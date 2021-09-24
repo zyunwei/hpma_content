@@ -507,6 +507,23 @@
 	text-shadow: #000 0px 0px 4px 4.0;
 }
 
+.ability-btn #Cost{
+	width: 100%;
+	height: 26px;
+	vertical-align: top;
+	horizontal-align: middle;
+	transform: translateY(2px);
+}
+
+.ability-btn #Cost Label{
+	color: #eba333;
+	font-size: 18px;
+	width: 100%;
+	text-align: center;
+	transform: translateY(3px);
+	text-shadow: #000 0px 0px 4px 4.0;
+}
+
 .is-passive #Hotkey Label{
 	color:#444;
 }

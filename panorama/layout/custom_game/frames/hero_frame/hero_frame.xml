@@ -23,6 +23,9 @@
 				<Panel id="Hotkey">
 					<Label text="" />
 				</Panel>
+				<Panel id="Cost">
+					<Label text="" />
+				</Panel>
 			</Button>
 		</snippet>
 

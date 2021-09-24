@@ -352,20 +352,21 @@ function UpdateAbility(btn, hero, slot, abilityName) {
 		btn.FindChild('cd').text = Math.ceil(cd);
 	}
 
-	if(isSmallAbility) {
+	var costPanel = btn.FindChild('Cost');
+	if(costPanel) {
 		var crystal_cost = Abilities.GetSpecialValueFor(ability, "crystal_cost");
 		if(crystal_cost && crystal_cost > 0) {
-			var hotkeyText = btn.FindChild('Hotkey').GetChild(0);
-			hotkeyText.style.color = "#eba333";
-			hotkeyText.style["text-align"] = "right";
-			hotkeyText.text = crystal_cost;
-		}
-
-		if(isMinorAbility && isInCD == false && crystal_cost > 0) {
-			btn.SetHasClass("show_redraw", true);
+			costPanel.GetChild(0).text = crystal_cost;
 		} else {
-			btn.SetHasClass("show_redraw", false);
+			var hotkeyText = btn.FindChild('Cost').GetChild(0);
+			costPanel.GetChild(0).text = "";
 		}
+	}
+
+	if(isMinorAbility && isInCD == false && crystal_cost > 0) {
+		btn.SetHasClass("show_redraw", true);
+	} else {
+		btn.SetHasClass("show_redraw", false);
 	}
 
 	let chargePanel = btn.FindChildTraverse("charge_panel");
