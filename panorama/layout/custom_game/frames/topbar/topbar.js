@@ -78,7 +78,7 @@ function UpdateEnemyInfo() {
 			Entities.GetAbilityByName(target, "ability_npc_teleport") != -1 ||
 			Entities.GetAbilityByName(target, "ability_npc_tombstone") != -1;
 
-		if (Entities.IsEnemy(target) && targetHealth != 0 && isCollectionUnit == false) {
+		if (target != Players.GetLocalHero() && targetHealth != 0 && isCollectionUnit == false) {
 			$("#EnemyInfo").visible = true;
 			$("#BuffsFrame").SetTargetUnit(target, 2);
 			UpdateEnemyInfoForUnit(target);
