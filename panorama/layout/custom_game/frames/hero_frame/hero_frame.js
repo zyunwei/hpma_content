@@ -86,7 +86,7 @@ function AbilityPress(key) {
 	var abilityPanelList = $("#AbilityList");
 	for (var i = 0; i <= 4; i++) {
 		var panel = abilityPanelList.GetChild(i);
-		if (panel && panel.visible == true && panel.HotKey== key) {
+		if (panel && panel.visible == true && panel.HotKey== key && panel.BHasClass("no-mana") == false) {
 			var ability = Entities.GetAbilityByName(hero, panel.m_AbilityName);
 			if(ability) {
 				if(GameUI.IsAltDown()){
