@@ -288,10 +288,16 @@ function UpdateAbility(btn, hero, slot, abilityName) {
 		abilityImg.abilityname = Abilities.GetAbilityName(ability);
 	}
 
+	var crystalTotal = 0;
+	var statAttrs = CustomNetTables.GetTableValue("CustomAttributes", "StatisticalAttributes_" + String(hero));
+	if (statAttrs) {
+		crystalTotal = statAttrs["crystal"];
+	}
+
 	btn.SetHasClass("active",( ability == Abilities.GetLocalPlayerActiveAbility()));
 	btn.SetHasClass("toggle-enable",( Abilities.GetToggleState(ability)));
 	btn.SetHasClass("auto-cast",( Abilities.GetAutoCastState(ability)));
-	btn.SetHasClass("no-mana",( Entities.GetMana(hero) < Abilities.GetManaCost(ability)));
+	btn.SetHasClass("no-mana",( crystalTotal < Abilities.GetSpecialValueFor(ability, "crystal_cost")));
 	btn.SetHasClass("not-activated",!Abilities.IsActivated(ability));
 	btn.SetHasClass("not-learn",Abilities.GetLevel(ability)<=0);
 	btn.SetHasClass("is-passive",Abilities.IsPassive(ability));
